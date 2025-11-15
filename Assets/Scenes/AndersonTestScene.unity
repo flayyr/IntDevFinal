@@ -360,6 +360,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 827678597725273826, guid: e149887272f0f584b8fb79e6ae1ff848, type: 3}
+      propertyPath: portrait
+      value: 
+      objectReference: {fileID: -8513768484045206122, guid: 7ab9fa2b5105931468eea4e7f118009d, type: 3}
+    - target: {fileID: 827678597725273826, guid: e149887272f0f584b8fb79e6ae1ff848, type: 3}
+      propertyPath: typeSpeed
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 827678597725273826, guid: e149887272f0f584b8fb79e6ae1ff848, type: 3}
       propertyPath: textBoxDisplay
       value: 
       objectReference: {fileID: 23030978}

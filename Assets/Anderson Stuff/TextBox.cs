@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine.InputSystem;
 using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class TextBox : MonoBehaviour
 {
@@ -12,18 +13,21 @@ public class TextBox : MonoBehaviour
     [SerializeField] bool bottom;
 
     //[SerializeField] sprites (figure out how to implement that)
+    [SerializeField] Sprite portrait;
 
     //keeps track of page
-    [SerializeField] private int index;
+    [SerializeField] private int index = 0;
+
+    [SerializeField] private bool typing = true;
 
     //how fast the text types
-    [SerializeField] private float typeSpeed = 0.005f;
+    [SerializeField] private float typeSpeed;
 
     //actual dialogue
     [SerializeField] private string[] testText = new string[] { "yo!", "i'm testing this out dude", "lets see how it goes", "this is the last line" };
 
     private GameObject self;
-
+    
     public TextMeshProUGUI textBoxDisplay;
 
     private void Awake()
@@ -34,6 +38,11 @@ public class TextBox : MonoBehaviour
     void Start()
     {
 
+    }
+
+    private void OnEnable()
+    {
+        nextSentence();
     }
 
     void nextSentence()
@@ -58,13 +67,18 @@ public class TextBox : MonoBehaviour
             yield return new WaitForSeconds(typeSpeed);
         }
         index++;
+        typing = true;
     }
 
     void Update()
     {
         if (Input.GetKeyDown("space"))
         {
-            nextSentence();
+            if (typing)
+            {
+                typing = false;
+                nextSentence();
+            }
         }
     }
 }
