@@ -12,12 +12,15 @@ public class PlayerEntity : Entity
 
     private void Update()
     {
-        progress += agility * Time.deltaTime;
-        progressBar.value = progress;
-        if(progress >= 1f)
+        if (BattleManager.Instance.state == BattleState.idle)
         {
-            progress = 0f;
-            UseCompetence(competences[0], enemy);
+            progress += agility * Time.deltaTime;
+            progressBar.value = progress;
+            if (progress >= 1f)
+            {
+                progress = 0f;
+                BattleManager.Instance.PlayerTurn(this);
+            }
         }
     }
 }

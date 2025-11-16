@@ -12,10 +12,10 @@ public class Entity : MonoBehaviour
     [SerializeField] int attackPower;
     [SerializeField] int baseDefense;
     [SerializeField, Range(0, 1)] float baseAgility = 0.2f;
-    [SerializeField] protected CompetenceSO[] competences;
+    [SerializeField] public CompetenceSO[] competences;
 
     float hp;
-    float cc;
+    public float cc;
     protected float agility;
     protected int defense;
     protected float progress;
@@ -33,7 +33,7 @@ public class Entity : MonoBehaviour
         Debug.Log(gameObject.name +": "+ hp);
     }
 
-    protected void UseCompetence(CompetenceSO competence, Entity target)
+    public void UseCompetence(CompetenceSO competence, Entity target)
     {
         cc -= competence.ccCost;
         StartCoroutine(AnimationCoroutine(target, competence.moveAmount, competence));
