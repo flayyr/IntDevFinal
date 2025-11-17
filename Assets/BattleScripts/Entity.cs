@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 
 public class Entity : MonoBehaviour
@@ -7,18 +8,19 @@ public class Entity : MonoBehaviour
     static float moveSpeed = 5f;
     static float waitTimeAfterMove = 0.5f;
 
-    [SerializeField] int maxHP;
-    [SerializeField] int maxCC;
+    [SerializeField] public int maxHP;
+    [SerializeField] public int maxCC;
     [SerializeField] int attackPower;
     [SerializeField] int baseDefense;
     [SerializeField, Range(0, 1)] float baseAgility = 0.2f;
     [SerializeField] public CompetenceSO[] competences;
 
-    float hp;
-    public float cc;
+    [HideInInspector] public int hp;
+    [HideInInspector] public int cc;
+    [HideInInspector] public float progress;
     protected float agility;
     protected int defense;
-    protected float progress;
+    
 
     private void Awake()
     {
@@ -29,8 +31,14 @@ public class Entity : MonoBehaviour
 
     public void changeHP(int change)
     {
-        hp += change;
-        Debug.Log(gameObject.name +": "+ hp);
+        int hpChange = change;
+        if (hp + change > maxHP) {
+            hpChange = maxHP - hp;
+            hp = maxHP;
+        } else {
+            hp += change;
+        }
+        Debug.Log(gameObject.name +": hit for "+hpChange+" to " +hp);
     }
 
     public void UseCompetence(CompetenceSO competence, Entity target)
@@ -78,6 +86,8 @@ public class Entity : MonoBehaviour
             yield return new WaitForSeconds(Time.deltaTime);
         }
         transform.position = originalPos;
+
+        BattleManager.Instance.SwitchState(BattleState.idle);
         yield return null;
     }
 

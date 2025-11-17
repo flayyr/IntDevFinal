@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
-  m_Name: RunWithCourage
+  m_Name: BaseAttack
   m_EditorClassIdentifier: 
-  competenceName: Run With Courage
-  description: Attack with medium impact
+  competenceName: Attack
+  description: 
   targetEnemy: 1
-  ccCost: 16
-  hpChange: -75
+  ccCost: 0
+  hpChange: -50
   statuses: 
   cures: 0
-  moveAmount: -1
+  moveAmount: 3
   effect: {fileID: 0}

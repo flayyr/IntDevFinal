@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,14 +18,19 @@ public class BattleManager : MonoBehaviour
     [SerializeField] CompetenceSO baseDefend;
 
     [Space(20)]
-    [SerializeField]
-    List<Entity> enemies = new List<Entity>();
+    [SerializeField] ActionSelectionMenu actionSelectionMenu;
+    [SerializeField] CompetenceSelectionMenu competenceSelectionMenu;
+    [SerializeField] CharacterSelectionmenu characterSelectionMenu;
+
+    [Space(20)]
+    [SerializeField] List<Entity> enemies = new List<Entity>();
+    [SerializeField] public PlayerEntity[] playerEntities;
 
     Entity currEntity;
     Entity targetEntity;
     CompetenceSO selectedCompetence;
 
-    int selectionIndex;
+    public int selectionIndex;
 
     delegate void SelectFunction (int index);
     enum Action { Attack, Defend, Competence }
@@ -50,13 +56,13 @@ public class BattleManager : MonoBehaviour
                     if (selected == Action.Attack)
                     {
                         selectedCompetence = baseAttack;
-                        state = BattleState.selectTarget;
+                        SwitchState(BattleState.selectTarget);
                     } else if (selected == Action.Defend)
                     {
                         Act(currEntity, targetEntity, baseDefend);
                     } else if (selected == Action.Competence)
                     {
-                        state = BattleState.selectCompetence;
+                        SwitchState(BattleState.selectCompetence);
                     }
                 }
                 break;
@@ -79,18 +85,18 @@ public class BattleManager : MonoBehaviour
                         SelectCompetence(selectionIndex - 1);
                 } else if (Input.GetKeyDown(KeyCode.Z))
                 {
-                    selectedCompetence = currEntity.competences[selectionIndex];
-                    if (currEntity.cc >= selectedCompetence.ccCost)
+                    if (selectionIndex < currEntity.competences.Length && currEntity.cc >= currEntity.competences[selectionIndex].ccCost)
                     {
-                        state = BattleState.selectTarget;
+                        selectedCompetence = currEntity.competences[selectionIndex];
+                        SwitchState(BattleState.selectTarget);
                     }
                     else
                     {
-                        //NOT ENOUGH CC
+                        //NOT ENOUGH CC or invalid selection
                     }
                 } else if (Input.GetKeyDown(KeyCode.X))
                 {
-                    state = BattleState.selectAction;
+                    SwitchState(BattleState.selectAction);
                 }
                 break;
 
@@ -102,16 +108,18 @@ public class BattleManager : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.Z))
                 {
+                    if (!selectedCompetence.targetEnemy)
+                        targetEntity = playerEntities[selectionIndex];
                     Act(currEntity, targetEntity, selectedCompetence);
                 } else if (Input.GetKeyDown(KeyCode.X))
                 {
                     if (selectedCompetence == baseAttack)
                     {
-                        state = BattleState.selectAction;
+                        SwitchState(BattleState.selectAction);
                     }
                     else
                     {
-                        state = BattleState.selectCompetence;
+                        SwitchState(BattleState.selectCompetence);
                     }
 
                 }
@@ -122,17 +130,46 @@ public class BattleManager : MonoBehaviour
         }
     }
 
+    public void SwitchState(BattleState targetState) {
+        if (state == BattleState.selectAction) {
+            actionSelectionMenu.Hide();
+            characterSelectionMenu.Default();
+        } else if (state == BattleState.selectCompetence) {
+            competenceSelectionMenu.Hide();
+        } else if (state == BattleState.selectTarget) {
+            characterSelectionMenu.Default();
+            pointer.Hide();
+        }
+
+        if (targetState == BattleState.selectAction) {
+            actionSelectionMenu.Show((PlayerEntity)currEntity);
+            characterSelectionMenu.Hide();
+        } else if (targetState == BattleState.selectCompetence) {
+            competenceSelectionMenu.Show((PlayerEntity)currEntity);
+        } else if (targetState == BattleState.selectTarget) {
+            if (selectedCompetence.targetEnemy) {
+                SelectEnemy(0);
+            } else {
+                characterSelectionMenu.Show();
+                targetEntity = playerEntities[selectionIndex];
+            }
+        }
+        selectionIndex = 0;
+
+        state = targetState;
+    }
+
     void Act(Entity user, Entity target, CompetenceSO competence)
     {
         user.UseCompetence(competence, target);
-        state = BattleState.Acting;
+        SwitchState(BattleState.Acting);
     }
 
     public void PlayerTurn(PlayerEntity entity)
     {
-        state = BattleState.selectAction;
         currEntity = entity;
-        SelectAction(0);
+
+        SwitchState(BattleState.selectAction);
     }
 
     void AlterSelection(SelectFunction function, SelectMode mode)
@@ -150,14 +187,13 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    void SelectAction(int index)
-    {
-
+    void SelectAction(int index) {
+        selectionIndex = actionSelectionMenu.SelectItem(index);
     }
 
     void SelectCompetence(int index)
     {
-
+        selectionIndex = competenceSelectionMenu.SelectItem(index);
     }
 
     void SelectEnemy(int index)
@@ -170,7 +206,7 @@ public class BattleManager : MonoBehaviour
 
     void SelectAlly(int index)
     {
-
+        selectionIndex = characterSelectionMenu.SelectItem(index);
     }
 
 

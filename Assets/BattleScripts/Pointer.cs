@@ -14,6 +14,11 @@ public class Pointer : MonoBehaviour
         nameText.text = entity.name;
     }
 
+    public void SetSelection(MenuItem item) {
+        transform.position = item.transform.position;
+        nameText.transform.position = new Vector3(-100, -100, 0);
+    }
+
     public void Hide()
     {
         transform.position = new Vector3(-100, -100, 0);
