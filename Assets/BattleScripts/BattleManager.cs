@@ -13,6 +13,9 @@ public class BattleManager : MonoBehaviour
     public static BattleManager Instance;
     public BattleState state = BattleState.idle;
     [Space(20)]
+    public GameObject damageTextPrefab;
+    public Canvas worldSpaceCanvas;
+    [Space(20)]
     [SerializeField] Pointer pointer;
     [SerializeField] CompetenceSO baseAttack;
     [SerializeField] CompetenceSO baseDefend;

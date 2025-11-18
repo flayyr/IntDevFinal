@@ -38,7 +38,9 @@ public class Entity : MonoBehaviour
         } else {
             hp += change;
         }
-        Debug.Log(gameObject.name +": hit for "+hpChange+" to " +hp);
+        GameObject damageText = Instantiate(BattleManager.Instance.damageTextPrefab, BattleManager.Instance.worldSpaceCanvas.transform);
+        damageText.GetComponent<ScoreTextScript>().SetDamage(hpChange);
+        damageText.transform.position = transform.position;
     }
 
     public void UseCompetence(CompetenceSO competence, Entity target)
