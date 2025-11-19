@@ -4,27 +4,42 @@ using UnityEngine.InputSystem;
 using UnityEngine;
 using System.Collections;
 using Unity.VisualScripting;
+using UnityEngine.UI;
 
 public class TextBox : MonoBehaviour
 {
-
-    //use these variables to determine whether the text box is spawned on the top of the screen or the bottom
-    [SerializeField] bool top;
-    [SerializeField] bool bottom;
-
-    //[SerializeField] sprites (figure out how to implement that)
-    [SerializeField] Sprite portrait;
-
     //keeps track of page
-    [SerializeField] private int index = 0;
+    [SerializeField] public int index = 0;
 
     [SerializeField] private bool typing = true;
+
+    [SerializeField] public AudioSource talkingSFX;
 
     //how fast the text types
     [SerializeField] private float typeSpeed;
 
     //actual dialogue
-    [SerializeField] private string[] testText = new string[] { "yo!", "i'm testing this out dude", "lets see how it goes", "this is the last line" };
+    [SerializeField] public string[] firstText = new string[] { "im sans", "i'm testing this out dude", "lets see how it goes", "this is the last line", "just kidding here's sans", "yo" };
+    [SerializeField] public string[] secondText = new string[] { "RAHAHAHAHAHAH", "I took too long" };
+
+    //you're gonna have to edit these in accordance to which image you want to show up, "B" for batter & "F" for Fifth
+    [SerializeField] public string[] firstTextImages = new string[] { "B", "F", "F", "F", "F", "B"};
+    [SerializeField] public string[] secondTextImages = new string[] { "F", "F" };
+
+    //use this one to determine which string the textbox is using
+    [SerializeField] private string[] usedText;
+
+    //use this one to determine which image the textbox should be on
+    [SerializeField] private string[] usedPortraits;
+
+    [SerializeField] bool talked = false;
+
+    [SerializeField] GameObject portrait;
+    [SerializeField] string currentImg;
+
+    [SerializeField] Sprite batterSprite;
+    [SerializeField] Sprite fifthSprite;
+    public Image portraitHolder;
 
     private GameObject self;
     
@@ -35,19 +50,25 @@ public class TextBox : MonoBehaviour
         self = this.gameObject;
     }
 
-    void Start()
-    {
-
-    }
-
     private void OnEnable()
-    {
+    { 
+        if (!talked)
+        {
+            usedPortraits = firstTextImages;
+            usedText = firstText;
+        }
+        else
+        {
+            usedPortraits = secondTextImages;
+            usedText = secondText;
+        }
+        currentImg = usedPortraits[0];
         nextSentence();
     }
 
     void nextSentence()
     {
-        if(index < testText.Length)
+        if(index < usedText.Length)
         {
             textBoxDisplay.text = "";
             StartCoroutine(WriteSentence());
@@ -55,14 +76,20 @@ public class TextBox : MonoBehaviour
         else
         {
             index = 0;
+
             textBoxDisplay.text = "";
+            if (!talked)
+            {
+                talked = true;
+            }
             self.SetActive(false);
         }
     }
 
     IEnumerator WriteSentence()
     {
-        foreach (char Character in testText[index].ToCharArray()){
+        foreach (char Character in usedText[index].ToCharArray())
+        {
             textBoxDisplay.text += Character;
             yield return new WaitForSeconds(typeSpeed);
         }
@@ -76,9 +103,23 @@ public class TextBox : MonoBehaviour
         {
             if (typing)
             {
+                if (index < usedText.Length)
+                {
+                    currentImg = usedPortraits[index];
+                }
                 typing = false;
                 nextSentence();
             }
         }
+
+        if (currentImg == "B")
+        {
+            portraitHolder.sprite = batterSprite;
+        }
+        else if (currentImg == "F")
+        {
+            portraitHolder.sprite = fifthSprite;
+        }
+
     }
 }
