@@ -1,7 +1,9 @@
+using TMPro;
 using UnityEngine;
 
 public class CompetenceSelectionMenu : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI descriptionText;
     [SerializeField]
     CompetenceMenuItem[] competenceMenuItems;
     [SerializeField, Range(0f, 1f)] float unusableAlpha = 0.3f;
@@ -31,6 +33,7 @@ public class CompetenceSelectionMenu : MonoBehaviour
 
         competenceMenuItems[selectedIndex].DeselectItem();
         competenceMenuItems[newIndex].SelectItem();
+        descriptionText.text = competenceMenuItems[newIndex].competence.description;
         selectedIndex = newIndex;
 
         return selectedIndex;

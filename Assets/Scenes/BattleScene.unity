@@ -1506,6 +1506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1483bb22f3a6c34c8a0a382091a7d94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 1965080637}
   competenceMenuItems:
   - {fileID: 4614106182939048765}
   - {fileID: 2035531961}

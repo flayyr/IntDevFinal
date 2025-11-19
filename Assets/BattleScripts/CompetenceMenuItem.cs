@@ -5,13 +5,13 @@ public class CompetenceMenuItem : MenuItem
 {
     [SerializeField] TextMeshProUGUI costText;
 
-    PlayerEntity entity;
+    public CompetenceSO competence;
     float alpha = 1f;
 
     public void SetUp(PlayerEntity entity, int index, float alpha) {
-        this.entity = entity;
-        SetText(entity.competences[index].competenceName);
-        SetCostText(entity.competences[index].ccCost);
+        competence = entity.competences[index];
+        SetText(competence.competenceName);
+        SetCostText(competence.ccCost);
 
         if(entity.cc < entity.competences[index].ccCost) {
             menuText.alpha = alpha;
