@@ -62,7 +62,7 @@ public class BattleManager : MonoBehaviour
                         SwitchState(BattleState.selectTarget);
                     } else if (selected == Action.Defend)
                     {
-                        Act(currEntity, targetEntity, baseDefend);
+                        Act(currEntity, currEntity, baseDefend);
                     } else if (selected == Action.Competence)
                     {
                         SwitchState(BattleState.selectCompetence);
@@ -88,7 +88,7 @@ public class BattleManager : MonoBehaviour
                         SelectCompetence(selectionIndex - 1);
                 } else if (Input.GetKeyDown(KeyCode.Z))
                 {
-                    if (selectionIndex < currEntity.competences.Length && currEntity.cc >= currEntity.competences[selectionIndex].ccCost)
+                    if (selectionIndex < currEntity.competences.Length && currEntity.cc >= currEntity.competences[selectionIndex].ccCost && !currEntity.statuses[(int)Status.Muted])
                     {
                         selectedCompetence = currEntity.competences[selectionIndex];
                         SwitchState(BattleState.selectTarget);
@@ -154,7 +154,7 @@ public class BattleManager : MonoBehaviour
                 SelectEnemy(0);
             } else {
                 characterSelectionMenu.Show();
-                targetEntity = playerEntities[selectionIndex];
+                targetEntity = playerEntities[0];
             }
         }
         selectionIndex = 0;

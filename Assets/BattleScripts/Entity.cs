@@ -7,19 +7,22 @@ public class Entity : MonoBehaviour
 {
     static float moveSpeed = 5f;
     static float waitTimeAfterMove = 0.5f;
+    static float defendingMultiplier = 3f;
 
     [SerializeField] public int maxHP;
     [SerializeField] public int maxCC;
     [SerializeField] int attackPower;
-    [SerializeField] int baseDefense;
+    [SerializeField] float baseDefense;
     [SerializeField, Range(0, 1)] float baseAgility = 0.2f;
     [SerializeField] public CompetenceSO[] competences;
 
     [HideInInspector] public int hp;
     [HideInInspector] public int cc;
     [HideInInspector] public float progress;
+    [HideInInspector] public bool[] statuses;
     protected float agility;
-    protected int defense;
+    protected float defense;
+    
     
 
     private void Awake()
@@ -27,9 +30,16 @@ public class Entity : MonoBehaviour
         hp = maxHP;
         cc = maxCC;
         agility = baseAgility;
+        statuses = new bool[4];
     }
 
-    public void changeHP(int change)
+    protected virtual void Update() {
+        if (BattleManager.Instance.state == BattleState.idle) {
+            progress += agility * Time.deltaTime;
+        }
+    }
+
+    public void ChangeHP(int change)
     {
         int hpChange = change;
         if (hp + change > maxHP) {
@@ -41,6 +51,35 @@ public class Entity : MonoBehaviour
         GameObject damageText = Instantiate(BattleManager.Instance.damageTextPrefab, BattleManager.Instance.worldSpaceCanvas.transform);
         damageText.GetComponent<ScoreTextScript>().SetDamage(hpChange);
         damageText.transform.position = transform.position;
+
+        defense = baseDefense;
+    }
+
+    public void ApplyStatus(CompetenceSO competence) {
+        for (int i = 0; i < competence.statuses.Length; i++) {
+            //Set Defending (not included in statuses array to avoid showing description)
+            if (competence.statuses[i] == Status.Defending) {
+                defense = baseDefense * defendingMultiplier;
+
+            } else if (statuses[(int)competence.statuses[i]] == competence.cures) {
+                if (competence.cures) {
+                    Debug.Log(name + " is no longer "+ competence.statuses[i].ToString());
+                    statuses[(int)competence.statuses[i]] = false;
+                } else {
+                    Debug.Log(name + " is inflicted with " + competence.statuses[i].ToString());
+                    statuses[(int)competence.statuses[i]] = true;
+                }
+            }
+        }
+
+        //Set Agility
+        if (statuses[(int)Status.Lethargic] && statuses[(int)Status.Hasty]) {
+            agility = baseAgility;
+        } else if (statuses[(int)Status.Lethargic]) {
+            agility = 0.5f * baseAgility;
+        } else if (statuses[(int)Status.Hasty]) {
+            agility = 2f * baseAgility;
+        }
     }
 
     public void UseCompetence(CompetenceSO competence, Entity target)
@@ -49,18 +88,19 @@ public class Entity : MonoBehaviour
         StartCoroutine(AnimationCoroutine(target, competence.moveAmount, competence));
     }
 
-    void ApplyEffect(CompetenceSO competence, Entity target)
+    void HitTarget(CompetenceSO competence, Entity target)
     {
         if(competence.effect != null)
         {
             Instantiate(competence.effect, target.transform);
         }
-        target.changeHP(competence.hpChange);
+        target.ChangeHP(competence.hpChange);
+        target.ApplyStatus(competence);
     }
 
     protected void Attack(Entity target)
     {
-        target.changeHP(-attackPower);
+        target.ChangeHP(-attackPower);
     }
 
     IEnumerator AnimationCoroutine(Entity targetEntity, float moveAmount, CompetenceSO competence)
@@ -79,7 +119,7 @@ public class Entity : MonoBehaviour
             yield return new WaitForSeconds(Time.deltaTime);
         }
 
-        ApplyEffect(competence, targetEntity);
+        HitTarget(competence, targetEntity);
         yield return new WaitForSeconds(waitTimeAfterMove);
 
         while (Mathf.Abs((originalPos - transform.position).magnitude) > 0.1f)

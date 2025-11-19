@@ -10,10 +10,10 @@ public class CompetenceMenuItem : MenuItem
 
     public void SetUp(PlayerEntity entity, int index, float alpha) {
         competence = entity.competences[index];
-        SetText(competence.competenceName);
+        SetText(competence.name);
         SetCostText(competence.ccCost);
 
-        if(entity.cc < entity.competences[index].ccCost) {
+        if(entity.cc < entity.competences[index].ccCost || entity.statuses[(int)Status.Muted]) {
             menuText.alpha = alpha;
             costText.alpha = alpha;
             this.alpha = alpha;

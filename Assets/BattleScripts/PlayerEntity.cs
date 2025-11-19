@@ -8,16 +8,12 @@ public class PlayerEntity : Entity
         //UseCompetence(competences[0], enemy);
     }
 
-    private void Update()
+    protected override void Update()
     {
-        if (BattleManager.Instance.state == BattleState.idle)
-        {
-            progress += agility * Time.deltaTime;
-            if (progress >= 1f)
-            {
-                progress = 0f;
-                BattleManager.Instance.PlayerTurn(this);
-            }
+        base.Update();
+        if (progress >= 1f) {
+            progress = 0f;
+            BattleManager.Instance.PlayerTurn(this);
         }
     }
 }

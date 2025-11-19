@@ -5,7 +5,6 @@ public enum Status { Lethargic, Muted, Poisoned, Hasty, Defending}
 [CreateAssetMenu(fileName = "Competence", menuName = "ScriptableObjects/CompetenceSO", order = 1)]
 public class CompetenceSO : ScriptableObject
 {
-    public string competenceName;
     public string description;
     public bool targetEnemy = true;
     public int ccCost;

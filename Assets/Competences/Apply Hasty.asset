@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
-  m_Name: BaseAttack
+  m_Name: Apply Hasty
   m_EditorClassIdentifier: 
-  competenceName: Attack
-  description: 
-  targetEnemy: 1
-  ccCost: 0
-  hpChange: -50
-  statuses: 
+  description: 'Test Competence: applies hasty'
+  targetEnemy: 0
+  ccCost: 10
+  hpChange: 0
+  statuses: 03000000
   cures: 0
-  moveAmount: 3
+  moveAmount: 1
   effect: {fileID: 0}
