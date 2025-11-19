@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
   m_Name: Base Defend
   m_EditorClassIdentifier: 
-  competenceName: Attack
-  battleDescription: 
+  description: 
   targetEnemy: 0
   ccCost: 0
   hpChange: 0
