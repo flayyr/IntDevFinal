@@ -13,10 +13,15 @@ MonoBehaviour:
   m_Name: Apply Lethargic
   m_EditorClassIdentifier: 
   description: 'Test Competence: applies lethargic'
-  targetEnemy: 0
+  targetType: 1
   ccCost: 10
   hpChange: 0
   statuses: 00000000
   cures: 0
+  isEnemy: 0
+  weight: 0
+  requirementType: 0
+  requirementNum: 0
+  turnsSinceUse: 0
   moveAmount: 1
   effect: {fileID: 0}

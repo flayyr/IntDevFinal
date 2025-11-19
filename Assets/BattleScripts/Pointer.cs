@@ -12,6 +12,13 @@ public class Pointer : MonoBehaviour
         transform.position = entity.transform.position;
         nameText.transform.position = transform.position + textOffSet;
         nameText.text = entity.name;
+        gameObject.SetActive(true);
+        nameText.gameObject.SetActive(true);
+    }
+
+    public void Deselect()
+    {
+        Destroy(gameObject);
     }
 
     public void SetSelection(MenuItem item) {

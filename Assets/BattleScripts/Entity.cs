@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -88,6 +89,12 @@ public class Entity : MonoBehaviour
         StartCoroutine(AnimationCoroutine(target, competence.moveAmount, competence));
     }
 
+    public void UseMultiTargetCompetence(CompetenceSO competence, List<Entity> targets)
+    {
+        cc -= competence.ccCost;
+        StartCoroutine(MultiTargetAnimationCoroutine(targets, competence.moveAmount, competence));
+    }
+
     void HitTarget(CompetenceSO competence, Entity target)
     {
         if(competence.effect != null)
@@ -120,6 +127,36 @@ public class Entity : MonoBehaviour
         }
 
         HitTarget(competence, targetEntity);
+        yield return new WaitForSeconds(waitTimeAfterMove);
+
+        while (Mathf.Abs((originalPos - transform.position).magnitude) > 0.1f)
+        {
+            transform.position -= dir * Time.deltaTime * moveSpeed * (originalPos - transform.position).magnitude;
+            yield return new WaitForSeconds(Time.deltaTime);
+        }
+        transform.position = originalPos;
+
+        BattleManager.Instance.SwitchState(BattleState.idle);
+        yield return null;
+    }
+
+    IEnumerator MultiTargetAnimationCoroutine(List<Entity> targetEntities, float moveAmount, CompetenceSO competence)
+    {
+        Vector3 dir = (Vector3.zero - transform.position).normalized;
+        Vector3 targetPos = transform.position + dir * Mathf.Abs(moveAmount);//No negative moveamount for multitarget
+        Vector3 originalPos = transform.position;
+
+        while (Mathf.Abs((targetPos - transform.position).magnitude) > 0.5f)
+        {
+            transform.position += dir * Time.deltaTime * moveSpeed * (targetPos - transform.position).magnitude;
+            yield return new WaitForSeconds(Time.deltaTime);
+        }
+
+        foreach (Entity entity in targetEntities)
+        {
+            HitTarget(competence, entity);
+        }
+
         yield return new WaitForSeconds(waitTimeAfterMove);
 
         while (Mathf.Abs((originalPos - transform.position).magnitude) > 0.1f)

@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
-  m_Name: Apply Muted
+  m_Name: EnemyMove1
   m_EditorClassIdentifier: 
-  description: 'Test Competence: applies muted'
-  targetType: 1
-  ccCost: 10
-  hpChange: 0
-  statuses: 01000000
+  description: Attack with medium impact
+  targetType: 0
+  ccCost: 16
+  hpChange: -75
+  statuses: 
   cures: 0
-  isEnemy: 0
-  weight: 0
+  isEnemy: 1
+  weight: 3
   requirementType: 0
   requirementNum: 0
   turnsSinceUse: 0
-  moveAmount: 1
+  moveAmount: -1
   effect: {fileID: 0}

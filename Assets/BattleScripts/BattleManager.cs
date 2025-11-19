@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public enum BattleState
 {
@@ -14,6 +15,7 @@ public class BattleManager : MonoBehaviour
     public BattleState state = BattleState.idle;
     [Space(20)]
     public GameObject damageTextPrefab;
+    [SerializeField] GameObject pointerPrefab;
     public Canvas worldSpaceCanvas;
     [Space(20)]
     [SerializeField] Pointer pointer;
@@ -26,11 +28,12 @@ public class BattleManager : MonoBehaviour
     [SerializeField] CharacterSelectionmenu characterSelectionMenu;
 
     [Space(20)]
-    [SerializeField] List<Entity> enemies = new List<Entity>();
+    [SerializeField] List<EnemyEntity> enemies = new List<EnemyEntity>();
     [SerializeField] public PlayerEntity[] playerEntities;
 
     Entity currEntity;
     Entity targetEntity;
+    List<Entity> targetEntities;
     CompetenceSO selectedCompetence;
 
     public int selectionIndex;
@@ -104,15 +107,24 @@ public class BattleManager : MonoBehaviour
                 break;
 
             case BattleState.selectTarget:
-                if (selectedCompetence.targetEnemy)
+                if (selectedCompetence.targetType == TargetType.Enemy)
                     AlterSelection(SelectEnemy, SelectMode.Horizontal);
-                else
+                else if(selectedCompetence.targetType == TargetType.Ally)
                     AlterSelection(SelectAlly, SelectMode.Horizontal);
 
                 if (Input.GetKeyDown(KeyCode.Z))
                 {
-                    if (!selectedCompetence.targetEnemy)
+                    if (selectedCompetence.targetType == TargetType.Ally)
                         targetEntity = playerEntities[selectionIndex];
+                    if (selectedCompetence.targetType == TargetType.AllEnemy)
+                    {
+                        targetEntities = new List<Entity>();
+                        foreach(EnemyEntity enemy in enemies)
+                        {
+                            enemy.pointer.Deselect();
+                            targetEntities.Add(enemy);
+                        }
+                    }
                     Act(currEntity, targetEntity, selectedCompetence);
                 } else if (Input.GetKeyDown(KeyCode.X))
                 {
@@ -150,9 +162,10 @@ public class BattleManager : MonoBehaviour
         } else if (targetState == BattleState.selectCompetence) {
             competenceSelectionMenu.Show((PlayerEntity)currEntity);
         } else if (targetState == BattleState.selectTarget) {
-            if (selectedCompetence.targetEnemy) {
+            if (selectedCompetence.targetType != TargetType.Ally) {
                 SelectEnemy(0);
-            } else {
+            } else
+            {
                 characterSelectionMenu.Show();
                 targetEntity = playerEntities[0];
             }
@@ -164,7 +177,10 @@ public class BattleManager : MonoBehaviour
 
     void Act(Entity user, Entity target, CompetenceSO competence)
     {
-        user.UseCompetence(competence, target);
+        if(competence.targetType != TargetType.AllEnemy)
+            user.UseCompetence(competence, target);
+        else
+            user.UseMultiTargetCompetence(competence, targetEntities);
         SwitchState(BattleState.Acting);
     }
 
@@ -173,6 +189,44 @@ public class BattleManager : MonoBehaviour
         currEntity = entity;
 
         SwitchState(BattleState.selectAction);
+    }
+
+    public void EnemyTurn(EnemyEntity entity, CompetenceSO competence)
+    {
+        currEntity = entity;
+        selectedCompetence = competence;
+        if(competence.targetType == TargetType.Ally)
+        {
+            targetEntities = new List<Entity>();
+            foreach (Entity enemy in enemies)
+                targetEntities.Add(enemy);
+            currEntity.UseMultiTargetCompetence(selectedCompetence, targetEntities);
+        } else
+        {
+            targetEntities = AlivePlayers();
+            if (competence.targetType == TargetType.Enemy)
+            {
+                targetEntity = targetEntities[Random.Range(0, targetEntities.Count)];
+                currEntity.UseCompetence(selectedCompetence, targetEntity);
+            } else
+            {
+                currEntity.UseMultiTargetCompetence(selectedCompetence, targetEntities);
+            }
+        }
+        SwitchState(BattleState.Acting);
+    }
+
+    List<Entity> AlivePlayers()
+    {
+        List<Entity> alivePlayers = new List<Entity>();
+        foreach (Entity player in playerEntities)
+        {
+            if (player.hp > 0)
+            {
+                alivePlayers.Add(player);
+            }
+        }
+        return alivePlayers;
     }
 
     void AlterSelection(SelectFunction function, SelectMode mode)
@@ -201,10 +255,20 @@ public class BattleManager : MonoBehaviour
 
     void SelectEnemy(int index)
     {
-        int i = (index+enemies.Count) % enemies.Count;
-        pointer.SetSelection(enemies[i]);
-        targetEntity = enemies[i];
-        selectionIndex = i;
+        if (selectedCompetence.targetType == TargetType.Enemy)
+        {
+            int i = (index + enemies.Count) % enemies.Count;
+            pointer.SetSelection(enemies[i]);
+            targetEntity = enemies[i];
+            selectionIndex = i;
+        }
+        else
+        {
+            foreach(EnemyEntity enemy in enemies){
+                enemy.pointer = Instantiate(pointerPrefab, worldSpaceCanvas.transform).GetComponent<Pointer>();
+                enemy.pointer.SetSelection(enemy);
+            }
+        }
     }
 
     void SelectAlly(int index)

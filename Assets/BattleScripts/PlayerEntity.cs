@@ -3,11 +3,6 @@ using UnityEngine.UI;
 
 public class PlayerEntity : Entity
 {
-    private void Start()
-    {
-        //UseCompetence(competences[0], enemy);
-    }
-
     protected override void Update()
     {
         base.Update();

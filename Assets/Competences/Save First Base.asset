@@ -12,12 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
   m_Name: Save First Base
   m_EditorClassIdentifier: 
-  competenceName: Save First Base
   description: Heals an ally for medium impact
-  targetEnemy: 0
+  targetType: 1
   ccCost: 60
   hpChange: 50
   statuses: 
   cures: 0
+  isEnemy: 0
+  weight: 0
+  requirementType: 0
+  requirementNum: 0
+  turnsSinceUse: 0
   moveAmount: 1
   effect: {fileID: 0}
