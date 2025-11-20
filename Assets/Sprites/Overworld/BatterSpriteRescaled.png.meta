@@ -70,7 +70,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 160
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 3
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -136,10 +136,10 @@ TextureImporter:
       name: BatterSpriteRescaled_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 699
-        width: 122
-        height: 212
+        x: 0
+        y: 698
+        width: 140
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,10 +158,10 @@ TextureImporter:
       name: BatterSpriteRescaled_1
       rect:
         serializedVersion: 2
-        x: 149
-        y: 699
-        width: 122
-        height: 222
+        x: 140
+        y: 698
+        width: 140
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,10 +180,10 @@ TextureImporter:
       name: BatterSpriteRescaled_2
       rect:
         serializedVersion: 2
-        x: 289
-        y: 699
-        width: 122
-        height: 212
+        x: 280
+        y: 698
+        width: 140
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +202,10 @@ TextureImporter:
       name: BatterSpriteRescaled_3
       rect:
         serializedVersion: 2
-        x: 9
-        y: 469
-        width: 122
-        height: 212
+        x: 0
+        y: 466
+        width: 140
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,10 +224,10 @@ TextureImporter:
       name: BatterSpriteRescaled_4
       rect:
         serializedVersion: 2
-        x: 149
-        y: 469
-        width: 122
-        height: 222
+        x: 140
+        y: 466
+        width: 140
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,10 +246,10 @@ TextureImporter:
       name: BatterSpriteRescaled_5
       rect:
         serializedVersion: 2
-        x: 289
-        y: 469
-        width: 122
-        height: 212
+        x: 280
+        y: 466
+        width: 140
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: BatterSpriteRescaled_6
       rect:
         serializedVersion: 2
-        x: 9
-        y: 239
-        width: 112
-        height: 212
+        x: 0
+        y: 234
+        width: 140
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +290,10 @@ TextureImporter:
       name: BatterSpriteRescaled_7
       rect:
         serializedVersion: 2
-        x: 149
-        y: 239
-        width: 112
-        height: 222
+        x: 140
+        y: 234
+        width: 140
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,10 +312,10 @@ TextureImporter:
       name: BatterSpriteRescaled_8
       rect:
         serializedVersion: 2
-        x: 279
-        y: 239
-        width: 132
-        height: 212
+        x: 280
+        y: 234
+        width: 140
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,10 +334,10 @@ TextureImporter:
       name: BatterSpriteRescaled_9
       rect:
         serializedVersion: 2
-        x: 9
-        y: 9
-        width: 132
-        height: 212
+        x: 0
+        y: 2
+        width: 140
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -356,10 +356,10 @@ TextureImporter:
       name: BatterSpriteRescaled_10
       rect:
         serializedVersion: 2
-        x: 159
-        y: 9
-        width: 112
-        height: 222
+        x: 140
+        y: 2
+        width: 140
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,10 +378,10 @@ TextureImporter:
       name: BatterSpriteRescaled_11
       rect:
         serializedVersion: 2
-        x: 299
-        y: 9
-        width: 112
-        height: 212
+        x: 280
+        y: 2
+        width: 140
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,7 +400,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 38e8cf6045c0d472d9c89b74e111256f
     internalID: 0
     vertices: []
     indices: 
