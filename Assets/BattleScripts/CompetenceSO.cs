@@ -2,7 +2,7 @@ using UnityEngine;
 
 public enum Status { Lethargic, Muted, Poisoned, Hasty, Defending}
 public enum TargetType { Enemy, Ally, AllEnemy}
-public enum RequirementType { None, NumMinionsLessThan, NumMinionsMoreThan, TurnsSinceUse}
+public enum RequirementType { None, NumEnemiesLessThan, NumEnemiesMoreThan, TurnsSinceUse}
 
 [CreateAssetMenu(fileName = "Competence", menuName = "ScriptableObjects/CompetenceSO", order = 1)]
 public class CompetenceSO : ScriptableObject
@@ -20,6 +20,7 @@ public class CompetenceSO : ScriptableObject
     public int weight;
     public RequirementType requirementType = RequirementType.None;
     public int requirementNum;
+    //public GameObject summonPrefab;
     [HideInInspector] public int turnsSinceUse = 100;
 
     [Header("Animation")]

@@ -28,7 +28,7 @@ public class Entity : MonoBehaviour
     
     
 
-    private void Awake()
+    protected virtual void Awake()
     {
         hp = maxHP;
         cc = maxCC;
@@ -46,7 +46,7 @@ public class Entity : MonoBehaviour
         }
     }
 
-    public void ChangeHP(int change)
+    public virtual void ChangeHP(int change)
     {
         int hpChange = change;
         if (hp + change > maxHP) {
@@ -135,8 +135,10 @@ public class Entity : MonoBehaviour
         {
             Instantiate(competence.effect, target.transform);
         }
+        
         target.ChangeHP(competence.hpChange);
-        target.ApplyStatus(competence);
+        if(target!=null)
+            target.ApplyStatus(competence);
     }
 
     protected void Attack(Entity target)

@@ -4,8 +4,12 @@ using UnityEngine;
 public class EnemyEntity : Entity
 {
     [HideInInspector] public Pointer pointer;
-    [SerializeField] int numMinions;
     [SerializeField] EnemyTimerAnimation enemyTimer;
+
+    protected override void Awake() {
+        base.Awake();
+        enemyTimer.transform.parent = null;
+    }
 
     protected override void Update()
     {
@@ -17,6 +21,22 @@ public class EnemyEntity : Entity
             CompetenceSO selectedCompetence = SelectCompetence();
             BattleManager.Instance.EnemyTurn(this, selectedCompetence);
         }
+    }
+
+    public override void ChangeHP(int change) {
+        base.ChangeHP(change);
+
+        if (hp <= 0) {
+            hp = 0;
+            Die();
+        }
+    }
+
+    void Die() {
+        BattleManager.Instance.enemies.Remove(this);
+        BattleManager.Instance.CheckWin();
+        Destroy(enemyTimer.gameObject);
+        Destroy(gameObject);
     }
 
     CompetenceSO SelectCompetence()
@@ -56,10 +76,10 @@ public class EnemyEntity : Entity
                     return true;
                 }
                 return false;
-            case RequirementType.NumMinionsLessThan:
-                return numMinions < competence.requirementNum;
-            case RequirementType.NumMinionsMoreThan:
-                return numMinions > competence.requirementNum;
+            case RequirementType.NumEnemiesLessThan:
+                return BattleManager.Instance.enemies.Count < competence.requirementNum;
+            case RequirementType.NumEnemiesMoreThan:
+                return BattleManager.Instance.enemies.Count > competence.requirementNum;
             case RequirementType.None:
                 return true;
             default:

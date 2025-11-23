@@ -28,7 +28,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] CharacterSelectionmenu characterSelectionMenu;
 
     [Space(20)]
-    [SerializeField] List<EnemyEntity> enemies = new List<EnemyEntity>();
+    [SerializeField] public List<EnemyEntity> enemies = new List<EnemyEntity>();
     [SerializeField] public PlayerEntity[] playerEntities;
 
     Entity currEntity;
@@ -274,6 +274,12 @@ public class BattleManager : MonoBehaviour
     void SelectAlly(int index)
     {
         selectionIndex = characterSelectionMenu.SelectItem(index);
+    }
+
+    public void CheckWin() {
+        if(enemies.Count == 0) {
+            Debug.Log("YOU WIN!!!!!");
+        }
     }
 
 
