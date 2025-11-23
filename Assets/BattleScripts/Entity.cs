@@ -6,9 +6,10 @@ using UnityEngine.UIElements;
 
 public class Entity : MonoBehaviour
 {
-    static float moveSpeed = 5f;
-    static float waitTimeAfterMove = 0.5f;
+    static float moveSpeed = 20f;
+    static float waitTimeAfterMove = 0.8f;
     static float defendingMultiplier = 3f;
+    static int statusDuration = 2;
 
     [SerializeField] public int maxHP;
     [SerializeField] public int maxCC;
@@ -21,6 +22,7 @@ public class Entity : MonoBehaviour
     [HideInInspector] public int cc;
     [HideInInspector] public float progress;
     [HideInInspector] public bool[] statuses;
+    [HideInInspector] public int[] statusDurations;
     protected float agility;
     protected float defense;
     
@@ -32,6 +34,10 @@ public class Entity : MonoBehaviour
         cc = maxCC;
         agility = baseAgility;
         statuses = new bool[4];
+        statusDurations = new int[4];
+        foreach(CompetenceSO competence in competences) {
+            competence.turnsSinceUse = 100;
+        }
     }
 
     protected virtual void Update() {
@@ -66,9 +72,11 @@ public class Entity : MonoBehaviour
                 if (competence.cures) {
                     Debug.Log(name + " is no longer "+ competence.statuses[i].ToString());
                     statuses[(int)competence.statuses[i]] = false;
+                    statusDurations[(int)competence.statuses[i]] = 0;
                 } else {
-                    Debug.Log(name + " is inflicted with " + competence.statuses[i].ToString());
+                    Debug.Log(name + " is " + competence.statuses[i].ToString());
                     statuses[(int)competence.statuses[i]] = true;
+                    statusDurations[(int)competence.statuses[i]] = statusDuration;
                 }
             }
         }
@@ -87,12 +95,38 @@ public class Entity : MonoBehaviour
     {
         cc -= competence.ccCost;
         StartCoroutine(AnimationCoroutine(target, competence.moveAmount, competence));
+        AfterMoveUpdate(competence);
     }
 
     public void UseMultiTargetCompetence(CompetenceSO competence, List<Entity> targets)
     {
         cc -= competence.ccCost;
         StartCoroutine(MultiTargetAnimationCoroutine(targets, competence.moveAmount, competence));
+        AfterMoveUpdate(competence);
+    }
+
+    void AfterMoveUpdate(CompetenceSO competence) {
+        IncrementCompetenceTurnsSinceUse(competence);
+        for (int i = 0; i<statusDurations.Length; i++) {
+            if(statusDurations[i] > 0) {
+                statusDurations[i]--;
+                if (statusDurations[i] == 0) {
+                    statuses[i] = false;
+                    Debug.Log(name + " is no longer " + ((Status)i).ToString());
+                }
+            }
+            
+        }
+    }
+
+    void IncrementCompetenceTurnsSinceUse(CompetenceSO usingCompetence) {
+        foreach (CompetenceSO competence in competences) {
+            if (competence == usingCompetence) {
+                usingCompetence.turnsSinceUse = 0;
+            } else {
+                competence.turnsSinceUse++;
+            }
+        }
     }
 
     void HitTarget(CompetenceSO competence, Entity target)

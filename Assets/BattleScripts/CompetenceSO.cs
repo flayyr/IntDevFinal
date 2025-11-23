@@ -20,7 +20,7 @@ public class CompetenceSO : ScriptableObject
     public int weight;
     public RequirementType requirementType = RequirementType.None;
     public int requirementNum;
-    [HideInInspector] public int turnsSinceUse = 0;
+    [HideInInspector] public int turnsSinceUse = 100;
 
     [Header("Animation")]
     public float moveAmount;

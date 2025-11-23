@@ -5,10 +5,12 @@ public class EnemyEntity : Entity
 {
     [HideInInspector] public Pointer pointer;
     [SerializeField] int numMinions;
+    [SerializeField] EnemyTimerAnimation enemyTimer;
 
     protected override void Update()
     {
         base.Update();
+        enemyTimer.UpdateSprite(progress);
         if (progress >= 1f)
         {
             progress = 0f;

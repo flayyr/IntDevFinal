@@ -16,12 +16,12 @@ MonoBehaviour:
   targetType: 2
   ccCost: 16
   hpChange: -20
-  statuses: 03000000
+  statuses: 
   cures: 0
   isEnemy: 1
-  weight: 3
-  requirementType: 0
-  requirementNum: 0
-  turnsSinceUse: 0
+  weight: 100
+  requirementType: 3
+  requirementNum: 2
+  turnsSinceUse: 1
   moveAmount: 1
   effect: {fileID: 0}
