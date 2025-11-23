@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 374cd644be4414265885d8d03c7dab77
+guid: 9e15eea82b059420baa3815e19b24561
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3448128201025430252
-    second: BarrierCube_0
+      213: -7910127128901405170
+    second: Barrier_0
   - first:
-      213: -5954657806107628118
-    second: BarrierCube_1
+      213: 7177050558602020790
+    second: Barrier_1
   - first:
-      213: 6975550062005809172
-    second: BarrierCube_2
+      213: -7244757402895609841
+    second: Barrier_2
   - first:
-      213: 7609296063472372481
-    second: BarrierCube_3
+      213: 1613612191115676438
+    second: Barrier_3
   - first:
-      213: -7355452474080119909
-    second: BarrierCube_4
+      213: -2524690885887992794
+    second: Barrier_4
   - first:
-      213: -6027932671857700281
-    second: BarrierCube_5
+      213: 5393006699929441127
+    second: Barrier_5
+  - first:
+      213: -3582121742445453656
+    second: Barrier_6
+  - first:
+      213: -6127196960956290437
+    second: Barrier_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,12 +121,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BarrierCube_0
+      name: Barrier_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 140
+        width: 160
         height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -130,19 +136,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ce2a02274563adf20800000000000000
-      internalID: 3448128201025430252
+      spriteID: e06b6a13945993290800000000000000
+      internalID: -7910127128901405170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BarrierCube_1
+      name: Barrier_1
       rect:
         serializedVersion: 2
-        x: 140
+        x: 160
         y: 0
-        width: 140
+        width: 160
         height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,19 +158,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aada2f3464ecc5da0800000000000000
-      internalID: -5954657806107628118
+      spriteID: 6b70e7815710a9360800000000000000
+      internalID: 7177050558602020790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BarrierCube_2
+      name: Barrier_2
       rect:
         serializedVersion: 2
-        x: 280
+        x: 320
         y: 0
-        width: 140
+        width: 160
         height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -174,19 +180,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4107fc6c2d12ec060800000000000000
-      internalID: 6975550062005809172
+      spriteID: f009684c683757b90800000000000000
+      internalID: -7244757402895609841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BarrierCube_3
+      name: Barrier_3
       rect:
         serializedVersion: 2
-        x: 420
+        x: 480
         y: 0
-        width: 140
+        width: 160
         height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -196,19 +202,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 10b8c063476a99960800000000000000
-      internalID: 7609296063472372481
+      spriteID: 61b80b01db3b46610800000000000000
+      internalID: 1613612191115676438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BarrierCube_4
+      name: Barrier_4
       rect:
         serializedVersion: 2
-        x: 560
+        x: 640
         y: 0
-        width: 140
+        width: 160
         height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -218,19 +224,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b93bf2812fe2ce990800000000000000
-      internalID: -7355452474080119909
+      spriteID: 62cdaf2040f76fcd0800000000000000
+      internalID: -2524690885887992794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BarrierCube_5
+      name: Barrier_5
       rect:
         serializedVersion: 2
-        x: 700
+        x: 800
         y: 0
-        width: 140
+        width: 160
         height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -240,8 +246,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 74253fb1c2b785ca0800000000000000
-      internalID: -6027932671857700281
+      spriteID: 763989c250fc7da40800000000000000
+      internalID: 5393006699929441127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barrier_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 160
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aed55f014fb94ec0800000000000000
+      internalID: -3582121742445453656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barrier_7
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 160
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ae859c3d2d7faa0800000000000000
+      internalID: -6127196960956290437
       vertices: []
       indices: 
       edges: []
@@ -250,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e49a54d4d49eb4eeda86fdd53cbd883c
+    spriteID: c245bc99e1c70445f80fa4acc34fa57f
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BarrierCube_0: 3448128201025430252
-      BarrierCube_1: -5954657806107628118
-      BarrierCube_2: 6975550062005809172
-      BarrierCube_3: 7609296063472372481
-      BarrierCube_4: -7355452474080119909
-      BarrierCube_5: -6027932671857700281
+      Barrier_0: -7910127128901405170
+      Barrier_1: 7177050558602020790
+      Barrier_2: -7244757402895609841
+      Barrier_3: 1613612191115676438
+      Barrier_4: -2524690885887992794
+      Barrier_5: 5393006699929441127
+      Barrier_6: -3582121742445453656
+      Barrier_7: -6127196960956290437
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
