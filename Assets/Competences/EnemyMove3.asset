@@ -22,6 +22,6 @@ MonoBehaviour:
   weight: 100
   requirementType: 3
   requirementNum: 2
-  turnsSinceUse: 1
+  turnsSinceUse: 0
   moveAmount: 1
   effect: {fileID: 0}

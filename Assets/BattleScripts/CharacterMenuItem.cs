@@ -38,7 +38,7 @@ public class CharacterMenuItem : MenuItem
 
     public void SetEntity(PlayerEntity entity) {
         this.entity = entity;
-        SetText(entity.name);
+        SetText(entity.entityName);
 
     }
 

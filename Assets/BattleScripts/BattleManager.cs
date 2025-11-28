@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -35,6 +36,9 @@ public class BattleManager : MonoBehaviour
     Entity targetEntity;
     List<Entity> targetEntities;
     CompetenceSO selectedCompetence;
+
+    [HideInInspector] public bool actionDone = false;
+    [HideInInspector] public bool descriptionDone = false;
 
     public int selectionIndex;
 
@@ -141,6 +145,12 @@ public class BattleManager : MonoBehaviour
                 break;
 
             case BattleState.Acting:
+                if(actionDone && descriptionDone)
+                {
+                    actionDone = false;
+                    descriptionDone = false;
+                    state = BattleState.idle;
+                }
                 break;
         }
     }

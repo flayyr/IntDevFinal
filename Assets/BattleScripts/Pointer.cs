@@ -11,7 +11,7 @@ public class Pointer : MonoBehaviour
     {
         transform.position = entity.transform.position;
         nameText.transform.position = transform.position + textOffSet;
-        nameText.text = entity.name;
+        nameText.text = entity.entityName;
         gameObject.SetActive(true);
         nameText.gameObject.SetActive(true);
     }

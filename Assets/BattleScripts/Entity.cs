@@ -6,11 +6,12 @@ using UnityEngine.UIElements;
 
 public class Entity : MonoBehaviour
 {
-    static float moveSpeed = 20f;
+    static float moveSpeed = 10f;
     static float waitTimeAfterMove = 0.8f;
     static float defendingMultiplier = 3f;
     static int statusDuration = 2;
 
+    [SerializeField] public string entityName;
     [SerializeField] public int maxHP;
     [SerializeField] public int maxCC;
     [SerializeField] int attackPower;
@@ -70,11 +71,11 @@ public class Entity : MonoBehaviour
 
             } else if (statuses[(int)competence.statuses[i]] == competence.cures) {
                 if (competence.cures) {
-                    Debug.Log(name + " is no longer "+ competence.statuses[i].ToString());
+                    DescriptionText.Instance.QueueText(entityName + " is no longer "+ competence.statuses[i].ToString());
                     statuses[(int)competence.statuses[i]] = false;
                     statusDurations[(int)competence.statuses[i]] = 0;
                 } else {
-                    Debug.Log(name + " is " + competence.statuses[i].ToString());
+                    DescriptionText.Instance.QueueText(entityName + " is " + competence.statuses[i].ToString());
                     statuses[(int)competence.statuses[i]] = true;
                     statusDurations[(int)competence.statuses[i]] = statusDuration;
                 }
@@ -94,6 +95,7 @@ public class Entity : MonoBehaviour
     public void UseCompetence(CompetenceSO competence, Entity target)
     {
         cc -= competence.ccCost;
+        DescriptionText.Instance.QueueText(entityName + " used "+ competence.name);
         StartCoroutine(AnimationCoroutine(target, competence.moveAmount, competence));
         AfterMoveUpdate(competence);
     }
@@ -101,6 +103,7 @@ public class Entity : MonoBehaviour
     public void UseMultiTargetCompetence(CompetenceSO competence, List<Entity> targets)
     {
         cc -= competence.ccCost;
+        DescriptionText.Instance.QueueText(entityName + " used " + competence.name);
         StartCoroutine(MultiTargetAnimationCoroutine(targets, competence.moveAmount, competence));
         AfterMoveUpdate(competence);
     }
@@ -112,7 +115,7 @@ public class Entity : MonoBehaviour
                 statusDurations[i]--;
                 if (statusDurations[i] == 0) {
                     statuses[i] = false;
-                    Debug.Log(name + " is no longer " + ((Status)i).ToString());
+                    DescriptionText.Instance.QueueText(name + " is no longer " + ((Status)i).ToString());
                 }
             }
             
@@ -172,7 +175,7 @@ public class Entity : MonoBehaviour
         }
         transform.position = originalPos;
 
-        BattleManager.Instance.SwitchState(BattleState.idle);
+        BattleManager.Instance.actionDone = true;
         yield return null;
     }
 
@@ -202,7 +205,7 @@ public class Entity : MonoBehaviour
         }
         transform.position = originalPos;
 
-        BattleManager.Instance.SwitchState(BattleState.idle);
+        BattleManager.Instance.actionDone = true;
         yield return null;
     }
 
