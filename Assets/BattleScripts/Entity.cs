@@ -8,14 +8,13 @@ public class Entity : MonoBehaviour
 {
     static float moveSpeed = 10f;
     static float waitTimeAfterMove = 0.8f;
-    static float defendingMultiplier = 3f;
-    static int statusDuration = 2;
+    static int statusDuration = 4;
 
     [SerializeField] public string entityName;
     [SerializeField] public int maxHP;
     [SerializeField] public int maxCC;
     [SerializeField] int attackPower;
-    [SerializeField] float baseDefense;
+    [SerializeField] int baseDefense;
     [SerializeField, Range(0, 1)] float baseAgility = 0.2f;
     [SerializeField] public CompetenceSO[] competences;
 
@@ -26,7 +25,7 @@ public class Entity : MonoBehaviour
     [HideInInspector] public int[] statusDurations;
     [HideInInspector] public bool wideAngled = false;
     protected float agility;
-    protected float defense;
+    protected bool defending;
     
     
 
@@ -60,15 +59,13 @@ public class Entity : MonoBehaviour
         GameObject damageText = Instantiate(BattleManager.Instance.damageTextPrefab, BattleManager.Instance.worldSpaceCanvas.transform);
         damageText.GetComponent<ScoreTextScript>().SetDamage(hpChange);
         damageText.transform.position = transform.position;
-
-        defense = baseDefense;
     }
 
     public void ApplyStatus(CompetenceSO competence) {
         for (int i = 0; i < competence.statuses.Length; i++) {
             //Set Defending (not included in statuses array to avoid showing description)
             if (competence.statuses[i] == Status.Defending) {
-                defense = baseDefense * defendingMultiplier;
+                defending = true;
 
             } else if (competence.statuses[i] == Status.WideAngle) {
                 wideAngled = true;
@@ -100,7 +97,7 @@ public class Entity : MonoBehaviour
         cc -= competence.ccCost;
         DescriptionText.Instance.QueueText(entityName + " used "+ competence.name);
         StartCoroutine(AnimationCoroutine(target, competence.moveAmount, competence));
-        AfterMoveUpdate(competence);
+        
     }
 
     public void UseMultiTargetCompetence(CompetenceSO competence, List<Entity> targets)
@@ -108,7 +105,7 @@ public class Entity : MonoBehaviour
         cc -= competence.ccCost;
         DescriptionText.Instance.QueueText(entityName + " used " + competence.name);
         StartCoroutine(MultiTargetAnimationCoroutine(targets, competence.moveAmount, competence));
-        AfterMoveUpdate(competence);
+        
     }
 
     void AfterMoveUpdate(CompetenceSO competence) {
@@ -122,6 +119,10 @@ public class Entity : MonoBehaviour
                 }
             }
             
+        }
+
+        if (statuses[(int)Status.Poisoned]) {
+            ChangeHP(Mathf.CeilToInt(-maxHP * (maxHP>300 ? 0.03f:0.07f)));
         }
     }
 
@@ -142,14 +143,25 @@ public class Entity : MonoBehaviour
             Instantiate(competence.effect, target.transform);
         }
         
-        target.ChangeHP(competence.hpChange);
+        target.Hit(competence.hpChange);
         if(target!=null)
             target.ApplyStatus(competence);
     }
 
-    protected void Attack(Entity target)
-    {
-        target.ChangeHP(-attackPower);
+    public void Hit(int power) {
+        int hpChange = 0;
+        if (power < 0) {
+            hpChange = power * 4 + baseDefense * 2;
+            if (hpChange >= 0) {
+                hpChange = 0;
+            }
+            if (defending) {
+                hpChange /= 2;
+                defending = false;
+            }
+        }
+        hpChange = Mathf.RoundToInt(hpChange * Random.Range(0.8f, 1.2f));
+        ChangeHP(hpChange);
     }
 
     IEnumerator AnimationCoroutine(Entity targetEntity, float moveAmount, CompetenceSO competence)
@@ -177,6 +189,8 @@ public class Entity : MonoBehaviour
             yield return new WaitForSeconds(Time.deltaTime);
         }
         transform.position = originalPos;
+
+        AfterMoveUpdate(competence);
 
         BattleManager.Instance.actionDone = true;
         yield return null;
@@ -207,6 +221,8 @@ public class Entity : MonoBehaviour
             yield return new WaitForSeconds(Time.deltaTime);
         }
         transform.position = originalPos;
+
+        AfterMoveUpdate(competence);
 
         BattleManager.Instance.actionDone = true;
         yield return null;

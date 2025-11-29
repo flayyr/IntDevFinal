@@ -15,7 +15,7 @@ MonoBehaviour:
   description: Attack with medium impact
   targetType: 2
   ccCost: 16
-  hpChange: -20
+  hpChange: -5
   statuses: 
   cures: 0
   isEnemy: 1

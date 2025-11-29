@@ -1129,6 +1129,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 941847663824689462, guid: 496ea1667643fc8408294978f6725972, type: 3}
+      propertyPath: iconPosition
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 941847663824689462, guid: 496ea1667643fc8408294978f6725972, type: 3}
       propertyPath: unselectedAlpha
       value: 1
       objectReference: {fileID: 0}
@@ -1612,7 +1616,7 @@ MonoBehaviour:
   maxHP: 100
   maxCC: 100
   attackPower: 50
-  baseDefense: 20
+  baseDefense: 0
   baseAgility: 0.3
   competences:
   - {fileID: 11400000, guid: 4a30237665682fb4bb715f6900ce276f, type: 2}
@@ -2353,6 +2357,10 @@ PrefabInstance:
       propertyPath: progressBar
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 941847663824689462, guid: 496ea1667643fc8408294978f6725972, type: 3}
+      propertyPath: iconPosition
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1143023234244966865, guid: 496ea1667643fc8408294978f6725972, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2862,7 +2870,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 18.588928, y: -46.948}
+  m_AnchoredPosition: {x: 18.588867, y: -46.948}
   m_SizeDelta: {x: -8.8907, y: 93.689}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1681188864
@@ -3308,7 +3316,7 @@ MonoBehaviour:
   maxHP: 100
   maxCC: 100
   attackPower: 50
-  baseDefense: 20
+  baseDefense: 0
   baseAgility: 0.2
   competences:
   - {fileID: 11400000, guid: 4a30237665682fb4bb715f6900ce276f, type: 2}

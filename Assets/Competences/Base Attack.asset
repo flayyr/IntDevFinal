@@ -12,12 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
   m_Name: Base Attack
   m_EditorClassIdentifier: 
-  competenceName: Attack
   description: 
-  targetEnemy: 1
+  targetType: 0
   ccCost: 0
-  hpChange: -50
+  hpChange: -10
   statuses: 
   cures: 0
+  isEnemy: 0
+  weight: 0
+  requirementType: 0
+  requirementNum: 0
+  turnsSinceUse: 100
   moveAmount: 3
   effect: {fileID: 0}

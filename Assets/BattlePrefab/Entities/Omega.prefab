@@ -104,7 +104,7 @@ MonoBehaviour:
   maxHP: 100
   maxCC: 100
   attackPower: 50
-  baseDefense: 50
+  baseDefense: 3
   baseAgility: 0.2
   competences:
   - {fileID: 11400000, guid: 026e2b75f68d7d844bfea0391598fd98, type: 2}
@@ -113,3 +113,4 @@ MonoBehaviour:
   progress: 0
   statuses: 
   statusDurations: 
+  wideAngled: 0
