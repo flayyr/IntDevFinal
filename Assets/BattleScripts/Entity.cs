@@ -24,6 +24,7 @@ public class Entity : MonoBehaviour
     [HideInInspector] public float progress;
     [HideInInspector] public bool[] statuses;
     [HideInInspector] public int[] statusDurations;
+    [HideInInspector] public bool wideAngled = false;
     protected float agility;
     protected float defense;
     
@@ -69,6 +70,8 @@ public class Entity : MonoBehaviour
             if (competence.statuses[i] == Status.Defending) {
                 defense = baseDefense * defendingMultiplier;
 
+            } else if (competence.statuses[i] == Status.WideAngle) {
+                wideAngled = true;
             } else if (statuses[(int)competence.statuses[i]] == competence.cures) {
                 if (competence.cures) {
                     DescriptionText.Instance.QueueText(entityName + " is no longer "+ competence.statuses[i].ToString());

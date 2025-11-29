@@ -1,11 +1,12 @@
 using TMPro;
 using UnityEngine;
-using static UnityEngine.EventSystems.EventTrigger;
+using UnityEngine.UI;
 
 public class Pointer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI nameText;
     [SerializeField] Vector3 textOffSet;
+    [SerializeField] Slider hpBar;
 
     public void SetSelection(Entity entity)
     {
@@ -14,6 +15,12 @@ public class Pointer : MonoBehaviour
         nameText.text = entity.entityName;
         gameObject.SetActive(true);
         nameText.gameObject.SetActive(true);
+        if(entity.wideAngled && hpBar != null) {
+            hpBar.gameObject.SetActive(true);
+            hpBar.value = (float)entity.hp / entity.maxHP;
+        } else if(hpBar!=null){
+            hpBar.gameObject.SetActive(false);
+        }
     }
 
     public void Deselect()

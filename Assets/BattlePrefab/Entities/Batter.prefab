@@ -107,9 +107,9 @@ MonoBehaviour:
   baseDefense: 50
   baseAgility: 0.458
   competences:
+  - {fileID: 11400000, guid: 89653f7dc3b5f544abd073aa3bc82712, type: 2}
   - {fileID: 11400000, guid: 026e2b75f68d7d844bfea0391598fd98, type: 2}
   - {fileID: 11400000, guid: dda4be1ecb6340f44a3fd26dfbf2db09, type: 2}
-  - {fileID: 11400000, guid: 6db7806e170cdeb46b106b6607ea04cf, type: 2}
   - {fileID: 11400000, guid: 1cd697dc830fb8249bbded6d9a68ffc0, type: 2}
   - {fileID: 11400000, guid: 76f4273901bf5f746be0f0eafa3a8999, type: 2}
   - {fileID: 11400000, guid: 9a7716e18952516418c01601e051990c, type: 2}
@@ -118,3 +118,4 @@ MonoBehaviour:
   progress: 0
   statuses: 
   statusDurations: 
+  wideAngled: 0
