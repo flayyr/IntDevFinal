@@ -19,8 +19,8 @@ public class Entity : MonoBehaviour
     [SerializeField, Range(0, 1)] float baseAgility = 0.2f;
     [SerializeField] public CompetenceSO[] competences;
 
-    [HideInInspector] public int hp;
-    [HideInInspector] public int cc;
+    public int hp;
+    public int cc;
     [HideInInspector] public float progress;
     [HideInInspector] public bool[] statuses;
     [HideInInspector] public int[] statusDurations;

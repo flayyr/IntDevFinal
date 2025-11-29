@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CharacterSelectionmenu : MonoBehaviour
+public class CharacterSelectionmenu : MonoBehaviour, ISelectionMenu
 {
     [SerializeField]
     CharacterMenuItem[] characterMenuItems;
@@ -10,8 +10,14 @@ public class CharacterSelectionmenu : MonoBehaviour
     int selectedIndex = 0;
 
     private void Start() {
-        for (int i = 0; i < BattleManager.Instance.playerEntities.Length; i++) {
-            characterMenuItems[i].SetEntity( BattleManager.Instance.playerEntities[i]);
+        if (BattleManager.Instance != null) {
+            for (int i = 0; i < BattleManager.Instance.playerEntities.Length; i++) {
+                characterMenuItems[i].SetEntity(BattleManager.Instance.playerEntities[i]);
+            }
+        } else {
+            for (int i = 0; i < characterMenuItems.Length; i++) {
+                characterMenuItems[i].SetEntity(OverworldMenuManager.Instance.playerEntities[i]);
+            }
         }
     }
 
@@ -25,7 +31,10 @@ public class CharacterSelectionmenu : MonoBehaviour
 
         characterMenuItems[selectedIndex].DeselectItem();
         characterMenuItems[newIndex].SelectItem();
-        pointer.SetSelection(characterMenuItems[newIndex]);
+
+        if (pointer != null) {
+            pointer.SetSelection(characterMenuItems[newIndex]);
+        }
         selectedIndex = newIndex;
 
         return selectedIndex;

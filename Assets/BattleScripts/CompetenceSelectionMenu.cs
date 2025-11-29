@@ -1,11 +1,11 @@
 using TMPro;
 using UnityEngine;
 
-public class CompetenceSelectionMenu : MonoBehaviour
-{
+public class CompetenceSelectionMenu : MonoBehaviour, ISelectionMenu {
     [SerializeField] TextMeshProUGUI descriptionText;
     [SerializeField]
     CompetenceMenuItem[] competenceMenuItems;
+    [SerializeField] CharacterMenuItem characterMenuItem;
     [SerializeField, Range(0f, 1f)] float unusableAlpha = 0.3f;
 
     int selectedIndex = 0;
@@ -15,6 +15,7 @@ public class CompetenceSelectionMenu : MonoBehaviour
     public void Show(PlayerEntity entity) {
         gameObject.SetActive(true);
         this.entity = entity;
+        characterMenuItem.SetEntity(entity);
 
         for (int i = 0; i < competenceMenuItems.Length; i++) {
             if (i < entity.competences.Length) {

@@ -8,6 +8,8 @@ public class CharacterMenuItem : MenuItem
     [SerializeField] Slider progressBar;
     [SerializeField] Slider healthBar;
     [SerializeField] Slider CCBar;
+    [SerializeField] TextMeshProUGUI hpText;
+    [SerializeField] TextMeshProUGUI ccText;
     [SerializeField, Range(0f, 1f)] float unselectedAlpha = 0.3f;
 
     PlayerEntity entity;
@@ -23,21 +25,32 @@ public class CharacterMenuItem : MenuItem
             progressBar.value = entity.progress;
         }
         healthBar.value = (float)entity.hp / entity.maxHP;
+        hpText.text = entity.hp+"/"+entity.maxHP;
         CCBar.value = (float)entity.cc / entity.maxCC;
+        ccText.text = entity.cc + "/" + entity.maxCC;
     }
 
     public override void SelectItem() {
         base.SelectItem();
-        canvasGroup.alpha = 1.0f;
+        if (canvasGroup != null) {
+            canvasGroup.alpha = 1.0f;
+        }
     }
 
     public override void DeselectItem() {
         base.DeselectItem();
-        canvasGroup.alpha = unselectedAlpha;
+        if (canvasGroup != null) {
+            canvasGroup.alpha = unselectedAlpha;
+        }
     }
 
     public void SetEntity(PlayerEntity entity) {
         this.entity = entity;
+        SetText(entity.entityName);
+
+    }
+
+    public void SetEntity() {
         SetText(entity.entityName);
 
     }

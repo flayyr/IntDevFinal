@@ -13,7 +13,7 @@ public class CompetenceMenuItem : MenuItem
         SetText(competence.name);
         SetCostText(competence.ccCost);
 
-        if(entity.cc < entity.competences[index].ccCost || entity.statuses[(int)Status.Muted]) {
+        if(entity.cc < competence.ccCost || (entity.statuses.Length>0 && entity.statuses[(int)Status.Muted])) {
             menuText.alpha = alpha;
             costText.alpha = alpha;
             this.alpha = alpha;
