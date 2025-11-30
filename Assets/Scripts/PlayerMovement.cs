@@ -10,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5.0f;
     [SerializeField] Transform movePoint;
 
+    public LayerMask moveStoppers;
+    public Animator animator;
+
     void Start()
     {
         movePoint.parent = null;
@@ -24,14 +27,19 @@ public class PlayerMovement : MonoBehaviour
 
             if (Math.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
             {
-                movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), 0.2f, moveStoppers))
+                {
+                    movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+                }
             }
 
             if (Math.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
-                movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), 0.2f, moveStoppers))
+                {
+                    movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+                }
             }
-
         }
     }
 
