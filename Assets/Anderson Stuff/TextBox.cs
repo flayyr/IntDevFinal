@@ -11,9 +11,10 @@ public class TextBox : MonoBehaviour
     //keeps track of page
     [SerializeField] public int index = 0;
 
+    //keeps track of whether or not text is currently being typed
     [SerializeField] private bool typing = true;
 
-    [SerializeField] public AudioSource talkingSFX;
+    [SerializeField] public AudioSource audioPlayer;
 
     //how fast the text types
     [SerializeField] private float typeSpeed;
@@ -32,11 +33,14 @@ public class TextBox : MonoBehaviour
     //use this one to determine which image the textbox should be on
     [SerializeField] private string[] usedPortraits;
 
+    //this determines whether or not you've talked to fifth already
     [SerializeField] bool talked = false;
 
+    //holds the image
     [SerializeField] GameObject portrait;
     [SerializeField] string currentImg;
 
+    //images
     [SerializeField] Sprite batterSprite;
     [SerializeField] Sprite fifthSprite;
     public Image portraitHolder;
@@ -51,17 +55,24 @@ public class TextBox : MonoBehaviour
     }
 
     private void OnEnable()
-    { 
+    {
+        typing = false;
+
+        //this set of code determines which dialogue and which portraits to use
         if (!talked)
         {
+            //use first set
             usedPortraits = firstTextImages;
             usedText = firstText;
+
         }
         else
         {
+            //use second set
             usedPortraits = secondTextImages;
             usedText = secondText;
         }
+        //resets whichever portrait you're on
         currentImg = usedPortraits[0];
         nextSentence();
     }
@@ -88,9 +99,16 @@ public class TextBox : MonoBehaviour
 
     IEnumerator WriteSentence()
     {
+
+        textBoxDisplay.maxVisibleCharacters = 0;
+        textBoxDisplay.text = usedText[index];
+
         foreach (char Character in usedText[index].ToCharArray())
         {
-            textBoxDisplay.text += Character;
+            //textBoxDisplay.text += Character;
+
+            textBoxDisplay.maxVisibleCharacters++;
+
             yield return new WaitForSeconds(typeSpeed);
         }
         index++;
@@ -106,12 +124,19 @@ public class TextBox : MonoBehaviour
                 if (index < usedText.Length)
                 {
                     currentImg = usedPortraits[index];
+                    
+                    if (index > 0 && currentImg == "F" && usedPortraits[index - 1] == "B")
+                    {
+                        audioPlayer.Play();
+                    }
+                    
                 }
                 typing = false;
                 nextSentence();
             }
         }
 
+        //handles portraits
         if (currentImg == "B")
         {
             portraitHolder.sprite = batterSprite;
@@ -120,6 +145,5 @@ public class TextBox : MonoBehaviour
         {
             portraitHolder.sprite = fifthSprite;
         }
-
     }
 }

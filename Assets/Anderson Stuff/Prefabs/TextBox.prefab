@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4068572090230811047}
   - component: {fileID: 7390068754636011631}
   - component: {fileID: 4787671635291978628}
-  - component: {fileID: 7674721622158669778}
   m_Layer: 5
   m_Name: Portrait
   m_TagString: Untagged
@@ -76,20 +75,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7674721622158669778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1233518668608416669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07f06acb8b9e44944a2701282d4cf372, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  portrait: {fileID: 0}
-  portraitHolder: {fileID: 4787671635291978628}
 --- !u!1 &3627454308352785966
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,8 +109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -312.61325, y: 130.26501}
-  m_SizeDelta: {x: 139.2531, y: 139.0332}
+  m_AnchoredPosition: {x: -313.11325, y: 130.26501}
+  m_SizeDelta: {x: 138.2531, y: 139.0332}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5677875527399438540
 CanvasRenderer:
@@ -175,13 +160,14 @@ GameObject:
   - component: {fileID: 2323517024710278140}
   - component: {fileID: 1039774644023646818}
   - component: {fileID: 827678597725273826}
+  - component: {fileID: 7762495673800331102}
   m_Layer: 5
   m_Name: TextBox
   m_TagString: TextBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3929405078483227126
 RectTransform:
   m_ObjectHideFlags: 0
@@ -284,31 +270,134 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   typing: 1
-  talkingSFX: {fileID: 0}
+  audioPlayer: {fileID: 0}
   typeSpeed: 0
-  testText:
-  - dude im literally fifth
-  - I'm testing out text
-  - and stuff
-  - here's the last line
+  firstText:
+  - im sans
+  - i'm testing this out dude
+  - lets see how it goes
+  - this is the last line
+  - just kidding here's sans
+  - yo
   secondText:
   - RAHAHAHAHAHAH
   - I took too long
-  textPortraits:
-  - 5
-  - 5
-  - 5
-  - 5
-  - 5
-  - S
+  firstTextImages:
+  - B
+  - F
+  - F
+  - F
+  - F
+  - B
+  secondTextImages:
+  - F
+  - F
   usedText: []
+  usedPortraits: []
   talked: 0
   portrait: {fileID: 0}
   currentImg: 
-  batterSprite: {fileID: 0}
-  fifthSprite: {fileID: 0}
+  batterSprite: {fileID: 4448675105396876176, guid: 14f57c8af5cd47e48976fd504197f9c9, type: 3}
+  fifthSprite: {fileID: -6030733325071058070, guid: c0cce9374d8b2084e8594ca45a5ea00d, type: 3}
   portraitHolder: {fileID: 0}
   textBoxDisplay: {fileID: 0}
+--- !u!82 &7762495673800331102
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4585039249587978780}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 85df03fe5e76f6a4a85acec168d51c43, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.694
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &5316233601551953620
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,7 +409,6 @@ GameObject:
   - component: {fileID: 4414540290477914881}
   - component: {fileID: 3841870161508585918}
   - component: {fileID: 2904357844195799529}
-  - component: {fileID: 3789067785116530902}
   m_Layer: 5
   m_Name: BG Opacity
   m_TagString: Untagged
@@ -382,20 +470,6 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!114 &3789067785116530902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5316233601551953620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07f06acb8b9e44944a2701282d4cf372, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  portrait: {fileID: 0}
-  portraitHolder: {fileID: 4787671635291978628}
 --- !u!1 &6127881834775942334
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,7 +739,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 1
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
