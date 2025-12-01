@@ -6,6 +6,7 @@ public class TextBoxSummon : MonoBehaviour
 {
 
     [SerializeField] public GameObject textBoxPrefab;
+    [SerializeField] public GameObject imagePrefab;
 
     // Update is called once per frame
     void Update()
@@ -15,6 +16,17 @@ public class TextBoxSummon : MonoBehaviour
             if(!textBoxPrefab.activeInHierarchy)
             {
                 textBoxPrefab.SetActive(true);
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Return))
+        {
+            if (!imagePrefab.activeInHierarchy)
+            {
+                imagePrefab.SetActive(true);
+            }
+            else
+            {
+                imagePrefab.SetActive(false);
             }
         }
     }
