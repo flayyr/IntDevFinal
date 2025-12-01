@@ -3,6 +3,7 @@ using System.Collections;
 public class PuzzleCube : MonoBehaviour
 {
     public bool pressed = false;
+    public bool active = false;
     public int number;
     private SpriteRenderer cspriteRenderer;
     PuzzleManager puzzleManager;
@@ -15,14 +16,17 @@ public class PuzzleCube : MonoBehaviour
 
     void Update()
     {
-        if(pressed){
+        if(pressed&&!active){
             cspriteRenderer.color = new Color(1f,1f,1f,.5f);
-            puzzleManager.numInput[0] = 9;
-            puzzleManager.currentSpot += 1;
+            puzzleManager.numInput.Add(number);
+            active = true;
+            //puzzleManager.currentSpot += 1;
         }
 
         if(!pressed){
+            active=false;
             cspriteRenderer.color = new Color(1f,1f,1f,1f);
         }
+
     }
 }

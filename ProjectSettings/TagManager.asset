@@ -8,6 +8,7 @@ TagManager:
   - PuzzleManager
   - ClueSheet
   - Phi
+  - Barrier
   layers:
   - Default
   - TransparentFX

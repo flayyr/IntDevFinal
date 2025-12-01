@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
         //using cubes
         if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("Cube")) {
-            Debug.Log($"Ouch, just hit {hit.collider.name}!!");
+            Debug.Log($"{hit.collider.name} pressed");
             var pc = hit.collider.gameObject.GetComponent<PuzzleCube>();
             pc.pressed=true;
         }
