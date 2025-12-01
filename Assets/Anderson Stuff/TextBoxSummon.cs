@@ -26,7 +26,7 @@ public class TextBoxSummon : MonoBehaviour
             }
             else
             {
-                imagePrefab.SetActive(false);
+                //imagePrefab.SetActive(false);
             }
         }
     }

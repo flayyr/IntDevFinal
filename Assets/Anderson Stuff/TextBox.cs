@@ -99,7 +99,7 @@ public class TextBox : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             if (typing)
             {
