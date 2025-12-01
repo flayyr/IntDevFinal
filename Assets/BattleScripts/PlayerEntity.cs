@@ -11,4 +11,17 @@ public class PlayerEntity : Entity
             BattleManager.Instance.PlayerTurn(this);
         }
     }
+
+    protected override void Die()
+    {
+        base.Die();
+        GetComponent<SpriteRenderer>().color = Color.black;
+        BattleManager.Instance.CheckWin();
+    }
+
+    protected override void Revive()
+    {
+        base.Revive();
+        GetComponent<SpriteRenderer>().color = Color.white;
+    }
 }

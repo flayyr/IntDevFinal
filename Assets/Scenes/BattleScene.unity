@@ -3599,6 +3599,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4288299799920154802, guid: e6214bf892efb994698735c3b796c448, type: 3}
+      propertyPath: maxHP
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4635640099123612831, guid: e6214bf892efb994698735c3b796c448, type: 3}
       propertyPath: m_Name
       value: Epsilon
@@ -4299,6 +4303,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4858054949201498414, guid: 3f899a244ad3eda428eee5a2864c0b90, type: 3}
+      propertyPath: 'competences.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 1f11c5c2108e42945b9bb21490f8632d, type: 2}
     - target: {fileID: 5320953154082424046, guid: 3f899a244ad3eda428eee5a2864c0b90, type: 3}
       propertyPath: m_Name
       value: Batter

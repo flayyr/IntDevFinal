@@ -25,14 +25,10 @@ public class EnemyEntity : Entity
 
     public override void ChangeHP(int change) {
         base.ChangeHP(change);
-
-        if (hp <= 0) {
-            hp = 0;
-            Die();
-        }
     }
 
-    void Die() {
+    protected override void Die() {
+        base.Die();
         BattleManager.Instance.enemies.Remove(this);
         BattleManager.Instance.CheckWin();
         Destroy(enemyTimer.gameObject);
