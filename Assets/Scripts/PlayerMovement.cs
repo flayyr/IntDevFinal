@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     private KeyCode lastHitKey;
     public float moveSpeed = 5.0f;
     [SerializeField] Transform movePoint;
+    bool movingH = false;
+    bool movingV = false;
 
     public LayerMask moveStoppers;
     public Animator animator;
@@ -30,19 +32,23 @@ public class PlayerMovement : MonoBehaviour
 
             if (Math.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
             {
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), 0.2f, moveStoppers))
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), 0.2f, moveStoppers)&&!movingV)
                 {
                     movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+                    movingH=true;
                 }
             }
+            else{movingH=false;}
 
             if (Math.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), 0.2f, moveStoppers))
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), 0.2f, moveStoppers)&&!movingH)
                 {
                     movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+                    movingV=true;
                 }
             }
+            else{movingV=false;}
         }
 
         if (Input.GetKeyDown(KeyCode.W)||Input.GetKeyDown(KeyCode.UpArrow))
@@ -82,14 +88,15 @@ public class PlayerMovement : MonoBehaviour
         //using clue sheets
         if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("ClueSheet")) {
             var clue = hit.collider.gameObject.GetComponent<ClueSheetBehavior>();
-            Debug.Log("A");
+            //Debug.Log("A");
             clue.sheet.SetActive(true);
         }
 
         //picking up Phi
         if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("Phi")) {
-            var clue = hit.collider.gameObject.GetComponent<ClueSheetBehavior>();
-            
+            var phi = hit.collider.gameObject;
+            phi.SetActive(false);
+            Debug.Log("frien");
         }
     }
 
