@@ -54,6 +54,10 @@ public class TextBox : MonoBehaviour
         self = this.gameObject;
     }
 
+    private void Start()
+    {
+        
+    }
     private void OnEnable()
     {
         typing = false;

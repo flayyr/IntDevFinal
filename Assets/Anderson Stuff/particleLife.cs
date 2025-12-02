@@ -12,6 +12,8 @@ public class particleLife : MonoBehaviour
     [SerializeField] RuntimeAnimatorController particleAnim;
     [SerializeField] AnimationClip currentAnim;
 
+    [SerializeField] AudioSource audioPlayer;
+
     private Animator anim;
 
     //this will hold the values of however long the animation clips are
