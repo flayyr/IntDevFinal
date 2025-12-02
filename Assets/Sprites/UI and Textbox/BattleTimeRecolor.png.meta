@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a1d34444a5f774465bcd8817c692651c
+guid: f6b4156a2c68b29459bd98f8a71d98e3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7235615098391477922
-    second: BatterDead_0
+      213: -8751747457525892286
+    second: BattleTimeRecolor_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 3
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BatterDead_0
+      name: BattleTimeRecolor_0
       rect:
         serializedVersion: 2
-        x: 9
+        x: 0
         y: 0
-        width: 282
-        height: 470
+        width: 3200
+        height: 1801
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2aeb31798911a6460800000000000000
-      internalID: 7235615098391477922
+      spriteID: 24bbd3e5e0c8b8680800000000000000
+      internalID: -8751747457525892286
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BatterDead_0: 7235615098391477922
+      BattleTimeRecolor_0: -8751747457525892286
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
