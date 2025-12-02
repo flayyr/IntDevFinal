@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: b4ec81ea76fe8fb4386de347ff97d7dd
+guid: b2ea0700663c8f64496a29a8984e9300
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6586649382830489539
-    second: CCBar_0
-  - first:
-      213: -397733804912341501
-    second: CCBar_1
+      213: -6897362237737328234
+    second: clockhand_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CCBar_0
+      name: clockhand_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 260
-        height: 90
+        width: 170
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d30c75ca8458794a0800000000000000
-      internalID: -6586649382830489539
+      spriteID: 691297ca695a740a0800000000000000
+      internalID: -6897362237737328234
       vertices: []
       indices: 
       edges: []
@@ -128,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6949da64f6d18fe4d879b66354d0eb63
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -138,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CCBar_0: -6586649382830489539
+      clockhand_0: -6897362237737328234
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
