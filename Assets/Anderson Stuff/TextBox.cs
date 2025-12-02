@@ -13,6 +13,8 @@ public class TextBox : MonoBehaviour
 
     //keeps track of whether or not text is currently being typed
     [SerializeField] private bool typing = true;
+    [SerializeField] private bool activating = false;
+    [SerializeField] private bool activated = false;
 
     [SerializeField] public AudioSource audioPlayer;
 
@@ -46,12 +48,15 @@ public class TextBox : MonoBehaviour
     public Image portraitHolder;
 
     private GameObject self;
-    
+
+    private CanvasScaler scaler;
+
     public TextMeshProUGUI textBoxDisplay;
 
     private void Awake()
     {
         self = this.gameObject;
+        scaler = self.GetComponent<CanvasScaler>();
     }
 
     private void Start()
@@ -60,6 +65,10 @@ public class TextBox : MonoBehaviour
     }
     private void OnEnable()
     {
+        scaler.scaleFactor = 0;
+        activating = true;
+        activated = false;
+
         typing = false;
 
         //this set of code determines which dialogue and which portraits to use
@@ -97,7 +106,8 @@ public class TextBox : MonoBehaviour
             {
                 talked = true;
             }
-            self.SetActive(false);
+
+            activating = false;
         }
     }
 
@@ -149,5 +159,24 @@ public class TextBox : MonoBehaviour
         {
             portraitHolder.sprite = fifthSprite;
         }
+
+        if (activating && !activated)
+        {
+            scaler.scaleFactor += 0.1f;
+            if(scaler.scaleFactor >= 1)
+            {
+                scaler.scaleFactor = 1;
+                activated = true;
+            }
+        }
+        else if (!activating && activated)
+        {
+            scaler.scaleFactor -= 0.1f;
+            if(scaler.scaleFactor <= 0.2f)
+            {
+                self.SetActive(false);
+            }
+        }
+
     }
 }
