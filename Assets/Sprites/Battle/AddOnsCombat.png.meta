@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: abf6432bb5e7e42febd958ee7014f59c
+guid: 232a11c3e5ed341eeb0ca0090f59d085
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8245697663342644898
-    second: compbar_0
-  - first:
-      213: 1749762136315653209
-    second: compbar_1
+      213: -5598228457472915997
+    second: AddOnsCombat_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: compbar_0
+      name: AddOnsCombat_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 49
-        width: 32
-        height: 32
+        x: 0
+        y: 0
+        width: 380
+        height: 370
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ae8ec4565a9e6270800000000000000
-      internalID: 8245697663342644898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: compbar_1
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 9
-        width: 192
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 95ce5807467684810800000000000000
-      internalID: 1749762136315653209
+      spriteID: 3e508dce0e81f42b0800000000000000
+      internalID: -5598228457472915997
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      compbar_0: 8245697663342644898
-      compbar_1: 1749762136315653209
+      AddOnsCombat_0: -5598228457472915997
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
