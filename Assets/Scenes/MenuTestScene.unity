@@ -1942,6 +1942,17 @@ PrefabInstance:
       addedObject: {fileID: 89262393}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8bcf86dfc6e5024291686d1c7a4e514, type: 3}
+--- !u!114 &1018901894 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1092737872492070690, guid: 16e1dd18a8bd4f04ba905ba8603502be, type: 3}
+  m_PrefabInstance: {fileID: 83041684}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 387c6a45bc30d3846a28435ea870f972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1130461048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2130,6 +2141,17 @@ PrefabInstance:
       addedObject: {fileID: 1786795001}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8bcf86dfc6e5024291686d1c7a4e514, type: 3}
+--- !u!114 &1181820047 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1092737872492070690, guid: 16e1dd18a8bd4f04ba905ba8603502be, type: 3}
+  m_PrefabInstance: {fileID: 564177587}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 387c6a45bc30d3846a28435ea870f972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1304850576 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8161589680536927602, guid: d8bcf86dfc6e5024291686d1c7a4e514, type: 3}
@@ -2315,9 +2337,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterMenuItems:
   - {fileID: 6351512275008880326}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1018901894}
+  - {fileID: 1181820047}
+  - {fileID: 1589462421}
   pointer: {fileID: 0}
 --- !u!1001 &1589462419
 PrefabInstance:
@@ -2453,6 +2475,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8725031099332271910, guid: 16e1dd18a8bd4f04ba905ba8603502be, type: 3}
   m_PrefabInstance: {fileID: 1589462419}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1589462421 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1092737872492070690, guid: 16e1dd18a8bd4f04ba905ba8603502be, type: 3}
+  m_PrefabInstance: {fileID: 1589462419}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 387c6a45bc30d3846a28435ea870f972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1701824465
 GameObject:
   m_ObjectHideFlags: 0
@@ -3658,6 +3691,14 @@ PrefabInstance:
       propertyPath: ccText
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1092737872492070690, guid: 16e1dd18a8bd4f04ba905ba8603502be, type: 3}
+      propertyPath: selectedFont
+      value: 
+      objectReference: {fileID: 11400000, guid: 9a5c17c4b5b2fc74c8e14a7a837c0ffa, type: 2}
+    - target: {fileID: 1092737872492070690, guid: 16e1dd18a8bd4f04ba905ba8603502be, type: 3}
+      propertyPath: unselectedFont
+      value: 
+      objectReference: {fileID: 11400000, guid: d35466cf22b36b142920d8f660bbd5fa, type: 2}
     - target: {fileID: 2992093977034964769, guid: 16e1dd18a8bd4f04ba905ba8603502be, type: 3}
       propertyPath: m_Name
       value: Batter
