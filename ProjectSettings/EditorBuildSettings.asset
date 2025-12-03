@@ -4,6 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 86a5206217b3b5f45b8e9bd079cede14
+  - enabled: 1
+    path: Assets/Scenes/AndersonTestScene.unity
+    guid: d3fda70714f83c34994c1e568b47d761
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

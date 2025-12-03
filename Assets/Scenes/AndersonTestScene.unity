@@ -581,7 +581,7 @@ PrefabInstance:
     - target: {fileID: 1095788037907972187, guid: e149887272f0f584b8fb79e6ae1ff848, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 11400000, guid: d35466cf22b36b142920d8f660bbd5fa, type: 2}
     - target: {fileID: 1095788037907972187, guid: e149887272f0f584b8fb79e6ae1ff848, type: 3}
       propertyPath: m_fontColor.b
       value: 1
@@ -602,6 +602,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 7041221599338836005, guid: 0a15c9c542bcfb049bd04d85c5c7141d, type: 2}
+    - target: {fileID: 1095788037907972187, guid: e149887272f0f584b8fb79e6ae1ff848, type: 3}
+      propertyPath: m_characterSpacing
+      value: -10
+      objectReference: {fileID: 0}
     - target: {fileID: 1095788037907972187, guid: e149887272f0f584b8fb79e6ae1ff848, type: 3}
       propertyPath: m_VerticalAlignment
       value: 512
