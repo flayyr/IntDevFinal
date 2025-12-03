@@ -76,7 +76,10 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void CheckForCube() {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirectionVector, rayCheckDistance);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirectionVector*rayCheckDistance);
+        /*if(hit){
+            Debug.Log(hit.collider.name);
+        }*/
 
         //using cubes
         if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("Cube")) {
@@ -98,6 +101,10 @@ public class PlayerMovement : MonoBehaviour
             phi.SetActive(false);
             Debug.Log("frien");
         }
+    }
+
+    void OnDrawGizmos(){
+        Gizmos.DrawRay(transform.position, moveDirectionVector*rayCheckDistance);
     }
 
 }
