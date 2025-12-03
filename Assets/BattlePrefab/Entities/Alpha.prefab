@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -5598228457472915997, guid: 4dc6fa1332e0c604d94964b31c82e486, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -114,3 +114,6 @@ MonoBehaviour:
   statuses: 
   statusDurations: 
   wideAngled: 0
+  portraitSprite: {fileID: -1525779057117115073, guid: 57f851cbf16fd4033b6976624bd2e001, type: 3}
+  idleAnimationTiming: 0.2
+  idleAnimationOffset: 0.05

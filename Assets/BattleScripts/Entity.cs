@@ -6,8 +6,8 @@ using UnityEngine.UIElements;
 
 public class Entity : MonoBehaviour
 {
-    static float moveSpeed = 10f;
-    static float waitTimeAfterMove = 0.8f;
+    static float moveSpeed = 15f;
+    static float waitTimeAfterMove = 0.3f;
     static int statusDuration = 4;
 
     [SerializeField] public string entityName;

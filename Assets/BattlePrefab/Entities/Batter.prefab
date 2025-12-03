@@ -112,10 +112,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dda4be1ecb6340f44a3fd26dfbf2db09, type: 2}
   - {fileID: 11400000, guid: 76f4273901bf5f746be0f0eafa3a8999, type: 2}
   - {fileID: 11400000, guid: 5145f0f3a69ba2a468cb6126a3ec8c04, type: 2}
-  - {fileID: 11400000, guid: 9a7716e18952516418c01601e051990c, type: 2}
+  - {fileID: 11400000, guid: 1cd697dc830fb8249bbded6d9a68ffc0, type: 2}
   hp: 100
   cc: 100
   progress: 0
   statuses: 
   statusDurations: 
   wideAngled: 0
+  portraitSprite: {fileID: -5678347072271384653, guid: c776b4ba00fa547ccbb849672ee8a0fd, type: 3}
+  idleAnimationTiming: 0.2
+  idleAnimationOffset: 0.05
