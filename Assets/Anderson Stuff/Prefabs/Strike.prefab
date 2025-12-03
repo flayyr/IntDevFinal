@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2069445818870711355}
   - component: {fileID: 5395408577650474362}
   m_Layer: 0
-  m_Name: FXSprite
+  m_Name: Strike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 9023045876527601134, guid: 6a712b8133cdd3347b50756e73088c5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -117,7 +117,7 @@ Animator:
   m_GameObject: {fileID: 6466106487047618027}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b19947c1e95afd74fa428af458f23aab, type: 2}
+  m_Controller: {fileID: 9100000, guid: c4e00c01de8c7534eae8b22c17e6ce03, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -140,7 +140,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 17dd3b76b1203d04f9baa6f92da6fe84, type: 3}
+  m_Resource: {fileID: 8300000, guid: 39e0985754766db498ae7600c5a353f1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
