@@ -272,7 +272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &57766545
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1255,11 +1255,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 900527114415226840, guid: 496ea1667643fc8408294978f6725972, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 900527114415226840, guid: 496ea1667643fc8408294978f6725972, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 941847663824689462, guid: 496ea1667643fc8408294978f6725972, type: 3}
       propertyPath: progressBar
@@ -1639,11 +1639,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6323972711767941532, guid: 496ea1667643fc8408294978f6725972, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6323972711767941532, guid: 496ea1667643fc8408294978f6725972, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6323972711767941532, guid: 496ea1667643fc8408294978f6725972, type: 3}
       propertyPath: m_SizeDelta.y
@@ -5000,7 +5000,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -138816191
-  m_SortingLayer: -1
+  m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: -8751747457525892286, guid: f6b4156a2c68b29459bd98f8a71d98e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
