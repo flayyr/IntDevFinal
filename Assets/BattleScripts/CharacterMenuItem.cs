@@ -16,6 +16,7 @@ public class CharacterMenuItem : MenuItem
     [SerializeField] Sprite[] iconSprites;
     [SerializeField] Transform iconPosition;
     [SerializeField] float iconWidth;
+    [SerializeField] bool showMaxHp;
 
     Image[] iconImages;
     bool[] iconsSet;
@@ -36,9 +37,19 @@ public class CharacterMenuItem : MenuItem
             progressBar.value = entity.progress;
         }
         healthBar.value = (float)entity.hp / entity.maxHP;
-        hpText.text = entity.hp+"/"+entity.maxHP;
+        if (hpText != null)
+        {
+            if (showMaxHp)
+            {
+                hpText.text = entity.hp + "/" + entity.maxHP;
+                ccText.text = entity.cc + "/" + entity.maxCC;
+            } else
+            {
+                hpText.text = entity.hp+"";
+                ccText.text = entity.cc+"";
+            }
+        }
         CCBar.value = (float)entity.cc / entity.maxCC;
-        ccText.text = entity.cc + "/" + entity.maxCC;
 
 
         if (iconPosition != null) {

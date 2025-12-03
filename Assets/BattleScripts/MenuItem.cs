@@ -9,18 +9,19 @@ public class MenuItem : MonoBehaviour
     [SerializeField] Color selectedColor;
 
     public virtual void SelectItem() {
-        menuText.font = selectedFont;
+        //menuText.font = selectedFont;
         menuText.color = selectedColor;
         menuText.fontStyle = FontStyles.Bold;
     }
 
     public virtual void DeselectItem() {
-        menuText.font = unselectedFont;
+        //menuText.font = unselectedFont;
         menuText.color = Color.white;
         menuText.fontStyle = FontStyles.Normal;
     }
 
     public void SetText(string text) {
+        if(menuText !=null)
         menuText.text = text;
     }
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6c6972e743b48496591fc857205640fd
+guid: 927b9e569aacf59429a1bde532d64696
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4019265584702454373
-    second: Batter-battlesprite_0
+      213: 1197703181795215433
+    second: Pointer_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 3
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Batter-battlesprite_0
+      name: Pointer_0
       rect:
         serializedVersion: 2
-        x: 89
+        x: 0
         y: 0
-        width: 282
-        height: 471
+        width: 120
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b958bd5ee33b838c0800000000000000
-      internalID: -4019265584702454373
+      spriteID: 9484249b2b81f9010800000000000000
+      internalID: 1197703181795215433
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Batter-battlesprite_0: -4019265584702454373
+      Pointer_0: 1197703181795215433
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
