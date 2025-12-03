@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 73ff22f316eebf5479f45c3ffe31016b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2381134502242168401
+    second: Clock8_0
+  - first:
+      213: -3096738872101405766
+    second: Clock8_1
+  - first:
+      213: -8671336017209661153
+    second: Clock8_2
+  - first:
+      213: 8832444395871123155
+    second: Clock8_3
+  - first:
+      213: 9117186965690973141
+    second: Clock8_4
+  - first:
+      213: -414804010911415740
+    second: Clock8_5
+  - first:
+      213: -5226688317471217786
+    second: Clock8_6
+  - first:
+      213: 4053510204951531562
+    second: Clock8_7
+  - first:
+      213: 7219113024626923807
+    second: Clock8_8
+  - first:
+      213: 4507256945393595833
+    second: Clock8_9
+  - first:
+      213: 2818958043380186860
+    second: Clock8_10
+  - first:
+      213: 3699462184423046922
+    second: Clock8_11
+  - first:
+      213: -1106927059455270891
+    second: Clock8_12
+  - first:
+      213: 9200269274874733816
+    second: Clock8_13
+  - first:
+      213: -1181746015842539169
+    second: Clock8_14
+  - first:
+      213: -2940701818087800090
+    second: Clock8_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Clock8_0
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1029
+        width: 52
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa1dd6739c284fed0800000000000000
+      internalID: -2381134502242168401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock8_1
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1029
+        width: 52
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb704e276c2605d0800000000000000
+      internalID: -3096738872101405766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock8_2
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1109
+        width: 42
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19ea26c5d939a780800000000000000
+      internalID: -8671336017209661153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock8_3
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1109
+        width: 72
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d6b94ab165239a70800000000000000
+      internalID: 8832444395871123155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock8_4
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 1029
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dbf4d88d31c68e70800000000000000
+      internalID: 9117186965690973141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock8_5
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 869
+        width: 42
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442c73623f15e3af0800000000000000
+      internalID: -414804010911415740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock8_6
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 859
+        width: 52
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 687a17ddaa21777b0800000000000000
+      internalID: -5226688317471217786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock8_7
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 849
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a209e831e06f04830800000000000000
+      internalID: 4053510204951531562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock8_8
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 599
+        width: 52
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1998422c017f2460800000000000000
+      internalID: 7219113024626923807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock8_9
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 499
+        width: 242
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b5f895bf4efc8e30800000000000000
+      internalID: 4507256945393595833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock8_10
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 609
+        width: 72
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceef76ca763fe1720800000000000000
+      internalID: 2818958043380186860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock8_11
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 319
+        width: 62
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0fb6829141275330800000000000000
+      internalID: 3699462184423046922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock8_12
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 339
+        width: 72
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510a6e444b763a0f0800000000000000
+      internalID: -1106927059455270891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock8_13
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 119
+        width: 72
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f469de092cedaf70800000000000000
+      internalID: 9200269274874733816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock8_14
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 49
+        width: 62
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f59e8fe7248999fe0800000000000000
+      internalID: -1181746015842539169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock8_15
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 139
+        width: 72
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e20886e6478037d0800000000000000
+      internalID: -2940701818087800090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Clock8_0: -2381134502242168401
+      Clock8_1: -3096738872101405766
+      Clock8_10: 2818958043380186860
+      Clock8_11: 3699462184423046922
+      Clock8_12: -1106927059455270891
+      Clock8_13: 9200269274874733816
+      Clock8_14: -1181746015842539169
+      Clock8_15: -2940701818087800090
+      Clock8_2: -8671336017209661153
+      Clock8_3: 8832444395871123155
+      Clock8_4: 9117186965690973141
+      Clock8_5: -414804010911415740
+      Clock8_6: -5226688317471217786
+      Clock8_7: 4053510204951531562
+      Clock8_8: 7219113024626923807
+      Clock8_9: 4507256945393595833
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

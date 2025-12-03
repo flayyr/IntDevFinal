@@ -102,11 +102,11 @@ public class Entity : MonoBehaviour
             }
             else if (statuses[(int)competence.statuses[i]] == competence.cures) {
                 if (competence.cures) {
-                    DescriptionText.Instance.QueueText(entityName + " is no longer "+ competence.statuses[i].ToString());
+                    DescriptionText.Instance.QueueText(entityName + " is no longer " + competence.statuses[i].ToString() + "!");
                     statuses[(int)competence.statuses[i]] = false;
                     statusDurations[(int)competence.statuses[i]] = 0;
                 } else {
-                    DescriptionText.Instance.QueueText(entityName + " is " + competence.statuses[i].ToString());
+                    DescriptionText.Instance.QueueText(entityName + " is " + competence.statuses[i].ToString() + "!");
                     statuses[(int)competence.statuses[i]] = true;
                     statusDurations[(int)competence.statuses[i]] = statusDuration;
                 }
@@ -126,7 +126,7 @@ public class Entity : MonoBehaviour
     public void UseCompetence(CompetenceSO competence, Entity target)
     {
         cc -= competence.ccCost;
-        DescriptionText.Instance.QueueText(entityName + " used "+ competence.name);
+        DescriptionText.Instance.QueueText(entityName + " used "+ competence.name + "!");
         StartCoroutine(AnimationCoroutine(target, competence.moveAmount, competence));
         
     }
@@ -134,7 +134,7 @@ public class Entity : MonoBehaviour
     public void UseMultiTargetCompetence(CompetenceSO competence, List<Entity> targets)
     {
         cc -= competence.ccCost;
-        DescriptionText.Instance.QueueText(entityName + " used " + competence.name);
+        DescriptionText.Instance.QueueText(entityName + " used " + competence.name + "!");
         StartCoroutine(MultiTargetAnimationCoroutine(targets, competence.moveAmount, competence));
         
     }
@@ -146,7 +146,7 @@ public class Entity : MonoBehaviour
                 statusDurations[i]--;
                 if (statusDurations[i] == 0) {
                     statuses[i] = false;
-                    DescriptionText.Instance.QueueText(name + " is no longer " + ((Status)i).ToString());
+                    DescriptionText.Instance.QueueText(name + " is no longer " + ((Status)i).ToString() + "!");
                 }
             }
             

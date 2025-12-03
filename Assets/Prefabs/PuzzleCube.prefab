@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 4391651093651752310}
   - component: {fileID: 7554387889083260742}
   - component: {fileID: -5104637115149684214}
-  m_Layer: 0
+  - component: {fileID: 6313459266709737654}
+  m_Layer: 7
   m_Name: PuzzleCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +147,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.2}
+  m_Offset: {x: 0, y: -0.07790603}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -156,7 +157,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.730108}
   m_EdgeRadius: 0
 --- !u!114 &-5104637115149684214
 MonoBehaviour:
@@ -171,3 +172,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pressed: 0
+  number: 
+--- !u!114 &6313459266709737654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6250710550346073684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef92ff736203c1d43b48065109a024d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
