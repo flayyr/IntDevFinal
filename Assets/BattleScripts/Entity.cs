@@ -155,6 +155,13 @@ public class Entity : MonoBehaviour
         if (statuses[(int)Status.Poisoned]) {
             ChangeHP(Mathf.CeilToInt(-maxHP * (maxHP>300 ? 0.03f:0.07f)));
         }
+        if (statuses[(int)Status.Incompetent])
+        {
+            cc -= Mathf.CeilToInt(maxCC * 0.06f);
+            GameObject damageText = Instantiate(BattleManager.Instance.damageTextPrefab, BattleManager.Instance.worldSpaceCanvas.transform);
+            damageText.GetComponent<ScoreTextScript>().SetCompetence(Mathf.CeilToInt(maxCC * 0.06f));
+            damageText.transform.position = transform.position;
+        }
     }
 
     void IncrementCompetenceTurnsSinceUse(CompetenceSO usingCompetence) {

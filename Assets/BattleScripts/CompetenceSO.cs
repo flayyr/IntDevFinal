@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public enum Status { Lethargic, Muted, Poisoned, Hasty, WideAngle, Revive, Defending}
+public enum Status { Lethargic, Muted, Poisoned, Hasty, WideAngle, Revive, Stasis, Incompetent, Defending}
 public enum TargetType { Enemy, Ally, AllEnemy}
 public enum RequirementType { None, NumEnemiesLessThan, NumEnemiesMoreThan, TurnsSinceUse}
 
