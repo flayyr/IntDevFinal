@@ -5,9 +5,12 @@ using UnityEngine.UI;
 public class CharacterMenuItem : MenuItem
 {
     [Space(20)]
+    [SerializeField] bool switchPortrait = false;
+    [Space(20)]
     [SerializeField] Slider progressBar;
     [SerializeField] Slider healthBar;
     [SerializeField] Slider CCBar;
+    [SerializeField] Image portrait;
     [SerializeField] TextMeshProUGUI hpText;
     [SerializeField] TextMeshProUGUI ccText;
     [SerializeField, Range(0f, 1f)] float unselectedAlpha = 0.3f;
@@ -82,7 +85,10 @@ public class CharacterMenuItem : MenuItem
     public void SetEntity(PlayerEntity entity) {
         this.entity = entity;
         SetText(entity.entityName);
-
+        if (switchPortrait)
+        {
+            portrait.sprite = entity.portraitSprite;
+        }
     }
 
     public void SetEntity() {

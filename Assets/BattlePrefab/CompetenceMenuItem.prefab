@@ -363,8 +363,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuText: {fileID: 6583390698988258647}
-  unselectedFont: {fileID: 11400000, guid: 34d643c3bdf3b5745add75e8aaf2c609, type: 2}
-  selectedFont: {fileID: 11400000, guid: 34d643c3bdf3b5745add75e8aaf2c609, type: 2}
+  unselectedFont: {fileID: 11400000, guid: d35466cf22b36b142920d8f660bbd5fa, type: 2}
+  selectedFont: {fileID: 11400000, guid: 9a5c17c4b5b2fc74c8e14a7a837c0ffa, type: 2}
+  unselectedSpacing: -15
+  selectedSpacing: -10
   selectedColor: {r: 1, g: 0.570091, b: 0, a: 1}
+  textTransform: {fileID: 6464882202141794278}
+  selectedShift: 10
   costText: {fileID: 6356395219252290238}
   competence: {fileID: 0}
