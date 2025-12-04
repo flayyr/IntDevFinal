@@ -2039,7 +2039,7 @@ MonoBehaviour:
   wideAngled: 0
   pointer: {fileID: 0}
   enemyTimer: {fileID: 1703773670}
-  TimerHideDuration: 3
+  TimerShowAfterPercentage: 0.3
 --- !u!1001 &637219328
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4673,7 +4673,7 @@ MonoBehaviour:
   wideAngled: 0
   pointer: {fileID: 0}
   enemyTimer: {fileID: 410774488}
-  TimerHideDuration: 3
+  TimerShowAfterPercentage: 0.3
 --- !u!212 &1913748478
 SpriteRenderer:
   m_ObjectHideFlags: 0
