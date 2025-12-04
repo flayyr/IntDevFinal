@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3208238578248704836}
   - component: {fileID: 3455033440977163408}
   - component: {fileID: 7751548624242932626}
+  - component: {fileID: 579621243155576923}
   m_Layer: 5
   m_Name: MenuItem
   m_TagString: Untagged
@@ -90,9 +91,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuText: {fileID: 4291423977895629756}
-  unselectedFont: {fileID: 11400000, guid: 34d643c3bdf3b5745add75e8aaf2c609, type: 2}
-  selectedFont: {fileID: 11400000, guid: 34d643c3bdf3b5745add75e8aaf2c609, type: 2}
+  unselectedFont: {fileID: 11400000, guid: d35466cf22b36b142920d8f660bbd5fa, type: 2}
+  selectedFont: {fileID: 11400000, guid: 9a5c17c4b5b2fc74c8e14a7a837c0ffa, type: 2}
+  unselectedSpacing: -15
+  selectedSpacing: -10
   selectedColor: {r: 0.9716981, g: 0.5941889, b: 0, a: 1}
+  textTransform: {fileID: 1054926204282160614}
+  selectedShift: 15
+--- !u!95 &579621243155576923
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2373754119567566985}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 173a89a2dc75d80488f6588c348b6cf9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5014358557647189564
 GameObject:
   m_ObjectHideFlags: 0

@@ -496,12 +496,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuText: {fileID: 3739282810643216249}
-  unselectedFont: {fileID: 11400000, guid: 34d643c3bdf3b5745add75e8aaf2c609, type: 2}
-  selectedFont: {fileID: 11400000, guid: 34d643c3bdf3b5745add75e8aaf2c609, type: 2}
+  unselectedFont: {fileID: 11400000, guid: d35466cf22b36b142920d8f660bbd5fa, type: 2}
+  selectedFont: {fileID: 11400000, guid: 9a5c17c4b5b2fc74c8e14a7a837c0ffa, type: 2}
+  unselectedSpacing: -15
+  selectedSpacing: -10
   selectedColor: {r: 1, g: 0.64767194, b: 0, a: 1}
+  switchPortrait: 0
   progressBar: {fileID: 483371257009476742}
   healthBar: {fileID: 147849643747241911}
   CCBar: {fileID: 547335693411246762}
+  portrait: {fileID: 3782553385147257253}
   hpText: {fileID: 5282354158100910907}
   ccText: {fileID: 5013857819188298506}
   unselectedAlpha: 0.4

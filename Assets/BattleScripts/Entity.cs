@@ -6,8 +6,8 @@ using UnityEngine.UIElements;
 
 public class Entity : MonoBehaviour
 {
-    static float moveSpeed = 10f;
-    static float waitTimeAfterMove = 0.8f;
+    static float moveSpeed = 15f;
+    static float waitTimeAfterMove = 0.3f;
     static int statusDuration = 4;
 
     [SerializeField] public string entityName;
@@ -26,7 +26,7 @@ public class Entity : MonoBehaviour
     [HideInInspector] public bool wideAngled = false;
     protected float agility;
     protected bool defending;
-    
+    protected bool dead;
     
 
     protected virtual void Awake()
@@ -42,23 +42,49 @@ public class Entity : MonoBehaviour
     }
 
     protected virtual void Update() {
-        if (BattleManager.Instance.state == BattleState.idle) {
+        if (BattleManager.Instance.state == BattleState.idle && !dead) {
             progress += agility * Time.deltaTime;
         }
     }
 
     public virtual void ChangeHP(int change)
     {
+        if (dead)
+        {
+            return;
+        }
         int hpChange = change;
         if (hp + change > maxHP) {
             hpChange = maxHP - hp;
             hp = maxHP;
-        } else {
+        } else if (hp + change < 0)
+        {
+            hpChange = -hp;
+            hp = 0;
+        }
+        else
+        {
             hp += change;
         }
         GameObject damageText = Instantiate(BattleManager.Instance.damageTextPrefab, BattleManager.Instance.worldSpaceCanvas.transform);
         damageText.GetComponent<ScoreTextScript>().SetDamage(hpChange);
         damageText.transform.position = transform.position;
+
+        if (hp <= 0)
+        {
+            hp = 0;
+            Die();
+        }
+    }
+
+    protected virtual void Die()
+    {
+        dead = true;
+    }
+
+    protected virtual void Revive()
+    {
+        dead = false;
     }
 
     public void ApplyStatus(CompetenceSO competence) {
@@ -69,7 +95,12 @@ public class Entity : MonoBehaviour
 
             } else if (competence.statuses[i] == Status.WideAngle) {
                 wideAngled = true;
-            } else if (statuses[(int)competence.statuses[i]] == competence.cures) {
+            }
+            else if (competence.statuses[i] == Status.Revive)
+            {
+                Revive();
+            }
+            else if (statuses[(int)competence.statuses[i]] == competence.cures) {
                 if (competence.cures) {
                     DescriptionText.Instance.QueueText(entityName + " is no longer " + competence.statuses[i].ToString() + "!");
                     statuses[(int)competence.statuses[i]] = false;
@@ -142,10 +173,9 @@ public class Entity : MonoBehaviour
         {
             Instantiate(competence.effect, target.transform);
         }
-        
+
+        target.ApplyStatus(competence);
         target.Hit(competence.hpChange);
-        if(target!=null)
-            target.ApplyStatus(competence);
     }
 
     public void Hit(int power) {
@@ -159,6 +189,9 @@ public class Entity : MonoBehaviour
                 hpChange /= 2;
                 defending = false;
             }
+        }else
+        {
+            hpChange = power;
         }
         hpChange = Mathf.RoundToInt(hpChange * Random.Range(0.8f, 1.2f));
         ChangeHP(hpChange);

@@ -3,12 +3,21 @@ using UnityEngine;
 
 public class EnemyEntity : Entity
 {
+    [Space(20)]
     [HideInInspector] public Pointer pointer;
     [SerializeField] EnemyTimerAnimation enemyTimer;
+    [SerializeField] float TimerHideDuration = 5f;
+
+    float timer = 0;
 
     protected override void Awake() {
         base.Awake();
         enemyTimer.transform.parent = null;
+    }
+
+    private void Start()
+    {
+        enemyTimer.Hide();
     }
 
     protected override void Update()
@@ -20,19 +29,24 @@ public class EnemyEntity : Entity
             progress = 0f;
             CompetenceSO selectedCompetence = SelectCompetence();
             BattleManager.Instance.EnemyTurn(this, selectedCompetence);
+            timer = 0f;
+            enemyTimer.Hide();
+        }
+
+        if(BattleManager.Instance.state == BattleState.idle)
+            timer += Time.deltaTime;
+        if (timer > TimerHideDuration)
+        {
+            enemyTimer.Show();
         }
     }
 
     public override void ChangeHP(int change) {
         base.ChangeHP(change);
-
-        if (hp <= 0) {
-            hp = 0;
-            Die();
-        }
     }
 
-    void Die() {
+    protected override void Die() {
+        base.Die();
         BattleManager.Instance.enemies.Remove(this);
         BattleManager.Instance.CheckWin();
         Destroy(enemyTimer.gameObject);

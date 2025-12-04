@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6313459266709737654}
   m_Layer: 7
   m_Name: PuzzleCube
-  m_TagString: Untagged
+  m_TagString: Cube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
