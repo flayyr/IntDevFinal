@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.21, y: 2.2, z: 0}
-  m_LocalScale: {x: 3.5491, y: 3.2464, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -102,11 +102,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c34b73545c12804baa7fcfb078f3926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleAnim: {fileID: 9100000, guid: b19947c1e95afd74fa428af458f23aab, type: 2}
-  currentAnim: {fileID: 0}
+  particleAnim: {fileID: 9100000, guid: c4e00c01de8c7534eae8b22c17e6ce03, type: 2}
+  currentAnim: {fileID: 7400000, guid: 6f57066933ffc424e8f922a94630dc94, type: 2}
   audioPlayer: {fileID: 5395408577650474362}
   animTime: 0
   lifeTimer: 0
+  opacity: 0
+  fade: 0
 --- !u!95 &2069445818870711355
 Animator:
   serializedVersion: 7
