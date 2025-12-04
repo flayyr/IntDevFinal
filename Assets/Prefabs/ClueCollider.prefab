@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 448498302704249769}
   - component: {fileID: 3726725951297435504}
   - component: {fileID: 4301716837910360144}
+  - component: {fileID: 5648221971652896643}
   m_Layer: 0
   m_Name: ClueCollider
   m_TagString: ClueSheet
@@ -134,3 +135,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5648221971652896643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588468461356557929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca4c0c61e886c4bc0860da9edc63a89e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sheet: {fileID: 0}

@@ -3,6 +3,7 @@ using UnityEngine;
 public class ClueSheetBehavior : MonoBehaviour
 {
     public GameObject sheet;
+    public GameObject player;
 
     void Start()
     {
