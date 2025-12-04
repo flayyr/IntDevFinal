@@ -14,6 +14,7 @@ public class CompetenceSO : ScriptableObject
 
     public Status[] statuses;
     public bool cures = false;
+    public int statusDuration;
 
     [Header("Enemy Competence")]
     public bool isEnemy = false;

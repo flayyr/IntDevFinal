@@ -108,7 +108,7 @@ public class Entity : MonoBehaviour
                 } else {
                     DescriptionText.Instance.QueueText(entityName + " is " + competence.statuses[i].ToString() + "!");
                     statuses[(int)competence.statuses[i]] = true;
-                    statusDurations[(int)competence.statuses[i]] = statusDuration;
+                    statusDurations[(int)competence.statuses[i]] = competence.statusDuration;
                 }
             }
         }
