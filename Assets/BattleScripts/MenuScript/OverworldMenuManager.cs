@@ -4,8 +4,9 @@ public class OverworldMenuManager : MonoBehaviour
 {
     public static OverworldMenuManager Instance;
 
-    [SerializeField] CharacterSelectionmenu characterMenu;
+    [SerializeField] OWCharacterSelectionMenu characterMenu;
     [SerializeField] CompetenceSelectionMenu competenceMenu;
+    [SerializeField] OWPortraitSwitcher portraitSwitcher;
     [SerializeField] public PlayerEntity[] playerEntities;
 
     enum MenuState {Closed, Character, Competence}
@@ -47,6 +48,8 @@ public class OverworldMenuManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Z)) {
                 state = MenuState.Competence;
                 competenceMenu.Show(playerEntities[index]);
+                portraitSwitcher.ShowPortraitAtIndex(index);
+
                 currSelectionMenu = competenceMenu;
                 characterMenu.Hide();
                 index = 0;

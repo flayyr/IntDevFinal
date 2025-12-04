@@ -34,8 +34,8 @@ public class Entity : MonoBehaviour
         hp = maxHP;
         cc = maxCC;
         agility = baseAgility;
-        statuses = new bool[4];
-        statusDurations = new int[4];
+        statuses = new bool[10];
+        statusDurations = new int[10];
         foreach(CompetenceSO competence in competences) {
             competence.turnsSinceUse = 100;
         }

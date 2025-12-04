@@ -15,7 +15,9 @@ public class CompetenceSelectionMenu : MonoBehaviour, ISelectionMenu {
     public void Show(PlayerEntity entity) {
         gameObject.SetActive(true);
         this.entity = entity;
-        characterMenuItem.SetEntity(entity);
+        if (characterMenuItem != null) {
+            characterMenuItem.SetEntity(entity);
+        }
 
         for (int i = 0; i < competenceMenuItems.Length; i++) {
             if (i < entity.competences.Length) {
@@ -23,6 +25,7 @@ public class CompetenceSelectionMenu : MonoBehaviour, ISelectionMenu {
             } else {
                 competenceMenuItems[i].SetText("");
                 competenceMenuItems[i].SetCostText(-1);
+                competenceMenuItems[i].SetMaxCCText(entity);
             }
         }
 
