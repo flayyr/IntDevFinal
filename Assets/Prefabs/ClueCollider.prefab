@@ -11,7 +11,11 @@ GameObject:
   - component: {fileID: 448498302704249769}
   - component: {fileID: 3726725951297435504}
   - component: {fileID: 4301716837910360144}
+<<<<<<< Updated upstream
   - component: {fileID: 5648221971652896643}
+=======
+  - component: {fileID: 6186372657871738598}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: ClueCollider
   m_TagString: ClueSheet
@@ -135,7 +139,11 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+<<<<<<< Updated upstream
 --- !u!114 &5648221971652896643
+=======
+--- !u!114 &6186372657871738598
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,3 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sheet: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+  player: {fileID: 0}
+>>>>>>> Stashed changes

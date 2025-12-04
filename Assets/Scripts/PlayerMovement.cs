@@ -93,6 +93,7 @@ public class PlayerMovement : MonoBehaviour
             var clue = hit.collider.gameObject.GetComponent<ClueSheetBehavior>();
             //Debug.Log("A");
             clue.sheet.SetActive(true);
+            moveSpeed=0.0f;
         }
 
         //picking up Phi

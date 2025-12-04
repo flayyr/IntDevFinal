@@ -380,6 +380,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClueCollider (3)
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 5648221971652896643, guid: f68de75bb8a4f4dfb8405d893e832375, type: 3}
       propertyPath: sheet
       value: 
@@ -388,6 +389,16 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 4654082632465253741}
+=======
+    - target: {fileID: 6186372657871738598, guid: f68de75bb8a4f4dfb8405d893e832375, type: 3}
+      propertyPath: sheet
+      value: 
+      objectReference: {fileID: 1048081809}
+    - target: {fileID: 6186372657871738598, guid: f68de75bb8a4f4dfb8405d893e832375, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 934543503}
+>>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -784,6 +795,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClueCollider (1)
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 5648221971652896643, guid: f68de75bb8a4f4dfb8405d893e832375, type: 3}
       propertyPath: sheet
       value: 
@@ -792,6 +804,16 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 4654082632465253741}
+=======
+    - target: {fileID: 6186372657871738598, guid: f68de75bb8a4f4dfb8405d893e832375, type: 3}
+      propertyPath: sheet
+      value: 
+      objectReference: {fileID: 1936371437}
+    - target: {fileID: 6186372657871738598, guid: f68de75bb8a4f4dfb8405d893e832375, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 934543503}
+>>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1752,6 +1774,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862826583}
   m_CullTransparentMesh: 1
+--- !u!1 &934543503 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4741358536823604043, guid: 7e3bbce2e6c894c1480e9f0b26436483, type: 3}
+  m_PrefabInstance: {fileID: 4654082632465253740}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &982383113
 GameObject:
   m_ObjectHideFlags: 0
@@ -2072,6 +2099,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClueCollider (2)
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 5648221971652896643, guid: f68de75bb8a4f4dfb8405d893e832375, type: 3}
       propertyPath: sheet
       value: 
@@ -2080,6 +2108,16 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 4654082632465253741}
+=======
+    - target: {fileID: 6186372657871738598, guid: f68de75bb8a4f4dfb8405d893e832375, type: 3}
+      propertyPath: sheet
+      value: 
+      objectReference: {fileID: 670778759}
+    - target: {fileID: 6186372657871738598, guid: f68de75bb8a4f4dfb8405d893e832375, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 934543503}
+>>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14793,6 +14831,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClueCollider
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 5648221971652896643, guid: f68de75bb8a4f4dfb8405d893e832375, type: 3}
       propertyPath: sheet
       value: 
@@ -14801,6 +14840,16 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 4654082632465253741}
+=======
+    - target: {fileID: 6186372657871738598, guid: f68de75bb8a4f4dfb8405d893e832375, type: 3}
+      propertyPath: sheet
+      value: 
+      objectReference: {fileID: 1443914584}
+    - target: {fileID: 6186372657871738598, guid: f68de75bb8a4f4dfb8405d893e832375, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 934543503}
+>>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
