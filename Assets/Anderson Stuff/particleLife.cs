@@ -12,6 +12,8 @@ public class particleLife : MonoBehaviour
     [SerializeField] RuntimeAnimatorController particleAnim;
     [SerializeField] AnimationClip currentAnim;
 
+
+
     [SerializeField] AudioSource audioPlayer;
 
     private Animator anim;
@@ -20,11 +22,25 @@ public class particleLife : MonoBehaviour
     public float animTime = 0;
     public float lifeTimer = 0;
 
+    public float spriteOpacity = 1f;
+
+    public bool fade = false;
+
     private GameObject self;
+
+    private SpriteRenderer sprender;
+
+    private void Awake()
+    {
+        sprender = GetComponent<SpriteRenderer>(); 
+    }
 
     private void OnEnable()
     {
-
+        if (fade)
+        {
+            sprender.color = new Color(1f, 1f, 1f, spriteOpacity);
+        }
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -38,7 +54,6 @@ public class particleLife : MonoBehaviour
         anim.Play(currentAnim.ToString());
 
         this.GetComponent<Animator>().runtimeAnimatorController = particleAnim as RuntimeAnimatorController;
-        //Debug.Log(animTime);
 
         Destroy(gameObject, animTime);
     }
@@ -46,6 +61,11 @@ public class particleLife : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (fade)
+        {               
+            spriteOpacity -= 0.002f;
+            sprender.color = new Color(1f, 1f, 1f, spriteOpacity);
+            Debug.Log(spriteOpacity);
+        }
     }
 }

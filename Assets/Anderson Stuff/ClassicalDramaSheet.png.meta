@@ -1,0 +1,623 @@
+fileFormatVersion: 2
+guid: 6e5b1c54738b815468c57889160ccd55
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4087107453583616672
+    second: ClassicalDramaSheet_0
+  - first:
+      213: -5281928497221035597
+    second: ClassicalDramaSheet_1
+  - first:
+      213: 4767989937573502482
+    second: ClassicalDramaSheet_2
+  - first:
+      213: 9030906072515358395
+    second: ClassicalDramaSheet_3
+  - first:
+      213: 4617008696555011278
+    second: ClassicalDramaSheet_4
+  - first:
+      213: -590665085733660659
+    second: ClassicalDramaSheet_5
+  - first:
+      213: 4593700770771492774
+    second: ClassicalDramaSheet_6
+  - first:
+      213: -8106067146181515205
+    second: ClassicalDramaSheet_7
+  - first:
+      213: 4190365757342411798
+    second: ClassicalDramaSheet_8
+  - first:
+      213: 5774132783494931871
+    second: ClassicalDramaSheet_9
+  - first:
+      213: 462853501577060390
+    second: ClassicalDramaSheet_10
+  - first:
+      213: -2828774348401841462
+    second: ClassicalDramaSheet_11
+  - first:
+      213: 8136755929697897384
+    second: ClassicalDramaSheet_12
+  - first:
+      213: -432793977792964709
+    second: ClassicalDramaSheet_13
+  - first:
+      213: -4281119762350957175
+    second: ClassicalDramaSheet_14
+  - first:
+      213: -6034799834906996249
+    second: ClassicalDramaSheet_15
+  - first:
+      213: -8042731824280762019
+    second: ClassicalDramaSheet_16
+  - first:
+      213: 3537477226176110768
+    second: ClassicalDramaSheet_17
+  - first:
+      213: -344081184417627304
+    second: ClassicalDramaSheet_18
+  - first:
+      213: -6982385160605986504
+    second: ClassicalDramaSheet_19
+  - first:
+      213: -566415066585857441
+    second: ClassicalDramaSheet_20
+  - first:
+      213: 7792244332518685334
+    second: ClassicalDramaSheet_21
+  - first:
+      213: -3171555781712217634
+    second: ClassicalDramaSheet_22
+  - first:
+      213: 5224143650930190154
+    second: ClassicalDramaSheet_23
+  - first:
+      213: -8161784852203805074
+    second: ClassicalDramaSheet_24
+  - first:
+      213: -646525059652437896
+    second: ClassicalDramaSheet_25
+  - first:
+      213: -7388852875389363260
+    second: ClassicalDramaSheet_26
+  - first:
+      213: -2133065562361294724
+    second: ClassicalDramaSheet_27
+  - first:
+      213: -8046623647813249980
+    second: ClassicalDramaSheet_28
+  - first:
+      213: -7148729143499519548
+    second: ClassicalDramaSheet_29
+  - first:
+      213: -7869322755763944511
+    second: ClassicalDramaSheet_30
+  - first:
+      213: -5820614904041160781
+    second: ClassicalDramaSheet_31
+  - first:
+      213: 7146391269257929110
+    second: ClassicalDramaSheet_32
+  - first:
+      213: 5832528069981624150
+    second: ClassicalDramaSheet_33
+  - first:
+      213: 6614889712848551287
+    second: ClassicalDramaSheet_34
+  - first:
+      213: -2396323690534449744
+    second: ClassicalDramaSheet_35
+  - first:
+      213: -6677871440986155711
+    second: ClassicalDramaSheet_36
+  - first:
+      213: -5462488792173860921
+    second: ClassicalDramaSheet_37
+  - first:
+      213: -5100288471293786487
+    second: ClassicalDramaSheet_38
+  - first:
+      213: 8730720089952338152
+    second: ClassicalDramaSheet_39
+  - first:
+      213: 4544501058611741846
+    second: ClassicalDramaSheet_40
+  - first:
+      213: 4311048232620104485
+    second: ClassicalDramaSheet_41
+  - first:
+      213: -3469768193334134267
+    second: ClassicalDramaSheet_42
+  - first:
+      213: 1364594307843775629
+    second: ClassicalDramaSheet_43
+  - first:
+      213: -8337471637493574054
+    second: ClassicalDramaSheet_44
+  - first:
+      213: -9095771623298263837
+    second: ClassicalDramaSheet_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3840
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aae3b9139258b830800000000000000
+      internalID: 4087107453583616672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_1
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3840
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b990224402d2b6b0800000000000000
+      internalID: -5281928497221035597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_2
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3840
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e94b9169d4b2240800000000000000
+      internalID: 4767989937573502482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_3
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 3840
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe2234a939345d70800000000000000
+      internalID: 9030906072515358395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_4
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 3840
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eccfc0392f8e21040800000000000000
+      internalID: 4617008696555011278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_5
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 3840
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d089e97eb398dc7f0800000000000000
+      internalID: -590665085733660659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6afd546338a10cf30800000000000000
+      internalID: 4593700770771492774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1920
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38e26ad0e6718f80800000000000000
+      internalID: -8106067146181515205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_8
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1920
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61cea5d647b272a30800000000000000
+      internalID: 4190365757342411798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_9
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 1920
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9527268c27d12050800000000000000
+      internalID: 5774132783494931871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_10
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 1920
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620eb80bec26c6600800000000000000
+      internalID: 462853501577060390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_11
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 1920
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca65c5b7bc2eb8d0800000000000000
+      internalID: -2828774348401841462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab42bd58609be070800000000000000
+      internalID: 8136755929697897384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b97d8b49b286ef9f0800000000000000
+      internalID: -432793977792964709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_14
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d9a2c22486694c0800000000000000
+      internalID: -4281119762350957175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_15
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 0
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e158cd1685104ca0800000000000000
+      internalID: -6034799834906996249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 371873aa370de2e4785a8f36a567debf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ClassicalDramaSheet_0: 4087107453583616672
+      ClassicalDramaSheet_1: -5281928497221035597
+      ClassicalDramaSheet_10: 462853501577060390
+      ClassicalDramaSheet_11: -2828774348401841462
+      ClassicalDramaSheet_12: 8136755929697897384
+      ClassicalDramaSheet_13: -432793977792964709
+      ClassicalDramaSheet_14: -4281119762350957175
+      ClassicalDramaSheet_15: -6034799834906996249
+      ClassicalDramaSheet_2: 4767989937573502482
+      ClassicalDramaSheet_3: 9030906072515358395
+      ClassicalDramaSheet_4: 4617008696555011278
+      ClassicalDramaSheet_5: -590665085733660659
+      ClassicalDramaSheet_6: 4593700770771492774
+      ClassicalDramaSheet_7: -8106067146181515205
+      ClassicalDramaSheet_8: 4190365757342411798
+      ClassicalDramaSheet_9: 5774132783494931871
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

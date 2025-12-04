@@ -1,0 +1,397 @@
+fileFormatVersion: 2
+guid: 6a712b8133cdd3347b50756e73088c5f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1387705070169517037
+    second: WideAngleSheet_0
+  - first:
+      213: -2424082244361411786
+    second: WideAngleSheet_1
+  - first:
+      213: 9023045876527601134
+    second: WideAngleSheet_2
+  - first:
+      213: 2345159637511641519
+    second: WideAngleSheet_3
+  - first:
+      213: 7793343887048262275
+    second: WideAngleSheet_4
+  - first:
+      213: 3522959311775273498
+    second: WideAngleSheet_5
+  - first:
+      213: -4526767641130166754
+    second: WideAngleSheet_6
+  - first:
+      213: 4795632385649204602
+    second: WideAngleSheet_7
+  - first:
+      213: 8740716860766672772
+    second: WideAngleSheet_8
+  - first:
+      213: -2901233153891790839
+    second: WideAngleSheet_9
+  - first:
+      213: 1604467621364718725
+    second: WideAngleSheet_10
+  - first:
+      213: 2135934223291541844
+    second: WideAngleSheet_11
+  - first:
+      213: -7142754792891448856
+    second: WideAngleSheet_12
+  - first:
+      213: 7264443571624269476
+    second: WideAngleSheet_13
+  - first:
+      213: -5373776320311441909
+    second: WideAngleSheet_14
+  - first:
+      213: -7251675676488147046
+    second: WideAngleSheet_15
+  - first:
+      213: -1458707924017973861
+    second: WideAngleSheet_16
+  - first:
+      213: 8637028016089863224
+    second: WideAngleSheet_17
+  - first:
+      213: -6783897615310300614
+    second: WideAngleSheet_18
+  - first:
+      213: -2568082021865087364
+    second: WideAngleSheet_19
+  - first:
+      213: -7624335631595684811
+    second: WideAngleSheet_20
+  - first:
+      213: 2793202745634295646
+    second: WideAngleSheet_21
+  - first:
+      213: 2939278320205187411
+    second: WideAngleSheet_22
+  - first:
+      213: 4526058167439226438
+    second: WideAngleSheet_23
+  - first:
+      213: 8406045099823096795
+    second: WideAngleSheet_24
+  - first:
+      213: 1185806365931257034
+    second: WideAngleSheet_25
+  - first:
+      213: -3996228806523960871
+    second: WideAngleSheet_26
+  - first:
+      213: 1281793961174575244
+    second: WideAngleSheet_27
+  - first:
+      213: -8619662748511442917
+    second: WideAngleSheet_28
+  - first:
+      213: 3215783726827834323
+    second: WideAngleSheet_29
+  - first:
+      213: -1031896503053181588
+    second: WideAngleSheet_30
+  - first:
+      213: -6925266261311246522
+    second: WideAngleSheet_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 160
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WideAngleSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 1840
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 314998f4791edbce0800000000000000
+      internalID: -1387705070169517037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WideAngleSheet_1
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 1800
+        width: 1840
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633a186ca0eeb5ed0800000000000000
+      internalID: -2424082244361411786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WideAngleSheet_2
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 1800
+        width: 1840
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee51b762b6c483d70800000000000000
+      internalID: 9023045876527601134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WideAngleSheet_3
+      rect:
+        serializedVersion: 2
+        x: 5520
+        y: 1800
+        width: 1840
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9177fd34eab8020800000000000000
+      internalID: 2345159637511641519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WideAngleSheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1840
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38249ff69f4872c60800000000000000
+      internalID: 7793343887048262275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WideAngleSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 0
+        width: 1840
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12158024d014e030800000000000000
+      internalID: 3522959311775273498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WideAngleSheet_6
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 0
+        width: 1840
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1614b170d0bd21c0800000000000000
+      internalID: -4526767641130166754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WideAngleSheet_7
+      rect:
+        serializedVersion: 2
+        x: 5520
+        y: 0
+        width: 1840
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ddaf31f328d8240800000000000000
+      internalID: 4795632385649204602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fb70ff685987cc446966cbd170315cb3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WideAngleSheet_0: -1387705070169517037
+      WideAngleSheet_1: -2424082244361411786
+      WideAngleSheet_2: 9023045876527601134
+      WideAngleSheet_3: 2345159637511641519
+      WideAngleSheet_4: 7793343887048262275
+      WideAngleSheet_5: 3522959311775273498
+      WideAngleSheet_6: -4526767641130166754
+      WideAngleSheet_7: 4795632385649204602
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
