@@ -8,7 +8,6 @@ public class Entity : MonoBehaviour
 {
     static float moveSpeed = 15f;
     static float waitTimeAfterMove = 0.3f;
-    static int statusDuration = 4;
 
     [SerializeField] public string entityName;
     [SerializeField] public int maxHP;
@@ -147,12 +146,17 @@ public class Entity : MonoBehaviour
     {
         cc -= competence.ccCost;
         DescriptionText.Instance.QueueText(entityName + " used "+ competence.name + "!");
+        if (competence.soundEffect != null)
+            SFXManager.Instance.PlaySound(competence.soundEffect);
+
         StartCoroutine(AnimationCoroutine(target, competence.moveAmount, competence));
         
     }
 
     public void UseMultiTargetCompetence(CompetenceSO competence, List<Entity> targets)
     {
+        if (competence.soundEffect != null)
+            SFXManager.Instance.PlaySound(competence.soundEffect);
         cc -= competence.ccCost;
         DescriptionText.Instance.QueueText(entityName + " used " + competence.name + "!");
         StartCoroutine(MultiTargetAnimationCoroutine(targets, competence.moveAmount, competence));
@@ -174,6 +178,7 @@ public class Entity : MonoBehaviour
 
         if (statuses[(int)Status.Poisoned]) {
             ChangeHP(Mathf.CeilToInt(-maxHP * (maxHP>300 ? 0.03f:0.07f)));
+            SFXManager.Instance.PlaySound(SFXManager.Instance.statusHurt);
         }
         if (statuses[(int)Status.Incompetent])
         {

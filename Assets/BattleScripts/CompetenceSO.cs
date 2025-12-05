@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public enum Status { Lethargic, Muted, Poisoned, Hasty, Stasis, Incompetent, Strengthened, WideAngle, Revive, Defending}
@@ -28,12 +29,19 @@ public class CompetenceSO : ScriptableObject
     [Header("Enemy Competence")]
     public bool isEnemy = false;
     public int weight;
-    public RequirementType requirementType = RequirementType.None;
-    public int requirementNum;
-    public Entity summonPrefab;
+    public Requirement[] requirements;
+    public EnemyEntity summonPrefab;
     [HideInInspector] public int turnsSinceUse = 100;
 
     [Header("Animation")]
     public float moveAmount;
     public GameObject effect;
+    public AudioClip soundEffect;
+}
+
+[Serializable]
+public class Requirement
+{
+    public RequirementType requirementType = RequirementType.None;
+    public int requirementNum;
 }

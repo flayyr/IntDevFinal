@@ -15,7 +15,7 @@ public class PlayerEntity : Entity
 
     private void Start()
     {
-        timer = Random.Range(0f, idleAnimationTiming);
+        timer = Random.value * idleAnimationTiming;
         animDir = (Random.Range(0, 2) == 0) ? -1 : 1;
     }
 
@@ -25,10 +25,11 @@ public class PlayerEntity : Entity
         if (progress >= 1f) {
             progress = 0f;
             BattleManager.Instance.PlayerTurn(this);
+            SFXManager.Instance.PlaySound(SFXManager.Instance.ping);
         }
 
         //if(BattleManager.Instance.state == BattleState.idle)
-            timer += Time.deltaTime;
+        timer += Time.deltaTime;
 
         if (timer > idleAnimationTiming)
         {
