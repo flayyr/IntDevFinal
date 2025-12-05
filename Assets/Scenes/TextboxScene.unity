@@ -690,7 +690,7 @@ PrefabInstance:
     - target: {fileID: 7762495673800331102, guid: e149887272f0f584b8fb79e6ae1ff848, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 17dd3b76b1203d04f9baa6f92da6fe84, type: 3}
+      objectReference: {fileID: 8300000, guid: 1dee8dcc9ca50452a947bd5b5e993ceb, type: 3}
     m_RemovedComponents:
     - {fileID: 7674721622158669778, guid: e149887272f0f584b8fb79e6ae1ff848, type: 3}
     - {fileID: 3789067785116530902, guid: e149887272f0f584b8fb79e6ae1ff848, type: 3}
