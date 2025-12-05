@@ -3,17 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private KeyCode lastHitKey;
-    public float moveSpeed = 5.0f;
+    public float moveSpeed = 8.0f;
     [SerializeField] Transform movePoint;
     bool movingH = false;
     bool movingV = false;
 
     public LayerMask moveStoppers;
-    public Animator animator;
+    private Animator animator;
 
     [SerializeField] private float rayCheckDistance = 1.0f;
     [SerializeField] private Vector2 moveDirectionVector = Vector2.right;
@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         movePoint.parent = null;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -51,35 +52,52 @@ public class PlayerMovement : MonoBehaviour
             else{movingV=false;}
         }
 
-        if (Input.GetKeyDown(KeyCode.W)||Input.GetKeyDown(KeyCode.UpArrow))
+        if(movingH||movingV){
+            animator.SetBool("isWalking",true);
+        }
+        else{
+            animator.SetBool("isWalking",false);
+            animator.SetFloat("InputY",0);
+            animator.SetFloat("InputX",0);
+        }
+
+        if (Input.GetKey(KeyCode.W)||Input.GetKey(KeyCode.UpArrow))
         {
-            lastHitKey = KeyCode.W;
+            animator.SetFloat("LastInputY",1);
+            animator.SetFloat("InputY",1);
             moveDirectionVector=Vector2.up;
         }
-        if (Input.GetKeyDown(KeyCode.A)||Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.LeftArrow))
         {
-            lastHitKey = KeyCode.A;
+            animator.SetFloat("LastInputX",-1);
+            animator.SetFloat("InputX",-1);
             moveDirectionVector=Vector2.left;
         }
-        if (Input.GetKeyDown(KeyCode.S)||Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S)||Input.GetKey(KeyCode.DownArrow))
         {
-            lastHitKey = KeyCode.S;
+            animator.SetFloat("LastInputY",-1);
+            animator.SetFloat("InputY",-1);
             moveDirectionVector=Vector2.down;
         }
-        if (Input.GetKeyDown(KeyCode.D)||Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D)||Input.GetKey(KeyCode.RightArrow))
         {
-            lastHitKey = KeyCode.D;
+            animator.SetFloat("LastInputX",1);
+            animator.SetFloat("InputX",1);
             moveDirectionVector=Vector2.right;
         }
+
+        if (moveDirectionVector!=Vector2.up&&moveDirectionVector!=Vector2.down)
+        {animator.SetFloat("LastInputY",0);}
+        
+        if (moveDirectionVector!=Vector2.left&&moveDirectionVector!=Vector2.right)
+        {animator.SetFloat("LastInputX",0);}
+
         CheckForCube();
     
     }
 
     void CheckForCube() {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirectionVector*rayCheckDistance);
-        /*if(hit){
-            Debug.Log(hit.collider.name);
-        }*/
 
         //using cubes
         if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("Cube")) {
@@ -93,6 +111,7 @@ public class PlayerMovement : MonoBehaviour
             var clue = hit.collider.gameObject.GetComponent<ClueSheetBehavior>();
             //Debug.Log("A");
             clue.sheet.SetActive(true);
+            moveSpeed=0.0f;
         }
 
         //picking up Phi
@@ -106,5 +125,20 @@ public class PlayerMovement : MonoBehaviour
     void OnDrawGizmos(){
         Gizmos.DrawRay(transform.position, moveDirectionVector*rayCheckDistance);
     }
+
+/*
+    public void Move(InputAction.CallbackContext context){
+        
+
+        if(context.canceled){
+            
+            
+            animator.SetFloat("LastInputY",movePoint.position.y);
+        }
+        moveDirectionVector = context.ReadValue<Vector2>();
+        animator.SetFloat("InputX",movePoint.position.x);
+        animator.SetFloat("InputY",movePoint.position.y);
+    }
+    */
 
 }
