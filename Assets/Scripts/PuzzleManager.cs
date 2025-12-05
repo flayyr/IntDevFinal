@@ -46,6 +46,7 @@ public class PuzzleManager : MonoBehaviour
                     var p = cubes[i].GetComponent<PuzzleCube>();
                     p.pressed = false;
                 }
+                numInput.Clear();
                 Debug.Log("u didnt it");
             }
         }
