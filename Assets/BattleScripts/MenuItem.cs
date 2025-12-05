@@ -11,11 +11,12 @@ public class MenuItem : MonoBehaviour
     [SerializeField] Color selectedColor;
     [SerializeField] RectTransform textTransform;
     [SerializeField] float selectedShift;
+    [SerializeField]bool bold = true;
     
     Animator animator;
     Vector3 originalTextPosition;
     Vector3 selectedTextPosition;
-
+    
     private void Awake()
     {
         if (textTransform != null)
@@ -33,6 +34,7 @@ public class MenuItem : MonoBehaviour
     public virtual void SelectItem() {
         menuText.font = selectedFont;
         menuText.color = selectedColor;
+        if(bold)
         menuText.fontStyle = FontStyles.Bold;
         menuText.characterSpacing = selectedSpacing;
         if (animator != null)

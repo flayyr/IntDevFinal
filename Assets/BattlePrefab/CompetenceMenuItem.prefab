@@ -370,5 +370,8 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 0.570091, b: 0, a: 1}
   textTransform: {fileID: 6464882202141794278}
   selectedShift: 10
+  bold: 0
   costText: {fileID: 6356395219252290238}
+  bgbox: {fileID: 0}
+  pointer: {fileID: 0}
   competence: {fileID: 0}

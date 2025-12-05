@@ -501,6 +501,8 @@ MonoBehaviour:
   unselectedSpacing: -15
   selectedSpacing: -10
   selectedColor: {r: 1, g: 0.64767194, b: 0, a: 1}
+  textTransform: {fileID: 0}
+  selectedShift: 0
   switchPortrait: 0
   progressBar: {fileID: 483371257009476742}
   healthBar: {fileID: 147849643747241911}
@@ -630,7 +632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.996, y: -0.559}
+  m_AnchoredPosition: {x: 1.058, y: -0.559}
   m_SizeDelta: {x: 60.8939, y: 30.3252}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7156668027042766903
@@ -766,7 +768,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.725, y: -0.559}
+  m_AnchoredPosition: {x: -0.6629883, y: -0.559}
   m_SizeDelta: {x: 60.8939, y: 30.3252}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8791069883662466710

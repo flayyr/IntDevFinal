@@ -1,9 +1,14 @@
 using TMPro;
 using UnityEngine;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class CompetenceMenuItem : MenuItem
 {
+    [Space(20)]
     [SerializeField] TextMeshProUGUI costText;
+    [SerializeField] TextMeshProUGUI maxCCText;
+    [SerializeField] GameObject bgbox;
+    [SerializeField] GameObject pointer;
 
     public CompetenceSO competence;
     float alpha = 1f;
@@ -12,6 +17,7 @@ public class CompetenceMenuItem : MenuItem
         competence = entity.competences[index];
         SetText(competence.name);
         SetCostText(competence.ccCost);
+        SetMaxCCText(entity);
 
         if(entity.cc < competence.ccCost || (entity.statuses.Length>0 && entity.statuses[(int)Status.Muted])) {
             menuText.alpha = alpha;
@@ -28,12 +34,20 @@ public class CompetenceMenuItem : MenuItem
         base.SelectItem();
         menuText.alpha = alpha;
         costText.alpha = alpha;
+        if (bgbox != null) {
+            bgbox.SetActive(true);
+            pointer.SetActive(true);
+        }
     }
 
     public override void DeselectItem() {
         base.DeselectItem();
         menuText.alpha = alpha;
         costText.alpha = alpha;
+        if (bgbox != null) {
+            bgbox.SetActive(false);
+            pointer.SetActive(false);
+        }
     }
 
     public void SetCostText(int cost) {
@@ -41,6 +55,12 @@ public class CompetenceMenuItem : MenuItem
             costText.text = "";
         } else {
             costText.text = cost+"";
+        }
+    }
+
+    public void SetMaxCCText(Entity entity) {
+        if (maxCCText != null) {
+            maxCCText.text = "/" + entity.maxCC;
         }
     }
 }

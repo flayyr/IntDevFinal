@@ -6,6 +6,7 @@ public class ScoreTextScript : MonoBehaviour
     [SerializeField] float speed=1;
     [SerializeField] Color damageColor;
     [SerializeField] Color healColor;
+    [SerializeField] Color competenceColor;
     TMP_Text text;
 
     private void Awake()
@@ -33,5 +34,16 @@ public class ScoreTextScript : MonoBehaviour
         {
             text.color = healColor;
         }
+    }
+
+    public void SetCompetence(int cc)
+    {
+        text.text = Mathf.Abs(cc) + "";
+        text.color = competenceColor;
+    }
+
+    public void SetMiss() {
+        text.text = "Miss";
+        text.color = damageColor;
     }
 }

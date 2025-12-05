@@ -1,14 +1,17 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OverworldMenuManager : MonoBehaviour
 {
     public static OverworldMenuManager Instance;
 
-    [SerializeField] CharacterSelectionmenu characterMenu;
+    [SerializeField] OWCharacterSelectionMenu characterMenu;
     [SerializeField] CompetenceSelectionMenu competenceMenu;
+    [SerializeField] OWPortraitSwitcher portraitSwitcher;
+    [SerializeField] OWQuitMenu quitMenu;
     [SerializeField] public PlayerEntity[] playerEntities;
 
-    enum MenuState {Closed, Character, Competence}
+    enum MenuState {Closed, Character, Competence, Exit}
 
     ISelectionMenu currSelectionMenu;
     MenuState state = MenuState.Closed;
@@ -47,20 +50,42 @@ public class OverworldMenuManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Z)) {
                 state = MenuState.Competence;
                 competenceMenu.Show(playerEntities[index]);
+                portraitSwitcher.ShowPortraitAtIndex(index);
+
                 currSelectionMenu = competenceMenu;
                 characterMenu.Hide();
                 index = 0;
             } else if (Input.GetKeyDown(KeyCode.X)) {
                 state = MenuState.Closed;
                 characterMenu.Hide();
+            } else if (Input.GetKeyDown(KeyCode.RightArrow)) {
+                state = MenuState.Exit;
+                characterMenu.Hide();
+                quitMenu.Show();
+                currSelectionMenu = quitMenu;
+                index = 0;
             }
-        } else {
+        } else if (state == MenuState.Competence) {
             if (Input.GetKeyDown(KeyCode.X)) {
                 state = MenuState.Character;
                 index = 0;
                 characterMenu.Show();
                 currSelectionMenu = characterMenu;
                 competenceMenu.Hide();
+            }
+        } else if (state == MenuState.Exit) {
+            if (Input.GetKeyDown(KeyCode.LeftArrow)) {
+                state = MenuState.Character;
+                index = 0;
+                characterMenu.Show();
+                currSelectionMenu = characterMenu;
+                quitMenu.Hide();
+            } else if (Input.GetKeyDown(KeyCode.Z)) {
+                if (index == 0) {
+                    SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(0));
+                } else {
+                    Application.Quit();
+                }
             }
         }
     }

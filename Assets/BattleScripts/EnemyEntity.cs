@@ -6,7 +6,7 @@ public class EnemyEntity : Entity
     [Space(20)]
     [HideInInspector] public Pointer pointer;
     [SerializeField] EnemyTimerAnimation enemyTimer;
-    [SerializeField] float TimerHideDuration = 5f;
+    [SerializeField] float TimerShowAfterPercentage = 0.2f;
 
     float timer = 0;
 
@@ -23,7 +23,7 @@ public class EnemyEntity : Entity
     protected override void Update()
     {
         base.Update();
-        enemyTimer.UpdateSprite(progress);
+        enemyTimer.UpdateSprite((progress-TimerShowAfterPercentage)/(1-TimerShowAfterPercentage));
         if (progress >= 1f)
         {
             progress = 0f;
@@ -33,11 +33,10 @@ public class EnemyEntity : Entity
             enemyTimer.Hide();
         }
 
-        if(BattleManager.Instance.state == BattleState.idle)
-            timer += Time.deltaTime;
-        if (timer > TimerHideDuration)
-        {
-            enemyTimer.Show();
+        if (BattleManager.Instance.state == BattleState.idle) {
+            if (progress >= TimerShowAfterPercentage) {
+                enemyTimer.Show();
+            }
         }
     }
 
