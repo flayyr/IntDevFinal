@@ -11,19 +11,19 @@ public class FightEnd : MonoBehaviour
 
     bool win = false;
 
-    SpriteRenderer renderer;
+    SpriteRenderer spriteRenderer;
 
     private void Start() {
         gameObject.SetActive(false);
-        renderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void EndFight(bool win) {
         this.win = win;
         if (win) {
-            renderer.sprite = winSprite;
+            spriteRenderer.sprite = winSprite;
         } else {
-            renderer.sprite = loseSprite;
+            spriteRenderer.sprite = loseSprite;
         }
         gameObject.SetActive(true);
     }

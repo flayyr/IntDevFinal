@@ -16,12 +16,22 @@ MonoBehaviour:
   targetType: 1
   ccCost: 0
   hpChange: 0
-  statuses: 04000000
+  CPChange: 0
+  ATKInfluence: 0
+  ESPInfluence: 0
+  DEFInfluence: 0
+  AGIInfluence: 0
+  variance: 0
+  hitChance: 1
+  statuses: 09000000
   cures: 0
+  statusDuration: 0
+  inflictChance: 1
   isEnemy: 0
   weight: 0
-  requirementType: 0
-  requirementNum: 0
+  requirements: []
+  summonPrefab: {fileID: 0}
   turnsSinceUse: 0
   moveAmount: 0
   effect: {fileID: 0}
+  soundEffect: {fileID: 0}

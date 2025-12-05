@@ -22,15 +22,16 @@ MonoBehaviour:
   DEFInfluence: 0
   AGIInfluence: 0
   variance: 0
-  statuses: 04000000
+  hitChance: 1
+  statuses: 07000000
   cures: 0
   statusDuration: 0
-  inflictChance: 0
+  inflictChance: 1
   isEnemy: 0
   weight: 0
   requirementType: 0
   requirementNum: 0
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 1
-  moveAmount: -1
+  turnsSinceUse: 0
+  moveAmount: 0
   effect: {fileID: 6466106487047618027, guid: 15cb2690d9b91c04fbfc1310dd9b86f1, type: 3}

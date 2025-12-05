@@ -5,13 +5,14 @@ using UnityEngine.UI;
 public class Pointer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI nameText;
+    [SerializeField] RectTransform nameTag;
     [SerializeField] Vector3 textOffSet;
     [SerializeField] Slider hpBar;
 
     public void SetSelection(Entity entity)
     {
         transform.position = entity.transform.position;
-        nameText.transform.position = transform.position + textOffSet;
+        nameTag.transform.position = transform.position + textOffSet;
         nameText.text = entity.entityName;
         gameObject.SetActive(true);
         nameText.gameObject.SetActive(true);
