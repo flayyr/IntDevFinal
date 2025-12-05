@@ -27,7 +27,7 @@ public class Entity : MonoBehaviour
     [HideInInspector] public bool wideAngled = false;
     protected float agility;
     protected bool defending;
-    protected bool dead;
+    public bool dead;
     
 
     protected virtual void Awake()

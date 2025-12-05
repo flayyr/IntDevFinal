@@ -121,5 +121,7 @@ MonoBehaviour:
   statusDurations: 
   wideAngled: 0
   portraitSprite: {fileID: -5678347072271384653, guid: c776b4ba00fa547ccbb849672ee8a0fd, type: 3}
+  aliveSprite: {fileID: -6522287064723650039, guid: a43c99ce9508c194e88cc4c60682eba3, type: 3}
+  deadSprite: {fileID: -661652494251581040, guid: 87b62b0261b693c4299a49926602534a, type: 3}
   idleAnimationTiming: 0.2
   idleAnimationOffset: 0.05

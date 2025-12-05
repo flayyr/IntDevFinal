@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public enum BattleState
 {
-    idle, selectAction, selectCompetence, selectTarget, Acting
+    idle, selectAction, selectCompetence, selectTarget, Acting, Finished
 }
 
 public class BattleManager : MonoBehaviour
@@ -18,6 +18,7 @@ public class BattleManager : MonoBehaviour
     public GameObject damageTextPrefab;
     [SerializeField] GameObject pointerPrefab;
     public Canvas worldSpaceCanvas;
+    [SerializeField] FightEnd fightEndBanner;
     [Space(20)]
     [SerializeField] Pointer pointer;
     [SerializeField] CompetenceSO baseAttack;
@@ -288,8 +289,16 @@ public class BattleManager : MonoBehaviour
 
     public void CheckWin() {
         if(enemies.Count == 0) {
-            Debug.Log("YOU WIN!!!!!");
+            fightEndBanner.EndFight(true);
+            state = BattleState.Finished;
         }
+        foreach (PlayerEntity player in playerEntities) {
+            if (!player.dead) {
+                return;
+            }
+        }
+        fightEndBanner.EndFight(false);
+        state = BattleState.Finished;
     }
 
 

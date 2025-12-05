@@ -4,10 +4,12 @@ using UnityEngine.UI;
 public class PlayerEntity : Entity
 {
     [SerializeField] public Sprite portraitSprite;
+    [SerializeField] Sprite aliveSprite;
+    [SerializeField] Sprite deadSprite;
 
     [SerializeField] float idleAnimationTiming = 0.5f;
     [SerializeField] float idleAnimationOffset=0.01f;
-
+    
     float timer = 0;
     int animDir = 1;
 
@@ -39,13 +41,13 @@ public class PlayerEntity : Entity
     protected override void Die()
     {
         base.Die();
-        GetComponent<SpriteRenderer>().color = Color.black;
+        GetComponent<SpriteRenderer>().sprite = deadSprite;
         BattleManager.Instance.CheckWin();
     }
 
     protected override void Revive()
     {
         base.Revive();
-        GetComponent<SpriteRenderer>().color = Color.white;
+        GetComponent<SpriteRenderer>().sprite = aliveSprite;
     }
 }

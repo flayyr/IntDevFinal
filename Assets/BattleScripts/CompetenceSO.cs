@@ -29,7 +29,7 @@ public class CompetenceSO : ScriptableObject
     public int weight;
     public RequirementType requirementType = RequirementType.None;
     public int requirementNum;
-    //public GameObject summonPrefab;
+    public Entity summonPrefab;
     [HideInInspector] public int turnsSinceUse = 100;
 
     [Header("Animation")]
