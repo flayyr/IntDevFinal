@@ -7,7 +7,6 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private KeyCode lastHitKey;
     public float moveSpeed = 8.0f;
     [SerializeField] Transform movePoint;
     bool movingH = false;
@@ -86,9 +85,11 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("InputX",1);
             moveDirectionVector=Vector2.right;
         }
-        if (Input.GetKeyUp(KeyCode.W)||Input.GetKeyUp(KeyCode.UpArrow)||Input.GetKeyUp(KeyCode.S)||Input.GetKeyUp(KeyCode.DownArrow))
+
+        if (moveDirectionVector!=Vector2.up&&moveDirectionVector!=Vector2.down)
         {animator.SetFloat("LastInputY",0);}
-        if (Input.GetKeyUp(KeyCode.A)||Input.GetKeyUp(KeyCode.LeftArrow)||Input.GetKeyUp(KeyCode.D)||Input.GetKeyUp(KeyCode.RightArrow))
+        
+        if (moveDirectionVector!=Vector2.left&&moveDirectionVector!=Vector2.right)
         {animator.SetFloat("LastInputX",0);}
 
         CheckForCube();
