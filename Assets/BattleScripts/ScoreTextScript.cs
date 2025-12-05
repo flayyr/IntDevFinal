@@ -41,4 +41,9 @@ public class ScoreTextScript : MonoBehaviour
         text.text = Mathf.Abs(cc) + "";
         text.color = competenceColor;
     }
+
+    public void SetMiss() {
+        text.text = "Miss";
+        text.color = damageColor;
+    }
 }

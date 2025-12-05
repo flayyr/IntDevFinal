@@ -13,8 +13,9 @@ public class Entity : MonoBehaviour
     [SerializeField] public string entityName;
     [SerializeField] public int maxHP;
     [SerializeField] public int maxCC;
-    [SerializeField] int attackPower;
-    [SerializeField] int baseDefense;
+    [SerializeField] int ATK;
+    [SerializeField] int DEF;
+    [SerializeField] int ESP;
     [SerializeField, Range(0, 1)] float baseAgility = 0.2f;
     [SerializeField] public CompetenceSO[] competences;
 
@@ -26,7 +27,7 @@ public class Entity : MonoBehaviour
     [HideInInspector] public bool wideAngled = false;
     protected float agility;
     protected bool defending;
-    protected bool dead;
+    public bool dead;
     
 
     protected virtual void Awake()
@@ -77,6 +78,23 @@ public class Entity : MonoBehaviour
         }
     }
 
+    void ChangeCC(int change) {
+        int ccChange = change;
+        if (cc + change > maxCC) {
+            ccChange = maxCC - cc;
+            cc = maxCC;
+        } else if (cc + change < 0) {
+            ccChange = -cc;
+            cc = 0;
+        } else {
+            cc += change;
+        }
+
+        GameObject damageText = Instantiate(BattleManager.Instance.damageTextPrefab, BattleManager.Instance.worldSpaceCanvas.transform);
+        damageText.GetComponent<ScoreTextScript>().SetCompetence(ccChange);
+        damageText.transform.position = transform.position;
+    }
+
     protected virtual void Die()
     {
         dead = true;
@@ -106,9 +124,11 @@ public class Entity : MonoBehaviour
                     statuses[(int)competence.statuses[i]] = false;
                     statusDurations[(int)competence.statuses[i]] = 0;
                 } else {
-                    DescriptionText.Instance.QueueText(entityName + " is " + competence.statuses[i].ToString() + "!");
-                    statuses[(int)competence.statuses[i]] = true;
-                    statusDurations[(int)competence.statuses[i]] = statusDuration;
+                    if (Random.value < competence.inflictChance) {
+                        DescriptionText.Instance.QueueText(entityName + " is " + competence.statuses[i].ToString() + "!");
+                        statuses[(int)competence.statuses[i]] = true;
+                        statusDurations[(int)competence.statuses[i]] = competence.statusDuration;
+                    }
                 }
             }
         }
@@ -157,10 +177,7 @@ public class Entity : MonoBehaviour
         }
         if (statuses[(int)Status.Incompetent])
         {
-            cc -= Mathf.CeilToInt(maxCC * 0.06f);
-            GameObject damageText = Instantiate(BattleManager.Instance.damageTextPrefab, BattleManager.Instance.worldSpaceCanvas.transform);
-            damageText.GetComponent<ScoreTextScript>().SetCompetence(Mathf.CeilToInt(maxCC * 0.06f));
-            damageText.transform.position = transform.position;
+            ChangeCC(-Mathf.CeilToInt(maxCC * 0.06f));
         }
     }
 
@@ -176,19 +193,25 @@ public class Entity : MonoBehaviour
 
     void HitTarget(CompetenceSO competence, Entity target)
     {
+        if (Random.value > competence.hitChance) {
+            GameObject damageText = Instantiate(BattleManager.Instance.damageTextPrefab, BattleManager.Instance.worldSpaceCanvas.transform);
+            damageText.GetComponent<ScoreTextScript>().SetMiss();
+            damageText.transform.position = target.transform.position;
+            return;
+        }
         if(competence.effect != null)
         {
-            Instantiate(competence.effect, target.transform);
+            Instantiate(competence.effect, target.transform.position, Quaternion.identity);
         }
 
         target.ApplyStatus(competence);
-        target.Hit(competence.hpChange);
+        target.Hit(competence, this);
     }
 
-    public void Hit(int power) {
+    public void Hit(CompetenceSO competence, Entity source) {
         int hpChange = 0;
-        if (power < 0) {
-            hpChange = power * 4 + baseDefense * 2;
+        if (competence.hpChange < 0) {
+            hpChange = competence.hpChange - Mathf.CeilToInt(source.ATK * competence.ATKInfluence + source.ESP * competence.ESPInfluence - DEF * competence.DEFInfluence);
             if (hpChange >= 0) {
                 hpChange = 0;
             }
@@ -196,12 +219,21 @@ public class Entity : MonoBehaviour
                 hpChange /= 2;
                 defending = false;
             }
+            if (source.statuses[(int)Status.Strengthened]) {
+                hpChange = Mathf.CeilToInt( hpChange * 1.2f);
+            }
         }else
         {
-            hpChange = power;
+            hpChange = competence.hpChange + Mathf.CeilToInt(source.ATK * competence.ATKInfluence + source.ESP * competence.ESPInfluence + DEF * competence.DEFInfluence + agility * competence.AGIInfluence);
         }
-        hpChange = Mathf.RoundToInt(hpChange * Random.Range(0.8f, 1.2f));
+        hpChange = Mathf.RoundToInt(hpChange * Random.Range(1f - competence.variance, 1f + competence.variance));
         ChangeHP(hpChange);
+
+        if (competence.CPChange != 0) {
+            
+
+            
+        }
     }
 
     IEnumerator AnimationCoroutine(Entity targetEntity, float moveAmount, CompetenceSO competence)
