@@ -193,9 +193,15 @@ public class Entity : MonoBehaviour
 
     void HitTarget(CompetenceSO competence, Entity target)
     {
+        if (Random.value > competence.hitChance) {
+            GameObject damageText = Instantiate(BattleManager.Instance.damageTextPrefab, BattleManager.Instance.worldSpaceCanvas.transform);
+            damageText.GetComponent<ScoreTextScript>().SetMiss();
+            damageText.transform.position = target.transform.position;
+            return;
+        }
         if(competence.effect != null)
         {
-            Instantiate(competence.effect, target.transform);
+            Instantiate(competence.effect, target.transform.position, Quaternion.identity);
         }
 
         target.ApplyStatus(competence);

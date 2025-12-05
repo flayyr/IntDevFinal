@@ -2142,6 +2142,7 @@ MonoBehaviour:
   statuses: 
   statusDurations: 
   wideAngled: 0
+  dead: 0
   pointer: {fileID: 0}
   enemyTimer: {fileID: 1703773670}
   TimerShowAfterPercentage: 0.3
@@ -4778,6 +4779,7 @@ MonoBehaviour:
   statuses: 
   statusDurations: 
   wideAngled: 0
+  dead: 0
   pointer: {fileID: 0}
   enemyTimer: {fileID: 410774488}
   TimerShowAfterPercentage: 0.3

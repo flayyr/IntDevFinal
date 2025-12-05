@@ -17,12 +17,13 @@ public class CompetenceSO : ScriptableObject
     public float DEFInfluence;
     public float AGIInfluence;
     public float variance;
+    public float hitChance = 1;
 
     [Header("Statuses")]
     public Status[] statuses;
     public bool cures = false;
     public int statusDuration;
-    public float inflictChance;
+    public float inflictChance=1;
 
     [Header("Enemy Competence")]
     public bool isEnemy = false;
