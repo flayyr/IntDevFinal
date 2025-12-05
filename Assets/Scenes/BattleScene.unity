@@ -1070,7 +1070,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: -1691881905
+  m_SortingLayerID: 139036875
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &266874405
@@ -2024,8 +2024,9 @@ MonoBehaviour:
   entityName: Enemy 1
   maxHP: 100
   maxCC: 100
-  attackPower: 50
-  baseDefense: 0
+  ATK: 0
+  DEF: 0
+  ESP: 0
   baseAgility: 0.3
   competences:
   - {fileID: 11400000, guid: 4a30237665682fb4bb715f6900ce276f, type: 2}
@@ -4660,8 +4661,9 @@ MonoBehaviour:
   entityName: Enemy 2
   maxHP: 100
   maxCC: 100
-  attackPower: 50
-  baseDefense: 0
+  ATK: 0
+  DEF: 0
+  ESP: 0
   baseAgility: 0.2
   competences:
   - {fileID: 11400000, guid: 4a30237665682fb4bb715f6900ce276f, type: 2}

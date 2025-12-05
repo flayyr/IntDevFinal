@@ -103,14 +103,15 @@ MonoBehaviour:
   entityName: The Batter
   maxHP: 100
   maxCC: 100
-  attackPower: 50
-  baseDefense: 3
+  ATK: 0
+  DEF: 0
+  ESP: 0
   baseAgility: 0.458
   competences:
   - {fileID: 11400000, guid: 89653f7dc3b5f544abd073aa3bc82712, type: 2}
   - {fileID: 11400000, guid: 6db7806e170cdeb46b106b6607ea04cf, type: 2}
   - {fileID: 11400000, guid: dda4be1ecb6340f44a3fd26dfbf2db09, type: 2}
-  - {fileID: 11400000, guid: 76f4273901bf5f746be0f0eafa3a8999, type: 2}
+  - {fileID: 11400000, guid: cc3481bfa39b3be49bb71825353e1c62, type: 2}
   - {fileID: 11400000, guid: 5145f0f3a69ba2a468cb6126a3ec8c04, type: 2}
   - {fileID: 11400000, guid: 1cd697dc830fb8249bbded6d9a68ffc0, type: 2}
   hp: 100

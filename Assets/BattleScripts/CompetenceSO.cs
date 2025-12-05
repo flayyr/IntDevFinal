@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public enum Status { Lethargic, Muted, Poisoned, Hasty, WideAngle, Revive, Stasis, Incompetent, Defending}
+public enum Status { Lethargic, Muted, Poisoned, Hasty, Stasis, Incompetent, Strengthened, WideAngle, Revive, Defending}
 public enum TargetType { Enemy, Ally, AllEnemy}
 public enum RequirementType { None, NumEnemiesLessThan, NumEnemiesMoreThan, TurnsSinceUse}
 
@@ -11,10 +11,18 @@ public class CompetenceSO : ScriptableObject
     public TargetType targetType;
     public int ccCost;
     public int hpChange;
+    public int CPChange;
+    public float ATKInfluence;
+    public float ESPInfluence;
+    public float DEFInfluence;
+    public float AGIInfluence;
+    public float variance;
 
+    [Header("Statuses")]
     public Status[] statuses;
     public bool cures = false;
     public int statusDuration;
+    public float inflictChance;
 
     [Header("Enemy Competence")]
     public bool isEnemy = false;
