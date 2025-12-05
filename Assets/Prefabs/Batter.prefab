@@ -220,7 +220,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1528450059170487276, guid: 5124e179a9a5a43ff9659062fe5a8909, type: 3}
+  m_Sprite: {fileID: -4873239495778499914, guid: 5124e179a9a5a43ff9659062fe5a8909, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -248,7 +248,6 @@ MonoBehaviour:
   moveStoppers:
     serializedVersion: 2
     m_Bits: 128
-  animator: {fileID: 5908083144143903044}
   rayCheckDistance: 1
   moveDirectionVector: {x: 1, y: 0}
 --- !u!95 &5908083144143903044
