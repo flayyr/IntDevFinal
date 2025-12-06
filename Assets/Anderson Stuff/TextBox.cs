@@ -5,6 +5,7 @@ using UnityEngine;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TextBox : MonoBehaviour
 {
@@ -52,6 +53,8 @@ public class TextBox : MonoBehaviour
     private CanvasScaler scaler;
 
     public TextMeshProUGUI textBoxDisplay;
+
+    [SerializeField] string sceneToGo;
 
     private void Awake()
     {
@@ -102,10 +105,14 @@ public class TextBox : MonoBehaviour
             index = 0;
 
             textBoxDisplay.text = "";
+            /*
             if (!talked)
             {
                 talked = true;
             }
+            */
+
+            SceneManager.LoadScene(sceneToGo);
 
             activating = false;
         }
