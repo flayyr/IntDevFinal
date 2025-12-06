@@ -311,10 +311,12 @@ MonoBehaviour:
   talked: 0
   portrait: {fileID: 0}
   currentImg: 
+  cam: {fileID: 0}
   batterSprite: {fileID: 4448675105396876176, guid: 14f57c8af5cd47e48976fd504197f9c9, type: 3}
   fifthSprite: {fileID: -6030733325071058070, guid: c0cce9374d8b2084e8594ca45a5ea00d, type: 3}
   portraitHolder: {fileID: 0}
   textBoxDisplay: {fileID: 0}
+  sceneToGo: 
 --- !u!82 &7762495673800331102
 AudioSource:
   m_ObjectHideFlags: 0
@@ -683,8 +685,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00081825, y: -115}
-  m_SizeDelta: {x: 864, y: 216}
+  m_AnchoredPosition: {x: -24.072699, y: -115}
+  m_SizeDelta: {x: 815.853, y: 216}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8609304684968330902
 CanvasRenderer:
