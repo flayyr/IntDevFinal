@@ -219,7 +219,9 @@ public class BattleManager : MonoBehaviour
         if(competence.summonPrefab != null)
         {
             targetEntity = SpawnEnemy(competence.summonPrefab);
-            currEntity.UseCompetence(selectedCompetence, targetEntity);
+            if (targetEntity != null) {
+                currEntity.UseCompetence(selectedCompetence, targetEntity);
+            }
         }
         else if(competence.targetType == TargetType.Ally)
         {
