@@ -10,18 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
-  m_Name: Run With Courage
+  m_Name: Long String
   m_EditorClassIdentifier: 
-  description: Attack with medium impact
+  description: Attack with incredible impact
   targetType: 0
-  ccCost: 16
-  hpChange: -20
+  ccCost: 18
+  hpChange: -240
+  CPChange: 0
+  ATKInfluence: 0.5
+  ESPInfluence: 1.5
+  DEFInfluence: 1
+  AGIInfluence: 0
+  variance: 0.3
+  hitChance: 1
   statuses: 
   cures: 0
+  statusDuration: 1
+  inflictChance: 1
+  chronomancy: 0
   isEnemy: 0
   weight: 0
-  requirementType: 0
-  requirementNum: 0
-  turnsSinceUse: 2
+  requirements: []
+  summonPrefab: {fileID: 0}
+  turnsSinceUse: 100
   moveAmount: -1
-  effect: {fileID: 0}
+  effect: {fileID: 6466106487047618027, guid: 79bc6f386f9583d4e9cf2153c98bf5bc, type: 3}
+  soundEffect: {fileID: 0}

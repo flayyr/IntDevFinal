@@ -101,20 +101,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityName: Epsilon
-  maxHP: 100
-  maxCC: 100
-  ATK: 0
-  DEF: 0
-  ESP: 0
-  baseAgility: 0.2
+  maxHP: 2072
+  maxCC: 249
+  ATK: 272
+  DEF: 219
+  ESP: 242
+  baseAgility: 234
   competences:
-  - {fileID: 11400000, guid: 026e2b75f68d7d844bfea0391598fd98, type: 2}
-  hp: 100
-  cc: 100
+  - {fileID: 11400000, guid: 28faa5a57e1a4b44daea85daa11c282e, type: 2}
+  - {fileID: 11400000, guid: 3d024449975d97241b16ae5fd98cebbb, type: 2}
+  - {fileID: 11400000, guid: 0f0260cb1aa836446b9b1db7eb962f70, type: 2}
+  - {fileID: 11400000, guid: 05cd4affd5828654b849fa6eae44dc09, type: 2}
+  - {fileID: 11400000, guid: 5d247ce8c1065354b81093c1d0315ff7, type: 2}
+  - {fileID: 11400000, guid: 9cc9379fcd9936c4c916bf41042296a5, type: 2}
+  hp: 2072
+  cc: 249
   progress: 0
   statuses: 
   statusDurations: 
   wideAngled: 0
+  dead: 0
   portraitSprite: {fileID: -8386591224931555603, guid: cc7fea493e0094ed39094ace695b4d12, type: 3}
   aliveSprite: {fileID: -5598228457472915997, guid: 4dc6fa1332e0c604d94964b31c82e486, type: 3}
   deadSprite: {fileID: 7212456468480737087, guid: 4644f48cd61003841a4111c1f4f19f70, type: 3}

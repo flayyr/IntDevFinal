@@ -102,12 +102,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityName: Enemy 1
-  maxHP: 100
+  maxHP: 400
   maxCC: 100
-  ATK: 0
-  DEF: 0
-  ESP: 0
-  baseAgility: 0.3
+  ATK: 300
+  DEF: 310
+  ESP: 100
+  baseAgility: 120
   competences:
   - {fileID: 11400000, guid: 4a30237665682fb4bb715f6900ce276f, type: 2}
   hp: 0

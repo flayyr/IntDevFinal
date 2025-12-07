@@ -10,19 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
-  m_Name: EnemyMove2
+  m_Name: Baroque Drama
   m_EditorClassIdentifier: 
-  description: Attack with medium impact
+  description: Increase ally's Defence
   targetType: 1
-  ccCost: 16
-  hpChange: 10
-  statuses: 03000000
+  ccCost: 25
+  hpChange: 0
+  CPChange: 0
+  ATKInfluence: 0
+  ESPInfluence: 0
+  DEFInfluence: 0
+  AGIInfluence: 0
+  variance: 0
+  hitChance: 1
+  statuses: 07000000
   cures: 0
   statusDuration: 3
-  isEnemy: 1
-  weight: 3
-  requirementType: 0
-  requirementNum: 0
+  inflictChance: 1
+  chronomancy: 0
+  isEnemy: 0
+  weight: 0
+  requirements: []
+  summonPrefab: {fileID: 0}
   turnsSinceUse: 0
   moveAmount: 1
-  effect: {fileID: 0}
+  effect: {fileID: 6466106487047618027, guid: 97b42024674f60847bcb4af89fd5a794, type: 3}
+  soundEffect: {fileID: 0}

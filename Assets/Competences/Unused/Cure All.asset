@@ -10,19 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
-  m_Name: Apply Muted
+  m_Name: Cure All
   m_EditorClassIdentifier: 
-  description: 'Test Competence: applies muted'
+  description: 'Test Competence: cures all statuses'
   targetType: 1
   ccCost: 10
   hpChange: 0
-  statuses: 01000000
-  cures: 0
-  statusDuration: 3
+  CPChange: 0
+  ATKInfluence: 0
+  ESPInfluence: 0
+  DEFInfluence: 0
+  AGIInfluence: 0
+  variance: 0
+  hitChance: 1
+  statuses: 00000000010000000200000003000000
+  cures: 1
+  statusDuration: 1
+  inflictChance: 1
+  chronomancy: 0
   isEnemy: 0
   weight: 0
-  requirementType: 0
-  requirementNum: 0
+  requirements: []
+  summonPrefab: {fileID: 0}
   turnsSinceUse: 0
   moveAmount: 1
   effect: {fileID: 0}
+  soundEffect: {fileID: 0}

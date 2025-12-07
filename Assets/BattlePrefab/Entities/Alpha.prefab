@@ -101,20 +101,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityName: Alpha
-  maxHP: 100
-  maxCC: 100
-  ATK: 0
-  DEF: 0
-  ESP: 0
-  baseAgility: 0.2
+  maxHP: 2022
+  maxCC: 232
+  ATK: 271
+  DEF: 227
+  ESP: 239
+  baseAgility: 240
   competences:
-  - {fileID: 11400000, guid: 026e2b75f68d7d844bfea0391598fd98, type: 2}
-  hp: 100
-  cc: 100
+  - {fileID: 11400000, guid: 90053adb706ace04188bb257d87ee880, type: 2}
+  - {fileID: 11400000, guid: 534112b0520fde144914f2b3e909d320, type: 2}
+  - {fileID: 11400000, guid: 4501644a52e85134da226ccfd6a49d2f, type: 2}
+  - {fileID: 11400000, guid: 9676705c12a683742beb48a00e157123, type: 2}
+  - {fileID: 11400000, guid: 35274feb7cc062c499606746176d2ac3, type: 2}
+  - {fileID: 11400000, guid: 8d1ac40434b838946bb5346e2d091475, type: 2}
+  hp: 2022
+  cc: 232
   progress: 0
   statuses: 
   statusDurations: 
   wideAngled: 0
+  dead: 0
   portraitSprite: {fileID: -1525779057117115073, guid: 57f851cbf16fd4033b6976624bd2e001, type: 3}
   aliveSprite: {fileID: -5598228457472915997, guid: 4dc6fa1332e0c604d94964b31c82e486, type: 3}
   deadSprite: {fileID: 7212456468480737087, guid: 4644f48cd61003841a4111c1f4f19f70, type: 3}

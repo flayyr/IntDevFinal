@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using static UnityEngine.EventSystems.EventTrigger;
 using Random = UnityEngine.Random;
 
 public enum BattleState
@@ -19,6 +20,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] GameObject pointerPrefab;
     public Canvas worldSpaceCanvas;
     [SerializeField] FightEnd fightEndBanner;
+    [SerializeField] Chronomancy chronomancy;
     [Space(20)]
     [SerializeField] Pointer pointer;
     [SerializeField] CompetenceSO baseAttack;
@@ -226,8 +228,9 @@ public class BattleManager : MonoBehaviour
         else if(competence.targetType == TargetType.Ally)
         {
             targetEntities = new List<Entity>();
-            foreach (Entity enemy in enemies)
-                targetEntities.Add(enemy);
+            for (int i = 1; i<enemies.Count; i++) {
+                targetEntities.Add(enemies[i]);
+            }
             currEntity.UseMultiTargetCompetence(selectedCompetence, targetEntities);
         } else
         {

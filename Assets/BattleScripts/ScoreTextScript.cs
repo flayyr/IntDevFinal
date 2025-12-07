@@ -50,8 +50,8 @@ public class ScoreTextScript : MonoBehaviour
         text.color = competenceColor;
     }
 
-    public void SetMiss() {
-        text.text = "Miss";
+    public void SetText(string str) {
+        text.text = str;
         text.color = damageColor;
     }
 }

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Chronomancy : MonoBehaviour
 {
-    
+    public static Chronomancy Instance;
+
     [SerializeField] public float chronotest=360.0f;
     [SerializeField] public float chronoGoal=0.0f;
     [SerializeField] public bool testingInProgress=false;
@@ -14,6 +15,11 @@ public class Chronomancy : MonoBehaviour
     Rigidbody2D clockHour;
 
     float timer = 0f;
+
+    private void Awake() {
+        Instance = this;
+        testingInProgress = false;
+    }
 
     void Start()
     {
@@ -28,7 +34,7 @@ public class Chronomancy : MonoBehaviour
     {
         //Debug.Log(timer);
         if(Input.GetKeyDown(KeyCode.R)) {
-            ChronomancyStart();
+            //ChronomancyStart();
         }
         if(testingInProgress) {
             timer+= Time.deltaTime;
@@ -36,7 +42,7 @@ public class Chronomancy : MonoBehaviour
             //    ChronomancyEnd();
             //}
             //Debug.Log(chronoTransform.transform.eulerAngles.z);
-            if(Input.GetKeyDown(KeyCode.C)) {
+            if(Input.GetKeyDown(KeyCode.Z)) {
                 ChronomancyEnd();
             }
             if(chronoTransform.transform.eulerAngles.z < 5f && chronoTransform.transform.eulerAngles.z >0f){
@@ -51,7 +57,7 @@ public class Chronomancy : MonoBehaviour
 
 
 
-    void ChronomancyStart() {
+    public void ChronomancyStart() {
         if(!testingInProgress) {
             testingInProgress = true;
             chronoGoal = Random.Range(1,12)*30f;
@@ -65,7 +71,7 @@ public class Chronomancy : MonoBehaviour
         }
     }
 
-    void ChronomancyEnd() {
+    public void ChronomancyEnd() {
         chronotest = Mathf.Abs(chronoTransform.transform.eulerAngles.z-(360-chronoGoal))/180;
         Debug.Log(chronotest);
         chronoTransform.transform.position = new Vector3(0,12,1);

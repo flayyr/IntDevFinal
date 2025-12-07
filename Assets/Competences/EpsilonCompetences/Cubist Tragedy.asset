@@ -10,30 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
-  m_Name: Summon Erased
+  m_Name: Cubist Tragedy
   m_EditorClassIdentifier: 
-  description: Spawn Enemy
-  targetType: 1
-  ccCost: 16
-  hpChange: 0
+  description: Attack all enemies
+  targetType: 2
+  ccCost: 42
+  hpChange: -190
   CPChange: 0
-  ATKInfluence: 0
-  ESPInfluence: 0
-  DEFInfluence: 0
+  ATKInfluence: 0.5
+  ESPInfluence: 1.5
+  DEFInfluence: 1
   AGIInfluence: 0
-  variance: 0
+  variance: 0.4
   hitChance: 1
   statuses: 
   cures: 0
-  statusDuration: 0
+  statusDuration: 1
   inflictChance: 0
-  isEnemy: 1
-  weight: 100
-  requirements:
-  - requirementType: 1
-    requirementNum: 4
-  summonPrefab: {fileID: 1928029462071408341, guid: e86b1385cf5dad64d9680a04bc48ff2a, type: 3}
+  chronomancy: 0
+  isEnemy: 0
+  weight: 0
+  requirements: []
+  summonPrefab: {fileID: 0}
   turnsSinceUse: 101
   moveAmount: 1
-  effect: {fileID: 6466106487047618027, guid: 97b42024674f60847bcb4af89fd5a794, type: 3}
+  effect: {fileID: 6466106487047618027, guid: 79bc6f386f9583d4e9cf2153c98bf5bc, type: 3}
   soundEffect: {fileID: 0}

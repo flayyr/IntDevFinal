@@ -101,25 +101,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityName: The Batter
-  maxHP: 100
-  maxCC: 100
-  ATK: 0
-  DEF: 0
-  ESP: 0
-  baseAgility: 0.458
+  maxHP: 2025
+  maxCC: 244
+  ATK: 282
+  DEF: 218
+  ESP: 230
+  baseAgility: 240
   competences:
   - {fileID: 11400000, guid: 89653f7dc3b5f544abd073aa3bc82712, type: 2}
-  - {fileID: 11400000, guid: 6db7806e170cdeb46b106b6607ea04cf, type: 2}
   - {fileID: 11400000, guid: dda4be1ecb6340f44a3fd26dfbf2db09, type: 2}
-  - {fileID: 11400000, guid: cc3481bfa39b3be49bb71825353e1c62, type: 2}
-  - {fileID: 11400000, guid: 5145f0f3a69ba2a468cb6126a3ec8c04, type: 2}
-  - {fileID: 11400000, guid: 1cd697dc830fb8249bbded6d9a68ffc0, type: 2}
-  hp: 100
-  cc: 100
+  - {fileID: 11400000, guid: 026e2b75f68d7d844bfea0391598fd98, type: 2}
+  - {fileID: 11400000, guid: 8f7e100e615e21d41b6b21c5a4ede7b1, type: 2}
+  - {fileID: 11400000, guid: bccd08c240728074cafc8b8fcc1ac83d, type: 2}
+  - {fileID: 11400000, guid: 8ff830290f98a594abf9a6ba99a56819, type: 2}
+  hp: 2025
+  cc: 244
   progress: 0
   statuses: 
   statusDurations: 
   wideAngled: 0
+  dead: 0
   portraitSprite: {fileID: -5678347072271384653, guid: c776b4ba00fa547ccbb849672ee8a0fd, type: 3}
   aliveSprite: {fileID: -6522287064723650039, guid: a43c99ce9508c194e88cc4c60682eba3, type: 3}
   deadSprite: {fileID: -661652494251581040, guid: 87b62b0261b693c4299a49926602534a, type: 3}

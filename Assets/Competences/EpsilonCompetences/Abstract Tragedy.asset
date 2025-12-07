@@ -10,28 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
-  m_Name: Wide Angle
+  m_Name: Abstract Tragedy
   m_EditorClassIdentifier: 
-  description: Analyze enemy
-  targetType: 0
-  ccCost: 2
-  hpChange: 0
+  description: Attack all enemies
+  targetType: 2
+  ccCost: 26
+  hpChange: -80
   CPChange: 0
-  ATKInfluence: 0
-  ESPInfluence: 0
-  DEFInfluence: 0
+  ATKInfluence: 0.5
+  ESPInfluence: 1.5
+  DEFInfluence: 1
   AGIInfluence: 0
-  variance: 0
+  variance: 0.4
   hitChance: 1
-  statuses: 07000000
+  statuses: 
   cures: 0
-  statusDuration: 0
-  inflictChance: 1
+  statusDuration: 1
+  inflictChance: 0
+  chronomancy: 0
   isEnemy: 0
   weight: 0
-  requirementType: 0
-  requirementNum: 0
+  requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 0
-  moveAmount: 0
-  effect: {fileID: 6466106487047618027, guid: 15cb2690d9b91c04fbfc1310dd9b86f1, type: 3}
+  turnsSinceUse: 101
+  moveAmount: 1
+  effect: {fileID: 6466106487047618027, guid: 79bc6f386f9583d4e9cf2153c98bf5bc, type: 3}
+  soundEffect: {fileID: 0}

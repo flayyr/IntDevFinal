@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using static UnityEngine.GraphicsBuffer;
 
 
 public class Entity : MonoBehaviour
@@ -15,7 +16,7 @@ public class Entity : MonoBehaviour
     [SerializeField] int ATK;
     [SerializeField] int DEF;
     [SerializeField] int ESP;
-    [SerializeField, Range(0, 1)] float baseAgility = 0.2f;
+    [SerializeField] int baseAgility = 200;
     [SerializeField] public CompetenceSO[] competences;
 
     public int hp;
@@ -24,7 +25,11 @@ public class Entity : MonoBehaviour
     [HideInInspector] public bool[] statuses;
     [HideInInspector] public int[] statusDurations;
     [HideInInspector] public bool wideAngled = false;
-    protected float agility;
+    protected int agility;
+    protected int defence;
+    protected int attack;
+    protected int espirit;
+
     protected bool defending;
     public bool dead;
     
@@ -34,8 +39,8 @@ public class Entity : MonoBehaviour
         hp = maxHP;
         cc = maxCC;
         agility = baseAgility;
-        statuses = new bool[10];
-        statusDurations = new int[10];
+        statuses = new bool[12];
+        statusDurations = new int[12];
         foreach(CompetenceSO competence in competences) {
             competence.turnsSinceUse = 100;
         }
@@ -43,7 +48,7 @@ public class Entity : MonoBehaviour
 
     protected virtual void Update() {
         if (BattleManager.Instance.state == BattleState.idle && !dead) {
-            progress += agility * Time.deltaTime;
+            progress += (agility/1000f) * Time.deltaTime;
         }
     }
 
@@ -129,16 +134,45 @@ public class Entity : MonoBehaviour
                         statusDurations[(int)competence.statuses[i]] = competence.statusDuration;
                     }
                 }
+            } else if(!competence.cures){
+                statusDurations[(int)competence.statuses[i]] = competence.statusDuration;
             }
         }
 
+        UpdateStats();
+    }
+
+    void UpdateStats() {
         //Set Agility
         if (statuses[(int)Status.Lethargic] && statuses[(int)Status.Hasty]) {
             agility = baseAgility;
         } else if (statuses[(int)Status.Lethargic]) {
-            agility = 0.5f * baseAgility;
+            agility = Mathf.CeilToInt(0.5f * baseAgility);
         } else if (statuses[(int)Status.Hasty]) {
-            agility = 2f * baseAgility;
+            agility = Mathf.CeilToInt(2f * baseAgility);
+        } else {
+            agility = baseAgility;
+        }
+
+        //Set Defence
+        if (statuses[(int)Status.Toughened]) {
+            defence = Mathf.CeilToInt(DEF * 1.3f);
+        } else {
+            defence = DEF;
+        }
+
+        //Set Attack
+        if (statuses[(int)Status.Strengthened]) {
+            attack = Mathf.CeilToInt(ATK * 1.3f);
+        } else {
+            attack = ATK;
+        }
+
+        //Set Espirit
+        if (statuses[(int)Status.Clever]) {
+            espirit = Mathf.CeilToInt(ESP * 1.3f);
+        } else {
+            espirit = ESP;
         }
     }
 
@@ -171,6 +205,7 @@ public class Entity : MonoBehaviour
                 if (statusDurations[i] == 0) {
                     statuses[i] = false;
                     DescriptionText.Instance.QueueText(name + " is no longer " + ((Status)i).ToString() + "!");
+                    UpdateStats();
                 }
             }
             
@@ -198,9 +233,9 @@ public class Entity : MonoBehaviour
 
     void HitTarget(CompetenceSO competence, Entity target)
     {
-        if (Random.value > competence.hitChance) {
+        if (Random.value > competence.hitChance || competence.statusDuration==0) {
             GameObject damageText = Instantiate(BattleManager.Instance.damageTextPrefab, BattleManager.Instance.worldSpaceCanvas.transform);
-            damageText.GetComponent<ScoreTextScript>().SetMiss();
+            damageText.GetComponent<ScoreTextScript>().SetText("Miss");
             damageText.transform.position = target.transform.position;
             return;
         }
@@ -216,7 +251,7 @@ public class Entity : MonoBehaviour
     public void Hit(CompetenceSO competence, Entity source) {
         int hpChange = 0;
         if (competence.hpChange < 0) {
-            hpChange = competence.hpChange - Mathf.CeilToInt(source.ATK * competence.ATKInfluence + source.ESP * competence.ESPInfluence - DEF * competence.DEFInfluence);
+            hpChange = competence.hpChange - Mathf.CeilToInt(source.attack * competence.ATKInfluence + source.espirit * competence.ESPInfluence - defence * competence.DEFInfluence);
             if (hpChange >= 0) {
                 hpChange = 0;
             }
@@ -224,20 +259,15 @@ public class Entity : MonoBehaviour
                 hpChange /= 2;
                 defending = false;
             }
-            if (source.statuses[(int)Status.Strengthened]) {
-                hpChange = Mathf.CeilToInt( hpChange * 1.2f);
-            }
         }else
         {
-            hpChange = competence.hpChange + Mathf.CeilToInt(source.ATK * competence.ATKInfluence + source.ESP * competence.ESPInfluence + DEF * competence.DEFInfluence + agility * competence.AGIInfluence);
+            hpChange = competence.hpChange + Mathf.CeilToInt(source.attack * competence.ATKInfluence + source.espirit * competence.ESPInfluence + defence * competence.DEFInfluence + agility * competence.AGIInfluence);
         }
         hpChange = Mathf.RoundToInt(hpChange * Random.Range(1f - competence.variance, 1f + competence.variance));
         ChangeHP(hpChange);
 
         if (competence.CPChange != 0) {
-            
-
-            
+            ChangeCC(competence.CPChange);
         }
     }
 
@@ -246,6 +276,19 @@ public class Entity : MonoBehaviour
         Vector3 dir = (targetEntity.transform.position - transform.position).normalized;
         Vector3 targetPos = transform.position + dir * moveAmount;
         Vector3 originalPos = transform.position;
+
+        if (statuses[(int)Status.Stasis]) {
+            Chronomancy.Instance.ChronomancyStart();
+            yield return new WaitUntil(() => !Chronomancy.Instance.testingInProgress);
+            float val = Chronomancy.Instance.chronotest;
+            if (val > 0.2f) {
+                GameObject damageText = Instantiate(BattleManager.Instance.damageTextPrefab, BattleManager.Instance.worldSpaceCanvas.transform);
+                damageText.GetComponent<ScoreTextScript>().SetText("Stasis");
+                damageText.transform.position = transform.position;
+                goto AfterHitLabel;
+            }
+        }
+
         if (moveAmount == -1)
         {
             targetPos = targetEntity.transform.position;
@@ -257,7 +300,24 @@ public class Entity : MonoBehaviour
             yield return new WaitForSeconds(Time.deltaTime);
         }
 
+        if (competence.chronomancy) {
+            Chronomancy.Instance.ChronomancyStart();
+            yield return new WaitUntil(()=>!Chronomancy.Instance.testingInProgress);
+            float val = Chronomancy.Instance.chronotest;
+            if (val < 0.05f) {
+                competence.statusDuration = 4;
+            } else if (val < 0.1f) {
+                competence.statusDuration = 3;
+            } else if (val < 0.2f) {
+                competence.statusDuration = 2;
+            } else {
+                competence.statusDuration = 0;
+            }
+        }
+
         HitTarget(competence, targetEntity);
+
+        AfterHitLabel:
         yield return new WaitForSeconds(waitTimeAfterMove);
 
         while (Mathf.Abs((originalPos - transform.position).magnitude) > 0.1f)
@@ -266,6 +326,7 @@ public class Entity : MonoBehaviour
             yield return new WaitForSeconds(Time.deltaTime);
         }
         transform.position = originalPos;
+
 
         AfterMoveUpdate(competence);
 
@@ -279,6 +340,18 @@ public class Entity : MonoBehaviour
         Vector3 targetPos = transform.position + dir * Mathf.Abs(moveAmount);//No negative moveamount for multitarget
         Vector3 originalPos = transform.position;
 
+        if (statuses[(int)Status.Stasis]) {
+            Chronomancy.Instance.ChronomancyStart();
+            yield return new WaitUntil(() => !Chronomancy.Instance.testingInProgress);
+            float val = Chronomancy.Instance.chronotest;
+            if (val > 0.2f) {
+                GameObject damageText = Instantiate(BattleManager.Instance.damageTextPrefab, BattleManager.Instance.worldSpaceCanvas.transform);
+                damageText.GetComponent<ScoreTextScript>().SetText("Stasis");
+                damageText.transform.position = transform.position;
+                goto AfterHitLabel;
+            }
+        }
+
         while (Mathf.Abs((targetPos - transform.position).magnitude) > 0.5f)
         {
             transform.position += dir * Time.deltaTime * moveSpeed * (targetPos - transform.position).magnitude;
@@ -290,6 +363,7 @@ public class Entity : MonoBehaviour
             HitTarget(competence, entity);
         }
 
+        AfterHitLabel:
         yield return new WaitForSeconds(waitTimeAfterMove);
 
         while (Mathf.Abs((originalPos - transform.position).magnitude) > 0.1f)

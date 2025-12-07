@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public enum Status { Lethargic, Muted, Poisoned, Hasty, Stasis, Incompetent, Strengthened, WideAngle, Revive, Defending}
+public enum Status { Lethargic, Muted, Poisoned, Hasty, Stasis, Incompetent, Strengthened, Toughened, Clever, WideAngle, Revive, Defending}
 public enum TargetType { Enemy, Ally, AllEnemy}
 public enum RequirementType { None, NumEnemiesLessThan, NumEnemiesMoreThan, TurnsSinceUse}
 
@@ -17,14 +17,15 @@ public class CompetenceSO : ScriptableObject
     public float ESPInfluence;
     public float DEFInfluence;
     public float AGIInfluence;
-    public float variance;
-    public float hitChance = 1;
+    [SerializeField, Range(0f,1f)]public float variance;
+    [SerializeField, Range(0f, 1f)] public float hitChance = 1;
 
     [Header("Statuses")]
     public Status[] statuses;
     public bool cures = false;
-    public int statusDuration;
-    public float inflictChance=1;
+    public int statusDuration = 1;
+    [SerializeField, Range(0f, 1f)] public float inflictChance=1;
+    public bool chronomancy = false;
 
     [Header("Enemy Competence")]
     public bool isEnemy = false;

@@ -25,8 +25,9 @@ MonoBehaviour:
   hitChance: 1
   statuses: 09000000
   cures: 0
-  statusDuration: 0
+  statusDuration: 1
   inflictChance: 1
+  chronomancy: 0
   isEnemy: 0
   weight: 0
   requirements: []
