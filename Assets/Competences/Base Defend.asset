@@ -23,7 +23,7 @@ MonoBehaviour:
   AGIInfluence: 0
   variance: 0
   hitChance: 1
-  statuses: 09000000
+  statuses: 0b000000
   cures: 0
   statusDuration: 1
   inflictChance: 1
