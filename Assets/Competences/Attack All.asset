@@ -15,22 +15,13 @@ MonoBehaviour:
   description: Attack with medium impact
   targetType: 2
   ccCost: 16
-  hpChange: -70
-  CPChange: 0
-  ATKInfluence: 0
-  ESPInfluence: 0
-  DEFInfluence: 0
-  AGIInfluence: 0
-  variance: 0
+  hpChange: -5
   statuses: 
   cures: 0
-  statusDuration: 0
-  inflictChance: 0
   isEnemy: 0
   weight: 0
   requirementType: 0
   requirementNum: 0
-  summonPrefab: {fileID: 0}
-  turnsSinceUse: 0
+  turnsSinceUse: 102
   moveAmount: 1
   effect: {fileID: 0}

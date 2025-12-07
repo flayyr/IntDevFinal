@@ -16,7 +16,7 @@ public class MenuItem : MonoBehaviour
     Animator animator;
     Vector3 originalTextPosition;
     Vector3 selectedTextPosition;
-    
+
     private void Awake()
     {
         if (textTransform != null)

@@ -176,8 +176,8 @@ Camera:
   m_GameObject: {fileID: 280966761}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -690,7 +690,7 @@ PrefabInstance:
     - target: {fileID: 7762495673800331102, guid: e149887272f0f584b8fb79e6ae1ff848, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 1dee8dcc9ca50452a947bd5b5e993ceb, type: 3}
+      objectReference: {fileID: 8300000, guid: 17dd3b76b1203d04f9baa6f92da6fe84, type: 3}
     m_RemovedComponents:
     - {fileID: 7674721622158669778, guid: e149887272f0f584b8fb79e6ae1ff848, type: 3}
     - {fileID: 3789067785116530902, guid: e149887272f0f584b8fb79e6ae1ff848, type: 3}
@@ -759,6 +759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textBoxPrefab: {fileID: 104634257}
+  imagePrefab: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

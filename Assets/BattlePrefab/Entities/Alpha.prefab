@@ -103,9 +103,8 @@ MonoBehaviour:
   entityName: Alpha
   maxHP: 100
   maxCC: 100
-  ATK: 0
-  DEF: 0
-  ESP: 0
+  attackPower: 50
+  baseDefense: 3
   baseAgility: 0.2
   competences:
   - {fileID: 11400000, guid: 026e2b75f68d7d844bfea0391598fd98, type: 2}
@@ -116,7 +115,5 @@ MonoBehaviour:
   statusDurations: 
   wideAngled: 0
   portraitSprite: {fileID: -1525779057117115073, guid: 57f851cbf16fd4033b6976624bd2e001, type: 3}
-  aliveSprite: {fileID: -5598228457472915997, guid: 4dc6fa1332e0c604d94964b31c82e486, type: 3}
-  deadSprite: {fileID: 7212456468480737087, guid: 4644f48cd61003841a4111c1f4f19f70, type: 3}
   idleAnimationTiming: 0.2
   idleAnimationOffset: 0.05

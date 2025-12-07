@@ -18,7 +18,6 @@ MonoBehaviour:
   hpChange: 0
   statuses: 00000000
   cures: 0
-  statusDuration: 3
   isEnemy: 0
   weight: 0
   requirementType: 0
