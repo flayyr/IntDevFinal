@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: 9e3c5091d0b2a8040a34d05846541d23
+guid: 4da6e7eb7d6566441bc971e0761b57ec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5861758979094156312
-    second: Clock4_0
+      213: -4282133096319724208
+    second: clock5_0
   - first:
-      213: 6485051141059216833
-    second: Clock4_1
+      213: -3606010715444644562
+    second: clock5_1
   - first:
-      213: 151182605133315871
-    second: Clock4_2
+      213: 4078571459984121360
+    second: clock5_2
   - first:
-      213: 6751446502183504091
-    second: Clock4_3
+      213: 5315975100847027196
+    second: clock5_3
   - first:
-      213: 1813372769534045277
-    second: Clock4_4
+      213: -5564494755686408792
+    second: clock5_4
   - first:
-      213: -7652149259239453906
-    second: Clock4_5
+      213: 4952457672115472710
+    second: clock5_5
   - first:
-      213: -2437864671963710842
-    second: Clock4_6
+      213: -6942785270273386191
+    second: clock5_6
   - first:
-      213: -7481147399307710124
-    second: Clock4_7
+      213: -7268554353405323829
+    second: clock5_7
   - first:
-      213: -2650668776254887296
-    second: Clock4_8
+      213: -6456774881191461960
+    second: clock5_8
   - first:
-      213: -9054863138104778182
-    second: Clock4_9
+      213: 6017902160332212698
+    second: clock5_9
   - first:
-      213: 8067115059029194892
-    second: Clock4_10
+      213: -2291086263230690588
+    second: clock5_10
   - first:
-      213: -3134151945484203873
-    second: Clock4_11
+      213: 8091876227000538634
+    second: clock5_11
   - first:
-      213: 1073181233169279893
-    second: Clock4_12
+      213: 1335864987933910890
+    second: clock5_12
   - first:
-      213: -2384662103440497127
-    second: Clock4_13
+      213: -8203795826676463030
+    second: clock5_13
   - first:
-      213: -3137971165496116627
-    second: Clock4_14
+      213: 8879938574112781948
+    second: clock5_14
   - first:
-      213: 7766156954255579655
-    second: Clock4_15
+      213: -6819190154821034430
+    second: clock5_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -91,12 +91,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 160
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -145,7 +145,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Clock4_0
+      name: clock5_0
       rect:
         serializedVersion: 2
         x: 279
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8141ddb0cb6295150800000000000000
-      internalID: 5861758979094156312
+      spriteID: 0555be8f2aec294c0800000000000000
+      internalID: -4282133096319724208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock4_1
+      name: clock5_1
       rect:
         serializedVersion: 2
         x: 329
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c5831d47a78ff950800000000000000
-      internalID: 6485051141059216833
+      spriteID: e257ba91c50e4fdc0800000000000000
+      internalID: -3606010715444644562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock4_2
+      name: clock5_2
       rect:
         serializedVersion: 2
         x: 579
@@ -204,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1f703347cb191200800000000000000
-      internalID: 151182605133315871
+      spriteID: 01e5667322ff99830800000000000000
+      internalID: 4078571459984121360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock4_3
+      name: clock5_3
       rect:
         serializedVersion: 2
         x: 629
@@ -226,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd883b2b2d4f1bd50800000000000000
-      internalID: 6751446502183504091
+      spriteID: cf3fec0603326c940800000000000000
+      internalID: 5315975100847027196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock4_4
+      name: clock5_4
       rect:
         serializedVersion: 2
         x: 909
@@ -248,14 +248,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5c617d1de46a2910800000000000000
-      internalID: 1813372769534045277
+      spriteID: 8ad99cc6081f6c2b0800000000000000
+      internalID: -5564494755686408792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock4_5
+      name: clock5_5
       rect:
         serializedVersion: 2
         x: 109
@@ -270,14 +270,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2b83c2aaca1ec590800000000000000
-      internalID: -7652149259239453906
+      spriteID: 649c997730aaab440800000000000000
+      internalID: 4952457672115472710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock4_6
+      name: clock5_6
       rect:
         serializedVersion: 2
         x: 169
@@ -292,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 68af0294ff6fa2ed0800000000000000
-      internalID: -2437864671963710842
+      spriteID: 1395a85c49546af90800000000000000
+      internalID: -6942785270273386191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock4_7
+      name: clock5_7
       rect:
         serializedVersion: 2
         x: 1059
@@ -314,14 +314,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4513defb310ad2890800000000000000
-      internalID: -7481147399307710124
+      spriteID: bc518a67358e02b90800000000000000
+      internalID: -7268554353405323829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock4_8
+      name: clock5_8
       rect:
         serializedVersion: 2
         x: 59
@@ -336,20 +336,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08aab16bacee63bd0800000000000000
-      internalID: -2650668776254887296
+      spriteID: 8bbfaeb747de466a0800000000000000
+      internalID: -6456774881191461960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock4_9
+      name: clock5_9
       rect:
         serializedVersion: 2
-        x: 489
+        x: 499
         y: 489
-        width: 262
-        height: 362
+        width: 252
+        height: 332
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,14 +358,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a326c7b53f9a65280800000000000000
-      internalID: -9054863138104778182
+      spriteID: ad948af6122e38350800000000000000
+      internalID: 6017902160332212698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock4_10
+      name: clock5_10
       rect:
         serializedVersion: 2
         x: 1129
@@ -380,14 +380,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c88b3af976624ff60800000000000000
-      internalID: 8067115059029194892
+      spriteID: 4ea8b5aae2d6430e0800000000000000
+      internalID: -2291086263230690588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock4_11
+      name: clock5_11
       rect:
         serializedVersion: 2
         x: 119
@@ -402,14 +402,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f98805939614184d0800000000000000
-      internalID: -3134151945484203873
+      spriteID: a069bcc4e8e1c4070800000000000000
+      internalID: 8091876227000538634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock4_12
+      name: clock5_12
       rect:
         serializedVersion: 2
         x: 1049
@@ -424,14 +424,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 59baba645a4b4ee00800000000000000
-      internalID: 1073181233169279893
+      spriteID: a67aea9f022f98210800000000000000
+      internalID: 1335864987933910890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock4_13
+      name: clock5_13
       rect:
         serializedVersion: 2
         x: 339
@@ -446,14 +446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 916e71f837af7eed0800000000000000
-      internalID: -2384662103440497127
+      spriteID: a4a0e154923462e80800000000000000
+      internalID: -8203795826676463030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock4_14
+      name: clock5_14
       rect:
         serializedVersion: 2
         x: 599
@@ -468,14 +468,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d6a7f25c9dfa374d0800000000000000
-      internalID: -3137971165496116627
+      spriteID: c76f741d511eb3b70800000000000000
+      internalID: 8879938574112781948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock4_15
+      name: clock5_15
       rect:
         serializedVersion: 2
         x: 889
@@ -490,8 +490,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70a55506a9ee6cb60800000000000000
-      internalID: 7766156954255579655
+      spriteID: 24e1d0e0fae5d51a0800000000000000
+      internalID: -6819190154821034430
       vertices: []
       indices: 
       edges: []
@@ -500,7 +500,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -510,22 +510,22 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Clock4_0: 5861758979094156312
-      Clock4_1: 6485051141059216833
-      Clock4_10: 8067115059029194892
-      Clock4_11: -3134151945484203873
-      Clock4_12: 1073181233169279893
-      Clock4_13: -2384662103440497127
-      Clock4_14: -3137971165496116627
-      Clock4_15: 7766156954255579655
-      Clock4_2: 151182605133315871
-      Clock4_3: 6751446502183504091
-      Clock4_4: 1813372769534045277
-      Clock4_5: -7652149259239453906
-      Clock4_6: -2437864671963710842
-      Clock4_7: -7481147399307710124
-      Clock4_8: -2650668776254887296
-      Clock4_9: -9054863138104778182
+      clock5_0: -4282133096319724208
+      clock5_1: -3606010715444644562
+      clock5_10: -2291086263230690588
+      clock5_11: 8091876227000538634
+      clock5_12: 1335864987933910890
+      clock5_13: -8203795826676463030
+      clock5_14: 8879938574112781948
+      clock5_15: -6819190154821034430
+      clock5_2: 4078571459984121360
+      clock5_3: 5315975100847027196
+      clock5_4: -5564494755686408792
+      clock5_5: 4952457672115472710
+      clock5_6: -6942785270273386191
+      clock5_7: -7268554353405323829
+      clock5_8: -6456774881191461960
+      clock5_9: 6017902160332212698
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

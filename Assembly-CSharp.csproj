@@ -42,27 +42,44 @@
     <UnityVersion>6000.0.59f2</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Users\monae\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.2.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.59f2\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.59f2\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.59f2\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Anderson Stuff\blink.cs" />
+    <Compile Include="Assets\Scripts\SceneChange.cs" />
+    <Compile Include="Assets\BattleScripts\MenuScript\OWCharacterSelectionMenu.cs" />
     <Compile Include="Assets\BattleScripts\EnemyEntity.cs" />
     <Compile Include="Assets\BattleScripts\Pointer.cs" />
     <Compile Include="Assets\BattleScripts\BattleManager.cs" />
+    <Compile Include="Assets\Scripts\LayerManagement.cs" />
     <Compile Include="Assets\BattleScripts\CharacterMenuItem.cs" />
     <Compile Include="Assets\BattleScripts\CharacterSelectionmenu.cs" />
     <Compile Include="Assets\BattleScripts\Entity.cs" />
     <Compile Include="Assets\BattleScripts\DescriptionText.cs" />
+    <Compile Include="Assets\Anderson Stuff\particleLife.cs" />
     <Compile Include="Assets\ChronoScripts\Chronomancy.cs" />
     <Compile Include="Assets\BattleScripts\MenuScript\OverworldMenuManager.cs" />
+    <Compile Include="Assets\BattleScripts\MenuScript\OWCharacterMenuItem.cs" />
+    <Compile Include="Assets\BattleScripts\MenuScript\OWQuitMenu.cs" />
     <Compile Include="Assets\BattleScripts\MenuItem.cs" />
+    <Compile Include="Assets\Anderson Stuff\particleOpacity.cs" />
+    <Compile Include="Assets\Anderson Stuff\retry.cs" />
     <Compile Include="Assets\BattleScripts\CompetenceSelectionMenu.cs" />
+    <Compile Include="Assets\BattleScripts\MenuScript\OWPortraitSwitcher.cs" />
     <Compile Include="Assets\BattleScripts\ScoreTextScript.cs" />
+    <Compile Include="Assets\Scripts\PuzzleManager.cs" />
     <Compile Include="Assets\BattleScripts\EnemyTimerAnimation.cs" />
+    <Compile Include="Assets\BattleScripts\MenuScript\OWPortrait.cs" />
     <Compile Include="Assets\BattleScripts\CompetenceSO.cs" />
+    <Compile Include="Assets\Scripts\ClueSheetBehavior.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\ChronoScripts\ClockFace.cs" />
     <Compile Include="Assets\BattleScripts\ISelectionMenu.cs" />
+    <Compile Include="Assets\Anderson Stuff\TextBoxSummon.cs" />
+    <Compile Include="Assets\Anderson Stuff\TextBox.cs" />
     <Compile Include="Assets\BattleScripts\CompetenceMenuItem.cs" />
     <Compile Include="Assets\BattleScripts\PlayerEntity.cs" />
     <Compile Include="Assets\BattleScripts\ActionSelectionMenu.cs" />
@@ -77,6 +94,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
+    <None Include="Assets\Anderson Stuff\off-game-font.otf\license.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -86,6 +104,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Anderson Stuff\off-game-font.otf\readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />

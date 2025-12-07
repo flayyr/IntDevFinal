@@ -1,55 +1,58 @@
 fileFormatVersion: 2
-guid: 4a0a17e98fe0a694d8559ebe49aa77aa
+guid: 3d68159784fd2544e9af3ad3adfd6f78
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5999754791337587963
-    second: Clock5_0
+      213: -3315637860079439037
+    second: clock12_0
   - first:
-      213: 2166525272709325983
-    second: Clock5_1
+      213: -6068559487129007432
+    second: clock12_1
   - first:
-      213: -3908495372206309401
-    second: Clock5_2
+      213: -5697368979682078590
+    second: clock12_2
   - first:
-      213: -7810111599207097479
-    second: Clock5_3
+      213: -5784420582429920462
+    second: clock12_3
   - first:
-      213: 2459985158728723978
-    second: Clock5_4
+      213: -675101921289339352
+    second: clock12_4
   - first:
-      213: 8387713312271665420
-    second: Clock5_5
+      213: -2893885723993800328
+    second: clock12_5
   - first:
-      213: 5010275011944939263
-    second: Clock5_6
+      213: -7611747183923482884
+    second: clock12_6
   - first:
-      213: 1623598049238345719
-    second: Clock5_7
+      213: -6195428020859805977
+    second: clock12_7
   - first:
-      213: -6041874067966403304
-    second: Clock5_8
+      213: -6974074484215778975
+    second: clock12_8
   - first:
-      213: 5891726006048277296
-    second: Clock5_9
+      213: 5849603862754092879
+    second: clock12_9
   - first:
-      213: -3409962419251281731
-    second: Clock5_10
+      213: -2083020557272301831
+    second: clock12_10
   - first:
-      213: -6718250297377444705
-    second: Clock5_11
+      213: -4766580442161492261
+    second: clock12_11
   - first:
-      213: 5888671945388961001
-    second: Clock5_12
+      213: 4386344088941563654
+    second: clock12_12
   - first:
-      213: -267359281325324712
-    second: Clock5_13
+      213: 8851504933961622503
+    second: clock12_13
   - first:
-      213: -2190969737954353964
-    second: Clock5_14
+      213: 5713364859808959293
+    second: clock12_14
   - first:
-      213: -1474188648225205431
-    second: Clock5_15
+      213: 2685510332690662246
+    second: clock12_15
+  - first:
+      213: 8630171695821513
+    second: clock12_16
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -91,12 +94,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 160
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -145,7 +148,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Clock5_0
+      name: clock12_0
       rect:
         serializedVersion: 2
         x: 279
@@ -160,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf4ff15d139634350800000000000000
-      internalID: 5999754791337587963
+      spriteID: 343f02aeeec7cf1d0800000000000000
+      internalID: -3315637860079439037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock5_1
+      name: clock12_1
       rect:
         serializedVersion: 2
         x: 329
@@ -182,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f94eebcb14b011e10800000000000000
-      internalID: 2166525272709325983
+      spriteID: 8ba495f8c4528cba0800000000000000
+      internalID: -6068559487129007432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock5_2
+      name: clock12_2
       rect:
         serializedVersion: 2
         x: 579
@@ -204,14 +207,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ef7265ca2c32c9c0800000000000000
-      internalID: -3908495372206309401
+      spriteID: 28058b35911eee0b0800000000000000
+      internalID: -5697368979682078590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock5_3
+      name: clock12_3
       rect:
         serializedVersion: 2
         x: 629
@@ -226,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 97b5a1951e8ec9390800000000000000
-      internalID: -7810111599207097479
+      spriteID: 2337ec0a02c99bfa0800000000000000
+      internalID: -5784420582429920462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock5_4
+      name: clock12_4
       rect:
         serializedVersion: 2
         x: 909
@@ -248,14 +251,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a0e22c2e77f932220800000000000000
-      internalID: 2459985158728723978
+      spriteID: 82e7d52216e81a6f0800000000000000
+      internalID: -675101921289339352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock5_5
+      name: clock12_5
       rect:
         serializedVersion: 2
         x: 109
@@ -270,14 +273,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0984c741d4276470800000000000000
-      internalID: 8387713312271665420
+      spriteID: 87186c8344ad6d7d0800000000000000
+      internalID: -2893885723993800328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock5_6
+      name: clock12_6
       rect:
         serializedVersion: 2
         x: 169
@@ -292,14 +295,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ffe7ef9e392188540800000000000000
-      internalID: 5010275011944939263
+      spriteID: cfe2926d344ad5690800000000000000
+      internalID: -7611747183923482884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock5_7
+      name: clock12_7
       rect:
         serializedVersion: 2
         x: 1059
@@ -314,14 +317,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7f76ed6d2dd288610800000000000000
-      internalID: 1623598049238345719
+      spriteID: 7ee56213a0b650aa0800000000000000
+      internalID: -6195428020859805977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock5_8
+      name: clock12_8
       rect:
         serializedVersion: 2
         x: 59
@@ -336,20 +339,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 81dd731eb83f62ca0800000000000000
-      internalID: -6041874067966403304
+      spriteID: 161f333f43c173f90800000000000000
+      internalID: -6974074484215778975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock5_9
+      name: clock12_9
       rect:
         serializedVersion: 2
-        x: 499
+        x: 409
         y: 489
-        width: 252
-        height: 332
+        width: 152
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,14 +361,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0334078369d93c150800000000000000
-      internalID: 5891726006048277296
+      spriteID: f47e53c78b7fd2150800000000000000
+      internalID: 5849603862754092879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock5_10
+      name: clock12_10
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 489
+        width: 272
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9feb2f7e6df9713e0800000000000000
+      internalID: -2083020557272301831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clock12_11
       rect:
         serializedVersion: 2
         x: 1129
@@ -380,14 +405,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db088171f316da0d0800000000000000
-      internalID: -3409962419251281731
+      spriteID: bdec3af9754b9ddb0800000000000000
+      internalID: -4766580442161492261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock5_11
+      name: clock12_12
       rect:
         serializedVersion: 2
         x: 119
@@ -402,14 +427,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f9ca7a803faf3c2a0800000000000000
-      internalID: -6718250297377444705
+      spriteID: 60f0ff385bc6fdc30800000000000000
+      internalID: 4386344088941563654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock5_12
+      name: clock12_13
       rect:
         serializedVersion: 2
         x: 1049
@@ -424,14 +449,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9eca7bf4fe3c8b150800000000000000
-      internalID: 5888671945388961001
+      spriteID: 7e3666417dcd6da70800000000000000
+      internalID: 8851504933961622503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock5_13
+      name: clock12_14
       rect:
         serializedVersion: 2
         x: 339
@@ -446,14 +471,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 856433176262a4cf0800000000000000
-      internalID: -267359281325324712
+      spriteID: d3bcc1db113f94f40800000000000000
+      internalID: 5713364859808959293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock5_14
+      name: clock12_15
       rect:
         serializedVersion: 2
         x: 599
@@ -468,14 +493,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4dc999fa1ac1891e0800000000000000
-      internalID: -2190969737954353964
+      spriteID: 6630bac4b69d44520800000000000000
+      internalID: 2685510332690662246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clock5_15
+      name: clock12_16
       rect:
         serializedVersion: 2
         x: 889
@@ -490,8 +515,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9439f9a2c31aa8be0800000000000000
-      internalID: -1474188648225205431
+      spriteID: 9c2b74e6819ae1000800000000000000
+      internalID: 8630171695821513
       vertices: []
       indices: 
       edges: []
@@ -500,7 +525,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -510,22 +535,23 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Clock5_0: 5999754791337587963
-      Clock5_1: 2166525272709325983
-      Clock5_10: -3409962419251281731
-      Clock5_11: -6718250297377444705
-      Clock5_12: 5888671945388961001
-      Clock5_13: -267359281325324712
-      Clock5_14: -2190969737954353964
-      Clock5_15: -1474188648225205431
-      Clock5_2: -3908495372206309401
-      Clock5_3: -7810111599207097479
-      Clock5_4: 2459985158728723978
-      Clock5_5: 8387713312271665420
-      Clock5_6: 5010275011944939263
-      Clock5_7: 1623598049238345719
-      Clock5_8: -6041874067966403304
-      Clock5_9: 5891726006048277296
+      clock12_0: -3315637860079439037
+      clock12_1: -6068559487129007432
+      clock12_10: -2083020557272301831
+      clock12_11: -4766580442161492261
+      clock12_12: 4386344088941563654
+      clock12_13: 8851504933961622503
+      clock12_14: 5713364859808959293
+      clock12_15: 2685510332690662246
+      clock12_16: 8630171695821513
+      clock12_2: -5697368979682078590
+      clock12_3: -5784420582429920462
+      clock12_4: -675101921289339352
+      clock12_5: -2893885723993800328
+      clock12_6: -7611747183923482884
+      clock12_7: -6195428020859805977
+      clock12_8: -6974074484215778975
+      clock12_9: 5849603862754092879
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
