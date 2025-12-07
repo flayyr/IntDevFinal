@@ -4451,7 +4451,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1447282620
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4491,7 +4491,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: bb6e27206a094ba41b1c804e12f8f8c6, type: 3}
+  m_Texture: {fileID: 2800000, guid: 5f233174d38ac914bbf1fe69dd42610e, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -15350,6 +15350,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3415035762414588155, guid: 7e3bbce2e6c894c1480e9f0b26436483, type: 3}
+      propertyPath: textBoxPrefab
+      value: 
+      objectReference: {fileID: 4585039249587978780, guid: e149887272f0f584b8fb79e6ae1ff848, type: 3}
     - target: {fileID: 4741358536823604043, guid: 7e3bbce2e6c894c1480e9f0b26436483, type: 3}
       propertyPath: m_Name
       value: Batter
