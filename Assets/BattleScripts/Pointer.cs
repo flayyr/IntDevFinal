@@ -5,16 +5,17 @@ using UnityEngine.UI;
 public class Pointer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI nameText;
+    [SerializeField] RectTransform nameTag;
     [SerializeField] Vector3 textOffSet;
     [SerializeField] Slider hpBar;
 
     public void SetSelection(Entity entity)
     {
         transform.position = entity.transform.position;
-        nameText.transform.position = transform.position + textOffSet;
-        nameText.text = entity.entityName;
+        nameTag.transform.position = transform.position + textOffSet;
+        //nameText.text = entity.entityName;
         gameObject.SetActive(true);
-        nameText.gameObject.SetActive(true);
+        //nameText.gameObject.SetActive(true);
         if(entity.wideAngled && hpBar != null) {
             hpBar.gameObject.SetActive(true);
             hpBar.value = (float)entity.hp / entity.maxHP;
@@ -36,7 +37,7 @@ public class Pointer : MonoBehaviour
     public void Hide()
     {
         transform.position = new Vector3(-100, -100, 0);
-        nameText.transform.position = transform.position + textOffSet;
+        //nameText.transform.position = transform.position + textOffSet;
     }
 
 }

@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public enum BattleState
 {
-    idle, selectAction, selectCompetence, selectTarget, Acting
+    idle, selectAction, selectCompetence, selectTarget, Acting, Finished
 }
 
 public class BattleManager : MonoBehaviour
@@ -18,6 +18,7 @@ public class BattleManager : MonoBehaviour
     public GameObject damageTextPrefab;
     [SerializeField] GameObject pointerPrefab;
     public Canvas worldSpaceCanvas;
+    [SerializeField] FightEnd fightEndBanner;
     [Space(20)]
     [SerializeField] Pointer pointer;
     [SerializeField] CompetenceSO baseAttack;
@@ -30,6 +31,7 @@ public class BattleManager : MonoBehaviour
 
     [Space(20)]
     [SerializeField] public List<EnemyEntity> enemies = new List<EnemyEntity>();
+    [SerializeField] EnemySpawn[] enemySpawnPositions;
     [SerializeField] public PlayerEntity[] playerEntities;
 
     Entity currEntity;
@@ -49,6 +51,11 @@ public class BattleManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        for (int i = 0; i < enemies.Count; i++)
+        {
+            enemySpawnPositions[i].occupied = true;
+            enemies[i].spawnPosition = enemySpawnPositions[i];
+        }
     }
 
     private void Update()
@@ -62,6 +69,7 @@ public class BattleManager : MonoBehaviour
                 AlterSelection(SelectAction, SelectMode.Vertical);
                 if (Input.GetKeyDown(KeyCode.Z))
                 {
+                    SFXManager.Instance.PlaySound(SFXManager.Instance.selectClick);
                     Action selected = (Action)selectionIndex;
                     if (selected == Action.Attack)
                     {
@@ -97,6 +105,7 @@ public class BattleManager : MonoBehaviour
                 {
                     if (selectionIndex < currEntity.competences.Length && currEntity.cc >= currEntity.competences[selectionIndex].ccCost && !currEntity.statuses[(int)Status.Muted])
                     {
+                        SFXManager.Instance.PlaySound(SFXManager.Instance.selectClick);
                         selectedCompetence = currEntity.competences[selectionIndex];
                         SwitchState(BattleState.selectTarget);
                     }
@@ -118,6 +127,7 @@ public class BattleManager : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.Z))
                 {
+                    SFXManager.Instance.PlaySound(SFXManager.Instance.selectClick);
                     if (selectedCompetence.targetType == TargetType.Ally)
                         targetEntity = playerEntities[selectionIndex];
                     if (selectedCompetence.targetType == TargetType.AllEnemy)
@@ -205,7 +215,13 @@ public class BattleManager : MonoBehaviour
     {
         currEntity = entity;
         selectedCompetence = competence;
-        if(competence.targetType == TargetType.Ally)
+
+        if(competence.summonPrefab != null)
+        {
+            targetEntity = SpawnEnemy(competence.summonPrefab);
+            currEntity.UseCompetence(selectedCompetence, targetEntity);
+        }
+        else if(competence.targetType == TargetType.Ally)
         {
             targetEntities = new List<Entity>();
             foreach (Entity enemy in enemies)
@@ -247,10 +263,12 @@ public class BattleManager : MonoBehaviour
         if (Input.GetKeyDown(dec))
         {
             function(selectionIndex - 1);
+            SFXManager.Instance.PlaySound(SFXManager.Instance.cycleClick);
         }
         else if (Input.GetKeyDown(inc))
         {
             function(selectionIndex + 1);
+            SFXManager.Instance.PlaySound(SFXManager.Instance.cycleClick);
         }
     }
 
@@ -288,8 +306,44 @@ public class BattleManager : MonoBehaviour
 
     public void CheckWin() {
         if(enemies.Count == 0) {
-            Debug.Log("YOU WIN!!!!!");
+            fightEndBanner.EndFight(true);
+            state = BattleState.Finished;
         }
+        foreach (PlayerEntity player in playerEntities) {
+            if (!player.dead) {
+                return;
+            }
+        }
+        fightEndBanner.EndFight(false);
+        state = BattleState.Finished;
+    }
+
+    public void RemoveEnemy(EnemyEntity enemy)
+    {
+        enemy.spawnPosition.occupied = false;
+        enemies.Remove(enemy);
+        CheckWin();
+    }
+
+    public Entity SpawnEnemy(EnemyEntity enemy)
+    {
+        for (int i = 0; i < enemySpawnPositions.Length; i++)
+        {
+            if (!enemySpawnPositions[i].occupied)
+            {
+                EnemyEntity newEnemy = Instantiate(enemy);
+                newEnemy.transform.position = enemySpawnPositions[i].transform.position;
+                newEnemy.GetComponent<SpriteRenderer>().sortingOrder = enemySpawnPositions.Length - i;
+                newEnemy.spawnPosition = enemySpawnPositions[i];
+                enemySpawnPositions[i].occupied = true;
+                newEnemy.SetTimerPosition();
+
+                enemies.Insert(i, newEnemy);
+                return newEnemy;
+            }
+        }
+        Debug.Log("No space for new enemy!");
+        return null;
     }
 
 

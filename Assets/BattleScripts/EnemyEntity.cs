@@ -6,9 +6,10 @@ public class EnemyEntity : Entity
     [Space(20)]
     [HideInInspector] public Pointer pointer;
     [SerializeField] EnemyTimerAnimation enemyTimer;
-    [SerializeField] float TimerHideDuration = 5f;
+    [SerializeField] float TimerShowAfterPercentage = 0.2f;
+    [SerializeField] Vector2 timerPositionOffset;
 
-    float timer = 0;
+    public EnemySpawn spawnPosition;
 
     protected override void Awake() {
         base.Awake();
@@ -23,21 +24,19 @@ public class EnemyEntity : Entity
     protected override void Update()
     {
         base.Update();
-        enemyTimer.UpdateSprite(progress);
+        enemyTimer.UpdateSprite((progress-TimerShowAfterPercentage)/(1-TimerShowAfterPercentage));
         if (progress >= 1f)
         {
             progress = 0f;
             CompetenceSO selectedCompetence = SelectCompetence();
             BattleManager.Instance.EnemyTurn(this, selectedCompetence);
-            timer = 0f;
             enemyTimer.Hide();
         }
 
-        if(BattleManager.Instance.state == BattleState.idle)
-            timer += Time.deltaTime;
-        if (timer > TimerHideDuration)
-        {
-            enemyTimer.Show();
+        if (BattleManager.Instance.state == BattleState.idle) {
+            if (progress >= TimerShowAfterPercentage) {
+                enemyTimer.Show();
+            }
         }
     }
 
@@ -47,8 +46,7 @@ public class EnemyEntity : Entity
 
     protected override void Die() {
         base.Die();
-        BattleManager.Instance.enemies.Remove(this);
-        BattleManager.Instance.CheckWin();
+        BattleManager.Instance.RemoveEnemy(this);
         Destroy(enemyTimer.gameObject);
         Destroy(gameObject);
     }
@@ -81,23 +79,36 @@ public class EnemyEntity : Entity
 
     bool CheckRequirement(CompetenceSO competence)
     {
-        switch (competence.requirementType)
+        foreach (Requirement req in competence.requirements)
         {
-            case RequirementType.TurnsSinceUse:
-                if(competence.turnsSinceUse >= competence.requirementNum)
-                {
-                    competence.turnsSinceUse = competence.requirementNum;
-                    return true;
-                }
-                return false;
-            case RequirementType.NumEnemiesLessThan:
-                return BattleManager.Instance.enemies.Count < competence.requirementNum;
-            case RequirementType.NumEnemiesMoreThan:
-                return BattleManager.Instance.enemies.Count > competence.requirementNum;
-            case RequirementType.None:
-                return true;
-            default:
-                return false;
+            switch (req.requirementType)
+            {
+                case RequirementType.TurnsSinceUse:
+                    if (competence.turnsSinceUse >= req.requirementNum)
+                    {
+                        //competence.turnsSinceUse = competence.requirementNum; i forgot why this line exists
+                        continue;
+                    }
+                    return false;
+                case RequirementType.NumEnemiesLessThan:
+                    if( BattleManager.Instance.enemies.Count < req.requirementNum)
+                    {
+                        continue;
+                    }
+                    return false;
+                case RequirementType.NumEnemiesMoreThan:
+                    if( BattleManager.Instance.enemies.Count > req.requirementNum)
+                    {
+                        continue;
+                    }
+                    return false;
+            }
         }
+        return true;
+    }
+
+    public void SetTimerPosition()
+    {
+        enemyTimer.transform.position = transform.position + (Vector3)timerPositionOffset;
     }
 }

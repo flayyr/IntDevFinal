@@ -26,7 +26,15 @@ public class ScoreTextScript : MonoBehaviour
 
     public void SetDamage(int dmg)
     {
-        text.text = Mathf.Abs(dmg)+"";
+        if (dmg == 0)
+        {
+            text.text = "";
+        }
+        else
+        {
+            text.text = Mathf.Abs(dmg) + "";
+        }
+
         if (dmg < 0)
         {
             text.color = damageColor;
@@ -40,5 +48,10 @@ public class ScoreTextScript : MonoBehaviour
     {
         text.text = Mathf.Abs(cc) + "";
         text.color = competenceColor;
+    }
+
+    public void SetMiss() {
+        text.text = "Miss";
+        text.color = damageColor;
     }
 }

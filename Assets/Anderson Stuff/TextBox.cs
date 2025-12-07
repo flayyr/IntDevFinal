@@ -5,6 +5,7 @@ using UnityEngine;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TextBox : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class TextBox : MonoBehaviour
     [SerializeField] private bool activated = false;
 
     [SerializeField] public AudioSource audioPlayer;
+    [SerializeField] public GameObject zoomIn;
 
     //how fast the text types
     [SerializeField] private float typeSpeed;
@@ -102,10 +104,14 @@ public class TextBox : MonoBehaviour
             index = 0;
 
             textBoxDisplay.text = "";
+            /*
             if (!talked)
             {
                 talked = true;
             }
+            */
+
+            //SceneManager.LoadScene(sceneToGo);
 
             activating = false;
         }
@@ -131,6 +137,7 @@ public class TextBox : MonoBehaviour
 
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Z))
         {
             if (typing)
@@ -174,6 +181,10 @@ public class TextBox : MonoBehaviour
             scaler.scaleFactor -= 0.1f;
             if(scaler.scaleFactor <= 0.2f)
             {
+                if (!zoomIn.activeInHierarchy)
+                {
+                    zoomIn.SetActive(true);
+                }
                 self.SetActive(false);
             }
         }
