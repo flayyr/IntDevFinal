@@ -39,7 +39,7 @@ public class OverworldMenuManager : MonoBehaviour
         }
 
         if (state == MenuState.Closed) {
-            if (Input.GetKeyDown(KeyCode.X)) {
+            if (Input.GetKeyDown(KeyCode.C)) {
                 state = MenuState.Character;
                 index = 0;
                 characterMenu.Show();
@@ -55,7 +55,7 @@ public class OverworldMenuManager : MonoBehaviour
                 currSelectionMenu = competenceMenu;
                 characterMenu.Hide();
                 index = 0;
-            } else if (Input.GetKeyDown(KeyCode.X)) {
+            } else if (Input.GetKeyDown(KeyCode.X)||Input.GetKeyDown(KeyCode.X)) {
                 state = MenuState.Closed;
                 characterMenu.Hide();
             } else if (Input.GetKeyDown(KeyCode.RightArrow)) {
