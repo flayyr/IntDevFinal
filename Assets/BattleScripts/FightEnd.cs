@@ -8,6 +8,7 @@ public class FightEnd : MonoBehaviour
 
     [SerializeField] float targetYPos;
     [SerializeField] float moveSpeed;
+    [SerializeField] FadeToWhite fade;
 
     bool win = false;
 
@@ -35,7 +36,7 @@ public class FightEnd : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Z)) {
             if (win) {
-                SceneManager.LoadScene("BossRoom");
+                fade.fading = true;
             } else {
                 SceneManager.LoadScene("GameOver");
             }

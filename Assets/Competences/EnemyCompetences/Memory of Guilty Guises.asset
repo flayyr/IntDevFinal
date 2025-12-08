@@ -29,7 +29,7 @@ MonoBehaviour:
   inflictChance: 0
   chronomancy: 0
   isEnemy: 1
-  weight: 3
+  weight: 20
   requirements:
   - requirementType: 1
     requirementNum: 4

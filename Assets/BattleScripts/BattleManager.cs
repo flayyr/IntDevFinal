@@ -69,11 +69,13 @@ public class BattleManager : MonoBehaviour
         {
             case BattleState.Start:
                 timer += Time.deltaTime;
-                if (timer > textBoxDelay)
+                if (timer > textBoxDelay && textBox!=null)
                 {
                     textBox.gameObject.SetActive(true);
-                    state = BattleState.idle;
-
+                    if (Input.GetKey(KeyCode.Z))
+                    {
+                        state = BattleState.idle;
+                    }
                 }
                 break;
             case BattleState.idle:
