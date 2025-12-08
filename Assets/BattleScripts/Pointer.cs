@@ -31,13 +31,13 @@ public class Pointer : MonoBehaviour
 
     public void SetSelection(MenuItem item) {
         transform.position = item.transform.position;
-        nameText.transform.position = new Vector3(-100, -100, 0);
+        nameTag.transform.position = new Vector3(-100, -100, 0);
     }
 
     public void Hide()
     {
         transform.position = new Vector3(-100, -100, 0);
-        //nameText.transform.position = transform.position + textOffSet;
+        nameTag.transform.position = transform.position + textOffSet;
     }
 
 }

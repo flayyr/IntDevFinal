@@ -31,8 +31,8 @@ public class CharacterMenuItem : MenuItem
 
     private void Start() {
         canvasGroup = GetComponent<CanvasGroup>();
-        iconImages = new Image[10];
-        iconsSet = new bool[10];
+        iconImages = new Image[12];
+        iconsSet = new bool[12];
     }
 
     private void Update() {
