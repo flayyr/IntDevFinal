@@ -261,13 +261,13 @@ public class Entity : MonoBehaviour
             }
         }else
         {
-            hpChange = competence.hpChange + Mathf.CeilToInt(source.attack * competence.ATKInfluence + source.espirit * competence.ESPInfluence + defence * competence.DEFInfluence + agility * competence.AGIInfluence);
+            hpChange = competence.hpChange + Mathf.CeilToInt(source.attack * competence.ATKInfluence + source.espirit * competence.ESPInfluence + defence * competence.DEFInfluence);
         }
         hpChange = Mathf.RoundToInt(hpChange * Random.Range(1f - competence.variance, 1f + competence.variance));
         ChangeHP(hpChange);
 
         if (competence.CPChange != 0) {
-            ChangeCC(competence.CPChange);
+            ChangeCC(Mathf.CeilToInt(competence.CPChange + agility * competence.AGIInfluence));
         }
     }
 
@@ -277,7 +277,7 @@ public class Entity : MonoBehaviour
         Vector3 targetPos = transform.position + dir * moveAmount;
         Vector3 originalPos = transform.position;
 
-        if (statuses[(int)Status.Stasis]) {
+        if (statuses[(int)Status.Static]) {
             Chronomancy.Instance.ChronomancyStart();
             yield return new WaitUntil(() => !Chronomancy.Instance.testingInProgress);
             float val = Chronomancy.Instance.chronotest;
@@ -302,6 +302,7 @@ public class Entity : MonoBehaviour
 
         if (competence.chronomancy) {
             Chronomancy.Instance.ChronomancyStart();
+            yield return new WaitForSeconds(0.1f);
             yield return new WaitUntil(()=>!Chronomancy.Instance.testingInProgress);
             float val = Chronomancy.Instance.chronotest;
             if (val < 0.05f) {
@@ -340,7 +341,7 @@ public class Entity : MonoBehaviour
         Vector3 targetPos = transform.position + dir * Mathf.Abs(moveAmount);//No negative moveamount for multitarget
         Vector3 originalPos = transform.position;
 
-        if (statuses[(int)Status.Stasis]) {
+        if (statuses[(int)Status.Static]) {
             Chronomancy.Instance.ChronomancyStart();
             yield return new WaitUntil(() => !Chronomancy.Instance.testingInProgress);
             float val = Chronomancy.Instance.chronotest;

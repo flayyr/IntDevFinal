@@ -44,7 +44,7 @@ public class Chronomancy : MonoBehaviour
             //    ChronomancyEnd();
             //}
             //Debug.Log(chronoTransform.transform.eulerAngles.z);
-            if(Input.GetKeyDown(KeyCode.Z)) {
+            if(Input.GetKeyDown(KeyCode.Z) && timer > waitTime*0.8f) {
                 ChronomancyEnd();
             }
             if(chronoTransform.transform.eulerAngles.z < 5f && chronoTransform.transform.eulerAngles.z >0f){

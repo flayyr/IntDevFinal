@@ -103,6 +103,12 @@ public class EnemyEntity : Entity
                         continue;
                     }
                     return false;
+                case RequirementType.CantBeMuted:
+                    if (!statuses[(int)Status.Muted])
+                    {
+                        continue;
+                    }
+                    return false;
             }
         }
         return true;

@@ -70,6 +70,7 @@
     <Compile Include="Assets\BattleScripts\FightEnd.cs" />
     <Compile Include="Assets\Anderson Stuff\particleOpacity.cs" />
     <Compile Include="Assets\Anderson Stuff\retry.cs" />
+    <Compile Include="Assets\BattleScripts\FadeToWhite.cs" />
     <Compile Include="Assets\BattleScripts\RandomSprite.cs" />
     <Compile Include="Assets\BattleScripts\CompetenceSelectionMenu.cs" />
     <Compile Include="Assets\BattleScripts\MenuScript\OWPortraitSwitcher.cs" />

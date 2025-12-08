@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -77,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetFloat("InputX", 0);
             }
 
-            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || (SceneManager.GetActiveScene().name == "BossDefeatRoom"))
             {
                 animator.SetFloat("LastInputY", 1);
                 animator.SetFloat("InputY", 1);
@@ -116,6 +117,7 @@ public class PlayerMovement : MonoBehaviour
     void CheckForCube() {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirectionVector*rayCheckDistance);
 
+        //Debug.Log(hit.collider.name);
         //using cubes
         if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("Cube")) {
             Debug.Log($"{hit.collider.name} pressed");
@@ -136,6 +138,12 @@ public class PlayerMovement : MonoBehaviour
             var phi = hit.collider.gameObject;
             phi.SetActive(false);
             Debug.Log("frien");
+
+            if (!textBoxPrefab.activeInHierarchy)
+            {
+                textBoxPrefab.SetActive(true);
+            }
+
         }
     }
 
