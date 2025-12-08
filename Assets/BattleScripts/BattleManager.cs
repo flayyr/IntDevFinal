@@ -71,7 +71,6 @@ public class BattleManager : MonoBehaviour
                 timer += Time.deltaTime;
                 if (timer > textBoxDelay && textBox!=null)
                 {
-                    textBox.gameObject.SetActive(true);
                     if (Input.GetKey(KeyCode.Z))
                     {
                         state = BattleState.idle;
