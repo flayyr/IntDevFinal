@@ -1169,6 +1169,10 @@ PrefabInstance:
       propertyPath: textBoxDisplay
       value: 
       objectReference: {fileID: 818839144}
+    - target: {fileID: 827678597725273826, guid: e149887272f0f584b8fb79e6ae1ff848, type: 3}
+      propertyPath: transitionOrNot
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1082770212667066997, guid: e149887272f0f584b8fb79e6ae1ff848, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.75
