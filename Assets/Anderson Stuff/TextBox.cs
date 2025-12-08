@@ -20,6 +20,8 @@ public class TextBox : MonoBehaviour
     [SerializeField] public AudioSource audioPlayer;
     [SerializeField] public GameObject zoomIn;
 
+    public bool transitionOrNot = false;
+
     //how fast the text types
     [SerializeField] private float typeSpeed;
 
@@ -104,14 +106,6 @@ public class TextBox : MonoBehaviour
             index = 0;
 
             textBoxDisplay.text = "";
-            /*
-            if (!talked)
-            {
-                talked = true;
-            }
-            */
-
-            //SceneManager.LoadScene(sceneToGo);
 
             activating = false;
         }
@@ -181,9 +175,12 @@ public class TextBox : MonoBehaviour
             scaler.scaleFactor -= 0.1f;
             if(scaler.scaleFactor <= 0.2f)
             {
-                if (!zoomIn.activeInHierarchy)
+                if (transitionOrNot)
                 {
-                    zoomIn.SetActive(true);
+                    if (!zoomIn.activeInHierarchy)
+                    {
+                        zoomIn.SetActive(true);
+                    }
                 }
                 self.SetActive(false);
             }
