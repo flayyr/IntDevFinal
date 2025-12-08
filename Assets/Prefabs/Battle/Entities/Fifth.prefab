@@ -123,7 +123,7 @@ MonoBehaviour:
   pointer: {fileID: 0}
   enemyTimer: {fileID: 7885502702582775524}
   TimerShowAfterPercentage: 0.2
-  timerPositionOffset: {x: 0, y: 0}
+  timerPositionOffset: {x: 5, y: 0}
   spawnPosition: {fileID: 0}
 --- !u!1001 &8477710575963132546
 PrefabInstance:

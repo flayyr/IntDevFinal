@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 12080fc502cae9541bd178c0f4259618
+guid: 1bf4dddc209160546a8d0b264adf7c07
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3847351543029088695
-    second: largeTimerResc_0
+      213: 113973727716461809
+    second: FifthNametagStatus_0
+  - first:
+      213: 6110418677517022677
+    second: FifthNametagStatus_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: largeTimerResc_0
+      name: FifthNametagStatus_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 170
-        height: 170
+        y: 220
+        width: 520
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,20 +118,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 94e33bfd7267b9ac0800000000000000
-      internalID: -3847351543029088695
+      spriteID: 1fc4442608ae49100800000000000000
+      internalID: 113973727716461809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: largeTimerResc_1
+      name: FifthNametagStatus_1
       rect:
         serializedVersion: 2
-        x: 170
-        y: 0
-        width: 170
-        height: 170
+        x: 520
+        y: 220
+        width: 520
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5705ea9619cc450800000000000000
+      internalID: 6110418677517022677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FifthNametagStatus_2
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 220
+        width: 520
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1937693b6f147c340b9661aacf830425
-      internalID: 1214709231
+      spriteID: ae566383807bf3541802e2990339ccab
+      internalID: -146676553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: largeTimerResc_2
+      name: FifthNametagStatus_3
       rect:
         serializedVersion: 2
-        x: 340
-        y: 0
-        width: 170
-        height: 170
+        x: 1560
+        y: 220
+        width: 520
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e3a83f8c5ce70c429cd59c4c432097c
-      internalID: 319735811
+      spriteID: 1e19db46ff749c642ba6e29662ce637f
+      internalID: 1438980958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: largeTimerResc_3
+      name: FifthNametagStatus_4
       rect:
         serializedVersion: 2
-        x: 510
+        x: 0
         y: 0
-        width: 170
-        height: 170
+        width: 520
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4d8efbb9a7e2524d89129e1c7fb844f
-      internalID: -455778170
+      spriteID: 4ac2beb35f3faba4c817209618e67e84
+      internalID: 1504798892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: largeTimerResc_4
+      name: FifthNametagStatus_5
       rect:
         serializedVersion: 2
-        x: 680
+        x: 520
         y: 0
-        width: 170
-        height: 170
+        width: 520
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19ae03ad519389440ab101544156c0d5
-      internalID: -326627844
+      spriteID: 41805a94ba53a444986b0d30f8488ace
+      internalID: 427313517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: largeTimerResc_5
+      name: FifthNametagStatus_6
       rect:
         serializedVersion: 2
-        x: 850
+        x: 1040
         y: 0
-        width: 170
-        height: 170
+        width: 520
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bbfc5e839d30f249b5c6c03bcbe77f9
-      internalID: -1562997918
+      spriteID: e90cfc54e2387ba4789a439b7e3dc6d6
+      internalID: 1049460004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: largeTimerResc_6
+      name: FifthNametagStatus_7
       rect:
         serializedVersion: 2
-        x: 1020
+        x: 1560
         y: 0
-        width: 170
-        height: 170
+        width: 520
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,162 +272,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57265ef24622e1e4eaf11eadae0a40a3
-      internalID: -185295015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: largeTimerResc_7
-      rect:
-        serializedVersion: 2
-        x: 1190
-        y: 0
-        width: 170
-        height: 170
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 702c149f07c4c244abff5a1b34790489
-      internalID: -1312626094
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: largeTimerResc_8
-      rect:
-        serializedVersion: 2
-        x: 1360
-        y: 0
-        width: 170
-        height: 170
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0707580dcde3027428b5e4741ef9d49e
-      internalID: -39820025
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: largeTimerResc_9
-      rect:
-        serializedVersion: 2
-        x: 1530
-        y: 0
-        width: 170
-        height: 170
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc26fbe85dcf56d498a1e2779e709ba1
-      internalID: -2001989002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: largeTimerResc_10
-      rect:
-        serializedVersion: 2
-        x: 1700
-        y: 0
-        width: 170
-        height: 170
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8107dcb64a158f4fa561880ce409937
-      internalID: 1185895674
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: largeTimerResc_11
-      rect:
-        serializedVersion: 2
-        x: 1870
-        y: 0
-        width: 170
-        height: 170
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6263d74ba6cc38e409058e7f7029bb97
-      internalID: 392578515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: largeTimerResc_12
-      rect:
-        serializedVersion: 2
-        x: 2040
-        y: 0
-        width: 170
-        height: 170
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc466c2488beac640a9aa16602ddc681
-      internalID: -681939916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: largeTimerResc_13
-      rect:
-        serializedVersion: 2
-        x: 2210
-        y: 0
-        width: 170
-        height: 170
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e2d22e684f608c41a38ca72a8dc53ea
-      internalID: 348588786
+      spriteID: 0ef84694656eb414789ca3bbb5a6926c
+      internalID: 1485207614
       vertices: []
       indices: 
       edges: []
@@ -411,7 +282,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 355c383b85a8a164596f0179ef98a887
+    spriteID: 3dbad4b8f00743345bd6b901812e0cd5
     internalID: 0
     vertices: []
     indices: 
@@ -421,20 +292,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      largeTimerResc_0: -3847351543029088695
-      largeTimerResc_1: 1214709231
-      largeTimerResc_10: 1185895674
-      largeTimerResc_11: 392578515
-      largeTimerResc_12: -681939916
-      largeTimerResc_13: 348588786
-      largeTimerResc_2: 319735811
-      largeTimerResc_3: -455778170
-      largeTimerResc_4: -326627844
-      largeTimerResc_5: -1562997918
-      largeTimerResc_6: -185295015
-      largeTimerResc_7: -1312626094
-      largeTimerResc_8: -39820025
-      largeTimerResc_9: -2001989002
+      FifthNametagStatus_0: 113973727716461809
+      FifthNametagStatus_1: 6110418677517022677
+      FifthNametagStatus_2: -146676553
+      FifthNametagStatus_3: 1438980958
+      FifthNametagStatus_4: 1504798892
+      FifthNametagStatus_5: 427313517
+      FifthNametagStatus_6: 1049460004
+      FifthNametagStatus_7: 1485207614
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
