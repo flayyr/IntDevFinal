@@ -5560,10 +5560,6 @@ PrefabInstance:
       propertyPath: selectedShift
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 637291853124271979, guid: d8bcf86dfc6e5024291686d1c7a4e514, type: 3}
-      propertyPath: selectedSpacing
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1066791667880895448, guid: d8bcf86dfc6e5024291686d1c7a4e514, type: 3}
       propertyPath: m_Color.b
       value: 0.2679245
