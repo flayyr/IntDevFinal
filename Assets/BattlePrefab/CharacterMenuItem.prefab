@@ -499,10 +499,10 @@ MonoBehaviour:
   unselectedFont: {fileID: 11400000, guid: d35466cf22b36b142920d8f660bbd5fa, type: 2}
   selectedFont: {fileID: 11400000, guid: 9a5c17c4b5b2fc74c8e14a7a837c0ffa, type: 2}
   unselectedSpacing: -15
-  selectedSpacing: -10
+  selectedSpacing: 0
   selectedColor: {r: 1, g: 0.64767194, b: 0, a: 1}
-  textTransform: {fileID: 0}
-  selectedShift: 0
+  textTransform: {fileID: 2623558201619183690}
+  selectedShift: 0.1
   bold: 0
   switchPortrait: 0
   progressBar: {fileID: 483371257009476742}
