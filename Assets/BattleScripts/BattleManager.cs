@@ -7,20 +7,21 @@ using Random = UnityEngine.Random;
 
 public enum BattleState
 {
-    idle, selectAction, selectCompetence, selectTarget, Acting, Finished
+    idle, selectAction, selectCompetence, selectTarget, Acting, Finished, Start
 }
 
 public class BattleManager : MonoBehaviour
 {
-
     public static BattleManager Instance;
-    public BattleState state = BattleState.idle;
+    public BattleState state = BattleState.Start;
     [Space(20)]
     public GameObject damageTextPrefab;
     [SerializeField] GameObject pointerPrefab;
     public Canvas worldSpaceCanvas;
     [SerializeField] FightEnd fightEndBanner;
     [SerializeField] Chronomancy chronomancy;
+    [SerializeField] TextBox textBox;
+    [SerializeField] float textBoxDelay;
     [Space(20)]
     [SerializeField] Pointer pointer;
     [SerializeField] CompetenceSO baseAttack;
@@ -53,6 +54,7 @@ public class BattleManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        state = BattleState.Start;
         for (int i = 0; i < enemies.Count; i++)
         {
             enemySpawnPositions[i].occupied = true;
@@ -60,10 +62,20 @@ public class BattleManager : MonoBehaviour
         }
     }
 
+    float timer;
     private void Update()
     {
         switch (state)
         {
+            case BattleState.Start:
+                timer += Time.deltaTime;
+                if (timer > textBoxDelay)
+                {
+                    textBox.gameObject.SetActive(true);
+                    state = BattleState.idle;
+
+                }
+                break;
             case BattleState.idle:
                 break;
 
@@ -176,6 +188,10 @@ public class BattleManager : MonoBehaviour
         } else if (state == BattleState.selectTarget) {
             characterSelectionMenu.Default();
             pointer.Hide();
+            foreach (EnemyEntity enemy in enemies) {
+                if(enemy.pointer!=null)
+                    enemy.pointer.Deselect();
+            }
         }
 
         if (targetState == BattleState.selectAction) {

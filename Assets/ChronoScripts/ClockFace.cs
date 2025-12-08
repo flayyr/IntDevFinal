@@ -29,7 +29,7 @@ public class ClockFace : MonoBehaviour
     void Update()
     {
         if(GameObject.Find("ChronoHand").GetComponent<Chronomancy>().testingInProgress==true){
-            clockTransform.transform.position = new Vector3(7,2,1);
+            clockTransform.transform.position = new Vector3(0,2,1);
             float clockGoal = GameObject.Find("ChronoHand").GetComponent<Chronomancy>().chronoGoal/30;
             if(clockGoal==1){gameObject.GetComponent<SpriteRenderer>().sprite = clockImage;}
             else if(clockGoal==2){gameObject.GetComponent<SpriteRenderer>().sprite = clockImage2;}

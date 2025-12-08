@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 797e9f0ea7bdbbf48a80bd0b285a4117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityName: Enemy 1
+  entityName: Erased
   maxHP: 400
   maxCC: 100
   ATK: 300
