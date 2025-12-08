@@ -138,6 +138,12 @@ public class PlayerMovement : MonoBehaviour
             var phi = hit.collider.gameObject;
             phi.SetActive(false);
             Debug.Log("frien");
+
+            if (!textBoxPrefab.activeInHierarchy)
+            {
+                textBoxPrefab.SetActive(true);
+            }
+
         }
     }
 
