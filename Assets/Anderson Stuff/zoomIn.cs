@@ -9,6 +9,10 @@ public class zoomIn : MonoBehaviour
     public GameObject white;
     public string sceneToGo;
 
+    public Vector3 scaleChange = new Vector3(0.1f, 0.1f, 0f);
+
+    public GameObject uiGrow;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,6 +25,7 @@ public class zoomIn : MonoBehaviour
         if (cam.orthographicSize >= 0)
         {
             cam.orthographicSize -= 0.1f;
+            uiGrow.transform.localScale -= scaleChange;
         }
 
         if(cam.orthographicSize < 0)
