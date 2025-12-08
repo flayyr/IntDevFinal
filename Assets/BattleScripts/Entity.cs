@@ -277,7 +277,7 @@ public class Entity : MonoBehaviour
         Vector3 targetPos = transform.position + dir * moveAmount;
         Vector3 originalPos = transform.position;
 
-        if (statuses[(int)Status.Stasis]) {
+        if (statuses[(int)Status.Static]) {
             Chronomancy.Instance.ChronomancyStart();
             yield return new WaitUntil(() => !Chronomancy.Instance.testingInProgress);
             float val = Chronomancy.Instance.chronotest;
@@ -340,7 +340,7 @@ public class Entity : MonoBehaviour
         Vector3 targetPos = transform.position + dir * Mathf.Abs(moveAmount);//No negative moveamount for multitarget
         Vector3 originalPos = transform.position;
 
-        if (statuses[(int)Status.Stasis]) {
+        if (statuses[(int)Status.Static]) {
             Chronomancy.Instance.ChronomancyStart();
             yield return new WaitUntil(() => !Chronomancy.Instance.testingInProgress);
             float val = Chronomancy.Instance.chronotest;

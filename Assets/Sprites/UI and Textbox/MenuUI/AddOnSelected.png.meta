@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 48eb354e832f3d3459392549921ef23e
+guid: 978108771d8da4e47a3f314d3310e194
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -673448488122741822
-    second: AddOnOVMenu_0
+      213: -9011118505702583193
+    second: AddOnSelected_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AddOnOVMenu_0
+      name: AddOnSelected_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 640
-        height: 330
+        width: 710
+        height: 370
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2cb8bea0b2e67a6f0800000000000000
-      internalID: -673448488122741822
+      spriteID: 76416a6467312f280800000000000000
+      internalID: -9011118505702583193
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      AddOnOVMenu_0: -673448488122741822
+      AddOnSelected_0: -9011118505702583193
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -77,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetFloat("InputX", 0);
             }
 
-            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || (SceneManager.GetActiveScene().name == "BossDefeatRoom"))
             {
                 animator.SetFloat("LastInputY", 1);
                 animator.SetFloat("InputY", 1);
