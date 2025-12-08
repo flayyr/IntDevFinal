@@ -7173,7 +7173,7 @@ MonoBehaviour:
   selectedSpacing: 0
   selectedColor: {r: 1, g: 0.84313726, b: 0, a: 1}
   textTransform: {fileID: 1925027723}
-  selectedShift: 0
+  selectedShift: 0.5
   bold: 0
   costText: {fileID: 1925027724}
   maxCCText: {fileID: 0}
@@ -10682,7 +10682,7 @@ MonoBehaviour:
   selectedSpacing: 0
   selectedColor: {r: 1, g: 0.84313726, b: 0, a: 1}
   textTransform: {fileID: 2090025564}
-  selectedShift: 0
+  selectedShift: 0.5
   bold: 0
   costText: {fileID: 2090025565}
   maxCCText: {fileID: 0}
@@ -11752,7 +11752,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 50.6, y: -19.5}
+  m_AnchoredPosition: {x: 41.7, y: -19.5}
   m_SizeDelta: {x: -149.969, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1925027724

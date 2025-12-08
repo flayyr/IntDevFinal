@@ -5197,6 +5197,7 @@ MonoBehaviour:
   chronoTransform: {fileID: 0}
   handMoving: 0
   timeSpeed: 5
+  waitTime: 1
 --- !u!50 &2064756593
 Rigidbody2D:
   serializedVersion: 5
