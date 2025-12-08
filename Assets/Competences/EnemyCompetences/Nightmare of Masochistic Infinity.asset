@@ -10,29 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
-  m_Name: Fifth Attack
+  m_Name: Nightmare of Masochistic Infinity
   m_EditorClassIdentifier: 
-  description: Fifth single target attack
-  targetType: 0
-  ccCost: 5
-  hpChange: -350
+  description: Party buff
+  targetType: 1
+  ccCost: 16
+  hpChange: 80
   CPChange: 0
   ATKInfluence: 0
   ESPInfluence: 0
   DEFInfluence: 0
   AGIInfluence: 0
   variance: 0
-  hitChance: 0.8
-  statuses: 04000000
+  hitChance: 1
+  statuses: 0300000006000000
   cures: 0
-  statusDuration: 1
-  inflictChance: 0.7
+  statusDuration: 3
+  inflictChance: 1
   chronomancy: 0
   isEnemy: 1
-  weight: 4
-  requirements: []
+  weight: 7
+  requirements:
+  - requirementType: 2
+    requirementNum: 2
+  - requirementType: 3
+    requirementNum: 2
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 100
-  moveAmount: -1
+  turnsSinceUse: 0
+  moveAmount: 1
   effect: {fileID: 0}
   soundEffect: {fileID: 0}

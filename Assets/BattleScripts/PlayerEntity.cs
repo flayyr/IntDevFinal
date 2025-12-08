@@ -28,8 +28,8 @@ public class PlayerEntity : Entity
             SFXManager.Instance.PlaySound(SFXManager.Instance.ping);
         }
 
-        //if(BattleManager.Instance.state == BattleState.idle)
-        timer += Time.deltaTime;
+        if(!dead)
+            timer += Time.deltaTime;
 
         if (timer > idleAnimationTiming)
         {

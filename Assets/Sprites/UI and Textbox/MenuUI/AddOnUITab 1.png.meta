@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4644f48cd61003841a4111c1f4f19f70
+guid: 87edf8b16380a4546a2d3559cb47a5c1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7212456468480737087
-    second: AddOnsDead_0
+      213: 8833428735337022811
+    second: AddOnUITab 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 160
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,12 +100,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AddOnsDead_0
+      name: AddOnUITab 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 380
+        y: 370
+        width: 710
         height: 370
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -115,8 +115,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3f33c1e1fac71460800000000000000
-      internalID: 7212456468480737087
+      spriteID: b55cd7e12a4a69a70800000000000000
+      internalID: 8833428735337022811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddOnUITab 1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 710
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e234a470dd2b645ab83109634b9d4f9c
+      internalID: 1910263680
       vertices: []
       indices: 
       edges: []
@@ -125,7 +147,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a6036af074ec74f11b42c148a3da8ddb
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +157,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      AddOnsDead_0: 7212456468480737087
+      AddOnUITab 1_0: 8833428735337022811
+      AddOnUITab 1_1: 1910263680
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

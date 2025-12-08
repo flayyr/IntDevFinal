@@ -10,33 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
-  m_Name: Party Buff
+  m_Name: Forgetting of Spiteful Nations
   m_EditorClassIdentifier: 
-  description: Attack with medium impact
-  targetType: 1
-  ccCost: 16
-  hpChange: 80
+  description: Fifth AOE attack
+  targetType: 2
+  ccCost: 15
+  hpChange: -120
   CPChange: 0
   ATKInfluence: 0
   ESPInfluence: 0
   DEFInfluence: 0
   AGIInfluence: 0
   variance: 0
-  hitChance: 1
-  statuses: 0300000006000000
+  hitChance: 0.8
+  statuses: 00000000
   cures: 0
-  statusDuration: 3
-  inflictChance: 1
+  statusDuration: 1
+  inflictChance: 0.4
   chronomancy: 0
   isEnemy: 1
-  weight: 7
-  requirements:
-  - requirementType: 2
-    requirementNum: 2
-  - requirementType: 3
-    requirementNum: 2
+  weight: 3
+  requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 0
-  moveAmount: 1
+  turnsSinceUse: 100
+  moveAmount: -1
   effect: {fileID: 0}
   soundEffect: {fileID: 0}

@@ -285,8 +285,8 @@ MonoBehaviour:
   unselectedSpacing: -15
   selectedSpacing: 0
   selectedColor: {r: 0.91372555, g: 0.854902, b: 0.28235295, a: 1}
-  textTransform: {fileID: 0}
-  selectedShift: 0
+  textTransform: {fileID: 4378429179527255422}
+  selectedShift: 0.07
   bold: 0
   entity: {fileID: 0}
   portrait: {fileID: 4109281046512639465}

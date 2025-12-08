@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4644f48cd61003841a4111c1f4f19f70
+guid: 90a7052ab89d14f4aad7273b4a6dcc8a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7212456468480737087
-    second: AddOnsDead_0
+      213: -8541024020634528864
+    second: BatterUITab 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 160
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AddOnsDead_0
+      name: BatterUITab 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 380
-        height: 370
+        y: 460
+        width: 710
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3f33c1e1fac71460800000000000000
-      internalID: 7212456468480737087
+      spriteID: 0a31000d7ef287980800000000000000
+      internalID: -8541024020634528864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BatterUITab 1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 710
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a807c1d77fb4b39b0ee616ccf344fb
+      internalID: -1903877948
       vertices: []
       indices: 
       edges: []
@@ -125,7 +147,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 640b4c0b5959241818abfb22a3d806b0
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +157,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      AddOnsDead_0: 7212456468480737087
+      BatterUITab 1_0: -8541024020634528864
+      BatterUITab 1_1: -1903877948
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
