@@ -107,9 +107,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 219
-        width: 2080
-        height: 221
+        y: 220
+        width: 520
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,10 +128,10 @@ TextureImporter:
       name: FifthNametagStatus_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2080
-        height: 221
+        x: 520
+        y: 220
+        width: 520
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,11 +146,143 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: FifthNametagStatus_2
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 220
+        width: 520
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae566383807bf3541802e2990339ccab
+      internalID: -146676553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FifthNametagStatus_3
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 220
+        width: 520
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e19db46ff749c642ba6e29662ce637f
+      internalID: 1438980958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FifthNametagStatus_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 520
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac2beb35f3faba4c817209618e67e84
+      internalID: 1504798892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FifthNametagStatus_5
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 520
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41805a94ba53a444986b0d30f8488ace
+      internalID: 427313517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FifthNametagStatus_6
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 0
+        width: 520
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90cfc54e2387ba4789a439b7e3dc6d6
+      internalID: 1049460004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FifthNametagStatus_7
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 0
+        width: 520
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef84694656eb414789ca3bbb5a6926c
+      internalID: 1485207614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3dbad4b8f00743345bd6b901812e0cd5
     internalID: 0
     vertices: []
     indices: 
@@ -162,6 +294,12 @@ TextureImporter:
     nameFileIdTable:
       FifthNametagStatus_0: 113973727716461809
       FifthNametagStatus_1: 6110418677517022677
+      FifthNametagStatus_2: -146676553
+      FifthNametagStatus_3: 1438980958
+      FifthNametagStatus_4: 1504798892
+      FifthNametagStatus_5: 427313517
+      FifthNametagStatus_6: 1049460004
+      FifthNametagStatus_7: 1485207614
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

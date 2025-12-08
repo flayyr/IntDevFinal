@@ -4885,7 +4885,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 106181984}
   uiGrow: {fileID: 0}
-  scaleChange: {x: 0.04, y: 0.04, z: 0.04}
+  finalSize: 1
+  currentSize: 0.1
   canvasOrNot: 0
 --- !u!4 &1726097694
 Transform:
