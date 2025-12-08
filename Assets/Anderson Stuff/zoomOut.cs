@@ -5,7 +5,8 @@ public class zoomOut : MonoBehaviour
 
     public Camera cam;
     public GameObject uiGrow;
-    public Vector3 scaleChange = new Vector3(0.04f, 0.04f, 0.04f);
+    public float finalSize = 1f;
+    public float currentSize = 0.1f;
 
     public bool canvasOrNot;
 
@@ -27,10 +28,24 @@ public class zoomOut : MonoBehaviour
 
         if (canvasOrNot)
         {
-            if (uiGrow.transform.localScale != new Vector3(1f, 1f, 1f))
+            /*
+            if (uiGrow.transform.localScale != new Vector3(finalSize, finalSize, 1f))
             {
-                uiGrow.transform.localScale += scaleChange;
+                currentSize += 0.1f;
             }
+            */
+
+            if (currentSize < finalSize)
+            {
+                currentSize += 0.1f;
+            }
+            else if (currentSize >= finalSize)
+            {
+                currentSize = 1f;
+            }
+
+            uiGrow.transform.localScale = new Vector3(currentSize, currentSize, 1f);
+
         }
 
         if (cam.orthographicSize < 5f)
