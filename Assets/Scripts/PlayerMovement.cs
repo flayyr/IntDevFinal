@@ -117,6 +117,7 @@ public class PlayerMovement : MonoBehaviour
     void CheckForCube() {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirectionVector*rayCheckDistance);
 
+        //Debug.Log(hit.collider.name);
         //using cubes
         if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("Cube")) {
             Debug.Log($"{hit.collider.name} pressed");
@@ -127,7 +128,7 @@ public class PlayerMovement : MonoBehaviour
         //using clue sheets
         if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("ClueSheet")) {
             var clue = hit.collider.gameObject.GetComponent<ClueSheetBehavior>();
-            //Debug.Log("A");
+            Debug.Log("A");
             clue.sheet.SetActive(true);
             moveSpeed=0.0f;
         }
