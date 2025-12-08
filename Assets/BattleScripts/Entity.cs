@@ -302,6 +302,7 @@ public class Entity : MonoBehaviour
 
         if (competence.chronomancy) {
             Chronomancy.Instance.ChronomancyStart();
+            yield return new WaitForSeconds(0.1f);
             yield return new WaitUntil(()=>!Chronomancy.Instance.testingInProgress);
             float val = Chronomancy.Instance.chronotest;
             if (val < 0.05f) {
