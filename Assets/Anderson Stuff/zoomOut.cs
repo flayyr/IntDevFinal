@@ -22,7 +22,7 @@ public class zoomOut : MonoBehaviour
     {
         if (cam.orthographicSize < 5f)
         {
-            cam.orthographicSize += 0.1f;
+            cam.orthographicSize += 0.2f;
         }
         else if (cam.orthographicSize >= 5f)
         {
