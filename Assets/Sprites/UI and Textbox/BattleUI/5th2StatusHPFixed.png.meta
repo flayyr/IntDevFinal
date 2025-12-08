@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 2d1e7a02153e44e4fa4a6ab32c3bba09
+guid: f5702b0f92b0442cba668cb32e4f42ba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8320680974347779093
-    second: 5thnametagFixed_0
+      213: -993052868373893687
+    second: 5th2StatusHPFixed_0
   - first:
-      213: 1152111225421638473
-    second: 5thnametagFixed_1
-  - first:
-      213: -8233617889452634072
-    second: 5thnametagFixed_2
+      213: 8949667028875841619
+    second: 5th2StatusHPFixed_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 5thnametagFixed_0
+      name: 5th2StatusHPFixed_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 380
-        width: 390
-        height: 190
+        y: 225
+        width: 660
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51cb955e24ff87370800000000000000
-      internalID: 8320680974347779093
+      spriteID: 9cd24697da7f732f0800000000000000
+      internalID: -993052868373893687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5thnametagFixed_1
+      name: 5th2StatusHPFixed_1
       rect:
         serializedVersion: 2
-        x: 390
-        y: 380
-        width: 390
-        height: 190
+        x: 660
+        y: 225
+        width: 660
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,42 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 94b2ffc2e0f1dff00800000000000000
-      internalID: 1152111225421638473
+      spriteID: 3509b22deba933c70800000000000000
+      internalID: 8949667028875841619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5thnametagFixed_2
+      name: 5th2StatusHPFixed_2
       rect:
         serializedVersion: 2
-        x: 780
-        y: 380
-        width: 390
-        height: 190
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 820dfd237205cbd80800000000000000
-      internalID: -8233617889452634072
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5thnametagFixed_3
-      rect:
-        serializedVersion: 2
-        x: 1170
-        y: 380
-        width: 390
-        height: 190
+        x: 1320
+        y: 225
+        width: 660
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72a36c3bd73fa412191df64e0f1d8e3e
-      internalID: 1912144163
+      spriteID: 30e09039f5bd14f52945dbc03a0670e1
+      internalID: 238720033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5thnametagFixed_4
+      name: 5th2StatusHPFixed_3
       rect:
         serializedVersion: 2
-        x: 1560
-        y: 380
-        width: 390
-        height: 190
+        x: 1980
+        y: 225
+        width: 660
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,130 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd64c1b6ce9024ae9b4a28fdbf39211b
-      internalID: -481811219
+      spriteID: 5e2dc6b780b4243a4b1be8b5510bf72d
+      internalID: 1756679992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5thnametagFixed_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 190
-        width: 390
-        height: 190
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af6069d4143a4443080b558f62698c13
-      internalID: -1602337075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5thnametagFixed_6
-      rect:
-        serializedVersion: 2
-        x: 390
-        y: 190
-        width: 390
-        height: 190
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5418201b7cc74c768b7c892bfd63889
-      internalID: 492775569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5thnametagFixed_7
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 190
-        width: 390
-        height: 190
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6632a50efcd2c445f8c9a32d3db54b63
-      internalID: -654928855
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5thnametagFixed_8
-      rect:
-        serializedVersion: 2
-        x: 1170
-        y: 190
-        width: 390
-        height: 190
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e19ccb59ae09a4ae199385718dee0395
-      internalID: -1608915887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5thnametagFixed_9
-      rect:
-        serializedVersion: 2
-        x: 1560
-        y: 190
-        width: 390
-        height: 190
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0820dd3297c4c4531aecc416774a48f3
-      internalID: -1532995389
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5thnametagFixed_10
+      name: 5th2StatusHPFixed_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 390
-        height: 190
+        width: 660
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17c87aadb7cd549bb9ec8160a93a3f7a
-      internalID: 551945739
+      spriteID: 2e8b1d6f247e34377a30f361e08c74fd
+      internalID: 1246838013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5thnametagFixed_11
+      name: 5th2StatusHPFixed_5
       rect:
         serializedVersion: 2
-        x: 390
+        x: 660
         y: 0
-        width: 390
-        height: 190
+        width: 660
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,20 +228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93ee5984953b64d0e8aef0b5f410b41e
-      internalID: -961506091
+      spriteID: f859c8ecede2e40c1a97a08e96be8311
+      internalID: -1649970671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5thnametagFixed_12
+      name: 5th2StatusHPFixed_6
       rect:
         serializedVersion: 2
-        x: 780
+        x: 1320
         y: 0
-        width: 390
-        height: 190
+        width: 660
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -385,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e56c0f1693304cf3974c95985d45974
-      internalID: -370924663
+      spriteID: 2c0a4fcde5d49466c981c667094405fc
+      internalID: 966217624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5thnametagFixed_13
+      name: 5th2StatusHPFixed_7
       rect:
         serializedVersion: 2
-        x: 1170
+        x: 1980
         y: 0
-        width: 390
-        height: 190
+        width: 660
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,8 +272,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cf43d34bd83c4c67a8eb54ffadd19f1
-      internalID: 682065627
+      spriteID: 0b3892ed6ab6a4cb1a342dc23aaf0150
+      internalID: 918466512
       vertices: []
       indices: 
       edges: []
@@ -417,7 +282,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: dcbd32b80f88b4bd2939f7f513fa5404
+    spriteID: ae53d87d750d542bf99cfc4ba585225e
     internalID: 0
     vertices: []
     indices: 
@@ -427,20 +292,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      5thnametagFixed_0: 8320680974347779093
-      5thnametagFixed_1: 1152111225421638473
-      5thnametagFixed_10: 551945739
-      5thnametagFixed_11: -961506091
-      5thnametagFixed_12: -370924663
-      5thnametagFixed_13: 682065627
-      5thnametagFixed_2: -8233617889452634072
-      5thnametagFixed_3: 1912144163
-      5thnametagFixed_4: -481811219
-      5thnametagFixed_5: -1602337075
-      5thnametagFixed_6: 492775569
-      5thnametagFixed_7: -654928855
-      5thnametagFixed_8: -1608915887
-      5thnametagFixed_9: -1532995389
+      5th2StatusHPFixed_0: -993052868373893687
+      5th2StatusHPFixed_1: 8949667028875841619
+      5th2StatusHPFixed_2: 238720033
+      5th2StatusHPFixed_3: 1756679992
+      5th2StatusHPFixed_4: 1246838013
+      5th2StatusHPFixed_5: -1649970671
+      5th2StatusHPFixed_6: 966217624
+      5th2StatusHPFixed_7: 918466512
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
