@@ -176,6 +176,10 @@ public class BattleManager : MonoBehaviour
         } else if (state == BattleState.selectTarget) {
             characterSelectionMenu.Default();
             pointer.Hide();
+            foreach (EnemyEntity enemy in enemies) {
+                if(enemy.pointer!=null)
+                    enemy.pointer.Deselect();
+            }
         }
 
         if (targetState == BattleState.selectAction) {
