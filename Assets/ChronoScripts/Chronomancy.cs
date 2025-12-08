@@ -83,7 +83,7 @@ public class Chronomancy : MonoBehaviour
 
     public void ChronomancyEnd() {
         chronotest = Mathf.Abs(chronoTransform.transform.eulerAngles.z-(360-chronoGoal))/180;
-        Debug.Log(chronotest);
+        //Debug.Log(chronotest);
         chronoTransform.transform.position = new Vector3(0,12,1);
         testingInProgress = false;
         clockHour.angularVelocity=0f;
