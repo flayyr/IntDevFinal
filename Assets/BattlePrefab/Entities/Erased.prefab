@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5123293697117729128}
   - component: {fileID: 8896756408688587935}
   - component: {fileID: 1928029462071408341}
+  - component: {fileID: 3314084798105636263}
   m_Layer: 0
   m_Name: Erased
   m_TagString: Untagged
@@ -122,6 +123,22 @@ MonoBehaviour:
   TimerShowAfterPercentage: 0.3
   timerPositionOffset: {x: -2, y: 0}
   spawnPosition: {fileID: 0}
+--- !u!114 &3314084798105636263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759457582102881974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad0bd4a41dba5ae4786186a381e1e5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -5220630910164304331, guid: 21a5755ff1f624a158aa1d75c4bdc5d2, type: 3}
+  - {fileID: 41458374819543707, guid: 67189942fe68045b5ae9b4a0de978758, type: 3}
+  - {fileID: 2706494328549742226, guid: 0e520d00632dc4052970874a2a87e1f6, type: 3}
 --- !u!1001 &7907120100826034178
 PrefabInstance:
   m_ObjectHideFlags: 0

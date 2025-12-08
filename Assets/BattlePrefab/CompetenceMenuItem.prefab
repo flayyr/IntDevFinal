@@ -366,12 +366,13 @@ MonoBehaviour:
   unselectedFont: {fileID: 11400000, guid: d35466cf22b36b142920d8f660bbd5fa, type: 2}
   selectedFont: {fileID: 11400000, guid: 9a5c17c4b5b2fc74c8e14a7a837c0ffa, type: 2}
   unselectedSpacing: -15
-  selectedSpacing: -10
+  selectedSpacing: 0
   selectedColor: {r: 1, g: 0.570091, b: 0, a: 1}
   textTransform: {fileID: 6464882202141794278}
   selectedShift: 10
   bold: 0
   costText: {fileID: 6356395219252290238}
+  maxCCText: {fileID: 0}
   bgbox: {fileID: 0}
   pointer: {fileID: 0}
   competence: {fileID: 0}
