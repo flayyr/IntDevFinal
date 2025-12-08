@@ -9,6 +9,8 @@ TagManager:
   - ClueSheet
   - Phi
   - Barrier
+  - TextBox
+  - TextBoxSummon
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - UI
   - FloorTiles
   - StopMovement
-  - 
+  - Textbox
   - 
   - 
   - 

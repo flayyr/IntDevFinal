@@ -117,6 +117,7 @@ public class PlayerMovement : MonoBehaviour
     void CheckForCube() {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirectionVector*rayCheckDistance);
 
+        //Debug.Log(hit.collider.name);
         //using cubes
         if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("Cube")) {
             Debug.Log($"{hit.collider.name} pressed");
@@ -137,6 +138,12 @@ public class PlayerMovement : MonoBehaviour
             var phi = hit.collider.gameObject;
             phi.SetActive(false);
             Debug.Log("frien");
+
+            if (!textBoxPrefab.activeInHierarchy)
+            {
+                textBoxPrefab.SetActive(true);
+            }
+
         }
     }
 

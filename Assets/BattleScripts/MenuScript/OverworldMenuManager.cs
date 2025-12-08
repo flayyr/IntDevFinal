@@ -11,6 +11,10 @@ public class OverworldMenuManager : MonoBehaviour
     [SerializeField] OWQuitMenu quitMenu;
     [SerializeField] public PlayerEntity[] playerEntities;
 
+    AudioSource audio;
+    [SerializeField]AudioClip selectSFX;
+    [SerializeField]AudioClip switchSFX;
+
     enum MenuState {Closed, Character, Competence, Exit}
 
     ISelectionMenu currSelectionMenu;
@@ -25,6 +29,7 @@ public class OverworldMenuManager : MonoBehaviour
 
     private void Start() {
         currSelectionMenu = characterMenu;
+        audio = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -32,9 +37,11 @@ public class OverworldMenuManager : MonoBehaviour
         if (state != MenuState.Closed) {
             if (Input.GetKeyDown(KeyCode.UpArrow)) {
                 ChangeSelection(index - 1);
+                audio.PlayOneShot(switchSFX, 1F);
             }
             if (Input.GetKeyDown(KeyCode.DownArrow)) {
                 ChangeSelection(index + 1);
+                audio.PlayOneShot(switchSFX, 1F);
             }
         }
 
@@ -51,6 +58,7 @@ public class OverworldMenuManager : MonoBehaviour
                 state = MenuState.Competence;
                 competenceMenu.Show(playerEntities[index]);
                 portraitSwitcher.ShowPortraitAtIndex(index);
+                audio.PlayOneShot(selectSFX, 1F);
 
                 currSelectionMenu = competenceMenu;
                 characterMenu.Hide();
@@ -64,6 +72,7 @@ public class OverworldMenuManager : MonoBehaviour
                 quitMenu.Show();
                 currSelectionMenu = quitMenu;
                 index = 0;
+                audio.PlayOneShot(switchSFX, 1F);
             }
         } else if (state == MenuState.Competence) {
             if (Input.GetKeyDown(KeyCode.X)) {
@@ -72,6 +81,7 @@ public class OverworldMenuManager : MonoBehaviour
                 characterMenu.Show();
                 currSelectionMenu = characterMenu;
                 competenceMenu.Hide();
+                audio.PlayOneShot(switchSFX, 1F);
             }
         } else if (state == MenuState.Exit) {
             if (Input.GetKeyDown(KeyCode.LeftArrow)) {
@@ -80,6 +90,7 @@ public class OverworldMenuManager : MonoBehaviour
                 characterMenu.Show();
                 currSelectionMenu = characterMenu;
                 quitMenu.Hide();
+                audio.PlayOneShot(switchSFX, 1F);
             } else if (Input.GetKeyDown(KeyCode.Z)) {
                 if (index == 0) {
                     SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(0));

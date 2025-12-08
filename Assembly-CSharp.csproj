@@ -66,11 +66,11 @@
     <Compile Include="Assets\BattleScripts\MenuScript\OverworldMenuManager.cs" />
     <Compile Include="Assets\BattleScripts\MenuScript\OWCharacterMenuItem.cs" />
     <Compile Include="Assets\BattleScripts\MenuScript\OWQuitMenu.cs" />
-    <Compile Include="Assets\BattleScripts\MenuScript\MenuAudioManager.cs" />
     <Compile Include="Assets\BattleScripts\MenuItem.cs" />
     <Compile Include="Assets\BattleScripts\FightEnd.cs" />
     <Compile Include="Assets\Anderson Stuff\particleOpacity.cs" />
     <Compile Include="Assets\Anderson Stuff\retry.cs" />
+    <Compile Include="Assets\BattleScripts\FadeToWhite.cs" />
     <Compile Include="Assets\BattleScripts\RandomSprite.cs" />
     <Compile Include="Assets\BattleScripts\CompetenceSelectionMenu.cs" />
     <Compile Include="Assets\BattleScripts\MenuScript\OWPortraitSwitcher.cs" />
