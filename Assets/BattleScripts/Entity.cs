@@ -217,7 +217,7 @@ public class Entity : MonoBehaviour
         }
         if (statuses[(int)Status.Incompetent])
         {
-            ChangeCC(-Mathf.CeilToInt(maxCC * 0.06f));
+            ChangeCC(-Mathf.CeilToInt(maxCC * 6f));
         }
     }
 

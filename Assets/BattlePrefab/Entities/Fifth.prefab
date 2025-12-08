@@ -102,12 +102,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityName: Fifth
-  maxHP: 5000
+  maxHP: 8000
   maxCC: 9999
   ATK: 355
-  DEF: 155
-  ESP: 155
-  baseAgility: 205
+  DEF: 215
+  ESP: 255
+  baseAgility: 400
   competences:
   - {fileID: 11400000, guid: 485a0d2711dac204fb45f7847b662d59, type: 2}
   - {fileID: 11400000, guid: ac1d4851193df0f48ae906ac34b88c7b, type: 2}

@@ -15,14 +15,14 @@ MonoBehaviour:
   description: Erased Attack
   targetType: 0
   ccCost: 16
-  hpChange: -100
+  hpChange: -400
   CPChange: 0
-  ATKInfluence: 0
+  ATKInfluence: 2
   ESPInfluence: 0
-  DEFInfluence: 0
+  DEFInfluence: 1
   AGIInfluence: 0
   variance: 0
-  hitChance: 1
+  hitChance: 0.95
   statuses: 05000000
   cures: 0
   statusDuration: 1
@@ -32,7 +32,7 @@ MonoBehaviour:
   weight: 3
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 100
+  turnsSinceUse: 0
   moveAmount: -1
   effect: {fileID: 0}
   soundEffect: {fileID: 0}

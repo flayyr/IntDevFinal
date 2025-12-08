@@ -15,18 +15,18 @@ MonoBehaviour:
   description: Attack with chance to inflict muted
   targetType: 0
   ccCost: 9
-  hpChange: -40
+  hpChange: -80
   CPChange: 0
   ATKInfluence: 0
-  ESPInfluence: 2
-  DEFInfluence: 1
+  ESPInfluence: 1.5
+  DEFInfluence: 0.5
   AGIInfluence: 0
-  variance: 0.4
+  variance: 0
   hitChance: 1
   statuses: 01000000
   cures: 0
   statusDuration: 3
-  inflictChance: 0.4
+  inflictChance: 0.3
   chronomancy: 0
   isEnemy: 0
   weight: 0

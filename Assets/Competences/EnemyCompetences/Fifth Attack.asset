@@ -15,18 +15,18 @@ MonoBehaviour:
   description: Fifth single target attack
   targetType: 0
   ccCost: 5
-  hpChange: -350
+  hpChange: -555
   CPChange: 0
-  ATKInfluence: 0
-  ESPInfluence: 0
-  DEFInfluence: 0
+  ATKInfluence: 2
+  ESPInfluence: 2
+  DEFInfluence: 1
   AGIInfluence: 0
   variance: 0
   hitChance: 0.8
   statuses: 04000000
   cures: 0
   statusDuration: 1
-  inflictChance: 0.7
+  inflictChance: 0.8
   chronomancy: 0
   isEnemy: 1
   weight: 4

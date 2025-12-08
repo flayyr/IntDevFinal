@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityName: Erased
-  maxHP: 400
+  maxHP: 1000
   maxCC: 100
   ATK: 300
   DEF: 310
