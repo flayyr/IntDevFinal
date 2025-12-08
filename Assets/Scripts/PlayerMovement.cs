@@ -128,7 +128,7 @@ public class PlayerMovement : MonoBehaviour
         //using clue sheets
         if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("ClueSheet")) {
             var clue = hit.collider.gameObject.GetComponent<ClueSheetBehavior>();
-            Debug.Log("A");
+            //Debug.Log("A");
             clue.sheet.SetActive(true);
             moveSpeed=0.0f;
         }
