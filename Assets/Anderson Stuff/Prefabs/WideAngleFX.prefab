@@ -79,12 +79,12 @@ SpriteRenderer:
   m_SortingLayerID: 139036875
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 9023045876527601134, guid: 6a712b8133cdd3347b50756e73088c5f, type: 3}
+  m_Sprite: {fileID: -1062253463, guid: 8d30c16e6fc682f4b8ad5f39d0344b88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 18.4, y: 18.004688}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -102,8 +102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c34b73545c12804baa7fcfb078f3926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleAnim: {fileID: 9100000, guid: c4e00c01de8c7534eae8b22c17e6ce03, type: 2}
-  currentAnim: {fileID: 7400000, guid: 6f57066933ffc424e8f922a94630dc94, type: 2}
+  particleAnim: {fileID: 9100000, guid: 1496783464574e24f83e5514e2493738, type: 2}
+  currentAnim: {fileID: 7400000, guid: a734f8a0e063e6f4080827548e9b57df, type: 2}
   audioPlayer: {fileID: 5395408577650474362}
   animTime: 0
   lifeTimer: 0

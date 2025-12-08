@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: b049a1d83d1c75f4482c5c828c4c3448
+guid: f3e2250d3b2c26a42acd2ad01dff1ab7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4538531146592000580
-    second: GameOver-Screen_0
+      213: -5999802726584132038
+    second: FifthNametagHP_0
+  - first:
+      213: 5352307543272766336
+    second: FifthNametagHP_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GameOver-Screen_0
+      name: FifthNametagHP_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 3200
-        height: 2400
+        y: 219
+        width: 1560
+        height: 221
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb56655e7f5e301c0800000000000000
-      internalID: -4538531146592000580
+      spriteID: a3e588f553b6cbca0800000000000000
+      internalID: -5999802726584132038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FifthNametagHP_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1560
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08bba655a57374a40800000000000000
+      internalID: 5352307543272766336
       vertices: []
       indices: 
       edges: []
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GameOver-Screen_0: -4538531146592000580
+      FifthNametagHP_0: -5999802726584132038
+      FifthNametagHP_1: 5352307543272766336
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
