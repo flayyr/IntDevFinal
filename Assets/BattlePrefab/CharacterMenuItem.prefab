@@ -514,12 +514,12 @@ MonoBehaviour:
   unselectedAlpha: 0.4
   statusIconPrefab: {fileID: 1168157391921322165, guid: cdcc1d7106afbb84dbddb0e56dbc10ef, type: 3}
   iconSprites:
-  - {fileID: -3847351543029088695, guid: b416528cd4df17d4b92342586b98c05a, type: 3}
-  - {fileID: -219406654, guid: b416528cd4df17d4b92342586b98c05a, type: 3}
-  - {fileID: 1500776322, guid: b416528cd4df17d4b92342586b98c05a, type: 3}
-  - {fileID: -1897810684, guid: b416528cd4df17d4b92342586b98c05a, type: 3}
-  - {fileID: -1992444466, guid: b416528cd4df17d4b92342586b98c05a, type: 3}
-  - {fileID: 347004814, guid: b416528cd4df17d4b92342586b98c05a, type: 3}
+  - {fileID: 8846307642225746275, guid: ae184e6f50dcc4024873b9e57a813825, type: 3}
+  - {fileID: 1981324681211088935, guid: 4199c91049bc546559fcc63244c2136d, type: 3}
+  - {fileID: -5005990984189769374, guid: f740e37d107d24380a072cf809fdee04, type: 3}
+  - {fileID: -291884746366384402, guid: dd1b03460cf8af3408459fb3e498c9c3, type: 3}
+  - {fileID: 8025369037976317918, guid: 2ec311bbabc704e4cb694dbae7571491, type: 3}
+  - {fileID: 167797524575511870, guid: ae083057042e54d839beb1f351d5d65f, type: 3}
   - {fileID: 1472607543, guid: b416528cd4df17d4b92342586b98c05a, type: 3}
   - {fileID: -1312626094, guid: 12080fc502cae9541bd178c0f4259618, type: 3}
   - {fileID: -39820025, guid: 12080fc502cae9541bd178c0f4259618, type: 3}

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public enum Status { Lethargic, Muted, Poisoned, Hasty, Stasis, Incompetent, Strengthened, Toughened, Clever, WideAngle, Revive, Defending}
 public enum TargetType { Enemy, Ally, AllEnemy}
-public enum RequirementType { None, NumEnemiesLessThan, NumEnemiesMoreThan, TurnsSinceUse}
+public enum RequirementType { None, NumEnemiesLessThan, NumEnemiesMoreThan, TurnsSinceUse, CantBeMuted}
 
 [CreateAssetMenu(fileName = "Competence", menuName = "ScriptableObjects/CompetenceSO", order = 1)]
 public class CompetenceSO : ScriptableObject
