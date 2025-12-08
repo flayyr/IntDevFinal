@@ -12,6 +12,7 @@ public class Chronomancy : MonoBehaviour
     [SerializeField]private Transform chronoTransform;
     [SerializeField] bool handMoving=false;
     [SerializeField] float timeSpeed=5.0f;
+    [SerializeField] bool rotated=false;
     [SerializeField] float waitTime = 1f;
     Rigidbody2D clockHour;
 
@@ -47,7 +48,14 @@ public class Chronomancy : MonoBehaviour
                 ChronomancyEnd();
             }
             if(chronoTransform.transform.eulerAngles.z < 5f && chronoTransform.transform.eulerAngles.z >0f){
-                ChronomancyEnd();
+                if(rotated) {
+                    ChronomancyEnd();
+                }
+                else if(!rotated)
+                {
+                    rotated=true;
+                    chronoTransform.transform.rotation = new Quaternion(0,0,0,0);
+                }
             }
             if(!handMoving && timer>waitTime){
                 clockHour.AddTorque(-timeSpeed,ForceMode2D.Impulse);
@@ -61,6 +69,7 @@ public class Chronomancy : MonoBehaviour
     public void ChronomancyStart() {
         if(!testingInProgress) {
             testingInProgress = true;
+            rotated=false;
             chronoGoal = Random.Range(1,12)*30f;
             //Debug.Log(chronoGoal);
             //oneMoment = 8.0f;
