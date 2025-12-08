@@ -12,12 +12,12 @@ public class LayerManagement : MonoBehaviour
 
     void Update()
     {
-        int yLayer = Mathf.FloorToInt(transform.position.y);
+        // int yLayer = Mathf.FloorToInt(transform.position.y);
 
         // Clamp to valid Unity layer range (0–31)
-        yLayer = Mathf.Clamp(yLayer, 0, 31);
+        // yLayer = Mathf.Clamp(yLayer, 0, 31);
 
         // Set the object's layer
-        sprender.sortingOrder = yLayer;
+        // sprender.sortingOrder = yLayer;
     }
 }
