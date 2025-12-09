@@ -113,6 +113,17 @@ public class CharacterMenuItem : MenuItem
         iconImages[status] = null;
         iconsSet[status] = false;
         iconCount--;
+        UpdateIcons();
+    }
+
+    void UpdateIcons() {
+        int curr = 0;
+        foreach (Image icon in iconImages) {
+            if (icon != null) {
+                icon.transform.position = iconPosition.position + Vector3.right * iconWidth * curr;
+                curr++;
+            }
+        }
     }
 
 }
