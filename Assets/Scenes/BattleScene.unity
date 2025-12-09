@@ -6530,6 +6530,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3560006700910851362, guid: 11273555d15ec58489321e685cec9c18, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3409cbd8b9d7a3b40b4dc27c096a2dd0, type: 2}
     - target: {fileID: 3804310153541115862, guid: 11273555d15ec58489321e685cec9c18, type: 3}
       propertyPath: m_Name
       value: Pointer
@@ -6626,6 +6630,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 139036875
       objectReference: {fileID: 0}
+    - target: {fileID: 6202401364688825305, guid: 11273555d15ec58489321e685cec9c18, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3215719322955278987, guid: a965544cce68b1c438c44b91b78d8936, type: 3}
     - target: {fileID: 9178343872876193806, guid: 11273555d15ec58489321e685cec9c18, type: 3}
       propertyPath: m_fontAsset
       value: 
