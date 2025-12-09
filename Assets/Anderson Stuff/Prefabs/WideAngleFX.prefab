@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7079642841549869172}
   - component: {fileID: 2017459821757984437}
-  - component: {fileID: 734391828909029433}
   - component: {fileID: 2069445818870711355}
   - component: {fileID: 5395408577650474362}
+  - component: {fileID: 1781637948065977461}
   m_Layer: 0
   m_Name: WideAngleFX
   m_TagString: Untagged
@@ -90,25 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &734391828909029433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6466106487047618027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c34b73545c12804baa7fcfb078f3926, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particleAnim: {fileID: 9100000, guid: d7c40e8c7bb882c43bb7b6a19d0817a5, type: 2}
-  currentAnim: {fileID: 7400000, guid: aaa4de326ce89f144a4f428e96e3684b, type: 2}
-  audioPlayer: {fileID: 5395408577650474362}
-  animTime: 0
-  lifeTimer: 0
-  spriteOpacity: 1
-  fade: 0
 --- !u!95 &2069445818870711355
 Animator:
   serializedVersion: 7
@@ -119,7 +100,7 @@ Animator:
   m_GameObject: {fileID: 6466106487047618027}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c4e00c01de8c7534eae8b22c17e6ce03, type: 2}
+  m_Controller: {fileID: 9100000, guid: d7c40e8c7bb882c43bb7b6a19d0817a5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -228,3 +209,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1781637948065977461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6466106487047618027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e44bad3e9d39240a0d9570d3f825fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleAnim: {fileID: 9100000, guid: d7c40e8c7bb882c43bb7b6a19d0817a5, type: 2}
+  currentAnim: {fileID: 7400000, guid: aaa4de326ce89f144a4f428e96e3684b, type: 2}
+  audioPlayer: {fileID: 5395408577650474362}
+  sfxTime: 0
+  spriteOpacity: 1
+  fade: 0

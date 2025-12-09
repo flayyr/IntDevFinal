@@ -70,6 +70,7 @@
     <Compile Include="Assets\Anderson Stuff\gradientSwitch.cs" />
     <Compile Include="Assets\Scripts\LayerManagement.cs" />
     <Compile Include="Assets\BattleScripts\CharacterMenuItem.cs" />
+    <Compile Include="Assets\Anderson Stuff\particleLifeSoundBased.cs" />
     <Compile Include="Assets\BattleScripts\CharacterSelectionmenu.cs" />
     <Compile Include="Assets\BattleScripts\Entity.cs" />
     <Compile Include="Assets\BattleScripts\DescriptionText.cs" />
