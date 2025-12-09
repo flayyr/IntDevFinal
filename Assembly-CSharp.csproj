@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Anderson Stuff\blink.cs" />
     <Compile Include="Assets\Scripts\SceneChange.cs" />
+    <Compile Include="Assets\BattleScripts\NameTag.cs" />
     <Compile Include="Assets\BattleScripts\MenuScript\OWCharacterSelectionMenu.cs" />
     <Compile Include="Assets\BattleScripts\EnemyEntity.cs" />
     <Compile Include="Assets\BattleScripts\Pointer.cs" />

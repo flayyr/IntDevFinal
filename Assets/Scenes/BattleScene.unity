@@ -6433,6 +6433,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8506024517564718606, guid: 0a00c5e80a550c243aefb39eec4e9321, type: 3}
+      propertyPath: baseAgility
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506024517564718606, guid: 0a00c5e80a550c243aefb39eec4e9321, type: 3}
       propertyPath: spawnPosition
       value: 
       objectReference: {fileID: 802486278}
@@ -6717,6 +6721,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 139036875
       objectReference: {fileID: 0}
+    - target: {fileID: 6202401364688825305, guid: 11273555d15ec58489321e685cec9c18, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7422495514983141112, guid: 3fc6e259654b3364e82eca859782a288, type: 3}
     - target: {fileID: 9178343872876193806, guid: 11273555d15ec58489321e685cec9c18, type: 3}
       propertyPath: m_fontAsset
       value: 

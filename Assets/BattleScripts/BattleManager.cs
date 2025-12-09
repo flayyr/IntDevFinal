@@ -190,8 +190,10 @@ public class BattleManager : MonoBehaviour
             characterSelectionMenu.Default();
             pointer.Hide();
             foreach (EnemyEntity enemy in enemies) {
-                if(enemy.pointer!=null)
+                if (enemy.pointer != null) {
                     enemy.pointer.Deselect();
+                    enemy.pointer = null;
+                }
             }
         }
 

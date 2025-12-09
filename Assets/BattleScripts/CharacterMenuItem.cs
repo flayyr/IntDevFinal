@@ -15,8 +15,8 @@ public class CharacterMenuItem : MenuItem
     [SerializeField] TextMeshProUGUI ccText;
     [SerializeField, Range(0f, 1f)] float unselectedAlpha = 0.3f;
     [Space(20)]
-    [SerializeField] GameObject statusIconPrefab;
-    [SerializeField] Sprite[] iconSprites;
+    [SerializeField] public GameObject statusIconPrefab;
+    [SerializeField] public Sprite[] iconSprites;
     [SerializeField] Transform iconPosition;
     [SerializeField] float iconWidth;
     [SerializeField] bool showMaxHp;
