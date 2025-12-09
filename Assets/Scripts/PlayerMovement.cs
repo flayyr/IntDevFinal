@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     {
         movePoint.parent = null;
         animator = GetComponent<Animator>();
+        animator.SetFloat("LastInputY", 1);
     }
 
     void Update()
