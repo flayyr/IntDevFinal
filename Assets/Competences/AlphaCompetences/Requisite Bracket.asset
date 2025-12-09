@@ -15,7 +15,7 @@ MonoBehaviour:
   description: Attack with chance to inflict lethargic
   targetType: 0
   ccCost: 7
-  hpChange: -40
+  hpChange: -120
   CPChange: 0
   ATKInfluence: 0
   ESPInfluence: 1.5
@@ -32,7 +32,7 @@ MonoBehaviour:
   weight: 0
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 100
+  turnsSinceUse: 3
   moveAmount: -1
   effect: {fileID: 6466106487047618027, guid: 79bc6f386f9583d4e9cf2153c98bf5bc, type: 3}
   soundEffect: {fileID: 0}

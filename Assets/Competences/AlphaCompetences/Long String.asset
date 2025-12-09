@@ -17,7 +17,7 @@ MonoBehaviour:
   ccCost: 18
   hpChange: -240
   CPChange: 0
-  ATKInfluence: 1.5
+  ATKInfluence: 2
   ESPInfluence: 1
   DEFInfluence: 1
   AGIInfluence: 0
@@ -32,7 +32,7 @@ MonoBehaviour:
   weight: 0
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 100
+  turnsSinceUse: 101
   moveAmount: -1
   effect: {fileID: 6466106487047618027, guid: 79bc6f386f9583d4e9cf2153c98bf5bc, type: 3}
   soundEffect: {fileID: 0}

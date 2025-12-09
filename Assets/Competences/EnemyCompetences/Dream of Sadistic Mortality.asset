@@ -18,21 +18,21 @@ MonoBehaviour:
   hpChange: -555
   CPChange: 0
   ATKInfluence: 2
-  ESPInfluence: 2
-  DEFInfluence: 1
+  ESPInfluence: 0
+  DEFInfluence: 0.5
   AGIInfluence: 0
   variance: 0
   hitChance: 0.8
-  statuses: 04000000
+  statuses: 00000000
   cures: 0
-  statusDuration: 1
-  inflictChance: 0.8
+  statusDuration: 3
+  inflictChance: 0.7
   chronomancy: 0
   isEnemy: 1
   weight: 4
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 0
+  turnsSinceUse: 3
   moveAmount: -1
   effect: {fileID: 0}
   soundEffect: {fileID: 0}

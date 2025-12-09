@@ -217,7 +217,7 @@ public class Entity : MonoBehaviour
         }
         if (statuses[(int)Status.Incompetent])
         {
-            ChangeCC(-Mathf.CeilToInt(maxCC * 6f));
+            ChangeCC(-Mathf.CeilToInt(maxCC * 0.12f));
         }
     }
 
@@ -261,13 +261,13 @@ public class Entity : MonoBehaviour
             }
         }else
         {
-            hpChange = competence.hpChange + Mathf.CeilToInt(source.attack * competence.ATKInfluence + source.espirit * competence.ESPInfluence + defence * competence.DEFInfluence);
+            hpChange = competence.hpChange + Mathf.CeilToInt(source.attack * competence.ATKInfluence + source.espirit * competence.ESPInfluence + defence * competence.DEFInfluence + agility * competence.AGIInfluence);
         }
         hpChange = Mathf.RoundToInt(hpChange * Random.Range(1f - competence.variance, 1f + competence.variance));
         ChangeHP(hpChange);
 
         if (competence.CPChange != 0) {
-            ChangeCC(Mathf.CeilToInt(competence.CPChange + agility * competence.AGIInfluence));
+            ChangeCC(competence.CPChange);
         }
     }
 
@@ -302,7 +302,6 @@ public class Entity : MonoBehaviour
 
         if (competence.chronomancy) {
             Chronomancy.Instance.ChronomancyStart();
-            yield return new WaitForSeconds(0.1f);
             yield return new WaitUntil(()=>!Chronomancy.Instance.testingInProgress);
             float val = Chronomancy.Instance.chronotest;
             if (val < 0.05f) {

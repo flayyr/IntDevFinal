@@ -15,18 +15,18 @@ MonoBehaviour:
   description: Fifth AOE attack
   targetType: 2
   ccCost: 15
-  hpChange: -44
+  hpChange: -250
   CPChange: 0
-  ATKInfluence: 1.5
-  ESPInfluence: 1
-  DEFInfluence: 1
+  ATKInfluence: 2
+  ESPInfluence: 0
+  DEFInfluence: 0.5
   AGIInfluence: 0
-  variance: 0.2
+  variance: 0
   hitChance: 0.8
-  statuses: 00000000
+  statuses: 04000000
   cures: 0
-  statusDuration: 1
-  inflictChance: 0.4
+  statusDuration: 4
+  inflictChance: 0.55
   chronomancy: 0
   isEnemy: 1
   weight: 3

@@ -104,9 +104,9 @@ MonoBehaviour:
   entityName: Fifth
   maxHP: 8000
   maxCC: 9999
-  ATK: 355
-  DEF: 215
-  ESP: 255
+  ATK: 350
+  DEF: 200
+  ESP: 250
   baseAgility: 400
   competences:
   - {fileID: 11400000, guid: 485a0d2711dac204fb45f7847b662d59, type: 2}
@@ -136,6 +136,18 @@ PrefabInstance:
     - target: {fileID: 5477854929058652805, guid: a828f58445b230a459316fc5ba8bb59f, type: 3}
       propertyPath: m_Name
       value: EnemyTimer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287651425869204909, guid: a828f58445b230a459316fc5ba8bb59f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287651425869204909, guid: a828f58445b230a459316fc5ba8bb59f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287651425869204909, guid: a828f58445b230a459316fc5ba8bb59f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6287651425869204909, guid: a828f58445b230a459316fc5ba8bb59f, type: 3}
       propertyPath: m_LocalPosition.x
