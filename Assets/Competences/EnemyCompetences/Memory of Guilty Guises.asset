@@ -33,6 +33,8 @@ MonoBehaviour:
   requirements:
   - requirementType: 1
     requirementNum: 4
+  - requirementType: 4
+    requirementNum: 0
   summonPrefab: {fileID: 1928029462071408341, guid: e86b1385cf5dad64d9680a04bc48ff2a, type: 3}
   turnsSinceUse: 1
   moveAmount: 1

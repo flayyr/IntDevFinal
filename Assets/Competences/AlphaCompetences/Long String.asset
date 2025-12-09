@@ -18,10 +18,10 @@ MonoBehaviour:
   hpChange: -240
   CPChange: 0
   ATKInfluence: 2
-  ESPInfluence: 1
+  ESPInfluence: 0.5
   DEFInfluence: 1
   AGIInfluence: 0
-  variance: 0
+  variance: 0.2
   hitChance: 1
   statuses: 
   cures: 0

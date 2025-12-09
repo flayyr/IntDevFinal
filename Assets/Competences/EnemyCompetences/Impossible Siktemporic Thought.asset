@@ -21,7 +21,7 @@ MonoBehaviour:
   ESPInfluence: 0
   DEFInfluence: 1
   AGIInfluence: 0
-  variance: 0
+  variance: 0.2
   hitChance: 0.8
   statuses: 05000000
   cures: 0
@@ -32,7 +32,7 @@ MonoBehaviour:
   weight: 3
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 0
+  turnsSinceUse: 100
   moveAmount: -1
   effect: {fileID: 0}
   soundEffect: {fileID: 0}
