@@ -20,7 +20,7 @@ public class FadeToWhite : MonoBehaviour
         {
             alpha += fadeSpeed * Time.deltaTime;
             image.color = new Color(1,1,1,alpha );
-            if(alpha > 1)
+            if(alpha >= 1)
             {
                 SceneManager.LoadScene("BossDefeatRoom");
             }
