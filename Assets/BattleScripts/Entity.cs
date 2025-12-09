@@ -147,9 +147,9 @@ public class Entity : MonoBehaviour
         if (statuses[(int)Status.Lethargic] && statuses[(int)Status.Hasty]) {
             agility = baseAgility;
         } else if (statuses[(int)Status.Lethargic]) {
-            agility = Mathf.CeilToInt(0.5f * baseAgility);
+            agility = Mathf.CeilToInt(0.6f * baseAgility);
         } else if (statuses[(int)Status.Hasty]) {
-            agility = Mathf.CeilToInt(2f * baseAgility);
+            agility = Mathf.CeilToInt(1.5f * baseAgility);
         } else {
             agility = baseAgility;
         }

@@ -15,11 +15,11 @@ MonoBehaviour:
   description: 
   targetType: 0
   ccCost: 0
-  hpChange: 0
+  hpChange: -10
   CPChange: 0
-  ATKInfluence: 1
-  ESPInfluence: 1
-  DEFInfluence: 0.75
+  ATKInfluence: 2
+  ESPInfluence: 0
+  DEFInfluence: 0.5
   AGIInfluence: 0
   variance: 0
   hitChance: 1

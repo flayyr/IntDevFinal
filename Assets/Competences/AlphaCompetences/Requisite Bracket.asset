@@ -26,13 +26,13 @@ MonoBehaviour:
   statuses: 00000000
   cures: 0
   statusDuration: 3
-  inflictChance: 0.4
+  inflictChance: 0.5
   chronomancy: 0
   isEnemy: 0
   weight: 0
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 3
+  turnsSinceUse: 0
   moveAmount: -1
   effect: {fileID: 6466106487047618027, guid: 79bc6f386f9583d4e9cf2153c98bf5bc, type: 3}
   soundEffect: {fileID: 0}
