@@ -165,7 +165,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -346,6 +346,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: WideAngleSheet_7
+      rect:
+        serializedVersion: 2
+        x: 5520
+        y: 0
+        width: 1840
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c08ad792d81dd4c8e313fae8944315
+      internalID: -1496317593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -367,6 +389,7 @@ TextureImporter:
       WideAngleSheet_4: 1585134739
       WideAngleSheet_5: -176240414
       WideAngleSheet_6: -288003192
+      WideAngleSheet_7: -1496317593
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
