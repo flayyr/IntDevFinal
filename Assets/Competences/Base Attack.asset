@@ -17,9 +17,9 @@ MonoBehaviour:
   ccCost: 0
   hpChange: -10
   CPChange: 0
-  ATKInfluence: 2
-  ESPInfluence: 0
-  DEFInfluence: 0.5
+  ATKInfluence: 1
+  ESPInfluence: 1
+  DEFInfluence: 1
   AGIInfluence: 0
   variance: 0
   hitChance: 1
