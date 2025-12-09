@@ -15,8 +15,6 @@ public class OverworldMenuManager : MonoBehaviour
     [SerializeField]AudioClip selectSFX;
     [SerializeField]AudioClip switchSFX;
 
-    [SerializeField]PlayerMovement playerMovement;
-
     enum MenuState {Closed, Character, Competence, Exit}
 
     ISelectionMenu currSelectionMenu;
@@ -37,7 +35,6 @@ public class OverworldMenuManager : MonoBehaviour
     void Update()
     {
         if (state != MenuState.Closed) {
-            playerMovement.menuClosed=false;
             if (Input.GetKeyDown(KeyCode.UpArrow)) {
                 ChangeSelection(index - 1);
                 audio.PlayOneShot(switchSFX, 1F);
@@ -49,7 +46,6 @@ public class OverworldMenuManager : MonoBehaviour
         }
 
         if (state == MenuState.Closed) {
-            playerMovement.menuClosed=true;
             if (Input.GetKeyDown(KeyCode.C)) {
                 state = MenuState.Character;
                 index = 0;

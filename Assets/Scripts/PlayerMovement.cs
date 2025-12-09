@@ -20,16 +20,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Vector2 moveDirectionVector = Vector2.right;
 
     [SerializeField] public GameObject textBoxPrefab;
-    OverworldMenuManager menuManager;
-    [SerializeField] GameObject owManager;
-
-    public bool menuClosed = true;
 
     void Start()
     {
         movePoint.parent = null;
         animator = GetComponent<Animator>();
-        menuManager = owManager.GetComponent<OverworldMenuManager>();
     }
 
     void Update()
@@ -124,7 +119,7 @@ public class PlayerMovement : MonoBehaviour
 
         //Debug.Log(hit.collider.name);
         //using cubes
-        if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("Cube") && menuClosed) {
+        if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("Cube")) {
             Debug.Log($"{hit.collider.name} pressed");
             var pc = hit.collider.gameObject.GetComponent<PuzzleCube>();
             pc.pressed=true;
