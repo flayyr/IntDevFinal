@@ -11,7 +11,6 @@ public class NameTag : MonoBehaviour
     [SerializeField] Slider hpBar;
 
     int iconCount = 0;
-
     public void ShowNameTag(Entity entity) {
         gameObject.SetActive(true);
 

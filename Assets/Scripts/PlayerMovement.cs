@@ -138,6 +138,7 @@ public class PlayerMovement : MonoBehaviour
 
         //picking up Phi
         if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("Phi")) {
+            OverworldMenuManager.Instance.AddPhi();
             var phi = hit.collider.gameObject;
             phi.SetActive(false);
             Debug.Log("frien");

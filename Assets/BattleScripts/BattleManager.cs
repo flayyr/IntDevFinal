@@ -105,19 +105,23 @@ public class BattleManager : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.UpArrow))
                 {
                     SelectCompetence(selectionIndex - 2);
+                    SFXManager.Instance.PlaySound(SFXManager.Instance.cycleClick);
                 }
                 else if (Input.GetKeyDown(KeyCode.DownArrow))
                 {
                     SelectCompetence(selectionIndex + 2);
+                    SFXManager.Instance.PlaySound(SFXManager.Instance.cycleClick);
                 }
                 else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
                 {
+                    SFXManager.Instance.PlaySound(SFXManager.Instance.cycleClick);
                     if (selectionIndex % 2 == 0)
                         SelectCompetence(selectionIndex + 1);
                     else
                         SelectCompetence(selectionIndex - 1);
                 } else if (Input.GetKeyDown(KeyCode.Z))
                 {
+                    SFXManager.Instance.PlaySound(SFXManager.Instance.selectClick);
                     if (selectionIndex < currEntity.competences.Length && currEntity.cc >= currEntity.competences[selectionIndex].ccCost && !currEntity.statuses[(int)Status.Muted])
                     {
                         SFXManager.Instance.PlaySound(SFXManager.Instance.selectClick);

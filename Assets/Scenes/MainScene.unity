@@ -2349,7 +2349,6 @@ MonoBehaviour:
   - {fileID: 294099176}
   - {fileID: 1473562463}
   - {fileID: 1403043502}
-  - {fileID: 216070955}
 --- !u!114 &355652717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5124,7 +5123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 660970860354146680, guid: 45cecca9de31142498aef80055cd8fe8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 944392667925709522, guid: 45cecca9de31142498aef80055cd8fe8, type: 3}
       propertyPath: SelectedSprite
@@ -8075,6 +8074,7 @@ MonoBehaviour:
   - {fileID: 1916884604790746927, guid: be4f6319912747a4f94b7e38c18278cc, type: 3}
   - {fileID: 1549741364745778325, guid: e6214bf892efb994698735c3b796c448, type: 3}
   - {fileID: 4288299799920154802, guid: d8f02dd8f1aa4498baef91c5b86c7919, type: 3}
+  phiMenuItem: {fileID: 216070955}
   selectSFX: {fileID: 8300000, guid: 846e8d353628c4714acfb3678395ab83, type: 3}
   switchSFX: {fileID: 8300000, guid: 567186aa1fdfa410d9f18bf9444ca083, type: 3}
   playerMovement: {fileID: 4654082632465253747}

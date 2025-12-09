@@ -1000,7 +1000,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &188477837
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2389,9 +2389,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cadc6415c474685468a601517f97a513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ping: {fileID: 0}
-  cycleClick: {fileID: 0}
-  selectClick: {fileID: 0}
+  ping: {fileID: 8300000, guid: 2f7dbc27b63e44b76bd2ab786c113aa5, type: 3}
+  cycleClick: {fileID: 8300000, guid: 567186aa1fdfa410d9f18bf9444ca083, type: 3}
+  selectClick: {fileID: 8300000, guid: 846e8d353628c4714acfb3678395ab83, type: 3}
   statusHurt: {fileID: 0}
 --- !u!4 &683644672
 Transform:
