@@ -29,7 +29,7 @@ MonoBehaviour:
   inflictChance: 1
   chronomancy: 0
   isEnemy: 1
-  weight: 7000
+  weight: 7
   requirements:
   - requirementType: 2
     requirementNum: 2
@@ -37,6 +37,7 @@ MonoBehaviour:
     requirementNum: 2
   summonPrefab: {fileID: 0}
   turnsSinceUse: 102
-  moveAmount: 1
-  effect: {fileID: 0}
+  moveAmount: 0
+  effect:
+  - {fileID: 0}
   soundEffect: {fileID: 0}

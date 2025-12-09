@@ -29,12 +29,15 @@ MonoBehaviour:
   inflictChance: 0
   chronomancy: 0
   isEnemy: 1
-  weight: 300
+  weight: 3
   requirements:
   - requirementType: 1
     requirementNum: 4
   summonPrefab: {fileID: 1928029462071408341, guid: e86b1385cf5dad64d9680a04bc48ff2a, type: 3}
   turnsSinceUse: 0
   moveAmount: 1
-  effect: {fileID: 6466106487047618027, guid: 97b42024674f60847bcb4af89fd5a794, type: 3}
+  effect:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   soundEffect: {fileID: 0}
