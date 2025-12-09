@@ -242,10 +242,12 @@ public class Entity : MonoBehaviour
             damageText.transform.position = target.transform.position;
             return;
         }
-        if(competence.effect != null)
-        {
-            Instantiate(competence.effect, target.transform.position, Quaternion.identity);
+        for(int i = 0; i<competence.effect.Length; i++) {
+            if (competence.effect[i] != null) {
+                Instantiate(competence.effect[i], target.transform.position, Quaternion.identity);
+            }
         }
+        
 
         target.ApplyStatus(competence);
         target.Hit(competence, this);

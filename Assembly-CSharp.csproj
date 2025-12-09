@@ -50,12 +50,14 @@
   <ItemGroup>
     <Compile Include="Assets\Anderson Stuff\blink.cs" />
     <Compile Include="Assets\Scripts\SceneChange.cs" />
+    <Compile Include="Assets\BattleScripts\NameTag.cs" />
     <Compile Include="Assets\BattleScripts\MenuScript\OWCharacterSelectionMenu.cs" />
     <Compile Include="Assets\BattleScripts\EnemyEntity.cs" />
     <Compile Include="Assets\BattleScripts\Pointer.cs" />
     <Compile Include="Assets\BattleScripts\BattleManager.cs" />
     <Compile Include="Assets\Anderson Stuff\gradientSwitch.cs" />
     <Compile Include="Assets\Scripts\LayerManagement.cs" />
+    <Compile Include="Assets\Scripts\TitleScreenManager.cs" />
     <Compile Include="Assets\BattleScripts\CharacterMenuItem.cs" />
     <Compile Include="Assets\Anderson Stuff\particleLifeSoundBased.cs" />
     <Compile Include="Assets\BattleScripts\CharacterSelectionmenu.cs" />

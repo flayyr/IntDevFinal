@@ -1,9 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class OWCharacterSelectionMenu : MonoBehaviour, ISelectionMenu
 {
     [SerializeField]
-    OWCharacterMenuItem[] characterMenuItems;
+    List< OWCharacterMenuItem> characterMenuItems;
 
     int selectedIndex = 0;
 
@@ -13,10 +14,16 @@ public class OWCharacterSelectionMenu : MonoBehaviour, ISelectionMenu
                 characterMenuItems[i].SetEntity(BattleManager.Instance.playerEntities[i]);
             }
         } else {
-            for (int i = 0; i < characterMenuItems.Length; i++) {
+            for (int i = 0; i < characterMenuItems.Count; i++) {
                 characterMenuItems[i].SetEntity(OverworldMenuManager.Instance.playerEntities[i]);
             }
         }
+    }
+
+    public void AddMenuItem(OWCharacterMenuItem menuItem, PlayerEntity entity) {
+        characterMenuItems.Add(menuItem);
+        menuItem.SetEntity(entity);
+        menuItem.gameObject.SetActive(true);
     }
 
     public void Show() {
@@ -25,7 +32,7 @@ public class OWCharacterSelectionMenu : MonoBehaviour, ISelectionMenu
     }
 
     public int SelectItem(int index) {
-        int newIndex = (index + characterMenuItems.Length) % characterMenuItems.Length;
+        int newIndex = (index + characterMenuItems.Count) % characterMenuItems.Count;
 
         characterMenuItems[selectedIndex].DeselectItem();
         characterMenuItems[newIndex].SelectItem();

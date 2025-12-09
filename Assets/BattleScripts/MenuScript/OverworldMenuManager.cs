@@ -10,12 +10,15 @@ public class OverworldMenuManager : MonoBehaviour
     [SerializeField] OWPortraitSwitcher portraitSwitcher;
     [SerializeField] OWQuitMenu quitMenu;
     [SerializeField] public PlayerEntity[] playerEntities;
+    [SerializeField] OWCharacterMenuItem phiMenuItem;
 
     AudioSource audio;
     [SerializeField]AudioClip selectSFX;
     [SerializeField]AudioClip switchSFX;
 
     enum MenuState {Closed, Character, Competence, Exit}
+
+    [SerializeField]PlayerMovement playerMovement;
 
     ISelectionMenu currSelectionMenu;
     MenuState state = MenuState.Closed;
@@ -34,7 +37,9 @@ public class OverworldMenuManager : MonoBehaviour
 
     void Update()
     {
+
         if (state != MenuState.Closed) {
+            playerMovement.menuOn = true;
             if (Input.GetKeyDown(KeyCode.UpArrow)) {
                 ChangeSelection(index - 1);
                 audio.PlayOneShot(switchSFX, 1F);
@@ -46,6 +51,7 @@ public class OverworldMenuManager : MonoBehaviour
         }
 
         if (state == MenuState.Closed) {
+            playerMovement.menuOn = false;
             if (Input.GetKeyDown(KeyCode.C)) {
                 state = MenuState.Character;
                 index = 0;
@@ -99,6 +105,10 @@ public class OverworldMenuManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void AddPhi() {
+        characterMenu.AddMenuItem(phiMenuItem, playerEntities[3]);
     }
 
     void ChangeSelection(int i) {
