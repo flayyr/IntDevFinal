@@ -17,7 +17,7 @@ MonoBehaviour:
   ccCost: 16
   hpChange: -300
   CPChange: 0
-  ATKInfluence: 2
+  ATKInfluence: 1.75
   ESPInfluence: 0
   DEFInfluence: 1
   AGIInfluence: 0
