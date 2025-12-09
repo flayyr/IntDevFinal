@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -181406618265882493, guid: 03988408d32208e4da7b64b7d3b89dc3, type: 3}
+  m_Sprite: {fileID: 3340238675223402174, guid: 90391fa7ae3635f409c3fb85895df529, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -98,6 +98,7 @@ MonoBehaviour:
   selectedColor: {r: 0.9716981, g: 0.5941889, b: 0, a: 1}
   textTransform: {fileID: 1054926204282160614}
   selectedShift: 15
+  bold: 1
 --- !u!95 &579621243155576923
 Animator:
   serializedVersion: 7

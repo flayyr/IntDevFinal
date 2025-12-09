@@ -1,103 +1,19 @@
 fileFormatVersion: 2
-guid: 8d30c16e6fc682f4b8ad5f39d0344b88
+guid: 29cf81ce881587648bb5033492ca2885
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3014936270476019843
-    second: WideAngleSheet 1_0
+      213: 5384150821803021839
+    second: FifthNametagHP3Status_0
   - first:
-      213: -5989902787211427900
-    second: WideAngleSheet 1_1
+      213: 3840274620944592515
+    second: FifthNametagHP3Status_1
   - first:
-      213: -9120737946432222101
-    second: WideAngleSheet 1_2
+      213: 8707385317512101687
+    second: FifthNametagHP3Status_2
   - first:
-      213: -2514423485641154464
-    second: WideAngleSheet 1_3
-  - first:
-      213: 8355561223093229508
-    second: WideAngleSheet 1_4
-  - first:
-      213: -2774190486084707430
-    second: WideAngleSheet 1_5
-  - first:
-      213: -7704783637795256237
-    second: WideAngleSheet 1_6
-  - first:
-      213: 853319183764068829
-    second: WideAngleSheet 1_7
-  - first:
-      213: -4582898536434707284
-    second: WideAngleSheet 1_8
-  - first:
-      213: -4441789954105236142
-    second: WideAngleSheet 1_9
-  - first:
-      213: -6183032465429123140
-    second: WideAngleSheet 1_10
-  - first:
-      213: -7205345822507182109
-    second: WideAngleSheet 1_11
-  - first:
-      213: 4861727735593351963
-    second: WideAngleSheet 1_12
-  - first:
-      213: 531096053120307702
-    second: WideAngleSheet 1_13
-  - first:
-      213: -5434103638167137076
-    second: WideAngleSheet 1_14
-  - first:
-      213: 3715806154409160042
-    second: WideAngleSheet 1_15
-  - first:
-      213: -2861447021128632635
-    second: WideAngleSheet 1_16
-  - first:
-      213: 369622912794584754
-    second: WideAngleSheet 1_17
-  - first:
-      213: 5592140896828406039
-    second: WideAngleSheet 1_18
-  - first:
-      213: 5572508565169975975
-    second: WideAngleSheet 1_19
-  - first:
-      213: -8929303538233835214
-    second: WideAngleSheet 1_20
-  - first:
-      213: 3909412990453644773
-    second: WideAngleSheet 1_21
-  - first:
-      213: -2341900931150902586
-    second: WideAngleSheet 1_22
-  - first:
-      213: -6819776579632176141
-    second: WideAngleSheet 1_23
-  - first:
-      213: -2270487608098538158
-    second: WideAngleSheet 1_24
-  - first:
-      213: 6936963487901947928
-    second: WideAngleSheet 1_25
-  - first:
-      213: -2843207963241526873
-    second: WideAngleSheet 1_26
-  - first:
-      213: -4561119803177175517
-    second: WideAngleSheet 1_27
-  - first:
-      213: 1807143267129270610
-    second: WideAngleSheet 1_28
-  - first:
-      213: 4565724984910760798
-    second: WideAngleSheet 1_29
-  - first:
-      213: -2646944740819704159
-    second: WideAngleSheet 1_30
-  - first:
-      213: 7724730245702370821
-    second: WideAngleSheet 1_31
+      213: 2711726629347686171
+    second: FifthNametagHP3Status_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -193,79 +109,101 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WideAngleSheet_0
+      name: FifthNametagHP3Status_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1800
-        width: 1840
-        height: 1800
+        y: 660
+        width: 860
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 002197a2dd5873143b53020d13acfca1
-      internalID: -236838477
+      spriteID: f0652be55a858ba40800000000000000
+      internalID: 5384150821803021839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WideAngleSheet_1
+      name: FifthNametagHP3Status_1
       rect:
         serializedVersion: 2
-        x: 1840
-        y: 1800
-        width: 1840
-        height: 1800
+        x: 860
+        y: 660
+        width: 860
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 974638775098b5445a766b633938e85d
-      internalID: 555694290
+      spriteID: 38ea95dcb656b4530800000000000000
+      internalID: 3840274620944592515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WideAngleSheet_2
+      name: FifthNametagHP3Status_2
       rect:
         serializedVersion: 2
-        x: 3680
-        y: 1800
-        width: 1840
-        height: 1800
+        x: 0
+        y: 440
+        width: 860
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 62d76596eb317254b971c83190abb081
-      internalID: -1231389562
+      spriteID: 73fb2c400d8d6d870800000000000000
+      internalID: 8707385317512101687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WideAngleSheet_3
+      name: FifthNametagHP3Status_3
       rect:
         serializedVersion: 2
-        x: 5520
-        y: 1800
-        width: 1840
-        height: 1800
+        x: 860
+        y: 440
+        width: 860
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b177c36800df1a520800000000000000
+      internalID: 2711726629347686171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FifthNametagHP3Status_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 860
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,20 +212,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e6d782c64c230d4491e67c2a8138e0e
-      internalID: -1062253463
+      spriteID: b086cefe4a3266d4ca4d1725c5303a89
+      internalID: -114528901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WideAngleSheet_4
+      name: FifthNametagHP3Status_5
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 220
+        width: 860
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5ac818b31c99e46b38ce4d5278d4cc
+      internalID: 1740246345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FifthNametagHP3Status_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1840
-        height: 1800
+        width: 860
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,20 +256,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcdea8d092510ce4ba27ca5c25b42f5a
-      internalID: 1585134739
+      spriteID: 57bb1e1d44aedca4c876cb2fa245dc8f
+      internalID: -1013232589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WideAngleSheet_5
+      name: FifthNametagHP3Status_7
       rect:
         serializedVersion: 2
-        x: 1840
+        x: 860
         y: 0
-        width: 1840
-        height: 1800
+        width: 860
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,30 +278,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0bdb8f22de1a08409af641665fadaa5
-      internalID: -176240414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WideAngleSheet_6
-      rect:
-        serializedVersion: 2
-        x: 3680
-        y: 0
-        width: 1840
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6363276c1e05199468ae6a7b9d728d2a
-      internalID: -288003192
+      spriteID: e0c7a86dfafad104f8a586f2d3edeb0d
+      internalID: -556048641
       vertices: []
       indices: 
       edges: []
@@ -350,7 +288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 7c4d18dc6d1a9984398bbd4aaa8bfd85
+    spriteID: cf85c5499e6031943b3ae46e0b8b84a5
     internalID: 0
     vertices: []
     indices: 
@@ -360,13 +298,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      WideAngleSheet_0: -236838477
-      WideAngleSheet_1: 555694290
-      WideAngleSheet_2: -1231389562
-      WideAngleSheet_3: -1062253463
-      WideAngleSheet_4: 1585134739
-      WideAngleSheet_5: -176240414
-      WideAngleSheet_6: -288003192
+      FifthNametagHP3Status_0: 5384150821803021839
+      FifthNametagHP3Status_1: 3840274620944592515
+      FifthNametagHP3Status_2: 8707385317512101687
+      FifthNametagHP3Status_3: 2711726629347686171
+      FifthNametagHP3Status_4: -114528901
+      FifthNametagHP3Status_5: 1740246345
+      FifthNametagHP3Status_6: -1013232589
+      FifthNametagHP3Status_7: -556048641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

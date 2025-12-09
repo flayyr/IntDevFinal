@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 1bf4dddc209160546a8d0b264adf7c07
+guid: 8ac2d2e487713de4a85dbe42c40b335a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 113973727716461809
-    second: FifthNametagStatus_0
+      213: 420751482864796816
+    second: ErasedNametagHP2Status_0
   - first:
-      213: 6110418677517022677
-    second: FifthNametagStatus_1
+      213: 3625681131131633889
+    second: ErasedNametagHP2Status_1
+  - first:
+      213: 6843551467875326053
+    second: ErasedNametagHP2Status_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +78,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -103,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FifthNametagStatus_0
+      name: ErasedNametagHP2Status_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 220
-        width: 520
-        height: 220
+        y: 420
+        width: 1010
+        height: 210
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1fc4442608ae49100800000000000000
-      internalID: 113973727716461809
+      spriteID: 09400e29e3fc6d500800000000000000
+      internalID: 420751482864796816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FifthNametagStatus_1
+      name: ErasedNametagHP2Status_1
       rect:
         serializedVersion: 2
-        x: 520
-        y: 220
-        width: 520
-        height: 220
+        x: 1010
+        y: 420
+        width: 1010
+        height: 210
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +143,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d5705ea9619cc450800000000000000
-      internalID: 6110418677517022677
+      spriteID: 1e000f177c1015230800000000000000
+      internalID: 3625681131131633889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FifthNametagStatus_2
+      name: ErasedNametagHP2Status_2
       rect:
         serializedVersion: 2
-        x: 1040
-        y: 220
-        width: 520
-        height: 220
+        x: 2020
+        y: 420
+        width: 1010
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568dfc42dcd29fe50800000000000000
+      internalID: 6843551467875326053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErasedNametagHP2Status_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 1010
+        height: 210
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae566383807bf3541802e2990339ccab
-      internalID: -146676553
+      spriteID: ad0f07bf58a12d245999a9da0c239660
+      internalID: 1091344230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FifthNametagStatus_3
+      name: ErasedNametagHP2Status_4
       rect:
         serializedVersion: 2
-        x: 1560
-        y: 220
-        width: 520
-        height: 220
+        x: 1010
+        y: 210
+        width: 1010
+        height: 210
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +209,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e19db46ff749c642ba6e29662ce637f
-      internalID: 1438980958
+      spriteID: 7d8dd7684a5930c4384215557f8ad5de
+      internalID: -981655689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FifthNametagStatus_4
+      name: ErasedNametagHP2Status_5
+      rect:
+        serializedVersion: 2
+        x: 2020
+        y: 210
+        width: 1010
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f505666605010374da05834635833e7d
+      internalID: 2062477009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ErasedNametagHP2Status_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 520
-        height: 220
+        width: 1010
+        height: 210
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +253,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ac2beb35f3faba4c817209618e67e84
-      internalID: 1504798892
+      spriteID: 9de0d137fbf958f42aa03c21598bb2f8
+      internalID: 1012185221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FifthNametagStatus_5
+      name: ErasedNametagHP2Status_7
       rect:
         serializedVersion: 2
-        x: 520
+        x: 1010
         y: 0
-        width: 520
-        height: 220
+        width: 1010
+        height: 210
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,52 +275,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41805a94ba53a444986b0d30f8488ace
-      internalID: 427313517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FifthNametagStatus_6
-      rect:
-        serializedVersion: 2
-        x: 1040
-        y: 0
-        width: 520
-        height: 220
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e90cfc54e2387ba4789a439b7e3dc6d6
-      internalID: 1049460004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FifthNametagStatus_7
-      rect:
-        serializedVersion: 2
-        x: 1560
-        y: 0
-        width: 520
-        height: 220
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ef84694656eb414789ca3bbb5a6926c
-      internalID: 1485207614
+      spriteID: 2ac67835ad4a7064b934db3850df6009
+      internalID: 831807290
       vertices: []
       indices: 
       edges: []
@@ -282,7 +285,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3dbad4b8f00743345bd6b901812e0cd5
+    spriteID: f83c2dcd2728d8246b4c8c8e82c72573
     internalID: 0
     vertices: []
     indices: 
@@ -292,14 +295,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FifthNametagStatus_0: 113973727716461809
-      FifthNametagStatus_1: 6110418677517022677
-      FifthNametagStatus_2: -146676553
-      FifthNametagStatus_3: 1438980958
-      FifthNametagStatus_4: 1504798892
-      FifthNametagStatus_5: 427313517
-      FifthNametagStatus_6: 1049460004
-      FifthNametagStatus_7: 1485207614
+      ErasedNametagHP2Status_0: 420751482864796816
+      ErasedNametagHP2Status_1: 3625681131131633889
+      ErasedNametagHP2Status_2: 6843551467875326053
+      ErasedNametagHP2Status_3: 1091344230
+      ErasedNametagHP2Status_4: -981655689
+      ErasedNametagHP2Status_5: 2062477009
+      ErasedNametagHP2Status_6: 1012185221
+      ErasedNametagHP2Status_7: 831807290
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
