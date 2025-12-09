@@ -522,8 +522,7 @@ MonoBehaviour:
   - {fileID: 1626539279491200485, guid: 675a2003df95444c4b845e8f0b19e440, type: 3}
   - {fileID: 4856963183710769406, guid: d6f249a0dd154b844a64f4700c1bec33, type: 3}
   - {fileID: 6404667191438731808, guid: 69311d1ca87480942b512d9b2d3f4afb, type: 3}
-  - {fileID: -39820025, guid: 12080fc502cae9541bd178c0f4259618, type: 3}
-  - {fileID: -2001989002, guid: 12080fc502cae9541bd178c0f4259618, type: 3}
+  - {fileID: 4119029241655128503, guid: 1393239596d2335429e98f3dc46d4f37, type: 3}
   iconPosition: {fileID: 3893000637703234966}
   iconWidth: 1
   showMaxHp: 0

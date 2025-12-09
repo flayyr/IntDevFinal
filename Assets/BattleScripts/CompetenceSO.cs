@@ -36,7 +36,7 @@ public class CompetenceSO : ScriptableObject
 
     [Header("Animation")]
     public float moveAmount;
-    public GameObject effect;
+    [SerializeField]public GameObject[] effect;
     public AudioClip soundEffect;
 }
 

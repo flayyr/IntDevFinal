@@ -63,13 +63,16 @@
   <ItemGroup>
     <Compile Include="Assets\Anderson Stuff\blink.cs" />
     <Compile Include="Assets\Scripts\SceneChange.cs" />
+    <Compile Include="Assets\BattleScripts\NameTag.cs" />
     <Compile Include="Assets\BattleScripts\MenuScript\OWCharacterSelectionMenu.cs" />
     <Compile Include="Assets\BattleScripts\EnemyEntity.cs" />
     <Compile Include="Assets\BattleScripts\Pointer.cs" />
     <Compile Include="Assets\BattleScripts\BattleManager.cs" />
     <Compile Include="Assets\Anderson Stuff\gradientSwitch.cs" />
     <Compile Include="Assets\Scripts\LayerManagement.cs" />
+    <Compile Include="Assets\Scripts\TitleScreenManager.cs" />
     <Compile Include="Assets\BattleScripts\CharacterMenuItem.cs" />
+    <Compile Include="Assets\Anderson Stuff\particleLifeSoundBased.cs" />
     <Compile Include="Assets\BattleScripts\CharacterSelectionmenu.cs" />
     <Compile Include="Assets\BattleScripts\Entity.cs" />
     <Compile Include="Assets\BattleScripts\DescriptionText.cs" />
@@ -620,6 +623,18 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f\Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.59f2\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.59f2\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.Apple.Extensions.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.59f2\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.Apple.Extensions.Common.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">

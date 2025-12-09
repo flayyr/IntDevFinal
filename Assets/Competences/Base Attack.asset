@@ -17,11 +17,11 @@ MonoBehaviour:
   ccCost: 0
   hpChange: -10
   CPChange: 0
-  ATKInfluence: 1.5
+  ATKInfluence: 2
   ESPInfluence: 1
-  DEFInfluence: 1
+  DEFInfluence: 0.5
   AGIInfluence: 0
-  variance: 0.2
+  variance: 0.31
   hitChance: 1
   statuses: 
   cures: 0
@@ -34,5 +34,6 @@ MonoBehaviour:
   summonPrefab: {fileID: 0}
   turnsSinceUse: 100
   moveAmount: 3
-  effect: {fileID: 6466106487047618027, guid: 79bc6f386f9583d4e9cf2153c98bf5bc, type: 3}
+  effect:
+  - {fileID: 6466106487047618027, guid: 582a0adf9fc751d4bb598e983fa7e8e3, type: 3}
   soundEffect: {fileID: 0}

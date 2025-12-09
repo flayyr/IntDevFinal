@@ -41,6 +41,9 @@ public class Entity : MonoBehaviour
         agility = baseAgility;
         statuses = new bool[12];
         statusDurations = new int[12];
+        attack = ATK;
+        espirit = ESP;
+        defence = DEF;
         foreach(CompetenceSO competence in competences) {
             competence.turnsSinceUse = 100;
         }
@@ -239,10 +242,12 @@ public class Entity : MonoBehaviour
             damageText.transform.position = target.transform.position;
             return;
         }
-        if(competence.effect != null)
-        {
-            Instantiate(competence.effect, target.transform.position, Quaternion.identity);
+        for(int i = 0; i<competence.effect.Length; i++) {
+            if (competence.effect[i] != null) {
+                Instantiate(competence.effect[i], target.transform.position, Quaternion.identity);
+            }
         }
+        
 
         target.ApplyStatus(competence);
         target.Hit(competence, this);
@@ -263,7 +268,7 @@ public class Entity : MonoBehaviour
         {
             hpChange = competence.hpChange + Mathf.CeilToInt(source.attack * competence.ATKInfluence + source.espirit * competence.ESPInfluence + defence * competence.DEFInfluence);
         }
-        hpChange = Mathf.RoundToInt(hpChange * Random.Range(1f - competence.variance, 1f + competence.variance));
+        hpChange = Mathf.CeilToInt(hpChange * Random.Range(1f - competence.variance, 1f + competence.variance));
         ChangeHP(hpChange);
 
         if (competence.CPChange != 0) {
