@@ -292,9 +292,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 21e94b9169d4b2240800000000000000
+      spriteID: 3dc3de7bd5004a0418c3e411cf763131
       internalID: 4767989937573502482
       vertices: []
       indices: 
@@ -314,9 +314,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bbe2234a939345d70800000000000000
+      spriteID: 129f55b36b32361469fb8057058a6c15
       internalID: 9030906072515358395
       vertices: []
       indices: 
@@ -336,9 +336,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: eccfc0392f8e21040800000000000000
+      spriteID: 6217113ab7ba4b34694af7b04d099aec
       internalID: 4617008696555011278
       vertices: []
       indices: 
@@ -358,9 +358,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d089e97eb398dc7f0800000000000000
+      spriteID: 73b91f1f1afc8d740b63644b3cd65c8e
       internalID: -590665085733660659
       vertices: []
       indices: 
@@ -380,9 +380,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6afd546338a10cf30800000000000000
+      spriteID: a325583a5ae6e3b49b6d4d6cc183f2ec
       internalID: 4593700770771492774
       vertices: []
       indices: 
@@ -402,9 +402,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b38e26ad0e6718f80800000000000000
+      spriteID: 65ccd93882fbf8a40b5db043265afd7d
       internalID: -8106067146181515205
       vertices: []
       indices: 
@@ -424,9 +424,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 61cea5d647b272a30800000000000000
+      spriteID: e3659e92284226744b2216ef02ddfde5
       internalID: 4190365757342411798
       vertices: []
       indices: 
@@ -446,9 +446,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f9527268c27d12050800000000000000
+      spriteID: ea0c03158103e2045b2fdff663a526cd
       internalID: 5774132783494931871
       vertices: []
       indices: 
@@ -468,9 +468,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 620eb80bec26c6600800000000000000
+      spriteID: 9c272380a7fef774890d3f4dc970c135
       internalID: 462853501577060390
       vertices: []
       indices: 
@@ -490,9 +490,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: aca65c5b7bc2eb8d0800000000000000
+      spriteID: 4d0eb6330521a8142ae7c4511e83e682
       internalID: -2828774348401841462
       vertices: []
       indices: 
@@ -512,9 +512,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8ab42bd58609be070800000000000000
+      spriteID: 471fc5ce7e948334eaa8c1e7016bd3a4
       internalID: 8136755929697897384
       vertices: []
       indices: 
@@ -534,9 +534,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b97d8b49b286ef9f0800000000000000
+      spriteID: df39997fc669d4240b427ac6de868049
       internalID: -432793977792964709
       vertices: []
       indices: 
@@ -556,9 +556,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 98d9a2c22486694c0800000000000000
+      spriteID: 2dd3677c8924e2248885571e59a2cc26
       internalID: -4281119762350957175
       vertices: []
       indices: 
@@ -578,10 +578,54 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7e158cd1685104ca0800000000000000
+      spriteID: e9755dbb740b2454db6197ee78604166
       internalID: -6034799834906996249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_16
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b82ae892114b6949a4046c9d8348836
+      internalID: -307790750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClassicalDramaSheet_17
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 0
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59817b2f9811114290ffa0456cf722a
+      internalID: 2123125146
       vertices: []
       indices: 
       edges: []
@@ -608,6 +652,8 @@ TextureImporter:
       ClassicalDramaSheet_13: -432793977792964709
       ClassicalDramaSheet_14: -4281119762350957175
       ClassicalDramaSheet_15: -6034799834906996249
+      ClassicalDramaSheet_16: -307790750
+      ClassicalDramaSheet_17: 2123125146
       ClassicalDramaSheet_2: 4767989937573502482
       ClassicalDramaSheet_3: 9030906072515358395
       ClassicalDramaSheet_4: 4617008696555011278
