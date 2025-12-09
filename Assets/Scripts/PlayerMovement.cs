@@ -21,10 +21,13 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] public GameObject textBoxPrefab;
 
+    public bool menuOn;
+
     void Start()
     {
         movePoint.parent = null;
         animator = GetComponent<Animator>();
+        animator.SetFloat("LastInputY", 1);
     }
 
     void Update()
@@ -119,7 +122,7 @@ public class PlayerMovement : MonoBehaviour
 
         //Debug.Log(hit.collider.name);
         //using cubes
-        if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("Cube")) {
+        if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("Cube") && !menuOn) {
             Debug.Log($"{hit.collider.name} pressed");
             var pc = hit.collider.gameObject.GetComponent<PuzzleCube>();
             pc.pressed=true;
