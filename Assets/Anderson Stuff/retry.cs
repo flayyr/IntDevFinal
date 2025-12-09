@@ -17,7 +17,8 @@ public class retry : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            SceneManager.LoadScene(levelGoTo);
+            //SceneManager.LoadScene(levelGoTo);
+            SceneManager.LoadScene("TitleScene");
         }
     }
 }
