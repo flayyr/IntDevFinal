@@ -41,6 +41,9 @@ public class Entity : MonoBehaviour
         agility = baseAgility;
         statuses = new bool[12];
         statusDurations = new int[12];
+        attack = ATK;
+        espirit = ESP;
+        defence = DEF;
         foreach(CompetenceSO competence in competences) {
             competence.turnsSinceUse = 100;
         }
@@ -217,7 +220,6 @@ public class Entity : MonoBehaviour
         }
         if (statuses[(int)Status.Incompetent])
         {
-            Debug.Log("hello");
             ChangeCC(-Mathf.CeilToInt(maxCC * 0.06f));
         }
     }
@@ -264,7 +266,7 @@ public class Entity : MonoBehaviour
         {
             hpChange = competence.hpChange + Mathf.CeilToInt(source.attack * competence.ATKInfluence + source.espirit * competence.ESPInfluence + defence * competence.DEFInfluence);
         }
-        hpChange = Mathf.RoundToInt(hpChange * Random.Range(1f - competence.variance, 1f + competence.variance));
+        hpChange = Mathf.CeilToInt(hpChange * Random.Range(1f - competence.variance, 1f + competence.variance));
         ChangeHP(hpChange);
 
         if (competence.CPChange != 0) {
