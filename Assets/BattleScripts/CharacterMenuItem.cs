@@ -15,8 +15,8 @@ public class CharacterMenuItem : MenuItem
     [SerializeField] TextMeshProUGUI ccText;
     [SerializeField, Range(0f, 1f)] float unselectedAlpha = 0.3f;
     [Space(20)]
-    [SerializeField] GameObject statusIconPrefab;
-    [SerializeField] Sprite[] iconSprites;
+    [SerializeField] public GameObject statusIconPrefab;
+    [SerializeField] public Sprite[] iconSprites;
     [SerializeField] Transform iconPosition;
     [SerializeField] float iconWidth;
     [SerializeField] bool showMaxHp;
@@ -113,6 +113,17 @@ public class CharacterMenuItem : MenuItem
         iconImages[status] = null;
         iconsSet[status] = false;
         iconCount--;
+        UpdateIcons();
+    }
+
+    void UpdateIcons() {
+        int curr = 0;
+        foreach (Image icon in iconImages) {
+            if (icon != null) {
+                icon.transform.position = iconPosition.position + Vector3.right * iconWidth * curr;
+                curr++;
+            }
+        }
     }
 
 }

@@ -71,7 +71,6 @@ public class BattleManager : MonoBehaviour
                 timer += Time.deltaTime;
                 if (timer > textBoxDelay && textBox!=null)
                 {
-                    textBox.gameObject.SetActive(true);
                     if (Input.GetKey(KeyCode.Z))
                     {
                         state = BattleState.idle;
@@ -191,8 +190,10 @@ public class BattleManager : MonoBehaviour
             characterSelectionMenu.Default();
             pointer.Hide();
             foreach (EnemyEntity enemy in enemies) {
-                if(enemy.pointer!=null)
+                if (enemy.pointer != null) {
                     enemy.pointer.Deselect();
+                    enemy.pointer = null;
+                }
             }
         }
 
