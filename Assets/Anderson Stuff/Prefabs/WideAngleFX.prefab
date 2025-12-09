@@ -221,8 +221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2e44bad3e9d39240a0d9570d3f825fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleAnim: {fileID: 9100000, guid: d7c40e8c7bb882c43bb7b6a19d0817a5, type: 2}
-  currentAnim: {fileID: 7400000, guid: aaa4de326ce89f144a4f428e96e3684b, type: 2}
+  particleAnim: {fileID: 9100000, guid: e7ca05a66888c41b59ece9aed23192b4, type: 2}
+  currentAnim: {fileID: 7400000, guid: 6661b5446167147f69b207aa45dd45bc, type: 2}
   audioPlayer: {fileID: 5395408577650474362}
   sfxTime: 0
   spriteOpacity: 1
