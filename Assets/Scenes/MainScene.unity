@@ -8077,6 +8077,7 @@ MonoBehaviour:
   - {fileID: 4288299799920154802, guid: d8f02dd8f1aa4498baef91c5b86c7919, type: 3}
   selectSFX: {fileID: 8300000, guid: 846e8d353628c4714acfb3678395ab83, type: 3}
   switchSFX: {fileID: 8300000, guid: 567186aa1fdfa410d9f18bf9444ca083, type: 3}
+  playerMovement: {fileID: 4654082632465253747}
 --- !u!4 &1362192638
 Transform:
   m_ObjectHideFlags: 0
@@ -23168,6 +23169,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4741358536823604043, guid: 7e3bbce2e6c894c1480e9f0b26436483, type: 3}
   m_PrefabInstance: {fileID: 4654082632465253740}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4654082632465253747 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3415035762414588155, guid: 7e3bbce2e6c894c1480e9f0b26436483, type: 3}
+  m_PrefabInstance: {fileID: 4654082632465253740}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4654082632465253742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed7abffdb990e84f9b9efa5945094c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
