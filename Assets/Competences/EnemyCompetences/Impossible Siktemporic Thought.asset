@@ -22,7 +22,7 @@ MonoBehaviour:
   DEFInfluence: 1
   AGIInfluence: 0
   variance: 0
-  hitChance: 0.95
+  hitChance: 0.8
   statuses: 05000000
   cures: 0
   statusDuration: 5

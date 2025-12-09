@@ -21,7 +21,7 @@ MonoBehaviour:
   ESPInfluence: 1.5
   DEFInfluence: 1
   AGIInfluence: 0
-  variance: 0.2
+  variance: 0
   hitChance: 0.8
   statuses: 
   cures: 0
