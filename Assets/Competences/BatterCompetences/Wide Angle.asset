@@ -32,7 +32,8 @@ MonoBehaviour:
   weight: 0
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 100
+  turnsSinceUse: 101
   moveAmount: 0
-  effect: {fileID: 6466106487047618027, guid: 15cb2690d9b91c04fbfc1310dd9b86f1, type: 3}
+  effect:
+  - {fileID: 6466106487047618027, guid: 15cb2690d9b91c04fbfc1310dd9b86f1, type: 3}
   soundEffect: {fileID: 0}
