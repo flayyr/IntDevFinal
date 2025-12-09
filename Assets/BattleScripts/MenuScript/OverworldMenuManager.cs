@@ -99,7 +99,8 @@ public class OverworldMenuManager : MonoBehaviour
                 audio.PlayOneShot(switchSFX, 1F);
             } else if (Input.GetKeyDown(KeyCode.Z)) {
                 if (index == 0) {
-                    SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(0));
+                    SceneManager.LoadScene("TitleScene"); 
+                    //SceneManager.SetActiveScene(SceneManager.GetSceneByName("TitleScene"));
                 } else {
                     Application.Quit();
                 }
