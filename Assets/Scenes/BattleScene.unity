@@ -6532,10 +6532,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8506024517564718606, guid: 0a00c5e80a550c243aefb39eec4e9321, type: 3}
-      propertyPath: baseAgility
-      value: 1304
-      objectReference: {fileID: 0}
-    - target: {fileID: 8506024517564718606, guid: 0a00c5e80a550c243aefb39eec4e9321, type: 3}
       propertyPath: spawnPosition
       value: 
       objectReference: {fileID: 802486278}
