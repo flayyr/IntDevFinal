@@ -5972,6 +5972,7 @@ MonoBehaviour:
   chronoTransform: {fileID: 0}
   handMoving: 0
   timeSpeed: 5
+  rotated: 0
   waitTime: 1
 --- !u!50 &2064756593
 Rigidbody2D:
@@ -6869,11 +6870,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4999264461834532510, guid: 11273555d15ec58489321e685cec9c18, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -18.05
+      value: -17.06
       objectReference: {fileID: 0}
     - target: {fileID: 4999264461834532510, guid: 11273555d15ec58489321e685cec9c18, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.06
+      value: -0.27
       objectReference: {fileID: 0}
     - target: {fileID: 4999264461834532510, guid: 11273555d15ec58489321e685cec9c18, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

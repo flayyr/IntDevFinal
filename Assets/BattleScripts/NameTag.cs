@@ -27,9 +27,11 @@ public class NameTag : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < entity.statuses.Length; i++) {
-            if (entity.statuses[i]) {
-                AddIcon(i);
+        if (entity.wideAngled) {
+            for (int i = 0; i < entity.statuses.Length; i++) {
+                if (entity.statuses[i]) {
+                    AddIcon(i);
+                }
             }
         }
     }
