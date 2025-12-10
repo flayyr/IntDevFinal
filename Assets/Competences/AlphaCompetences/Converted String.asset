@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
   m_Name: Converted String
   m_EditorClassIdentifier: 
-  description: Attack with high impact
+  description: Special attack with average impact.
   targetType: 0
   ccCost: 10
   hpChange: -120

@@ -207,7 +207,7 @@ public class Entity : MonoBehaviour
                 statusDurations[i]--;
                 if (statusDurations[i] == 0) {
                     statuses[i] = false;
-                    DescriptionText.Instance.QueueText(name + " is no longer " + ((Status)i).ToString() + "!");
+                    DescriptionText.Instance.QueueText(entityName + " is no longer " + ((Status)i).ToString() + "!");
                     UpdateStats();
                 }
             }
