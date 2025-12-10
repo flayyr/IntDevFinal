@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2069445818870711355}
   - component: {fileID: 5395408577650474362}
   - component: {fileID: 7884023644749317239}
+  - component: {fileID: -2631689051027081634}
   m_Layer: 0
   m_Name: ClassicalDrama
   m_TagString: Untagged
@@ -216,7 +217,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6466106487047618027}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c34b73545c12804baa7fcfb078f3926, type: 3}
   m_Name: 
@@ -227,4 +228,22 @@ MonoBehaviour:
   animTime: 0
   lifeTimer: 0
   spriteOpacity: 0.5
-  fade: 1
+  fade: 0
+--- !u!114 &-2631689051027081634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6466106487047618027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e44bad3e9d39240a0d9570d3f825fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleAnim: {fileID: 9100000, guid: 877584f8354954749aab54129df644d5, type: 2}
+  currentAnim: {fileID: 7400000, guid: 514feeb96ee80f44ab11dddc0d872d2f, type: 2}
+  audioPlayer: {fileID: 5395408577650474362}
+  sfxTime: 0
+  spriteOpacity: 1
+  fade: 0
