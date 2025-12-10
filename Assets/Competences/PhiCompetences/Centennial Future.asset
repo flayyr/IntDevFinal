@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
   m_Name: Centennial Future
   m_EditorClassIdentifier: 
-  description: 'Chronomancy check: Increase Ally''s agility'
+  description: 'Chronomancy check: Lightly increase an Ally''s agility'
   targetType: 1
   ccCost: 16
   hpChange: 0

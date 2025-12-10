@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
   m_Name: Requisite Bracket
   m_EditorClassIdentifier: 
-  description: Attack with chance to inflict lethargic
+  description: Special attack inflicting Lethargic. Minimal impact.
   targetType: 0
   ccCost: 7
   hpChange: -80
@@ -34,5 +34,8 @@ MonoBehaviour:
   summonPrefab: {fileID: 0}
   turnsSinceUse: 0
   moveAmount: -1
-  effect: {fileID: 6466106487047618027, guid: 79bc6f386f9583d4e9cf2153c98bf5bc, type: 3}
+  effect:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   soundEffect: {fileID: 0}
