@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        if (!textBoxPrefab.activeInHierarchy && SceneManager.GetActiveScene().name != "BossDefeatRoom")
+        if (!textBoxPrefab.activeInHierarchy && SceneManager.GetActiveScene().name != "BossDefeatRoom" && !menuOn)
         {
 
             transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
@@ -129,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //using clue sheets
-        if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("ClueSheet")) {
+        if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("ClueSheet")&& !menuOn) {
             var clue = hit.collider.gameObject.GetComponent<ClueSheetBehavior>();
             //Debug.Log("A");
             clue.sheet.SetActive(true);
@@ -137,7 +137,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //picking up Phi
-        if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("Phi")) {
+        if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("Phi")&& !menuOn) {
             OverworldMenuManager.Instance.AddPhi();
             var phi = hit.collider.gameObject;
             phi.SetActive(false);
