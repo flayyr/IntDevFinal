@@ -17,7 +17,7 @@ public class CompetenceMenuItem : MenuItem
         competence = entity.competences[index];
         SetText(competence.name);
         SetCostText(competence.ccCost);
-        SetMaxCCText(entity);
+        SetMaxCCText(entity.maxCC);
 
         if(entity.cc < competence.ccCost || (entity.statuses.Length>0 && entity.statuses[(int)Status.Muted])) {
             menuText.alpha = alpha;
@@ -58,9 +58,13 @@ public class CompetenceMenuItem : MenuItem
         }
     }
 
-    public void SetMaxCCText(Entity entity) {
+    public void SetMaxCCText(int maxCC) {
         if (maxCCText != null) {
-            maxCCText.text = "/" + entity.maxCC;
+            if (maxCC > 0) {
+                maxCCText.text = "/" + maxCC;
+            } else {
+                maxCCText.text = "";
+            }
         }
     }
 }

@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        if (!textBoxPrefab.activeInHierarchy && SceneManager.GetActiveScene().name != "BossDefeatRoom")
+        if (!textBoxPrefab.activeInHierarchy && SceneManager.GetActiveScene().name != "BossDefeatRoom" && !menuOn)
         {
 
             transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
