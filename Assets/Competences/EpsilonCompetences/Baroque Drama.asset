@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
   m_Name: Baroque Drama
   m_EditorClassIdentifier: 
-  description: Increase ally's Defence
+  description: Lightly increases an ally's defence.
   targetType: 1
   ccCost: 25
   hpChange: 0
