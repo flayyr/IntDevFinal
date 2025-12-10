@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] public GameObject textBoxPrefab;
 
+
     public bool menuOn;
 
     void Start()
@@ -132,6 +133,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z)&&hit && hit.collider.CompareTag("ClueSheet")&& !menuOn) {
             var clue = hit.collider.gameObject.GetComponent<ClueSheetBehavior>();
             //Debug.Log("A");
+
             clue.sheet.SetActive(true);
             moveSpeed=0.0f;
         }
