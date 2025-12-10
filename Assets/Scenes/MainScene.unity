@@ -529,7 +529,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &115670609
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8185,6 +8185,7 @@ MonoBehaviour:
   - {fileID: 1549741364745778325, guid: e6214bf892efb994698735c3b796c448, type: 3}
   - {fileID: 4288299799920154802, guid: d8f02dd8f1aa4498baef91c5b86c7919, type: 3}
   phiMenuItem: {fileID: 216070955}
+  phiPortrait: {fileID: 115670608}
   selectSFX: {fileID: 8300000, guid: 846e8d353628c4714acfb3678395ab83, type: 3}
   switchSFX: {fileID: 8300000, guid: 567186aa1fdfa410d9f18bf9444ca083, type: 3}
   playerMovement: {fileID: 4654082632465253747}
@@ -13239,7 +13240,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -10
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0.000044345856, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
