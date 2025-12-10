@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
   m_Name: Save Second Base
   m_EditorClassIdentifier: 
-  description: Heals an ally for medium impact
+  description: Restores a lot of HP to an ally.
   targetType: 1
   ccCost: 15
   hpChange: 500
@@ -32,7 +32,7 @@ MonoBehaviour:
   weight: 0
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 101
+  turnsSinceUse: 100
   moveAmount: 1
   effect:
   - {fileID: 6466106487047618027, guid: 97b42024674f60847bcb4af89fd5a794, type: 3}

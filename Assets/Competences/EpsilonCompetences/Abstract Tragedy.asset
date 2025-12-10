@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
   m_Name: Abstract Tragedy
   m_EditorClassIdentifier: 
-  description: Attack all enemies
+  description: Special attack with average impact. Hits all foes.
   targetType: 2
   ccCost: 26
   hpChange: -80
@@ -32,9 +32,10 @@ MonoBehaviour:
   weight: 0
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 105
+  turnsSinceUse: 103
   moveAmount: 1
   effect:
-  - {fileID: 6466106487047618027, guid: 79bc6f386f9583d4e9cf2153c98bf5bc, type: 3}
-  - {fileID: 6466106487047618027, guid: 582a0adf9fc751d4bb598e983fa7e8e3, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   soundEffect: {fileID: 0}

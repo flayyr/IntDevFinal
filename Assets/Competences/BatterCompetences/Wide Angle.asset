@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
   m_Name: Wide Angle
   m_EditorClassIdentifier: 
-  description: Analyze enemy
+  description: Analyzes the enemies' characteristics.
   targetType: 0
   ccCost: 2
   hpChange: 0
@@ -32,7 +32,7 @@ MonoBehaviour:
   weight: 0
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 101
+  turnsSinceUse: 100
   moveAmount: 0
   effect:
   - {fileID: 6466106487047618027, guid: 15cb2690d9b91c04fbfc1310dd9b86f1, type: 3}

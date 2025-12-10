@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
   m_Name: Momentary Future
   m_EditorClassIdentifier: 
-  description: 'Chronomancy check: Lightly increase an ally''s Attack and Defense'
+  description: 'Chronomancy: Lightly increases an ally''s ATK and DEF.'
   targetType: 1
   ccCost: 16
   hpChange: 0
