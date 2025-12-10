@@ -15,26 +15,24 @@ MonoBehaviour:
   description: Fifth single target attack
   targetType: 0
   ccCost: 5
-  hpChange: -350
+  hpChange: -555
   CPChange: 0
-  ATKInfluence: 0
+  ATKInfluence: 2
   ESPInfluence: 0
-  DEFInfluence: 0
+  DEFInfluence: 0.5
   AGIInfluence: 0
-  variance: 0
+  variance: 0.2
   hitChance: 0.8
-  statuses: 04000000
+  statuses: 00000000
   cures: 0
-  statusDuration: 1
+  statusDuration: 3
   inflictChance: 0.7
   chronomancy: 0
   isEnemy: 1
-  weight: 4
+  weight: 3
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 102
+  turnsSinceUse: 3
   moveAmount: -1
-  effect:
-  - {fileID: 6466106487047618027, guid: 582a0adf9fc751d4bb598e983fa7e8e3, type: 3}
-  - {fileID: 6466106487047618027, guid: 79bc6f386f9583d4e9cf2153c98bf5bc, type: 3}
+  effect: {fileID: 0}
   soundEffect: {fileID: 0}

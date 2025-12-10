@@ -103,12 +103,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityName: Erased
-  maxHP: 400
+  maxHP: 1000
   maxCC: 100
   ATK: 300
   DEF: 310
   ESP: 100
-  baseAgility: 120
+  baseAgility: 200
   competences:
   - {fileID: 11400000, guid: 4a30237665682fb4bb715f6900ce276f, type: 2}
   hp: 0

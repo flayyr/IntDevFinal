@@ -16,24 +16,23 @@ MonoBehaviour:
   targetType: 1
   ccCost: 10
   hpChange: 0
-  CPChange: 1
+  CPChange: 70
   ATKInfluence: 0
   ESPInfluence: 0
   DEFInfluence: 0
-  AGIInfluence: 0.2
-  variance: 0.2
+  AGIInfluence: 0.3
+  variance: 0.5
   hitChance: 1
   statuses: 04000000
   cures: 1
   statusDuration: 1
   inflictChance: 1
-  chronomancy: 1
+  chronomancy: 0
   isEnemy: 0
   weight: 0
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 101
+  turnsSinceUse: 0
   moveAmount: 1
-  effect:
-  - {fileID: 6466106487047618027, guid: 97b42024674f60847bcb4af89fd5a794, type: 3}
+  effect: {fileID: 6466106487047618027, guid: 97b42024674f60847bcb4af89fd5a794, type: 3}
   soundEffect: {fileID: 0}

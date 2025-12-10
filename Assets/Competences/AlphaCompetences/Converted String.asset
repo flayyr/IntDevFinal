@@ -17,11 +17,11 @@ MonoBehaviour:
   ccCost: 10
   hpChange: -120
   CPChange: 0
-  ATKInfluence: 0.5
-  ESPInfluence: 1.5
+  ATKInfluence: 2
+  ESPInfluence: 0.5
   DEFInfluence: 1
   AGIInfluence: 0
-  variance: 0.3
+  variance: 0.2
   hitChance: 1
   statuses: 
   cures: 0

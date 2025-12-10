@@ -15,13 +15,13 @@ MonoBehaviour:
   description: Party buff
   targetType: 1
   ccCost: 16
-  hpChange: 80
+  hpChange: 120
   CPChange: 0
   ATKInfluence: 0
   ESPInfluence: 0
   DEFInfluence: 0
   AGIInfluence: 0
-  variance: 0
+  variance: 0.1
   hitChance: 1
   statuses: 0300000006000000
   cures: 0
@@ -29,17 +29,16 @@ MonoBehaviour:
   inflictChance: 1
   chronomancy: 0
   isEnemy: 1
-  weight: 7
+  weight: 8
   requirements:
   - requirementType: 2
     requirementNum: 2
   - requirementType: 3
     requirementNum: 2
   - requirementType: 4
-    requirementNum: 2
+    requirementNum: 0
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 102
-  moveAmount: 0
-  effect:
-  - {fileID: 6466106487047618027, guid: 97b42024674f60847bcb4af89fd5a794, type: 3}
+  turnsSinceUse: 0
+  moveAmount: 1
+  effect: {fileID: 0}
   soundEffect: {fileID: 0}

@@ -15,17 +15,17 @@ MonoBehaviour:
   description: Impossible Siktemporic Thought
   targetType: 0
   ccCost: 16
-  hpChange: -100
+  hpChange: -300
   CPChange: 0
-  ATKInfluence: 0
+  ATKInfluence: 1.75
   ESPInfluence: 0
-  DEFInfluence: 0
+  DEFInfluence: 1
   AGIInfluence: 0
-  variance: 0
-  hitChance: 1
+  variance: 0.2
+  hitChance: 0.8
   statuses: 05000000
   cures: 0
-  statusDuration: 1
+  statusDuration: 5
   inflictChance: 0.7
   chronomancy: 0
   isEnemy: 1

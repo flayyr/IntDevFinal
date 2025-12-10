@@ -15,28 +15,26 @@ MonoBehaviour:
   description: Fifth AOE attack
   targetType: 2
   ccCost: 15
-  hpChange: -120
+  hpChange: -200
   CPChange: 0
-  ATKInfluence: 0
+  ATKInfluence: 2
   ESPInfluence: 0
-  DEFInfluence: 0
+  DEFInfluence: 0.5
   AGIInfluence: 0
-  variance: 0
+  variance: 0.35
   hitChance: 0.8
-  statuses: 00000000
+  statuses: 04000000
   cures: 0
-  statusDuration: 1
-  inflictChance: 0.4
+  statusDuration: 4
+  inflictChance: 0.55
   chronomancy: 0
   isEnemy: 1
-  weight: 3
+  weight: 4
   requirements:
   - requirementType: 4
     requirementNum: 0
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 102
-  moveAmount: 1
-  effect:
-  - {fileID: 6466106487047618027, guid: 582a0adf9fc751d4bb598e983fa7e8e3, type: 3}
-  - {fileID: 6466106487047618027, guid: 79bc6f386f9583d4e9cf2153c98bf5bc, type: 3}
+  turnsSinceUse: 7
+  moveAmount: -1
+  effect: {fileID: 0}
   soundEffect: {fileID: 0}

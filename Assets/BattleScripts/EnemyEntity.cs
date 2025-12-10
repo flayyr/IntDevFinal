@@ -38,6 +38,7 @@ public class EnemyEntity : Entity
                 enemyTimer.Show();
             }
         }
+        Debug.Log(gameObject.name + " "+hp);
     }
 
     public override void ChangeHP(int change) {
