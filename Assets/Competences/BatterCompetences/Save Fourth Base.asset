@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
   m_Name: Save Fourth Base
   m_EditorClassIdentifier: 
-  description: Revive an ally
+  description: Revives an ally.
   targetType: 1
   ccCost: 50
-  hpChange: 100
+  hpChange: 1100
   CPChange: 0
   ATKInfluence: 0
   ESPInfluence: 1
@@ -32,7 +32,7 @@ MonoBehaviour:
   weight: 0
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 101
+  turnsSinceUse: 100
   moveAmount: 1
   effect:
   - {fileID: 6466106487047618027, guid: 97b42024674f60847bcb4af89fd5a794, type: 3}
