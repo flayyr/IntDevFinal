@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
   m_Name: Cubist Tragedy
   m_EditorClassIdentifier: 
-  description: Special attack with considerable impact. Hits all foes.
+  description: Attack all enemies
   targetType: 2
   ccCost: 42
   hpChange: -190
@@ -35,7 +35,6 @@ MonoBehaviour:
   turnsSinceUse: 0
   moveAmount: 1
   effect:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 6466106487047618027, guid: 79bc6f386f9583d4e9cf2153c98bf5bc, type: 3}
+  - {fileID: 6466106487047618027, guid: 582a0adf9fc751d4bb598e983fa7e8e3, type: 3}
   soundEffect: {fileID: 0}

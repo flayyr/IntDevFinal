@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
   m_Name: Aeonian Future
   m_EditorClassIdentifier: 
-  description: 'Chronomancy check: Lightly increase an ally''s ATK/DEF/ESP'
+  description: 'Chronomancy check: Increase ATK/DEF/ESP of an ally'
   targetType: 1
   ccCost: 38
   hpChange: 0
@@ -32,10 +32,8 @@ MonoBehaviour:
   weight: 0
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 0
+  turnsSinceUse: 105
   moveAmount: 1
   effect:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 6466106487047618027, guid: 97b42024674f60847bcb4af89fd5a794, type: 3}
   soundEffect: {fileID: 0}
