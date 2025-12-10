@@ -28,12 +28,21 @@ public class Pointer : MonoBehaviour
     }
 
     void SwitchNameTag(EnemyEntity entity, int countStatus) {
+        if (!entity.wideAngled) {
+            if (entity.entityName == "Fifth") {
+                fifthNameTags[0].ShowNameTag(entity);
+            } else if (entity.entityName == "Erased") {
+                erasedNameTags[0].ShowNameTag(entity);
+            }
+            return;
+        }
+
         if (entity.entityName == "Fifth") {
-            if(countStatus >= fifthNameTags.Length) { countStatus = fifthNameTags.Length - 1; }
-            fifthNameTags[countStatus].ShowNameTag(entity);
+            if(countStatus >= fifthNameTags.Length) { countStatus = fifthNameTags.Length; }
+            fifthNameTags[countStatus+1].ShowNameTag(entity);
         } else if (entity.entityName == "Erased") {
-            if (countStatus >= erasedNameTags.Length) { countStatus = erasedNameTags.Length - 1; }
-            erasedNameTags[countStatus].ShowNameTag(entity);
+            if (countStatus >= erasedNameTags.Length) { countStatus = erasedNameTags.Length; }
+            erasedNameTags[countStatus+1].ShowNameTag(entity);
         }
     }
 
