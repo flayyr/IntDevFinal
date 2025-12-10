@@ -25,7 +25,7 @@ public class CompetenceSelectionMenu : MonoBehaviour, ISelectionMenu {
             } else {
                 competenceMenuItems[i].SetText("");
                 competenceMenuItems[i].SetCostText(-1);
-                competenceMenuItems[i].SetMaxCCText(entity);
+                competenceMenuItems[i].SetMaxCCText(-1);
             }
         }
 
