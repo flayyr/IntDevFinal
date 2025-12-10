@@ -1,10 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class retry : MonoBehaviour
+public class fadeTransOut : MonoBehaviour
 {
 
-    [SerializeField] string levelGoTo;
+    public Image square;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,10 +16,6 @@ public class retry : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            //SceneManager.LoadScene(levelGoTo);
-            SceneManager.LoadScene("TitleScene");
-        }
+        square.CrossFadeAlpha(0f, 0.2f, false);
     }
 }
