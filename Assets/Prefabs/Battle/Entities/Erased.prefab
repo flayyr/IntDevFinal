@@ -121,7 +121,7 @@ MonoBehaviour:
   pointer: {fileID: 0}
   enemyTimer: {fileID: 8463308104276696164}
   TimerShowAfterPercentage: 0.3
-  timerPositionOffset: {x: -2, y: 0}
+  timerPositionOffset: {x: 1.306, y: 0}
   spawnPosition: {fileID: 0}
 --- !u!114 &3314084798105636263
 MonoBehaviour:
