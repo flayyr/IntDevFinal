@@ -11,7 +11,7 @@ public class Pointer : MonoBehaviour
     public void SetSelection(EnemyEntity entity)
     {
         transform.position = entity.transform.position;
-        //nameTag.transform.position = transform.position + textOffSet;
+        transform.position += new Vector3(0, 0, Random.Range(0f, 1f));
         gameObject.SetActive(true);
 
         HideNameTags();

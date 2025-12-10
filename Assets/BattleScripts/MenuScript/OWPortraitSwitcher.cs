@@ -12,7 +12,9 @@ public class OWPortraitSwitcher : MonoBehaviour
 
     public void StopAll() {
         for (int i = 0; i < portraits.Length; i++) {
-            portraits[i].StopAnim();
+            if (portraits[i].gameObject.activeInHierarchy) {
+                portraits[i].StopAnim();
+            }
         }
     }
 }

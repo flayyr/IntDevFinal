@@ -11,6 +11,7 @@ public class OverworldMenuManager : MonoBehaviour
     [SerializeField] OWQuitMenu quitMenu;
     [SerializeField] public PlayerEntity[] playerEntities;
     [SerializeField] OWCharacterMenuItem phiMenuItem;
+    [SerializeField] GameObject phiPortrait;
 
     AudioSource audio;
     [SerializeField]AudioClip selectSFX;
@@ -69,7 +70,7 @@ public class OverworldMenuManager : MonoBehaviour
                 currSelectionMenu = competenceMenu;
                 characterMenu.Hide();
                 index = 0;
-            } else if (Input.GetKeyDown(KeyCode.X)||Input.GetKeyDown(KeyCode.X)) {
+            } else if (Input.GetKeyDown(KeyCode.X)||Input.GetKeyDown(KeyCode.C)) {
                 state = MenuState.Closed;
                 characterMenu.Hide();
             } else if (Input.GetKeyDown(KeyCode.RightArrow)) {
@@ -99,17 +100,21 @@ public class OverworldMenuManager : MonoBehaviour
                 audio.PlayOneShot(switchSFX, 1F);
             } else if (Input.GetKeyDown(KeyCode.Z)) {
                 if (index == 0) {
-                    SceneManager.LoadScene("TitleScene"); 
+                    SceneManager.LoadScene("TitleScene");
                     //SceneManager.SetActiveScene(SceneManager.GetSceneByName("TitleScene"));
                 } else {
                     Application.Quit();
                 }
+            } else if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.C)) {
+                state = MenuState.Closed;
+                quitMenu.Hide();
             }
         }
     }
 
     public void AddPhi() {
         characterMenu.AddMenuItem(phiMenuItem, playerEntities[3]);
+        phiPortrait.gameObject.SetActive(true);
     }
 
     void ChangeSelection(int i) {
