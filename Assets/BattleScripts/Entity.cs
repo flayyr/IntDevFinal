@@ -9,6 +9,9 @@ public class Entity : MonoBehaviour
 {
     static float moveSpeed = 15f;
     static float waitTimeAfterMove = 0.3f;
+    static int defendingCompetenceRestore = 10;
+    static float hitAnimationFlashRate = 10f;
+    static float multihitDelay = 0.2f;
 
     [SerializeField] public string entityName;
     [SerializeField] public int maxHP;
@@ -32,6 +35,8 @@ public class Entity : MonoBehaviour
 
     protected bool defending;
     public bool dead;
+
+    [SerializeField]SpriteRenderer spriteRenderer;
     
 
     protected virtual void Awake()
@@ -46,6 +51,10 @@ public class Entity : MonoBehaviour
         defence = DEF;
         foreach(CompetenceSO competence in competences) {
             competence.turnsSinceUse = 100;
+        }
+        if (spriteRenderer == null)
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
         }
     }
 
@@ -117,7 +126,7 @@ public class Entity : MonoBehaviour
             //Set Defending (not included in statuses array to avoid showing description)
             if (competence.statuses[i] == Status.Defending) {
                 defending = true;
-
+                ChangeCC(defendingCompetenceRestore);
             } else if (competence.statuses[i] == Status.WideAngle) {
                 wideAngled = true;
             }
@@ -138,7 +147,12 @@ public class Entity : MonoBehaviour
                     }
                 }
             } else if(!competence.cures){
-                statusDurations[(int)competence.statuses[i]] = competence.statusDuration;
+                if (Random.value < competence.inflictChance)
+                {
+                    DescriptionText.Instance.QueueText(entityName + " is " + competence.statuses[i].ToString() + " again!");
+                    statuses[(int)competence.statuses[i]] = true;
+                    statusDurations[(int)competence.statuses[i]] = competence.statusDuration;
+                }
             }
         }
 
@@ -264,16 +278,35 @@ public class Entity : MonoBehaviour
                 hpChange /= 2;
                 defending = false;
             }
+
+            StartCoroutine(HitAnimation());
+
         }else
         {
-            hpChange = competence.hpChange + Mathf.CeilToInt(source.attack * competence.ATKInfluence + source.espirit * competence.ESPInfluence + defence * competence.DEFInfluence + agility * competence.AGIInfluence);
+            hpChange = competence.hpChange + Mathf.CeilToInt(source.attack * competence.ATKInfluence + source.espirit * competence.ESPInfluence + defence * competence.DEFInfluence);
         }
         hpChange = Mathf.CeilToInt(hpChange * Random.Range(1f - competence.variance, 1f + competence.variance));
         ChangeHP(hpChange);
 
         if (competence.CPChange != 0) {
-            ChangeCC(competence.CPChange);
+            ChangeCC(Mathf.CeilToInt( competence.CPChange + agility * competence.AGIInfluence));
         }
+    }
+
+    IEnumerator HitAnimation()
+    {
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.05f);
+        spriteRenderer.color = Color.white;
+
+        float time = 0f;
+        while (time < 0.5f*hitAnimationFlashRate)
+        {
+            time += Time.deltaTime* hitAnimationFlashRate;
+            spriteRenderer.color = new Color(1,1,1, Mathf.Floor(time) % 2);
+            yield return new WaitForEndOfFrame();
+        }
+        spriteRenderer.color = new Color(1, 1, 1, 1);
     }
 
     IEnumerator AnimationCoroutine(Entity targetEntity, float moveAmount, CompetenceSO competence)
@@ -366,6 +399,7 @@ public class Entity : MonoBehaviour
         foreach (Entity entity in targetEntities)
         {
             HitTarget(competence, entity);
+            yield return new WaitForSeconds(multihitDelay);
         }
 
         AfterHitLabel:

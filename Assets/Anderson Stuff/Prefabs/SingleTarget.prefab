@@ -107,8 +107,8 @@ MonoBehaviour:
   audioPlayer: {fileID: 5395408577650474362}
   animTime: 0
   lifeTimer: 0
-  spriteOpacity: 0.5
-  fade: 0
+  spriteOpacity: 1
+  fade: 1
 --- !u!95 &2069445818870711355
 Animator:
   serializedVersion: 7
