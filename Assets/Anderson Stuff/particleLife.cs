@@ -62,8 +62,8 @@ public class particleLife : MonoBehaviour
     void Update()
     {
         if (fade)
-        {               
-            spriteOpacity -= 0.005f;
+        {
+            spriteOpacity -= Time.deltaTime;
             sprender.color = new Color(1f, 1f, 1f, spriteOpacity);
             Debug.Log(spriteOpacity);
         }
