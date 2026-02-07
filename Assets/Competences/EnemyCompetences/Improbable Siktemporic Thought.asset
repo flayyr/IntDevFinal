@@ -10,31 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
-  m_Name: Forgetting of Spiteful Nations
+  m_Name: Improbable Siktemporic Thought
   m_EditorClassIdentifier: 
-  description: Fifth AOE attack
-  targetType: 2
-  ccCost: 15
-  hpChange: -275
+  description: Impossible Siktemporic Thought
+  targetType: 0
+  ccCost: 16
+  hpChange: -300
   CPChange: 0
-  ATKInfluence: 2
+  ATKInfluence: 1.75
   ESPInfluence: 0
   DEFInfluence: 1
   AGIInfluence: 0
-  variance: 0.3
-  hitChance: 0.75
-  statuses: 04000000
+  variance: 0.2
+  hitChance: 0.8
+  statuses: 05000000
   cures: 0
-  statusDuration: 4
-  inflictChance: 0.55
+  statusDuration: 5
+  inflictChance: 0.7
   chronomancy: 0
   isEnemy: 1
-  weight: 4
-  requirements:
-  - requirementType: 4
-    requirementNum: 0
+  weight: 3
+  requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 0
+  turnsSinceUse: 100
   moveAmount: -1
   effect:
   - {fileID: 6466106487047618027, guid: 582a0adf9fc751d4bb598e983fa7e8e3, type: 3}
