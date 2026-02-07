@@ -20,7 +20,7 @@ MonoBehaviour:
   ATKInfluence: 0
   ESPInfluence: 0
   DEFInfluence: 0
-  AGIInfluence: 0.3
+  AGIInfluence: 0.1
   variance: 0.5
   hitChance: 1
   statuses: 04000000
@@ -32,7 +32,7 @@ MonoBehaviour:
   weight: 0
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 100
+  turnsSinceUse: 0
   moveAmount: 1
   effect:
   - {fileID: 6466106487047618027, guid: 97b42024674f60847bcb4af89fd5a794, type: 3}
