@@ -12,6 +12,9 @@ public class Entity : MonoBehaviour
     static int defendingCompetenceRestore = 10;
     static float hitAnimationFlashRate = 10f;
     static float multihitDelay = 0.2f;
+    static float critSpeedMult = 2f;
+    static float critValueMult = 2f;
+    static float critRate = 0.05f;
 
     [SerializeField] public string entityName;
     [SerializeField] public int maxHP;
@@ -35,6 +38,8 @@ public class Entity : MonoBehaviour
 
     protected bool defending;
     public bool dead;
+
+    public bool critting;
 
     [SerializeField]SpriteRenderer spriteRenderer;
     
@@ -60,7 +65,14 @@ public class Entity : MonoBehaviour
 
     protected virtual void Update() {
         if (BattleManager.Instance.state == BattleState.idle && !dead) {
-            progress += (agility/1000f) * Time.deltaTime;
+            if (critting)
+            {
+                progress += (agility * critSpeedMult) / 1000f * Time.deltaTime;
+            }
+            else
+            {
+                progress += (agility / 1000f) * Time.deltaTime;
+            }
         }
     }
 
@@ -236,6 +248,24 @@ public class Entity : MonoBehaviour
         {
             ChangeCC(-Mathf.CeilToInt(maxCC * 0.12f));
         }
+
+        if (critting)
+        {
+            RemoveCrit();
+        }else if (Random.value < critRate)
+        {
+            Crit();
+        }
+    }
+
+    void Crit()
+    {
+        critting = true;
+    }
+
+    void RemoveCrit()
+    {
+        critting = false;
     }
 
     void IncrementCompetenceTurnsSinceUse(CompetenceSO usingCompetence) {
@@ -286,6 +316,10 @@ public class Entity : MonoBehaviour
             hpChange = competence.hpChange + Mathf.CeilToInt(source.attack * competence.ATKInfluence + source.espirit * competence.ESPInfluence + defence * competence.DEFInfluence);
         }
         hpChange = Mathf.CeilToInt(hpChange * Random.Range(1f - competence.variance, 1f + competence.variance));
+        if (source.critting)
+        {
+            hpChange = Mathf.CeilToInt(hpChange * critValueMult);
+        }
         ChangeHP(hpChange);
 
         if (competence.CPChange != 0) {
