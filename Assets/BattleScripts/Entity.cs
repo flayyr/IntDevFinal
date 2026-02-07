@@ -146,7 +146,12 @@ public class Entity : MonoBehaviour
                     }
                 }
             } else if(!competence.cures){
-                statusDurations[(int)competence.statuses[i]] = competence.statusDuration;
+                if (Random.value < competence.inflictChance)
+                {
+                    DescriptionText.Instance.QueueText(entityName + " is " + competence.statuses[i].ToString() + " again!");
+                    statuses[(int)competence.statuses[i]] = true;
+                    statusDurations[(int)competence.statuses[i]] = competence.statusDuration;
+                }
             }
         }
 
