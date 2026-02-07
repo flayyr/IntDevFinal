@@ -246,4 +246,4 @@ MonoBehaviour:
   audioPlayer: {fileID: 5395408577650474362}
   sfxTime: 0
   spriteOpacity: 1
-  fade: 0
+  fade: 1
