@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class DescriptionText : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI dropShadow;
     [SerializeField] GameObject descriptionTextBox;
     [SerializeField, Range(0f, 0.2f)] float waitTimePerCharacter;
     [SerializeField, Range(0f, 0.5f)] float waitTimePerLine;
@@ -47,10 +48,12 @@ public class DescriptionText : MonoBehaviour
     {
         int numChar = 0;
         text.text = textToDisplay;
+        dropShadow.text = text.text;
         while (numChar < textToDisplay.Length)
         {
             numChar++;
             text.maxVisibleCharacters = numChar;
+            dropShadow.maxVisibleCharacters = text.maxVisibleCharacters;
             yield return new WaitForSeconds(waitTimePerCharacter);
         }
         yield return new WaitForSeconds(waitTimePerLine);

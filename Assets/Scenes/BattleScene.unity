@@ -3235,6 +3235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0953b3406e0f5142a5bbf263b182493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dropShadow: {fileID: 1681188864}
   descriptionTextBox: {fileID: 624447773}
   waitTimePerCharacter: 0.05
   waitTimePerLine: 0.3
@@ -5108,7 +5109,6 @@ GameObject:
   - component: {fileID: 1681188863}
   - component: {fileID: 1681188865}
   - component: {fileID: 1681188864}
-  - component: {fileID: 1681188866}
   m_Layer: 5
   m_Name: Description Text Shadow
   m_TagString: Untagged
@@ -5234,21 +5234,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681188862}
   m_CullTransparentMesh: 1
---- !u!114 &1681188866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1681188862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0953b3406e0f5142a5bbf263b182493, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  descriptionTextBox: {fileID: 624447773}
-  waitTimePerCharacter: 0.05
-  waitTimePerLine: 0.3
 --- !u!1 &1704839215
 GameObject:
   m_ObjectHideFlags: 0
