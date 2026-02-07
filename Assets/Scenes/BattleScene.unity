@@ -497,6 +497,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7869261902197303198, guid: 496ea1667643fc8408294978f6725972, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9186622794550565828, guid: 496ea1667643fc8408294978f6725972, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -969,6 +973,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7869261902197303198, guid: 496ea1667643fc8408294978f6725972, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9186622794550565828, guid: 496ea1667643fc8408294978f6725972, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1435,6 +1443,10 @@ PrefabInstance:
     - target: {fileID: 941847663824689462, guid: 496ea1667643fc8408294978f6725972, type: 3}
       propertyPath: unselectedAlpha
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 941847663824689462, guid: 496ea1667643fc8408294978f6725972, type: 3}
+      propertyPath: critProgressSprite
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1143023234244966865, guid: 496ea1667643fc8408294978f6725972, type: 3}
       propertyPath: m_LocalScale.x
@@ -4126,6 +4138,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7869261902197303198, guid: 496ea1667643fc8408294978f6725972, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9186622794550565828, guid: 496ea1667643fc8408294978f6725972, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4422,6 +4438,10 @@ PrefabInstance:
     - target: {fileID: 941847663824689462, guid: 496ea1667643fc8408294978f6725972, type: 3}
       propertyPath: switchPortrait
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 941847663824689462, guid: 496ea1667643fc8408294978f6725972, type: 3}
+      propertyPath: critProgressSprite
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1143023234244966865, guid: 496ea1667643fc8408294978f6725972, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5070,6 +5090,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6592576755881835781, guid: 496ea1667643fc8408294978f6725972, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869261902197303198, guid: 496ea1667643fc8408294978f6725972, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
