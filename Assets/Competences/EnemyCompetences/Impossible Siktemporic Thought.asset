@@ -15,14 +15,14 @@ MonoBehaviour:
   description: Impossible Siktemporic Thought
   targetType: 0
   ccCost: 16
-  hpChange: -325
+  hpChange: -300
   CPChange: 0
   ATKInfluence: 1.75
   ESPInfluence: 0
   DEFInfluence: 1
   AGIInfluence: 0
   variance: 0.2
-  hitChance: 0.8
+  hitChance: 0.75
   statuses: 05000000
   cures: 0
   statusDuration: 4
@@ -32,7 +32,7 @@ MonoBehaviour:
   weight: 3
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 0
+  turnsSinceUse: 100
   moveAmount: -1
   effect:
   - {fileID: 6466106487047618027, guid: 582a0adf9fc751d4bb598e983fa7e8e3, type: 3}
