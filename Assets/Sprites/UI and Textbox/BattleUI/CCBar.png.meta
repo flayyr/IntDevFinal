@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: b4ec81ea76fe8fb4386de347ff97d7dd
+guid: 2a19880d467a6f64bb5a0798b4aa56da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6586649382830489539
-    second: CCBar_0
-  - first:
-      213: -397733804912341501
-    second: CCBar_1
+      213: 1494682776557974901
+    second: CCBar 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CCBar_0
+      name: CCBar 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 260
-        height: 90
+        width: 21
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d30c75ca8458794a0800000000000000
-      internalID: -6586649382830489539
+      spriteID: 575f1ace01e2eb410800000000000000
+      internalID: 1494682776557974901
       vertices: []
       indices: 
       edges: []
@@ -128,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6949da64f6d18fe4d879b66354d0eb63
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -138,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CCBar_0: -6586649382830489539
+      CCBar 1_0: 1494682776557974901
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
