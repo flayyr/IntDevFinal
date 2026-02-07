@@ -9,6 +9,7 @@ public class CharacterMenuItem : MenuItem
     [Space(20)]
     [SerializeField] Slider progressBar;
     [SerializeField] CritProgressDisplay critProgressSprite;
+    [SerializeField] CritUIAnimation critFullAnimation;
     [SerializeField] Slider healthBar;
     [SerializeField] Slider CCBar;
     [SerializeField] Image portrait;
@@ -47,6 +48,15 @@ public class CharacterMenuItem : MenuItem
             {
                 critProgressSprite.Deactivate();
             }
+            if (entity.selectingMove)
+            {
+                critProgressSprite.Deactivate();
+            }
+        }
+
+        if(critFullAnimation != null)
+        {
+            critFullAnimation.gameObject.SetActive(entity.critting && entity.selectingMove);
         }
 
         if (progressBar != null) {

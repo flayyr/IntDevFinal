@@ -12,7 +12,10 @@ public class MenuItem : MonoBehaviour
     [SerializeField] RectTransform textTransform;
     [SerializeField] float selectedShift;
     [SerializeField]bool bold = true;
-    
+    [SerializeField] GameObject showOnSelect;
+
+    public bool enableShowOnSelectObj = false;
+     
     Animator animator;
     Vector3 originalTextPosition;
     Vector3 selectedTextPosition;
@@ -45,6 +48,11 @@ public class MenuItem : MonoBehaviour
         {
             textTransform.localPosition = selectedTextPosition;
         }
+
+        if(showOnSelect != null && enableShowOnSelectObj)
+        {
+            showOnSelect.SetActive(true);
+        }
     }
 
     public virtual void DeselectItem() {
@@ -59,6 +67,11 @@ public class MenuItem : MonoBehaviour
         if (textTransform != null)
         {
             textTransform.localPosition = originalTextPosition;
+        }
+
+        if (showOnSelect != null && enableShowOnSelectObj)
+        {
+            showOnSelect.SetActive(false);
         }
     }
 

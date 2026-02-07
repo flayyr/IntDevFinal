@@ -226,6 +226,11 @@ public class BattleManager : MonoBehaviour
             user.UseCompetence(competence, target);
         else
             user.UseMultiTargetCompetence(competence, targetEntities);
+
+        if (user.GetType() == typeof(PlayerEntity))
+        {
+            ((PlayerEntity)user).selectingMove = false;
+        }
         SwitchState(BattleState.Acting);
     }
 

@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\LayerManagement.cs" />
     <Compile Include="Assets\Scripts\TitleScreenManager.cs" />
     <Compile Include="Assets\BattleScripts\CharacterMenuItem.cs" />
+    <Compile Include="Assets\BattleScripts\CritUIAnimation.cs" />
     <Compile Include="Assets\Anderson Stuff\particleLifeSoundBased.cs" />
     <Compile Include="Assets\BattleScripts\CharacterSelectionmenu.cs" />
     <Compile Include="Assets\BattleScripts\Entity.cs" />

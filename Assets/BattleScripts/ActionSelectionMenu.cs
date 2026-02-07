@@ -19,7 +19,17 @@ public class ActionSelectionMenu : MonoBehaviour
     public void Show(PlayerEntity entity) {
         gameObject.SetActive(true);
         ActingCharacter.SetEntity(entity);
+        SetShowOnSelectObj(entity.critting);
+
         SelectItem(0);
+    }
+
+    void SetShowOnSelectObj(bool condition)
+    {
+        for (int i = 0; i < menuItems.Length; i++)
+        {
+            menuItems[i].enableShowOnSelectObj = condition;
+        }
     }
 
     public int SelectItem(int index) {

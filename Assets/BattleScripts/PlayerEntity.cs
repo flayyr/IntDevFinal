@@ -12,6 +12,7 @@ public class PlayerEntity : Entity
     
     float timer = 0;
     int animDir = 1;
+    public bool selectingMove = false;
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class PlayerEntity : Entity
             progress = 0f;
             BattleManager.Instance.PlayerTurn(this);
             SFXManager.Instance.PlaySound(SFXManager.Instance.ping);
+            selectingMove = true;
         }
 
         if(!dead)

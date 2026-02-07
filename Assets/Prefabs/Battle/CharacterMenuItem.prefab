@@ -32,6 +32,7 @@ RectTransform:
   - {fileID: 8850540502576287561}
   - {fileID: 1843489376196847141}
   - {fileID: 7869261902197303198}
+  - {fileID: 29208835166039461}
   m_Father: {fileID: 3522274267260067075}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -289,7 +290,7 @@ GameObject:
   - component: {fileID: 6565227647905387496}
   - component: {fileID: 5611421966417822634}
   m_Layer: 5
-  m_Name: Crit Sprite
+  m_Name: Crit Follow Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -456,6 +457,7 @@ MonoBehaviour:
   switchPortrait: 0
   progressBar: {fileID: 483371257009476742}
   critProgressSprite: {fileID: 5611421966417822634}
+  critFullAnimation: {fileID: 2334991104369111512}
   healthBar: {fileID: 147849643747241911}
   CCBar: {fileID: 547335693411246762}
   portrait: {fileID: 3782553385147257253}
@@ -823,6 +825,99 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &5104475597331629031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 29208835166039461}
+  - component: {fileID: 1699658064129743407}
+  - component: {fileID: 3343756246989576763}
+  - component: {fileID: 2334991104369111512}
+  m_Layer: 5
+  m_Name: Crit Full Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &29208835166039461
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5104475597331629031}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 198476542069079254}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0021791, y: 17.1}
+  m_SizeDelta: {x: 160, y: 49.14}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1699658064129743407
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5104475597331629031}
+  m_CullTransparentMesh: 1
+--- !u!114 &3343756246989576763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5104475597331629031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 6537579843111615999, guid: c58fb9a6693fb413ebc80fdad969f40b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2334991104369111512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5104475597331629031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008d1115414468749814460f4b0fb177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 6537579843111615999, guid: c58fb9a6693fb413ebc80fdad969f40b, type: 3}
+  - {fileID: 1958473005, guid: c58fb9a6693fb413ebc80fdad969f40b, type: 3}
+  - {fileID: 837435671, guid: c58fb9a6693fb413ebc80fdad969f40b, type: 3}
+  - {fileID: 508951333, guid: c58fb9a6693fb413ebc80fdad969f40b, type: 3}
 --- !u!1 &5533845484099432979
 GameObject:
   m_ObjectHideFlags: 0

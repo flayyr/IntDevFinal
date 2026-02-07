@@ -1,16 +1,17 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-public class CritTimerAnimation : MonoBehaviour
+public class CritUIAnimation : MonoBehaviour
 {
     [SerializeField] Sprite[] sprites;
-    SpriteRenderer spriteRenderer;
+    Image image;
 
     float timer = 0f;
     int spriteIndex = 0;
 
     private void OnEnable()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        image = GetComponent<Image>();
     }
 
     private void Update()
@@ -22,7 +23,7 @@ public class CritTimerAnimation : MonoBehaviour
         }
 
         timer -= 0.15f;
-        spriteRenderer.sprite = sprites[spriteIndex];
+        image.sprite = sprites[spriteIndex];
         spriteIndex++;
         spriteIndex %= sprites.Length;
     }
