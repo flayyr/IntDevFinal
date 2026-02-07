@@ -14,7 +14,7 @@ public class Entity : MonoBehaviour
     static float multihitDelay = 0.2f;
     static float critSpeedMult = 2f;
     static float critValueMult = 2f;
-    static float critRate = 0.05f;
+    static float critRate = 0.5f;
 
     [SerializeField] public string entityName;
     [SerializeField] public int maxHP;
@@ -261,6 +261,7 @@ public class Entity : MonoBehaviour
     protected virtual void Crit()
     {
         critting = true;
+        SFXManager.Instance.PlaySound(SFXManager.Instance.crit);
     }
 
     protected virtual void RemoveCrit()

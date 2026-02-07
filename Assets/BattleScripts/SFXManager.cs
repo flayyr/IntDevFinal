@@ -8,6 +8,7 @@ public class SFXManager : MonoBehaviour
     public AudioClip cycleClick;
     public AudioClip selectClick;
     public AudioClip statusHurt;
+    public AudioClip crit;
 
     AudioSource source;
 
