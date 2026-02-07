@@ -15,7 +15,7 @@ MonoBehaviour:
   description: Special attack inflicting Muteness. Minimal impact.
   targetType: 0
   ccCost: 9
-  hpChange: -80
+  hpChange: -40
   CPChange: 0
   ATKInfluence: 0
   ESPInfluence: 1.5
@@ -32,7 +32,7 @@ MonoBehaviour:
   weight: 0
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 0
+  turnsSinceUse: 100
   moveAmount: -1
   effect:
   - {fileID: 6466106487047618027, guid: 0c4df2a9cd35697428a268c9875c3f77, type: 3}
