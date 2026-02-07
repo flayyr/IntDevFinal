@@ -11,6 +11,7 @@ public class Entity : MonoBehaviour
     static float waitTimeAfterMove = 0.3f;
     static int defendingCompetenceRestore = 10;
     static float hitAnimationFlashRate = 10f;
+    static float multihitDelay = 0.2f;
 
     [SerializeField] public string entityName;
     [SerializeField] public int maxHP;
@@ -398,6 +399,7 @@ public class Entity : MonoBehaviour
         foreach (Entity entity in targetEntities)
         {
             HitTarget(competence, entity);
+            yield return new WaitForSeconds(multihitDelay);
         }
 
         AfterHitLabel:

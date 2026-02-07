@@ -98,7 +98,8 @@ public class CharacterMenuItem : MenuItem
 
     void AddIcon(int status) {
         GameObject prefab = Instantiate(statusIconPrefab, iconPosition);
-        prefab.transform.position = iconPosition.position + Vector3.right * iconWidth * iconCount;
+        prefab.transform.position = iconPosition.position + Vector3.right * iconWidth * (iconCount%4);
+        prefab.transform.position += Vector3.up * iconWidth * Mathf.Floor(iconCount / 4);
         Image prefabImage = prefab.GetComponent<Image>();
         if (prefabImage != null) {
             prefabImage.sprite = iconSprites[status];
@@ -120,7 +121,8 @@ public class CharacterMenuItem : MenuItem
         int curr = 0;
         foreach (Image icon in iconImages) {
             if (icon != null) {
-                icon.transform.position = iconPosition.position + Vector3.right * iconWidth * curr;
+                icon.transform.position = iconPosition.position + Vector3.right * iconWidth * (curr % 4);
+                icon.transform.position += Vector3.up * iconWidth * Mathf.Floor(curr / 4);
                 curr++;
             }
         }

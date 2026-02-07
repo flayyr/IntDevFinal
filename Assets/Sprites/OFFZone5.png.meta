@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 51d79adc88c06214c95fb70f0c726f29
+guid: 2787de8bebe4c3d46944223f178f6164
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2961639321629350723
-    second: competences menu_0
+      213: 3854472852155261515
+    second: OFFZone5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: competences menu_0
+      name: OFFZone5_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 19
         y: 0
-        width: 851
-        height: 633
+        width: 122
+        height: 151
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db424797ab426e6d0800000000000000
-      internalID: -2961639321629350723
+      spriteID: b42e91d13a6dd7530800000000000000
+      internalID: 3854472852155261515
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      competences menu_0: -2961639321629350723
+      OFFZone5_0: 3854472852155261515
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
