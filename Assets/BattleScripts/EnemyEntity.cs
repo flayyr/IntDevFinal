@@ -11,6 +11,8 @@ public class EnemyEntity : Entity
 
     public EnemySpawn spawnPosition;
 
+    CompetenceSO previousCompetence;
+
     protected override void Awake() {
         base.Awake();
         enemyTimer.transform.parent = null;
@@ -38,7 +40,6 @@ public class EnemyEntity : Entity
                 enemyTimer.Show();
             }
         }
-        Debug.Log(gameObject.name + " "+hp);
     }
 
     public override void ChangeHP(int change) {
@@ -58,7 +59,7 @@ public class EnemyEntity : Entity
         int totalWeight = 0;
         foreach (CompetenceSO competence in competences)
         {
-            if (CheckRequirement(competence))
+            if (CheckRequirement(competence) && competence!=previousCompetence)
             {
                 usableCompetences.Enqueue(competence);
                 totalWeight += competence.weight;
@@ -71,6 +72,7 @@ public class EnemyEntity : Entity
             randomWeight -= current.weight;
             if (randomWeight <= 0)
             {
+                previousCompetence = current;
                 return current;
             }
         }
