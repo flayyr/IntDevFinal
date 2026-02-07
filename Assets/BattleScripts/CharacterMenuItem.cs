@@ -8,7 +8,7 @@ public class CharacterMenuItem : MenuItem
     [SerializeField] bool switchPortrait = false;
     [Space(20)]
     [SerializeField] Slider progressBar;
-    [SerializeField] Image critProgressSprite;
+    [SerializeField] CritProgressDisplay critProgressSprite;
     [SerializeField] Slider healthBar;
     [SerializeField] Slider CCBar;
     [SerializeField] Image portrait;
@@ -39,7 +39,14 @@ public class CharacterMenuItem : MenuItem
     private void Update() {
         if (critProgressSprite != null)
         {
-            critProgressSprite.gameObject.SetActive(entity.critting);
+            if (entity.critting && entity.progress>0.15f)
+            {
+                critProgressSprite.UpdateSprite();
+            }
+            else
+            {
+                critProgressSprite.Deactivate();
+            }
         }
 
         if (progressBar != null) {

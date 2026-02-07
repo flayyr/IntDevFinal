@@ -100,6 +100,7 @@
     <Compile Include="Assets\Scripts\ClueSheetBehavior.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\ChronoScripts\ClockFace.cs" />
+    <Compile Include="Assets\BattleScripts\CritProgressDisplay.cs" />
     <Compile Include="Assets\Anderson Stuff\zoomIn.cs" />
     <Compile Include="Assets\Anderson Stuff\zoomOut.cs" />
     <Compile Include="Assets\BattleScripts\ISelectionMenu.cs" />
