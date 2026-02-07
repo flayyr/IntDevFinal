@@ -107,7 +107,7 @@ MonoBehaviour:
   ATK: 350
   DEF: 200
   ESP: 250
-  baseAgility: 400
+  baseAgility: 415
   competences:
   - {fileID: 11400000, guid: 485a0d2711dac204fb45f7847b662d59, type: 2}
   - {fileID: 11400000, guid: ac1d4851193df0f48ae906ac34b88c7b, type: 2}
@@ -120,6 +120,8 @@ MonoBehaviour:
   statusDurations: 
   wideAngled: 0
   dead: 0
+  critting: 0
+  spriteRenderer: {fileID: 0}
   pointer: {fileID: 0}
   enemyTimer: {fileID: 7885502702582775524}
   TimerShowAfterPercentage: 0.2

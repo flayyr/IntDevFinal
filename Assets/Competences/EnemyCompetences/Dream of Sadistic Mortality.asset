@@ -15,7 +15,7 @@ MonoBehaviour:
   description: Fifth single target attack
   targetType: 0
   ccCost: 5
-  hpChange: -555
+  hpChange: -700
   CPChange: 0
   ATKInfluence: 2
   ESPInfluence: 0
@@ -32,7 +32,7 @@ MonoBehaviour:
   weight: 3
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 3
+  turnsSinceUse: 1
   moveAmount: -1
   effect:
   - {fileID: 6466106487047618027, guid: 79bc6f386f9583d4e9cf2153c98bf5bc, type: 3}
