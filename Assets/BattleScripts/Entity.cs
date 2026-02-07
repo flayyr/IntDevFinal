@@ -14,7 +14,7 @@ public class Entity : MonoBehaviour
     static float multihitDelay = 0.2f;
     static float critSpeedMult = 2f;
     static float critValueMult = 2f;
-    static float critRate = 0.5f;
+    static float critRate = 0.05f;
 
     [SerializeField] public string entityName;
     [SerializeField] public int maxHP;
