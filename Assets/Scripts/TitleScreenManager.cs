@@ -21,7 +21,7 @@ public class TitleScreenManager : MonoBehaviour
                 }
 
                 if(Input.GetKeyDown(KeyCode.Z)){
-                    SceneManager.LoadScene("MainScene");
+                    SceneManager.LoadScene("MainReworked");
                     break;
                 }
                 break;
