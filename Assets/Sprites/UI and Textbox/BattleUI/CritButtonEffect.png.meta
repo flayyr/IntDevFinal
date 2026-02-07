@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 04861d1d4b3bf4fa790e2950749d47f2
+guid: c58fb9a6693fb413ebc80fdad969f40b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8230914408393274547
-    second: CritBarStart_0
-  - first:
-      213: 4166425231428625710
-    second: CritBarStart_1
-  - first:
-      213: -139852633356641161
-    second: CritBarStart_2
-  - first:
-      213: -6659484468271931235
-    second: CritBarStart_3
-  - first:
-      213: 2350345646087093897
-    second: CritBarStart_4
+      213: 6537579843111615999
+    second: CritButtonEffect_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,123 +100,79 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CritBarStart_0
+      name: CritButtonEffect_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 67
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffdfb6fca362aba50800000000000000
+      internalID: 6537579843111615999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CritButtonEffect_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 67
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69638c238ce4949b3bf220094a4834c4
+      internalID: 1958473005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CritButtonEffect_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 67
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a61d9a66801d454cabf641354d7d349
+      internalID: 837435671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CritButtonEffect_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3b4fce09b051a3270800000000000000
-      internalID: 8230914408393274547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CritBarStart_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e25278e5cad12d930800000000000000
-      internalID: 4166425231428625710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CritBarStart_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 77cdfdb55c42f0ef0800000000000000
-      internalID: -139852633356641161
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CritBarStart_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d90ab69d822c493a0800000000000000
-      internalID: -6659484468271931235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CritBarStart_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 98e386699ea1e9020800000000000000
-      internalID: 2350345646087093897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CritBarStart_5
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 13
+        width: 67
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,30 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfdfeee1b28c545a08e8dbe7675e0feb
-      internalID: 2030653833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CritBarStart_6
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dcd985530353c4b6cba446e77adfbd90
-      internalID: 1903810
+      spriteID: ab3e8ac07b0e6450aa0ccb6ea8523bfc
+      internalID: 508951333
       vertices: []
       indices: 
       edges: []
@@ -269,7 +191,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2b8cfdecebf8a4448b0c82f79aae6072
+    spriteID: 1958551b47bf74e8688c04a624ba6679
     internalID: 0
     vertices: []
     indices: 
@@ -279,13 +201,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CritBarStart_0: 8230914408393274547
-      CritBarStart_1: 4166425231428625710
-      CritBarStart_2: -139852633356641161
-      CritBarStart_3: -6659484468271931235
-      CritBarStart_4: 2350345646087093897
-      CritBarStart_5: 2030653833
-      CritBarStart_6: 1903810
+      CritButtonEffect_0: 6537579843111615999
+      CritButtonEffect_1: 1958473005
+      CritButtonEffect_2: 837435671
+      CritButtonEffect_3: 508951333
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

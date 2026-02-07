@@ -1,22 +1,37 @@
 fileFormatVersion: 2
-guid: 04861d1d4b3bf4fa790e2950749d47f2
+guid: 9e0c8b388596a4fadadd697c919f6817
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8230914408393274547
-    second: CritBarStart_0
+      213: 138010282114481390
+    second: CritTimer_0
   - first:
-      213: 4166425231428625710
-    second: CritBarStart_1
+      213: 146679532966953065
+    second: CritTimer_1
   - first:
-      213: -139852633356641161
-    second: CritBarStart_2
+      213: -4266739960927238224
+    second: CritTimer_2
   - first:
-      213: -6659484468271931235
-    second: CritBarStart_3
+      213: -687747026816792716
+    second: CritTimer_3
   - first:
-      213: 2350345646087093897
-    second: CritBarStart_4
+      213: 8794421453655644264
+    second: CritTimer_4
+  - first:
+      213: -2001449069753646085
+    second: CritTimer_5
+  - first:
+      213: -1285245828605065892
+    second: CritTimer_6
+  - first:
+      213: -2606721019744055488
+    second: CritTimer_7
+  - first:
+      213: -1915776239104213090
+    second: CritTimer_8
+  - first:
+      213: -213490344303989229
+    second: CritTimer_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,13 +127,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CritBarStart_0
+      name: CritTimer_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 13
+        width: 37
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b4fce09b051a3270800000000000000
-      internalID: 8230914408393274547
+      spriteID: eecf8c0de9f4ae100800000000000000
+      internalID: 138010282114481390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CritBarStart_1
+      name: CritTimer_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 37
         y: 0
-        width: 16
-        height: 13
+        width: 37
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e25278e5cad12d930800000000000000
-      internalID: 4166425231428625710
+      spriteID: 960c052124c190200800000000000000
+      internalID: 146679532966953065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CritBarStart_2
+      name: CritTimer_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 74
         y: 0
-        width: 16
-        height: 13
+        width: 37
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 77cdfdb55c42f0ef0800000000000000
-      internalID: -139852633356641161
+      spriteID: 0b7c7f79c9e79c4c0800000000000000
+      internalID: -4266739960927238224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CritBarStart_3
+      name: CritTimer_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 111
         y: 0
-        width: 16
-        height: 13
+        width: 37
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d90ab69d822c493a0800000000000000
-      internalID: -6659484468271931235
+      spriteID: 477014319b1a476f0800000000000000
+      internalID: -687747026816792716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CritBarStart_4
+      name: CritTimer_4
       rect:
         serializedVersion: 2
-        x: 64
+        x: 148
         y: 0
-        width: 16
-        height: 13
+        width: 37
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,52 +230,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 98e386699ea1e9020800000000000000
-      internalID: 2350345646087093897
+      spriteID: 868183e97bf0c0a70800000000000000
+      internalID: 8794421453655644264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CritBarStart_5
+      name: CritTimer_5
       rect:
         serializedVersion: 2
-        x: 80
+        x: 185
         y: 0
-        width: 16
-        height: 13
+        width: 37
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cfdfeee1b28c545a08e8dbe7675e0feb
-      internalID: 2030653833
+      spriteID: bf34c49dcac6934e0800000000000000
+      internalID: -2001449069753646085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CritBarStart_6
+      name: CritTimer_6
       rect:
         serializedVersion: 2
-        x: 96
+        x: 222
         y: 0
-        width: 16
-        height: 13
+        width: 37
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: dcd985530353c4b6cba446e77adfbd90
-      internalID: 1903810
+      spriteID: c5541f87ab3e92ee0800000000000000
+      internalID: -1285245828605065892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CritTimer_7
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 0
+        width: 37
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f8c952b0113dbd0800000000000000
+      internalID: -2606721019744055488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CritTimer_8
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 0
+        width: 37
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f3f0729abc965e0800000000000000
+      internalID: -1915776239104213090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CritTimer_9
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 0
+        width: 37
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ee8c8b9a7890df0800000000000000
+      internalID: -213490344303989229
       vertices: []
       indices: 
       edges: []
@@ -269,7 +350,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2b8cfdecebf8a4448b0c82f79aae6072
+    spriteID: f72c83507f2a14240adff4f7987491b0
     internalID: 0
     vertices: []
     indices: 
@@ -279,13 +360,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CritBarStart_0: 8230914408393274547
-      CritBarStart_1: 4166425231428625710
-      CritBarStart_2: -139852633356641161
-      CritBarStart_3: -6659484468271931235
-      CritBarStart_4: 2350345646087093897
-      CritBarStart_5: 2030653833
-      CritBarStart_6: 1903810
+      CritTimer_0: 138010282114481390
+      CritTimer_1: 146679532966953065
+      CritTimer_2: -4266739960927238224
+      CritTimer_3: -687747026816792716
+      CritTimer_4: 8794421453655644264
+      CritTimer_5: -2001449069753646085
+      CritTimer_6: -1285245828605065892
+      CritTimer_7: -2606721019744055488
+      CritTimer_8: -1915776239104213090
+      CritTimer_9: -213490344303989229
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

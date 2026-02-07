@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 04861d1d4b3bf4fa790e2950749d47f2
+guid: 0f2954561ebcf407ca8773c7213d7e7e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8230914408393274547
-    second: CritBarStart_0
+      213: -6542565908443511789
+    second: CritBarStart2_0
   - first:
-      213: 4166425231428625710
-    second: CritBarStart_1
+      213: 4927854131938987477
+    second: CritBarStart2_1
   - first:
-      213: -139852633356641161
-    second: CritBarStart_2
+      213: 2262301203649237063
+    second: CritBarStart2_2
   - first:
-      213: -6659484468271931235
-    second: CritBarStart_3
+      213: 8709444047325571200
+    second: CritBarStart2_3
   - first:
-      213: 2350345646087093897
-    second: CritBarStart_4
+      213: -8039447774956635552
+    second: CritBarStart2_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,7 +112,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CritBarStart_0
+      name: CritBarStart2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -127,14 +127,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b4fce09b051a3270800000000000000
-      internalID: 8230914408393274547
+      spriteID: 314c4a368f22435a0800000000000000
+      internalID: -6542565908443511789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CritBarStart_1
+      name: CritBarStart2_1
       rect:
         serializedVersion: 2
         x: 16
@@ -149,14 +149,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e25278e5cad12d930800000000000000
-      internalID: 4166425231428625710
+      spriteID: 5dd0a2f5931436440800000000000000
+      internalID: 4927854131938987477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CritBarStart_2
+      name: CritBarStart2_2
       rect:
         serializedVersion: 2
         x: 32
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 77cdfdb55c42f0ef0800000000000000
-      internalID: -139852633356641161
+      spriteID: 740937265fe456f10800000000000000
+      internalID: 2262301203649237063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CritBarStart_3
+      name: CritBarStart2_3
       rect:
         serializedVersion: 2
         x: 48
@@ -193,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d90ab69d822c493a0800000000000000
-      internalID: -6659484468271931235
+      spriteID: 0882bf767392ed870800000000000000
+      internalID: 8709444047325571200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CritBarStart_4
+      name: CritBarStart2_4
       rect:
         serializedVersion: 2
         x: 64
@@ -215,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 98e386699ea1e9020800000000000000
-      internalID: 2350345646087093897
+      spriteID: 06ab76fe7d42e6090800000000000000
+      internalID: -8039447774956635552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CritBarStart_5
+      name: CritBarStart2_5
       rect:
         serializedVersion: 2
         x: 80
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfdfeee1b28c545a08e8dbe7675e0feb
-      internalID: 2030653833
+      spriteID: 2dfffe4618c7841918596cd5b3143347
+      internalID: 1794461549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CritBarStart_6
+      name: CritBarStart2_6
       rect:
         serializedVersion: 2
         x: 96
@@ -259,8 +259,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcd985530353c4b6cba446e77adfbd90
-      internalID: 1903810
+      spriteID: 514b4aa24a408422ba9ac07a4ed133ab
+      internalID: -1980141514
       vertices: []
       indices: 
       edges: []
@@ -269,7 +269,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2b8cfdecebf8a4448b0c82f79aae6072
+    spriteID: a7d3a8bfdaca3454a946770e8611b2bd
     internalID: 0
     vertices: []
     indices: 
@@ -279,13 +279,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CritBarStart_0: 8230914408393274547
-      CritBarStart_1: 4166425231428625710
-      CritBarStart_2: -139852633356641161
-      CritBarStart_3: -6659484468271931235
-      CritBarStart_4: 2350345646087093897
-      CritBarStart_5: 2030653833
-      CritBarStart_6: 1903810
+      CritBarStart2_0: -6542565908443511789
+      CritBarStart2_1: 4927854131938987477
+      CritBarStart2_2: 2262301203649237063
+      CritBarStart2_3: 8709444047325571200
+      CritBarStart2_4: -8039447774956635552
+      CritBarStart2_5: 1794461549
+      CritBarStart2_6: -1980141514
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
