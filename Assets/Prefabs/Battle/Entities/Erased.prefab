@@ -111,6 +111,7 @@ MonoBehaviour:
   baseAgility: 200
   competences:
   - {fileID: 11400000, guid: 4a30237665682fb4bb715f6900ce276f, type: 2}
+  - {fileID: 11400000, guid: 7cc729d0aeffd414db9705443c2523c8, type: 2}
   hp: 0
   cc: 0
   progress: 0
@@ -118,6 +119,7 @@ MonoBehaviour:
   statusDurations: 
   wideAngled: 0
   dead: 0
+  spriteRenderer: {fileID: 0}
   pointer: {fileID: 0}
   enemyTimer: {fileID: 8463308104276696164}
   TimerShowAfterPercentage: 0.3
