@@ -62,7 +62,7 @@ public class particleLifeSoundBased : MonoBehaviour
         {
             spriteOpacity -= Time.deltaTime;
             sprender.color = new Color(1f, 1f, 1f, spriteOpacity);
-            Debug.Log(spriteOpacity);
+            //Debug.Log(spriteOpacity);
         }
     }
 }

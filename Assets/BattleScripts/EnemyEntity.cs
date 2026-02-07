@@ -120,4 +120,16 @@ public class EnemyEntity : Entity
     {
         enemyTimer.transform.position = transform.position + (Vector3)timerPositionOffset;
     }
+
+    protected override void Crit()
+    {
+        base.Crit();
+        enemyTimer.Crit();
+    }
+
+    protected override void RemoveCrit()
+    {
+        base.RemoveCrit();
+        enemyTimer.RemoveCrit();
+    }
 }

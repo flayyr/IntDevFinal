@@ -258,12 +258,12 @@ public class Entity : MonoBehaviour
         }
     }
 
-    void Crit()
+    protected virtual void Crit()
     {
         critting = true;
     }
 
-    void RemoveCrit()
+    protected virtual void RemoveCrit()
     {
         critting = false;
     }

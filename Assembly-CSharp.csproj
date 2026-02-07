@@ -108,6 +108,7 @@
     <Compile Include="Assets\Anderson Stuff\TextBox.cs" />
     <Compile Include="Assets\BattleScripts\EnemySpawn.cs" />
     <Compile Include="Assets\BattleScripts\CompetenceMenuItem.cs" />
+    <Compile Include="Assets\BattleScripts\CritTimerAnimation.cs" />
     <Compile Include="Assets\BattleScripts\PlayerEntity.cs" />
     <Compile Include="Assets\BattleScripts\ActionSelectionMenu.cs" />
     <Compile Include="Assets\Scripts\PuzzleCube.cs" />
