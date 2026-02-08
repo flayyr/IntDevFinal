@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class NameTag : MonoBehaviour
 {
     Image[] iconImages = new Image[12];
+    static int HPBarSize = 28;
 
     [SerializeField] CharacterMenuItem iconReference;
     [SerializeField] Transform iconPosition;
@@ -16,7 +17,7 @@ public class NameTag : MonoBehaviour
 
         if (entity.wideAngled && hpBar != null) {
             hpBar.gameObject.SetActive(true);
-            hpBar.value = (float)entity.hp / entity.maxHP;
+            hpBar.value = Mathf.Floor(((float)entity.hp / entity.maxHP)*HPBarSize)/HPBarSize;
         } else if (hpBar != null) {
             hpBar.gameObject.SetActive(false);
         }

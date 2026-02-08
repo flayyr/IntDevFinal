@@ -23,6 +23,9 @@ public class CharacterMenuItem : MenuItem
     [SerializeField] float iconWidth;
     [SerializeField] bool showMaxHp;
 
+    static int CCBarSize = 16;
+    static int HPBarSize = 21;
+
     Image[] iconImages;
     bool[] iconsSet;
     int iconCount = 0;
@@ -62,7 +65,7 @@ public class CharacterMenuItem : MenuItem
         if (progressBar != null) {
             progressBar.value = entity.progress;
         }
-        healthBar.value = (float)entity.hp / entity.maxHP;
+        healthBar.value = Mathf.Floor(((float)entity.hp / entity.maxHP)*HPBarSize)/CCBarSize;
         if (hpText != null)
         {
             if (showMaxHp)
@@ -75,7 +78,7 @@ public class CharacterMenuItem : MenuItem
                 ccText.text = entity.cc+"";
             }
         }
-        CCBar.value = (float)entity.cc / entity.maxCC;
+        CCBar.value = Mathf.Floor(((float)entity.cc / entity.maxCC)*CCBarSize)/CCBarSize;
 
 
         if (iconPosition != null) {
