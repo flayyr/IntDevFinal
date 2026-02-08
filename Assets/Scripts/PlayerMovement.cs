@@ -88,19 +88,19 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetFloat("InputY", 1);
                 moveDirectionVector = Vector2.up;
             }
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
                 animator.SetFloat("LastInputX", -1);
                 animator.SetFloat("InputX", -1);
                 moveDirectionVector = Vector2.left;
             }
-            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
             {
                 animator.SetFloat("LastInputY", -1);
                 animator.SetFloat("InputY", -1);
                 moveDirectionVector = Vector2.down;
             }
-            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             {
                 animator.SetFloat("LastInputX", 1);
                 animator.SetFloat("InputX", 1);
