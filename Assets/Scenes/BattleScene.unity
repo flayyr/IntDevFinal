@@ -2502,6 +2502,7 @@ MonoBehaviour:
   cycleClick: {fileID: 8300000, guid: 567186aa1fdfa410d9f18bf9444ca083, type: 3}
   selectClick: {fileID: 8300000, guid: 846e8d353628c4714acfb3678395ab83, type: 3}
   statusHurt: {fileID: 0}
+  crit: {fileID: 0}
 --- !u!4 &683644672
 Transform:
   m_ObjectHideFlags: 0
@@ -5870,7 +5871,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 254950195901949037, guid: 881a361c4bb5c43c8b3eac65d71b4a8d, type: 3}
+  m_Sprite: {fileID: -3633481992624316139, guid: 293b9ed5333e84996b7aa76581842c8c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
