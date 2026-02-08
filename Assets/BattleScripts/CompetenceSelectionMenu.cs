@@ -22,6 +22,7 @@ public class CompetenceSelectionMenu : MonoBehaviour, ISelectionMenu {
         for (int i = 0; i < competenceMenuItems.Length; i++) {
             if (i < entity.competences.Length) {
                 competenceMenuItems[i].SetUp(entity, i, unusableAlpha);
+                competenceMenuItems[i].enableShowOnSelectObj = entity.critting;
             } else {
                 competenceMenuItems[i].SetText("");
                 competenceMenuItems[i].SetCostText(-1);

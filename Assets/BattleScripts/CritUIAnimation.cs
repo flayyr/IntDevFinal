@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class CritUIAnimation : MonoBehaviour
 {
     [SerializeField] Sprite[] sprites;
+    [SerializeField] float animationDelay = 0.15f;
     Image image;
 
     float timer = 0f;
@@ -16,13 +17,13 @@ public class CritUIAnimation : MonoBehaviour
 
     private void Update()
     {
-        if (timer < 0.15f)
+        if (timer < animationDelay)
         {
             timer += Time.deltaTime;
             return;
         }
 
-        timer -= 0.15f;
+        timer -= animationDelay;
         image.sprite = sprites[spriteIndex];
         spriteIndex++;
         spriteIndex %= sprites.Length;

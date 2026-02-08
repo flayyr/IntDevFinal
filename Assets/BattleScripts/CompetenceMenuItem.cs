@@ -9,6 +9,7 @@ public class CompetenceMenuItem : MenuItem
     [SerializeField] TextMeshProUGUI maxCCText;
     [SerializeField] GameObject bgbox;
     [SerializeField] GameObject pointer;
+    [SerializeField] GameObject selectionBackground;
 
     public CompetenceSO competence;
     float alpha = 1f;
@@ -38,6 +39,8 @@ public class CompetenceMenuItem : MenuItem
             bgbox.SetActive(true);
             pointer.SetActive(true);
         }
+        if(selectionBackground != null)
+            selectionBackground.SetActive(true);
     }
 
     public override void DeselectItem() {
@@ -48,6 +51,8 @@ public class CompetenceMenuItem : MenuItem
             bgbox.SetActive(false);
             pointer.SetActive(false);
         }
+        if (selectionBackground != null)
+            selectionBackground.SetActive(false);
     }
 
     public void SetCostText(int cost) {
