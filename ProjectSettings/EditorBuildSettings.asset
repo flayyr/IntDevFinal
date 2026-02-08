@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScene.unity
     guid: 182afa247340cdb4f8648ad08e3cc887
   - enabled: 0
-    path: Assets/Scenes/MainScene.unity
+    path: Assets/Scenes/UNUSED_MainOld.unity
     guid: 8620b580fedaff6469c8c8b77bc1af4a
   - enabled: 1
     path: Assets/Scenes/BossDefeatRoom.unity
@@ -21,13 +21,13 @@ EditorBuildSettings:
     path: Assets/Scenes/BattleScene.unity
     guid: 81b10261ac37a8b458a8d128f87fe541
   - enabled: 0
-    path: Assets/Scenes/TextboxScene.unity
+    path: Assets/Scenes/UNUSED_TextboxScene.unity
     guid: d3fda70714f83c34994c1e568b47d761
   - enabled: 1
     path: Assets/Scenes/BossRoom.unity
     guid: 95e005a2aa05255419c09e5d384c892c
   - enabled: 1
-    path: Assets/Scenes/MainReworked.unity
+    path: Assets/Scenes/MainScene.unity
     guid: e5c9f60af11f04c6ab2899096f8fc208
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
