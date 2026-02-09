@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 196c8161445648f4fbbf9dd6c430d390, type: 3}
-  m_Name: Dream of Sadistic Mortality
+  m_Name: Truth of Masochistic Eternity
   m_EditorClassIdentifier: 
   description: Fifth single target attack
   targetType: 0
@@ -29,10 +29,10 @@ MonoBehaviour:
   inflictChance: 0.7
   chronomancy: 0
   isEnemy: 1
-  weight: 2
+  weight: 1
   requirements: []
   summonPrefab: {fileID: 0}
-  turnsSinceUse: 2
+  turnsSinceUse: 1
   moveAmount: -1
   effect:
   - {fileID: 6466106487047618027, guid: 79bc6f386f9583d4e9cf2153c98bf5bc, type: 3}

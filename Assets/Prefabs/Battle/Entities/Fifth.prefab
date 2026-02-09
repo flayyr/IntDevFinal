@@ -113,6 +113,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ac1d4851193df0f48ae906ac34b88c7b, type: 2}
   - {fileID: 11400000, guid: 6b3aa9e0d1f9973419b262bf6811967c, type: 2}
   - {fileID: 11400000, guid: cf576c19f87c7d543aa43890c040c416, type: 2}
+  - {fileID: 11400000, guid: aaa097d78c3a98c4b9cbc03df64f0b04, type: 2}
   hp: 0
   cc: 0
   progress: 0
