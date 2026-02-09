@@ -450,10 +450,12 @@ MonoBehaviour:
   selectedFont: {fileID: 11400000, guid: 9a5c17c4b5b2fc74c8e14a7a837c0ffa, type: 2}
   unselectedSpacing: -15
   selectedSpacing: 0
-  selectedColor: {r: 1, g: 0.64767194, b: 0, a: 1}
+  selectedColor: {r: 0.96862745, g: 0.6784314, b: 0.15686275, a: 1}
   textTransform: {fileID: 2623558201619183690}
   selectedShift: 0.1
   bold: 0
+  showOnSelect: {fileID: 0}
+  enableShowOnSelectObj: 0
   switchPortrait: 0
   progressBar: {fileID: 483371257009476742}
   critProgressSprite: {fileID: 5611421966417822634}
@@ -918,6 +920,7 @@ MonoBehaviour:
   - {fileID: 1958473005, guid: c58fb9a6693fb413ebc80fdad969f40b, type: 3}
   - {fileID: 837435671, guid: c58fb9a6693fb413ebc80fdad969f40b, type: 3}
   - {fileID: 508951333, guid: c58fb9a6693fb413ebc80fdad969f40b, type: 3}
+  animationDelay: 0.15
 --- !u!1 &5533845484099432979
 GameObject:
   m_ObjectHideFlags: 0
