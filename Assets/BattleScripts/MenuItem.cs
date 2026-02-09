@@ -69,7 +69,7 @@ public class MenuItem : MonoBehaviour
             textTransform.localPosition = originalTextPosition;
         }
 
-        if (showOnSelect != null && enableShowOnSelectObj)
+        if (showOnSelect != null)
         {
             showOnSelect.SetActive(false);
         }
