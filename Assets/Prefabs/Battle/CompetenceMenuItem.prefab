@@ -500,7 +500,7 @@ MonoBehaviour:
   selectedFont: {fileID: 11400000, guid: 9a5c17c4b5b2fc74c8e14a7a837c0ffa, type: 2}
   unselectedSpacing: -15
   selectedSpacing: 0
-  selectedColor: {r: 0.96862745, g: 0.6784314, b: 0.15686275, a: 1}
+  selectedColor: {r: 1, g: 0.570091, b: 0, a: 1}
   textTransform: {fileID: 6464882202141794278}
   selectedShift: 10
   bold: 0
