@@ -1779,10 +1779,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2443,7 +2443,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 12
-      m_TileSpriteIndex: 10
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 1
       m_TileColorIndex: 11
       m_TileObjectToInstantiateIndex: 65535
@@ -3632,16 +3632,16 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 4
     m_Data: {fileID: 1369693686, guid: ce2b96b698a3e4ef998de2c9957de6fc, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -1423887434, guid: ce2b96b698a3e4ef998de2c9957de6fc, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 7
     m_Data: {fileID: -1004765814, guid: ce2b96b698a3e4ef998de2c9957de6fc, type: 3}
   - m_RefCount: 60
     m_Data: {fileID: -1734377619, guid: ce2b96b698a3e4ef998de2c9957de6fc, type: 3}
   - m_RefCount: 7
     m_Data: {fileID: -1354089607, guid: ce2b96b698a3e4ef998de2c9957de6fc, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -1423887434, guid: ce2b96b698a3e4ef998de2c9957de6fc, type: 3}
   - m_RefCount: 7
     m_Data: {fileID: -1406686770, guid: ce2b96b698a3e4ef998de2c9957de6fc, type: 3}
   - m_RefCount: 10
